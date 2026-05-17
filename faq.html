@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ – Anshuman Enterprises | Frequently Asked Questions</title>
+<meta name="description" content="Find answers to common questions about Anshuman Enterprises, our electrical products, installation services, pricing, and delivery in Greater Noida.">
+<link rel="canonical" href="https://anshumanenterprises.online/faq.html">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon: #6b1c23;
+    --maroon-dark: #3d0e14;
+    --maroon-mid: #8a2530;
+    --gold: #c9a84c;
+    --gold-light: #e8c96a;
+    --gold-pale: #f5ead5;
+    --cream: #faf7f2;
+    --cream-dark: #f0ebe1;
+    --white: #ffffff;
+    --text: #1a1a1a;
+    --text-mid: #4a4040;
+    --text-light: #8a7a7a;
+    --border: rgba(107,28,35,0.12);
+    --shadow-sm: 0 2px 12px rgba(61,14,20,0.08);
+    --shadow-md: 0 8px 32px rgba(61,14,20,0.14);
+    --shadow-lg: 0 20px 60px rgba(61,14,20,0.18);
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; font-size:16px; }
+  body { font-family:'DM Sans',sans-serif; background:var(--cream); color:var(--text); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  
+  /* NAV */
+  nav {
+    background:var(--maroon-dark);
+    position:sticky; top:0; z-index:1000;
+    box-shadow:0 2px 20px rgba(0,0,0,0.35);
+  }
+  .nav-inner {
+    max-width:1200px; margin:auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:12px 5%;
+    gap:16px;
+  }
+  .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .nav-logo img { height:40px; width:40px; object-fit:contain; border-radius:6px; background:#fff; }
+  .nav-brand { color:#fff; font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; line-height:1.1; }
+  .nav-sub { color:var(--gold-light); font-size:9px; letter-spacing:2.5px; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:400; }
+  .nav-links { display:flex; align-items:center; gap:4px; }
+  .nav-links a {
+    color:rgba(255,255,255,0.75); text-decoration:none; font-size:13px; font-weight:500;
+    padding:6px 12px; border-radius:50px; transition:all 0.2s; letter-spacing:0.3px;
+  }
+  .nav-links a:hover, .nav-links a.active { color:#fff; background:rgba(255,255,255,0.12); }
+  .nav-cta { display:flex; gap:8px; }
+  .btn-nav-call {
+    display:inline-flex; align-items:center; gap:5px;
+    background:var(--gold); color:var(--maroon-dark); border:none;
+    padding:8px 16px; border-radius:50px; font-size:13px; font-weight:600;
+    text-decoration:none; transition:all 0.2s;
+  }
+  .btn-nav-call:hover { background:var(--gold-light); transform:translateY(-1px); }
+  .btn-nav-wa {
+    display:inline-flex; align-items:center; gap:5px;
+    background:#25D366; color:#fff; border:none;
+    padding:8px 14px; border-radius:50px; font-size:13px; font-weight:600;
+    text-decoration:none; transition:all 0.2s;
+  }
+  .btn-nav-wa:hover { background:#1ebe5d; transform:translateY(-1px); }
+
+  /* FOOTER */
+  footer {
+    background:var(--maroon-dark);
+    color:rgba(255,255,255,0.8);
+    padding:56px 5% 24px;
+  }
+  .footer-grid {
+    max-width:1200px; margin:auto;
+    display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:40px;
+    padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,0.1);
+  }
+  .footer-brand img { height:48px; width:48px; object-fit:contain; background:#fff; border-radius:8px; margin-bottom:16px; }
+  .footer-brand p { font-size:13px; line-height:1.7; opacity:0.7; margin-top:8px; }
+  .footer-col h4 { color:var(--gold-light); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; font-weight:600; }
+  .footer-col a, .footer-col p { display:block; color:rgba(255,255,255,0.65); font-size:13px; text-decoration:none; margin-bottom:8px; transition:color 0.2s; }
+  .footer-col a:hover { color:var(--gold-light); }
+  .footer-bottom { max-width:1200px; margin:24px auto 0; display:flex; justify-content:space-between; align-items:center; font-size:12px; opacity:0.5; flex-wrap:wrap; gap:8px; }
+  
+  /* SECTION LABEL */
+  .label {
+    display:inline-block; font-size:10px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--gold); font-weight:600; font-family:'DM Mono',monospace;
+    padding:6px 16px; border:1px solid var(--gold); border-radius:50px;
+    margin-bottom:20px;
+  }
+
+  /* BUTTONS */
+  .btn-primary {
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--gold); color:var(--maroon-dark);
+    padding:13px 28px; border-radius:50px; font-size:14px; font-weight:600;
+    text-decoration:none; transition:all 0.25s; border:2px solid var(--gold);
+  }
+  .btn-primary:hover { background:var(--gold-light); transform:translateY(-2px); box-shadow:var(--shadow-md); }
+
+  @media(max-width:768px){
+    .nav-links { display:none; }
+    .footer-grid { grid-template-columns:1fr 1fr; }
+    .footer-col:first-child { grid-column:span 2; }
+  }
+  @media(max-width:480px){
+    .footer-grid { grid-template-columns:1fr; }
+    .footer-col:first-child { grid-column:span 1; }
+    .nav-cta .btn-nav-wa span { display:none; }
+  }
+
+  /* PAGE SPECIFIC STYLES */
+  .faq-hero {
+    background:linear-gradient(150deg, var(--maroon-dark) 0%, var(--maroon) 100%);
+    padding:80px 5%; text-align:center;
+  }
+  .faq-hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(32px,4.5vw,52px); color:#fff; margin-bottom:16px; font-weight:700; }
+  .faq-hero p { font-size:16px; color:rgba(255,255,255,0.72); max-width:600px; margin:0 auto; }
+
+  .faq-section {
+    padding: 80px 5%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .faq-category {
+    margin-bottom: 48px;
+  }
+  
+  .faq-category-title {
+    font-family:'Cormorant Garamond',serif;
+    font-size: 28px;
+    color: var(--maroon-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid var(--gold-pale);
+    padding-bottom: 12px;
+  }
+
+  .accordion-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion-item.active {
+    border-color: var(--gold);
+    box-shadow: var(--shadow-md);
+  }
+
+  .accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 20px 24px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--maroon-dark);
+    transition: background 0.2s;
+  }
+  
+  .accordion-header:hover {
+    background: var(--cream-dark);
+  }
+
+  .accordion-icon {
+    font-size: 20px;
+    color: var(--gold);
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #fff;
+  }
+  
+  .accordion-inner {
+    padding: 0 24px 24px;
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    border-top: 1px solid transparent;
+  }
+  
+  .accordion-item.active .accordion-inner {
+    border-top-color: var(--border);
+    padding-top: 20px;
+  }
+
+  /* POPUP STYLES */
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(15, 5, 7, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+  }
+  
+  .modal-overlay.active .modal-content {
+    transform: translateY(0) scale(1);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: var(--cream-dark);
+    border: none;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; color: var(--text-mid);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .modal-close:hover {
+    background: var(--maroon);
+    color: #fff;
+  }
+
+  .modal-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  .modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--maroon-dark);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .modal-desc {
+    font-size: 15px;
+    color: var(--text-mid);
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-modal-wa {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25D366; color: #fff;
+    padding: 14px 24px; border-radius: 50px;
+    font-size: 15px; font-weight: 600;
+    text-decoration: none; transition: all 0.2s;
+  }
+  .btn-modal-wa:hover { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37,211,102,0.3); }
+
+  .btn-modal-ig {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+    padding: 14px 24px; border-radius: 50px;
+    font-size: 15px; font-weight: 600;
+    text-decoration: none; transition: all 0.2s;
+  }
+  .btn-modal-ig:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(204,35,102,0.3); }
+
+  /* FLOATING ASK BUTTON */
+  .fab-ask {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--maroon-dark);
+    color: #fff;
+    border: 2px solid var(--gold);
+    padding: 14px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .fab-ask:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: var(--maroon);
+  }
+  
+  @media(max-width: 600px) {
+    .fab-ask {
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+
+    <!-- NEW NAVIGATION START -->
+  <nav>
+    <div class="nav-inner" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 5%; background: var(--maroon-dark, #3d0e14);">
+      
+      <a href="index.html" class="nav-logo" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+        <img src="logo.webp" alt="Anshuman Enterprises Logo" style="height: 50px; width: auto; object-fit: contain;">
+        <span style="color: #c9a84c; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; line-height: 1.1; display:flex; flex-direction:column; justify-content:center;">Anshuman<span style="font-size: 13px; color: #fff; font-family: 'DM Sans', sans-serif; font-weight:400; letter-spacing:1px;">ENTERPRISES</span></span>
+      </a>
+      <button id="mobile-menu-btn" style="background: none; border: none; color: #fff; font-size: 28px; cursor: pointer; display: flex; align-items: center; z-index: 10001;">
+        &#9776;
+      </button>
+    </div>
+  </nav>
+
+  <!-- SIDE SLIDING MENU -->
+  <div id="menu-backdrop" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.6); z-index: 9998; opacity: 0; transition: opacity 0.3s ease;"></div>
+  
+  <div id="side-menu" style="position: fixed; top: 0; right: -320px; width: 300px; max-width: 85%; height: 100vh; background: #faf7f2; z-index: 9999; display: flex; flex-direction: column; padding: 30px 20px; box-shadow: -5px 0 25px rgba(0,0,0,0.2); transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto;">
+    
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 30px;">
+      <button id="close-menu-btn" style="background: none; border: none; color: #3d0e14; font-size: 36px; cursor: pointer; line-height: 1;">&times;</button>
+    </div>
+    
+    <div style="display: flex; flex-direction: column; gap: 18px; font-size: 20px; font-weight: 600; font-family: 'DM Sans', sans-serif;">
+      <a href="index.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">🏠 Home</a>
+      <a href="products.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">📦 Products</a>
+      <a href="services.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">⚙️ Services</a>
+      <a href="projects.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">🏢 Projects</a>
+      <a href="brands.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">🏷️ Brands</a>
+      <a href="blog.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">📝 Blog</a>
+
+      <a href="faq.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">❓ FAQ</a>
+      <a href="about.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">🏢 About Us</a>
+      <a href="contact.html" style="color: #3d0e14; text-decoration: none; padding-bottom: 12px; border-bottom: 1px solid rgba(61,14,20,0.1);">📍 Contact</a>
+    </div>
+
+    <div style="margin-top: auto; padding-top: 40px; display: flex; flex-direction: column; gap: 16px;">
+      <a href="https://wa.me/917065815743?text=Hello%20Anshuman%20Enterprises" style="background: #25D366; color: #fff; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
+        💬 WhatsApp Us
+      </a>
+      <a href="tel:+917065815743" style="background: #3d0e14; color: #c9a84c; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 10px rgba(61,14,20,0.2);">
+        📞 Call Now
+      </a>
+    
+
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; padding-top: 15px; border-top: 1px solid rgba(61,14,20,0.1);">
+      <a href="https://www.instagram.com/about.aaditya" target="_blank" style="text-decoration:none; font-size: 24px;">📸</a>
+      <a href="https://youtube.com/@anshumanenterprises1119" target="_blank" style="text-decoration:none; font-size: 24px;">▶</a>
+      <a href="https://www.linkedin.com/in/aditya-tiwari-18a1a2371?" target="_blank" style="text-decoration:none; font-size: 24px;">💼</a>
+    </div>
+</div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const closeBtn = document.getElementById("close-menu-btn");
+      const sideMenu = document.getElementById("side-menu");
+      const backdrop = document.getElementById("menu-backdrop");
+      const menuLinks = sideMenu.querySelectorAll("a");
+
+      function openMenu() {
+        backdrop.style.display = "block";
+        setTimeout(() => {
+          backdrop.style.opacity = "1";
+          sideMenu.style.right = "0";
+        }, 10);
+        document.body.style.overflow = "hidden"; // Prevent background scrolling
+      }
+
+      function closeMenu() {
+        sideMenu.style.right = "-320px";
+        backdrop.style.opacity = "0";
+        setTimeout(() => {
+          backdrop.style.display = "none";
+        }, 400); // Wait for transition
+        document.body.style.overflow = "auto";
+      }
+
+      if (menuBtn && closeBtn && sideMenu && backdrop) {
+        menuBtn.addEventListener("click", openMenu);
+        closeBtn.addEventListener("click", closeMenu);
+        backdrop.addEventListener("click", closeMenu);
+
+        // Close menu when a link is clicked
+        menuLinks.forEach(link => {
+          link.addEventListener("click", closeMenu);
+        });
+      }
+    });
+  </script>
+  <!-- NEW NAVIGATION END -->
+
+<!-- HERO -->
+<section class="faq-hero">
+  <span class="label" style="border-color:rgba(201,168,76,0.4);color:var(--gold-light);">Help Center</span>
+  <h1>Frequently Asked Questions</h1>
+  <p>Find quick answers to common questions about our products, services, pricing, and support.</p>
+</section>
+
+<section class="faq-section">
+  
+  <!-- Category 1 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">🏢 General / About Us</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q1. Anshuman Enterprises क्या करती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Electrical & hardware material supplier company है जो retailers, contractors, builders और end customers को branded products best pricing पर देती है — direct sourcing model के through।
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q2. आप कहाँ service देते हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Greater Noida West, Noida, Delhi NCR और surrounding areas में।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q3. क्या आप सिर्फ products बेचते हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          नहीं। Products के साथ electrical services भी देते हैं — installation, wiring, CCTV, lighting setup, panel fitting, maintenance।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 2 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">📦 Products</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q4. कौन-कौन से products मिलते हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Wires & cables, modular switches, MCB & DB boxes, conduit pipes, LED/COB/panel lights, decorative lighting, CCTV cameras और electrical accessories।
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q5. क्या products branded होते हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — सिर्फ trusted, quality-tested branded products। कोई local या duplicate material नहीं।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q6. क्या warranty मिलती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — company warranty applicable है, जो brand और product category पर depend करती है।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q7. Bulk orders available हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — builders, contractors, retail shops और commercial/society projects के लिए bulk orders accept होते हैं।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q8. Customized quotation मिल सकता है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — requirement share करें, हम proper quotation और product recommendation देंगे।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 3 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">🔧 Services</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q9. क्या आपकी अपनी electrician team है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — experienced in-house team है जो installation और maintenance handle करती है।
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q10. CCTV installation करते हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — installation, wiring, setup और maintenance सब।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q11. Interior lighting setup भी होता है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — profile lights, COB, rope lights और decorative lighting installation available है।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q12. Site visit मिलती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — project requirement के हिसाब से site visit और inspection available है।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 4 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">🛒 Order, Delivery & Payment</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q13. Order कैसे करें?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Call, WhatsApp या website contact form के through।
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q14. Delivery कितने दिन में होती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Product availability और location पर depend करता है। Urgent requirements के लिए fast delivery support भी है।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q15. Payment कैसे करें?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          UPI, Bank Transfer, Cash और other standard methods accepted हैं।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q16. Emergency electrical support मिलती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Location और availability के अनुसार emergency support provide किया जाता है।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 5 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">✅ Trust & Pricing</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q17. दूसरे suppliers से अलग क्यों हैं?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Low margin – high volume model + direct manufacturer sourcing = genuine branded products affordable rates पर।
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q18. Contractors/builders के लिए special pricing है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — regular bulk buyers और project-based clients के लिए special pricing available है।
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q19. Installation के बाद maintenance मिलती है?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          हाँ — कई services में post-installation maintenance support भी दिया जाता है।
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category 6 -->
+  <div class="faq-category">
+    <h2 class="faq-category-title">📞 Contact</h2>
+    
+    <div class="accordion-item">
+      <button class="accordion-header">
+        Q20. Contact कैसे करें?
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-inner">
+          Call / WhatsApp / Website Contact Form — तीनों तरीकों से reach कर सकते हैं।
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FLOATING ASK QUESTION BUTTON -->
+<button class="fab-ask" onclick="openAskModal()">
+  <span style="font-size: 20px;">🙋</span> Have more questions?
+</button>
+
+<!-- ASK QUESTION MODAL -->
+<div class="modal-overlay" id="askModal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeAskModal()">×</button>
+    <div class="modal-icon">💬</div>
+    <h3 class="modal-title">Ask a Question</h3>
+    <p class="modal-desc">Didn't find what you were looking for? Feel free to ask us directly on WhatsApp or Instagram.</p>
+    
+    <div class="modal-actions">
+      <a href="https://wa.me/917065815743?text=Hello%20Anshuman%20Enterprises%2C%20I%20have%20a%20question..." target="_blank" class="btn-modal-wa">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        Ask on WhatsApp
+      </a>
+      <a href="https://www.instagram.com/about.aaditya" target="_blank" class="btn-modal-ig">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+        Ask on Instagram
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      
+      <div style="color:#fff;font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;margin-top:10px;">
+        Anshuman Enterprises</div>
+      <p>Greater Noida's trusted electrical supplier — 100% branded products, honest pricing, and long-term
+        relationships since 2025.</p>
+      <div style="margin-top:16px;display:flex;gap:8px;">
+        <a href="https://wa.me/917065815743"
+          style="display:inline-flex;align-items:center;gap:5px;background:#25D366;color:#fff;padding:7px 14px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">💬
+          WhatsApp</a>
+        <a href="tel:+917065815743"
+          style="display:inline-flex;align-items:center;gap:5px;background:var(--gold);color:var(--maroon-dark);padding:7px 14px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">📞
+          Call</a>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="https://www.instagram.com/about.aaditya" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:7px 12px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">📸
+          Instagram</a>
+        <a href="https://youtube.com/@anshumanenterprises1119?si=NFaFo_glKpbk2WKX?sub_confirmation=1" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:#FF0000;color:#fff;padding:7px 12px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">▶
+          YouTube</a>
+        <a href="https://www.linkedin.com/in/aditya-tiwari-18a1a2371?" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:#0077B5;color:#fff;padding:7px 12px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">💼
+          LinkedIn</a>
+        <a href="https://g.page/r/CdZ99l9ezVvlEBE/review" target="_blank"
+          style="display:inline-flex;align-items:center;gap:5px;background:#4285F4;color:#fff;padding:7px 12px;border-radius:50px;font-size:12px;font-weight:600;text-decoration:none;">⭐
+          Review Us</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="products.html">Our Products</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <a href="products.html#wires">Wires & Cables</a>
+      <a href="products.html#switches">Switches & Accessories</a>
+      <a href="products.html#mcb">MCB & DB Fittings</a>
+      <a href="products.html#conduit">Conduit Pipes</a>
+      <a href="products.html#hardware">Electrical Hardware</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>📍 Shop No.-2, KHS-722,<br>Near Adityanandan Hospital,<br>J S Roop Road, Aimnabad,<br>Sec-1, Greater Noida -
+        201306</p>
+      <a href="tel:+917065815743">📞 +91 70658 15743</a>
+      <a href="mailto:anshumanenterprises1119@gmail.com">✉ anshumanenterprises1119<br>@gmail.com</a>
+      <p style="margin-top:8px;font-size:11px;opacity:0.6;">GSTIN: 09AWTPT8270E1ZQ</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Anshuman Enterprises. All rights reserved. Founded by Aditya Tiwari.</span>
+    <span>Shop No.-2, KHS-722, Greater Noida - 201306</span>
+  </div>
+</footer>
+
+<script>
+  // Accordion Logic
+  document.querySelectorAll('.accordion-header').forEach(button => {
+    button.addEventListener('click', () => {
+      const accordionItem = button.parentElement;
+      const isActive = accordionItem.classList.contains('active');
+      
+      // Close all other items
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+        item.querySelector('.accordion-content').style.maxHeight = null;
+      });
+
+      // If clicked item wasn't active, open it
+      if (!isActive) {
+        accordionItem.classList.add('active');
+        const content = accordionItem.querySelector('.accordion-content');
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+  // Modal Logic
+  const askModal = document.getElementById('askModal');
+  
+  function openAskModal() {
+    askModal.classList.add('active');
+  }
+  
+  function closeAskModal() {
+    askModal.classList.remove('active');
+  }
+
+  // Close modal when clicking outside
+  askModal.addEventListener('click', (e) => {
+    if (e.target === askModal) {
+      closeAskModal();
+    }
+  });
+</script>
+
+</body>
+</html>

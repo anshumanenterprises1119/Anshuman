@@ -1,0 +1,12 @@
+mingit/
+mingit.zip
+Antigravity.exe
+"Anshuman enterprises.zip"
+Anshuman enterprises/
+images/gallery/
+*.exe
+*.zip
+*.mp4
+.gemini/
+node_modules/
+.venv/

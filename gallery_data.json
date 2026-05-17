@@ -1,0 +1,570 @@
+[
+  {
+    "id": "item_1",
+    "category": "Electrical",
+    "title": "Industrial Lighting Installation",
+    "description": "High-output LED floodlight setup for industrial warehouse.",
+    "type": "image",
+    "data": "images/gallery/20862.jpg"
+  },
+  {
+    "id": "item_2",
+    "category": "Electrical",
+    "title": "Commercial Wiring Project",
+    "description": "Heavy-duty electrical wiring for a commercial complex.",
+    "type": "image",
+    "data": "images/gallery/20863.jpg"
+  },
+  {
+    "id": "item_3",
+    "category": "Electrical",
+    "title": "Site Distribution Board",
+    "description": "Main electrical distribution panel installation.",
+    "type": "image",
+    "data": "images/gallery/D.jpg"
+  },
+  {
+    "id": "item_4",
+    "category": "Other",
+    "title": "Project Overview Video",
+    "description": "Video demonstration of the completed site work.",
+    "type": "video",
+    "data": "images/gallery/D.mp4"
+  },
+  {
+    "id": "item_5",
+    "category": "Electrical",
+    "title": "Residential Wiring",
+    "description": "Concealed wiring installation for a residential apartment.",
+    "type": "image",
+    "data": "images/gallery/IMG-20251026-WA0025.jpg"
+  },
+  {
+    "id": "item_6",
+    "category": "Electrical",
+    "title": "Switchboard Setup",
+    "description": "Modular switchboard installation with premium finishes.",
+    "type": "image",
+    "data": "images/gallery/IMG-20251026-WA0031.jpg"
+  },
+  {
+    "id": "item_7",
+    "category": "Electrical",
+    "title": "Ceiling Conduit Work",
+    "description": "Precision conduit layout for ceiling lighting.",
+    "type": "image",
+    "data": "images/gallery/IMG-20260112-WA0014.jpeg"
+  },
+  {
+    "id": "item_8",
+    "category": "Electrical",
+    "title": "Power Panel Installation",
+    "description": "Installation of main power control panels.",
+    "type": "image",
+    "data": "images/gallery/IMG-20260115-WA0007.jpeg"
+  },
+  {
+    "id": "item_9",
+    "category": "Electrical",
+    "title": "Underground Cabling",
+    "description": "Armoured cable laying for outdoor power distribution.",
+    "type": "image",
+    "data": "images/gallery/IMG-20260115-WA0009.jpeg"
+  },
+  {
+    "id": "item_10",
+    "category": "Electrical",
+    "title": "MCB Distribution Box",
+    "description": "Organized MCB layout for circuit protection.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260103_081601372_HDR.jpg"
+  },
+  {
+    "id": "item_11",
+    "category": "Electrical",
+    "title": "Industrial High-Bay Lights",
+    "description": "Energy-efficient lighting for large workspaces.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260116_153756927_HDR.jpg"
+  },
+  {
+    "id": "item_12",
+    "category": "Electrical",
+    "title": "Concealed Box Fitting",
+    "description": "Wall-mounted concealed boxes for modular switches.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260124_084851848_HDR.jpg"
+  },
+  {
+    "id": "item_13",
+    "category": "Electrical",
+    "title": "Main Line Wiring",
+    "description": "Main incoming line installation for industrial site.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260124_094535080_HDR.jpg"
+  },
+  {
+    "id": "item_14",
+    "category": "Electrical",
+    "title": "Cable Tray Installation",
+    "description": "Organized cable trays for overhead wiring management.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260124_094705347_HDR.jpg"
+  },
+  {
+    "id": "item_15",
+    "category": "Electrical",
+    "title": "Busbar Chamber Setup",
+    "description": "High-capacity busbar installation for power distribution.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260124_110513634_HDR.jpg"
+  },
+  {
+    "id": "item_16",
+    "category": "Other",
+    "title": "Material Delivery",
+    "description": "Safe delivery of electrical materials to the project site.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260204_171837910_HDR_AE.jpg"
+  },
+  {
+    "id": "item_17",
+    "category": "Electrical",
+    "title": "Decorative Panel Lights",
+    "description": "Slim LED panel installation for modern interiors.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260219_134252282_HDR_AE.jpg"
+  },
+  {
+    "id": "item_18",
+    "category": "Electrical",
+    "title": "False Ceiling Wiring",
+    "description": "Complex wiring network above false ceiling.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260219_134332645_HDR.jpg"
+  },
+  {
+    "id": "item_19",
+    "category": "Electrical",
+    "title": "COB Spotlight Setup",
+    "description": "Directional COB lighting for accentuation.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260219_134409025_HDR_AE.jpg"
+  },
+  {
+    "id": "item_20",
+    "category": "Electrical",
+    "title": "Profile Lighting Work",
+    "description": "Custom aluminum profile LED lighting installation.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260219_134413204_AE.jpg"
+  },
+  {
+    "id": "item_21",
+    "category": "Electrical",
+    "title": "Main Switchgear Unit",
+    "description": "Installation of heavy-duty switchgear and isolators.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100346275_HDR_AE.jpg"
+  },
+  {
+    "id": "item_22",
+    "category": "Electrical",
+    "title": "Circuit Breaker Panel",
+    "description": "Fully wired circuit breaker panel with clear labeling.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100400656_HDR_AE.jpg"
+  },
+  {
+    "id": "item_23",
+    "category": "Electrical",
+    "title": "Earth Pit Inspection",
+    "description": "Testing and maintenance of electrical earthing systems.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100410877_HDR.jpg"
+  },
+  {
+    "id": "item_24",
+    "category": "Electrical",
+    "title": "Lugs and Terminations",
+    "description": "Professional cable termination using high-quality lugs.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100420642_HDR_AE.jpg"
+  },
+  {
+    "id": "item_25",
+    "category": "Electrical",
+    "title": "Junction Box Dressing",
+    "description": "Clean and organized wiring inside junction boxes.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100432046_HDR.jpg"
+  },
+  {
+    "id": "item_26",
+    "category": "Electrical",
+    "title": "Phase Indicator Setup",
+    "description": "LED phase indicators for three-phase power monitoring.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260224_100439152_HDR_AE.jpg"
+  },
+  {
+    "id": "item_27",
+    "category": "Electrical",
+    "title": "Outdoor Floodlights",
+    "description": "Weatherproof lighting installation for parking areas.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260225_101822702_HDR_AE.jpg"
+  },
+  {
+    "id": "item_28",
+    "category": "Electrical",
+    "title": "Tower Lighting System",
+    "description": "High-mast lighting for large outdoor spaces.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260225_102303784_HDR.jpg"
+  },
+  {
+    "id": "item_29",
+    "category": "Electrical",
+    "title": "Security Perimeter Lights",
+    "description": "Automated lighting for site boundary security.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260225_102416559.jpg"
+  },
+  {
+    "id": "item_30",
+    "category": "Electrical",
+    "title": "Inverter Battery Setup",
+    "description": "Professional installation of power backup systems.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260306_163308938_HDR_AE.jpg"
+  },
+  {
+    "id": "item_31",
+    "category": "Electrical",
+    "title": "UPS System Wiring",
+    "description": "Critical power wiring for server and IT equipment.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260306_201618795_HDR.jpg"
+  },
+  {
+    "id": "item_32",
+    "category": "Electrical",
+    "title": "Voltage Stabilizer Unit",
+    "description": "Heavy-duty stabilizer for industrial machinery.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260306_201642318_HDR.jpg"
+  },
+  {
+    "id": "item_33",
+    "category": "Electrical",
+    "title": "Smart Home Hub",
+    "description": "Centralized control for home automation devices.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260314_185214217_HDR.jpg"
+  },
+  {
+    "id": "item_34",
+    "category": "Electrical",
+    "title": "Mood Lighting Scenes",
+    "description": "App-controlled RGB lighting for living spaces.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260323_122745688_HDR_AE.jpg"
+  },
+  {
+    "id": "item_35",
+    "category": "Electrical",
+    "title": "Curtain Automation",
+    "description": "Motorized curtain tracks integrated with smart home.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260323_122753759_HDR_AE.jpg"
+  },
+  {
+    "id": "item_36",
+    "category": "Electrical",
+    "title": "Motion Sensor Lights",
+    "description": "Energy-saving motion-activated lighting for hallways.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260323_123818655_HDR_AE.jpg"
+  },
+  {
+    "id": "item_37",
+    "category": "Electrical",
+    "title": "Smart Fan Controllers",
+    "description": "Remote-controlled fan regulators with automation.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260323_123858397_HDR_AE.jpg"
+  },
+  {
+    "id": "item_38",
+    "category": "Electrical",
+    "title": "App-Based Lighting",
+    "description": "Smartphone controlled smart light integration.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260405_161018504_HDR.jpg"
+  },
+  {
+    "id": "item_39",
+    "category": "Electrical",
+    "title": "Energy Audit Setup",
+    "description": "Smart energy meters for real-time power monitoring.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260406_200932798_HDR.jpg"
+  },
+  {
+    "id": "item_40",
+    "category": "Electrical",
+    "title": "Voice Controlled Switches",
+    "description": "Alexa and Google Home compatible smart switches.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260406_201024885_HDR.jpg"
+  },
+  {
+    "id": "item_41",
+    "category": "Electrical",
+    "title": "Premium Glass Switches",
+    "description": "Luxury modular switches for upscale residences.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260411_194045519_HDR.jpg"
+  },
+  {
+    "id": "item_42",
+    "category": "Electrical",
+    "title": "Bedside Control Panel",
+    "description": "Customized electrical controls for bedroom convenience.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_195055362_HDR.jpg"
+  },
+  {
+    "id": "item_43",
+    "category": "Electrical",
+    "title": "Kitchen Appliance Circuit",
+    "description": "Dedicated heavy-duty circuits for kitchen power.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_195122312_HDR.jpg"
+  },
+  {
+    "id": "item_44",
+    "category": "Electrical",
+    "title": "Water Heater Installation",
+    "description": "Safe electrical connection for high-power geysers.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_195146535_HDR.jpg"
+  },
+  {
+    "id": "item_45",
+    "category": "Electrical",
+    "title": "AC Power Point",
+    "description": "Specialized sockets for air conditioning units.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_195315356_HDR.jpg"
+  },
+  {
+    "id": "item_46",
+    "category": "Electrical",
+    "title": "Modern Chandelier Fitting",
+    "description": "Intricate wiring and mounting for heavy chandeliers.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_205419958_HDR.jpg"
+  },
+  {
+    "id": "item_47",
+    "category": "Electrical",
+    "title": "Balcony Weatherproof Lights",
+    "description": "Outdoor rated lighting for apartment balconies.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260415_205436880_HDR.jpg"
+  },
+  {
+    "id": "item_48",
+    "category": "Electrical",
+    "title": "Staircase Strip Lights",
+    "description": "Warm-white LED strips for safe and stylish stairs.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260503_194701148_HDR.jpg"
+  },
+  {
+    "id": "item_49",
+    "category": "Electrical",
+    "title": "Mirror Front Lighting",
+    "description": "Professional vanity lighting for dressing areas.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_115955689_HDR.jpg"
+  },
+  {
+    "id": "item_50",
+    "category": "Electrical",
+    "title": "Wardrobe Sensor Lights",
+    "description": "Automatic internal lighting for modern wardrobes.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120006813_HDR.jpg"
+  },
+  {
+    "id": "item_51",
+    "category": "Electrical",
+    "title": "Basement Wiring",
+    "description": "Surface conduit wiring for industrial basements.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120027210_HDR.jpg"
+  },
+  {
+    "id": "item_52",
+    "category": "Electrical",
+    "title": "Exhaust Fan Setup",
+    "description": "Heavy-duty exhaust fan installation for kitchens.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120116542_HDR.jpg"
+  },
+  {
+    "id": "item_53",
+    "category": "Electrical",
+    "title": "Main Gate Intercom",
+    "description": "Electronic intercom and lock for main gates.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120124916_HDR.jpg"
+  },
+  {
+    "id": "item_54",
+    "category": "Electrical",
+    "title": "Landscape Pathway Lights",
+    "description": "Elegant spike lights for garden pathway illumination.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120354740_HDR.jpg"
+  },
+  {
+    "id": "item_55",
+    "category": "Electrical",
+    "title": "Sub-Meter Installation",
+    "description": "Individual sub-meters for tenant billing management.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_120805608_HDR.jpg"
+  },
+  {
+    "id": "item_56",
+    "category": "Electrical",
+    "title": "Cable Termination Box",
+    "description": "High-voltage cable terminations in sealed boxes.",
+    "type": "image",
+    "data": "images/gallery/IMG_20260514_130725686_HDR.jpg"
+  },
+  {
+    "id": "item_57",
+    "category": "Other",
+    "title": "Site Walkthrough Video 1",
+    "description": "Video inspection of completed site installations.",
+    "type": "video",
+    "data": "images/gallery/VID_20260403_111031451.mp4"
+  },
+  {
+    "id": "item_58",
+    "category": "Other",
+    "title": "Site Walkthrough Video 2",
+    "description": "Detailed video tour of electrical distribution network.",
+    "type": "video",
+    "data": "images/gallery/VID_20260403_111049996.mp4"
+  },
+  {
+    "id": "item_59",
+    "category": "Other",
+    "title": "Site Walkthrough Video 3",
+    "description": "Video demonstration of smart lighting controls.",
+    "type": "video",
+    "data": "images/gallery/VID_20260403_111108117.mp4"
+  },
+  {
+    "id": "item_60",
+    "category": "Other",
+    "title": "Site Walkthrough Video 4",
+    "description": "Video walkthrough of commercial project site.",
+    "type": "video",
+    "data": "images/gallery/VID_20260403_111124105.mp4"
+  },
+  {
+    "id": "item_61",
+    "category": "Other",
+    "title": "Site Walkthrough Video 5",
+    "description": "Final handover video for the client.",
+    "type": "video",
+    "data": "images/gallery/VID_20260403_111135371.mp4"
+  },
+  {
+    "id": "item_62",
+    "category": "Other",
+    "title": "Site Walkthrough Video 6",
+    "description": "Night-time video showing exterior lighting effects.",
+    "type": "video",
+    "data": "images/gallery/VID_20260415_195038710.mp4"
+  },
+  {
+    "id": "item_63",
+    "category": "Other",
+    "title": "WhatsApp Project Video",
+    "description": "Quick video update shared with the client.",
+    "type": "video",
+    "data": "images/gallery/WA_1776266646296.mp4"
+  },
+  {
+    "id": "item_64",
+    "category": "CCTV",
+    "title": "8-Channel IP CCTV",
+    "description": "High-definition IP camera setup for office security.",
+    "type": "image",
+    "data": "images/gallery/file_000000002680720985a91f9f7e009f06.png"
+  },
+  {
+    "id": "item_65",
+    "category": "CCTV",
+    "title": "4K Bullet Cameras",
+    "description": "Outdoor bullet cameras with night vision support.",
+    "type": "image",
+    "data": "images/gallery/file_0000000040407209b0d6cfeb7eb75f78.png"
+  },
+  {
+    "id": "item_66",
+    "category": "CCTV",
+    "title": "NVR Storage Setup",
+    "description": "Rack-mounted NVR with redundant HDD storage.",
+    "type": "image",
+    "data": "images/gallery/file_0000000041e47209b4aab9f96b70ace6.png"
+  },
+  {
+    "id": "item_67",
+    "category": "Networking",
+    "title": "IT Server Rack",
+    "description": "Organized server rack with patch panels and switches.",
+    "type": "image",
+    "data": "images/gallery/file_000000006b787209a5ca7f18c8e8817c.png"
+  },
+  {
+    "id": "item_68",
+    "category": "Networking",
+    "title": "Office WiFi Network",
+    "description": "Dual-band access point installation for seamless WiFi.",
+    "type": "image",
+    "data": "images/gallery/file_000000007fb47209a459a520087a75c3.png"
+  },
+  {
+    "id": "item_69",
+    "category": "Networking",
+    "title": "Cat6 Cabling",
+    "description": "Structured Cat6 cabling for high-speed data networking.",
+    "type": "image",
+    "data": "images/gallery/file_00000000a8687209868feedca1517ec4.png"
+  },
+  {
+    "id": "item_70",
+    "category": "Security",
+    "title": "Biometric Attendance",
+    "description": "Fingerprint based attendance system installation.",
+    "type": "image",
+    "data": "images/gallery/file_00000000b4d0720999d6699bcf019508.png"
+  },
+  {
+    "id": "item_71",
+    "category": "Electrical",
+    "title": "Legacy Project Sample",
+    "description": "Electrical supply project from 2022.",
+    "type": "image",
+    "data": "images/gallery/whatsapp-image-2022-05-17-at-5-20-42-pm-1--500x500.jpeg"
+  }
+]
