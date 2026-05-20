@@ -1,46 +1,3 @@
-const searchIndex = [
-  // Guides
-  { title: "Complete House Wiring Guide", url: "house-wiring-guide.html", type: "Guide", keywords: "house wiring, wire gauge, havells, polycab, frls, mcb, rccb" },
-  { title: "Complete CCTV Installation Guide", url: "cctv-installation-guide.html", type: "Guide", keywords: "cctv, camera, dvr, nvr, poe, hikvision, cp plus, security" },
-  { title: "Top LED Lighting Solutions for Warehouses", url: "warehouse-led-lighting.html", type: "Guide", keywords: "led lighting, warehouse, high bay, low bay, lux, lumens, industrial" },
-  { title: "Why is My MCB Tripping Continuously?", url: "mcb-tripping-solution.html", type: "Guide", keywords: "mcb, tripping, short circuit, overload, electrical fault, troubleshooting" },
-  { title: "The Future of Office Access Control Systems", url: "smart-office-security.html", type: "Guide", keywords: "access control, biometric, rfid, smart lock, office security, door lock" },
-  { title: "Maintaining Heavy Duty Electrical Panels", url: "industrial-panel-maintenance.html", type: "Guide", keywords: "electrical panel, maintenance, acb, mccb, thermography, industrial, switchgear" },
-  { title: "How to Read Architectural Blueprints for Wiring", url: "contractor-blueprint-guide.html", type: "Guide", keywords: "blueprint, contractor, sld, single line diagram, conduit, slab, layout" },
-  { title: "5 Must-Have Safety Tools for Electricians", url: "electrician-safety-tools.html", type: "Guide", keywords: "safety, tools, ppe, gloves, tester, loto, arc flash, electrician" },
-  { title: "Planning CCTV Placement in Large Offices", url: "cctv-placement-guide.html", type: "Guide", keywords: "cctv placement, camera angle, blind spot, office security, wdr, lens" },
-  
-  // Main Pages
-  { title: "Home", url: "index.html", type: "Page", keywords: "home, anshuman enterprises, greater noida" },
-  { title: "Products Catalog", url: "products.html", type: "Page", keywords: "products, materials, switchgear, wires, lighting, wholesale" },
-  { title: "Services", url: "services.html", type: "Page", keywords: "services, installation, contracting, maintenance, repair" },
-  { title: "Knowledge Hub (Blog)", url: "blog.html", type: "Page", keywords: "blog, guides, articles, knowledge hub, tips" },
-  { title: "Contact Us", url: "contact.html", type: "Page", keywords: "contact, phone, address, map, location, whatsapp" },
-  { title: "About Us", url: "about.html", type: "Page", keywords: "about, company, history, mission, founder" },
-  { title: "FAQ", url: "faq.html", type: "Page", keywords: "faq, questions, support, help" },
-  { title: "Projects & Gallery", url: "projects.html", type: "Page", keywords: "projects, gallery, portfolio, work" },
-  { title: "Brands We Trust", url: "brands.html", type: "Page", keywords: "brands, havells, polycab, l&t, hikvision, cp plus" },
-
-  // Products/Services
-  { title: "Biometric Access Control", url: "biometrics-access-control.html", type: "Service", keywords: "biometric, access control, fingerprint, attendance" },
-  { title: "CCTV Installation Services", url: "cctv-installation.html", type: "Service", keywords: "cctv installation, security cameras, setup" },
-  { title: "Commercial Electrical Work", url: "commercial-electrical.html", type: "Service", keywords: "commercial, electrical, office, building" },
-  { title: "Conduit Pipes & Fittings", url: "conduit-pipes.html", type: "Product", keywords: "conduit, pipes, pvc, fittings" },
-  { title: "Distribution Boards (DB)", url: "distribution-boards.html", type: "Product", keywords: "distribution board, db, mcb box" },
-  { title: "Electrical Contracting", url: "electrical-contracting.html", type: "Service", keywords: "electrical contracting, projects, large scale" },
-  { title: "Electrical Maintenance", url: "electrical-maintenance.html", type: "Service", keywords: "electrical maintenance, amc, repair" },
-  { title: "Interior Lighting", url: "interior-lighting.html", type: "Product", keywords: "interior lighting, decorative, lights" },
-  { title: "LED Lighting", url: "led-lighting.html", type: "Product", keywords: "led lighting, bulbs, panels, commercial" },
-  { title: "Modular Switches", url: "modular-switches.html", type: "Product", keywords: "modular switches, sockets, plates, anchor" },
-  { title: "Network Rack Setup", url: "network-rack-setup.html", type: "Service", keywords: "network rack, server room, patch panel" },
-  { title: "Smart Door Locks", url: "smart-door-locks.html", type: "Product", keywords: "smart lock, digital lock, keyless" },
-  { title: "Society Electrical Works", url: "society-electrical.html", type: "Service", keywords: "society, residential complex, electrical" },
-  { title: "Structured Cabling", url: "structured-cabling.html", type: "Service", keywords: "structured cabling, lan, networking, cat6" },
-  { title: "Video Door Phones", url: "video-door-phones.html", type: "Product", keywords: "video door phone, vdp, intercom" },
-  { title: "WiFi Access Points", url: "wifi-access-points.html", type: "Product", keywords: "wifi, access point, wireless, networking" },
-  { title: "Wires & Cables", url: "wires-cables.html", type: "Product", keywords: "wires, cables, frls, polycab, havells" }
-];
-
 document.addEventListener("DOMContentLoaded", () => {
   // Inject Search UI Styles
   const style = document.createElement('style');
@@ -51,38 +8,98 @@ document.addEventListener("DOMContentLoaded", () => {
     #global-search-btn:hover { color: #c9a84c; }
     
     #global-search-modal {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.8); backdrop-filter: blur(5px);
+      position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(15, 6, 8, 0.85); backdrop-filter: blur(10px);
       z-index: 10000; display: none; opacity: 0; transition: opacity 0.3s ease; justify-content: center; align-items: flex-start; padding-top: 100px;
     }
     .search-modal-content {
-      width: 90%; max-width: 700px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-      transform: translateY(-20px); transition: transform 0.3s ease;
+      width: 90%; max-width: 700px; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 25px 70px rgba(0,0,0,0.5);
+      transform: translateY(-30px); transition: transform 0.3s ease; border: 1px solid rgba(201, 168, 76, 0.2);
     }
     .search-modal-header {
-      display: flex; align-items: center; padding: 20px 25px; border-bottom: 1px solid #eee;
+      display: flex; align-items: center; padding: 22px 28px; border-bottom: 1px solid #f0e6d2; background: #faf7f2;
     }
     .search-modal-header input {
-      flex: 1; border: none; outline: none; font-size: 20px; font-family: 'Inter', sans-serif; padding-left: 15px;
+      flex: 1; border: none; outline: none; font-size: 20px; font-family: 'Poppins', 'Inter', sans-serif; padding-left: 15px; background: transparent; color: #3d0e14;
+    }
+    .search-modal-header input::placeholder {
+      color: #8a7a7a;
     }
     .search-modal-close {
-      background: none; border: none; font-size: 28px; color: #888; cursor: pointer; line-height: 1;
+      background: none; border: none; font-size: 28px; color: #8a7a7a; cursor: pointer; line-height: 1; transition: color 0.2s;
     }
+    .search-modal-close:hover { color: #3d0e14; }
+    
     .search-results {
-      max-height: 400px; overflow-y: auto; padding: 10px 0;
+      max-height: 420px; overflow-y: auto; padding: 10px 0; background: #fff;
     }
     .search-result-item {
-      display: flex; align-items: center; padding: 15px 25px; text-decoration: none; border-bottom: 1px solid #f5f5f5; transition: background 0.2s;
+      display: flex; align-items: center; padding: 16px 28px; text-decoration: none; border-bottom: 1px solid #f9f6f0; transition: all 0.25s ease; border-left: 4px solid transparent;
     }
-    .search-result-item:hover { background: #faf7f2; }
-    .search-result-info { flex: 1; }
+    .search-result-item:hover, .search-result-item.active {
+      background: #faf7f2; border-left: 4px solid #c9a84c; padding-left: 32px;
+    }
+    .search-result-info { flex: 1; margin-right: 15px; }
     .search-result-title { font-size: 16px; color: #3d0e14; font-weight: 600; margin-bottom: 4px; font-family: 'Poppins', sans-serif; }
-    .search-result-url { font-size: 13px; color: #8a7a7a; }
-    .search-result-type { font-size: 12px; background: #3d0e14; color: #c9a84c; padding: 3px 10px; border-radius: 20px; font-weight: 600; }
-    .search-no-results { padding: 30px; text-align: center; color: #888; font-size: 16px; display: none; }
+    .search-result-snippet { font-size: 13px; color: #5a4a4a; line-height: 1.5; margin-bottom: 4px; }
+    .search-result-url { font-size: 11px; color: #c9a84c; font-family: 'Inter', sans-serif; font-weight: 500; text-transform: lowercase; }
+    .search-result-type { font-size: 11px; background: #3d0e14; color: #c9a84c; padding: 4px 12px; border-radius: 20px; font-weight: 600; white-space: nowrap; font-family: 'Poppins', sans-serif; }
+    
+    .search-highlight {
+      background: rgba(201, 168, 76, 0.25);
+      color: #3d0e14;
+      padding: 1px 3px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+    
+    .search-no-results { padding: 40px 30px; text-align: center; color: #8a7a7a; font-size: 16px; display: none; font-family: 'Poppins', sans-serif; }
+    
+    /* Popular Suggestions UI */
+    .search-suggestions-container {
+      padding: 25px 28px;
+      background: #fff;
+      border-top: 1px solid #faf7f2;
+    }
+    .search-suggestions-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #8a7a7a;
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .popular-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .popular-tag {
+      background: #faf7f2;
+      color: #3d0e14;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: 1px solid #f0e6d2;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+    .popular-tag:hover {
+      background: #3d0e14;
+      color: #c9a84c;
+      border-color: #3d0e14;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(61, 14, 20, 0.15);
+    }
     
     @media(max-width: 768px) {
       #global-search-modal { padding-top: 50px; }
       .search-modal-content { width: 95%; }
+      .search-result-item { padding: 12px 20px; }
+      .search-result-item:hover, .search-result-item.active { padding-left: 24px; }
+      .search-suggestions-container { padding: 20px; }
     }
   `;
   document.head.appendChild(style);
@@ -93,7 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.createElement('button');
     searchBtn.id = 'global-search-btn';
     searchBtn.innerHTML = '&#128269;'; // Magnifying glass icon
-    // Insert before the mobile menu button if it exists, otherwise append
+    searchBtn.title = "Search Website";
+    
     const mobileBtn = document.getElementById('mobile-menu-btn');
     if (mobileBtn) {
       navInner.insertBefore(searchBtn, mobileBtn);
@@ -107,12 +125,27 @@ document.addEventListener("DOMContentLoaded", () => {
     <div id="global-search-modal">
       <div class="search-modal-content">
         <div class="search-modal-header">
-          <span style="font-size: 24px; color: #888;">&#128269;</span>
+          <span style="font-size: 24px; color: #c9a84c;">&#128269;</span>
           <input type="text" id="global-search-input" placeholder="Search for wiring, CCTV, products..." autocomplete="off">
           <button class="search-modal-close" id="global-search-close">&times;</button>
         </div>
         <div class="search-results" id="global-search-results"></div>
-        <div class="search-no-results" id="global-search-empty">No results found for your query.</div>
+        <div class="search-no-results" id="global-search-empty">
+          <div style="font-size: 40px; margin-bottom: 10px;">🔍</div>
+          No results found for your query. Try searching another term.
+        </div>
+        <div class="search-suggestions-container" id="global-search-suggestions">
+          <div class="search-suggestions-title">Popular Searches</div>
+          <div class="popular-tags">
+            <span class="popular-tag">House Wiring</span>
+            <span class="popular-tag">CCTV Camera</span>
+            <span class="popular-tag">MCB Tripping</span>
+            <span class="popular-tag">LED Lighting</span>
+            <span class="popular-tag">Biometric Access</span>
+            <span class="popular-tag">Smart Locks</span>
+            <span class="popular-tag">Conduit Pipes</span>
+          </div>
+        </div>
       </div>
     </div>
   `;
@@ -123,8 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById('global-search-input');
   const resultsContainer = document.getElementById('global-search-results');
   const emptyState = document.getElementById('global-search-empty');
+  const suggestionsContainer = document.getElementById('global-search-suggestions');
   const searchBtn = document.getElementById('global-search-btn');
   const closeBtn = document.getElementById('global-search-close');
+
+  let activeIndex = -1;
+  let currentResults = [];
 
   function openSearch() {
     modal.style.display = 'flex';
@@ -134,16 +171,25 @@ document.addEventListener("DOMContentLoaded", () => {
       searchInput.focus();
     }, 10);
     document.body.style.overflow = 'hidden';
+    
+    // Reset state
+    searchInput.value = '';
+    resultsContainer.innerHTML = '';
+    emptyState.style.display = 'none';
+    suggestionsContainer.style.display = 'block';
+    activeIndex = -1;
+    currentResults = [];
   }
 
   function closeSearch() {
     modal.style.opacity = '0';
-    modalContent.style.transform = 'translateY(-20px)';
+    modalContent.style.transform = 'translateY(-30px)';
     setTimeout(() => {
       modal.style.display = 'none';
       searchInput.value = '';
       resultsContainer.innerHTML = '';
       emptyState.style.display = 'none';
+      suggestionsContainer.style.display = 'block';
     }, 300);
     document.body.style.overflow = 'auto';
   }
@@ -152,50 +198,212 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener('click', closeSearch);
   modal.addEventListener('click', (e) => { if (e.target === modal) closeSearch(); });
 
+  // Escape to close
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.style.display === 'flex') closeSearch();
+    if (e.key === 'Escape' && modal.style.display === 'flex') {
+      closeSearch();
+    }
   });
 
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase().trim();
-    resultsContainer.innerHTML = '';
+  // Popular Tag Clicks
+  document.querySelectorAll('.popular-tag').forEach(tag => {
+    tag.addEventListener('click', () => {
+      const term = tag.textContent;
+      searchInput.value = term;
+      performSearch(term);
+      searchInput.focus();
+    });
+  });
+
+  // Safe Regexp escaping
+  function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // Highlight matches
+  function highlightText(text, words) {
+    if (!words || words.length === 0) return text;
+    const escapedWords = words.map(escapeRegExp).filter(w => w.length > 0);
+    if (escapedWords.length === 0) return text;
     
-    if (query.length < 2) {
+    // Sort words by length descending to prevent shorter words within longer ones from matching first
+    escapedWords.sort((a, b) => b.length - a.length);
+    
+    const regex = new RegExp(`\\b(${escapedWords.join('|')})`, 'gi');
+    return text.replace(regex, '<mark class="search-highlight">$1</mark>');
+  }
+
+  // Real Search Implementation
+  function performSearch(query) {
+    resultsContainer.innerHTML = '';
+    activeIndex = -1;
+    
+    const cleanQuery = query.toLowerCase().trim();
+    if (cleanQuery.length < 2) {
       emptyState.style.display = 'none';
+      resultsContainer.innerHTML = '';
+      suggestionsContainer.style.display = 'block';
+      currentResults = [];
       return;
     }
 
-    const results = searchIndex.filter(item => 
-      item.title.toLowerCase().includes(query) || 
-      item.keywords.toLowerCase().includes(query)
-    );
+    suggestionsContainer.style.display = 'none';
 
-    if (results.length === 0) {
+    // Verify search index is available
+    if (typeof globalSearchData === 'undefined') {
+      resultsContainer.innerHTML = '<div style="padding:20px; text-align:center; color:#888;">Search database is loading... please wait.</div>';
+      return;
+    }
+
+    const queryWords = cleanQuery.split(/\s+/).filter(Boolean);
+    const results = [];
+
+    globalSearchData.forEach(item => {
+      let score = 0;
+      const lowerTitle = item.title.toLowerCase();
+      const lowerContent = item.content.toLowerCase();
+
+      // Check exact phrase matches
+      if (lowerTitle.includes(cleanQuery)) {
+        score += 150;
+      }
+      if (lowerContent.includes(cleanQuery)) {
+        score += 50;
+      }
+
+      // Check individual word matches
+      queryWords.forEach(word => {
+        if (lowerTitle.includes(word)) {
+          score += 30;
+        }
+        
+        // Count content word matches (max out to avoid spamming weight)
+        const wordCount = (lowerContent.match(new RegExp(escapeRegExp(word), 'g')) || []).length;
+        score += Math.min(10, wordCount) * 5;
+      });
+
+      if (score > 0) {
+        // Extract snippet
+        let snippet = '';
+        let matchIndex = lowerContent.indexOf(cleanQuery);
+        
+        if (matchIndex === -1 && queryWords.length > 0) {
+          // Find the index of the first matching word
+          for (let i = 0; i < queryWords.length; i++) {
+            const idx = lowerContent.indexOf(queryWords[i]);
+            if (idx !== -1) {
+              matchIndex = idx;
+              break;
+            }
+          }
+        }
+
+        if (matchIndex !== -1) {
+          const start = Math.max(0, matchIndex - 45);
+          const end = Math.min(item.content.length, matchIndex + cleanQuery.length + 65);
+          snippet = item.content.substring(start, end).trim();
+          
+          if (start > 0) snippet = '...' + snippet;
+          if (end < item.content.length) snippet = snippet + '...';
+        } else {
+          // Default to beginning of the page
+          snippet = item.content.substring(0, 110).trim() + '...';
+        }
+
+        results.push({
+          url: item.url,
+          title: item.title,
+          type: item.type || 'Page',
+          snippet: snippet,
+          score: score
+        });
+      }
+    });
+
+    // Sort by score descending
+    results.sort((a, b) => b.score - a.score);
+
+    currentResults = results.slice(0, 15); // limit to top 15 results
+
+    if (currentResults.length === 0) {
       emptyState.style.display = 'block';
     } else {
       emptyState.style.display = 'none';
-      results.forEach(item => {
+      currentResults.forEach((item, index) => {
         const a = document.createElement('a');
         a.href = item.url;
         a.className = 'search-result-item';
+        a.dataset.index = index;
+        
+        const highlightedTitle = highlightText(item.title, queryWords);
+        const highlightedSnippet = highlightText(item.snippet, queryWords);
+
         a.innerHTML = `
           <div class="search-result-info">
-            <div class="search-result-title">${item.title}</div>
+            <div class="search-result-title">${highlightedTitle}</div>
+            <div class="search-result-snippet">${highlightedSnippet}</div>
             <div class="search-result-url">${item.url}</div>
           </div>
           <div class="search-result-type">${item.type}</div>
         `;
+        
+        a.addEventListener('click', (e) => {
+          // Smooth closing tracking
+          setTimeout(closeSearch, 100);
+        });
+
         resultsContainer.appendChild(a);
       });
     }
+  }
+
+  // Listen to input changes
+  searchInput.addEventListener('input', (e) => {
+    performSearch(e.target.value);
   });
+
+  // Keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    if (currentResults.length === 0) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      activeIndex = (activeIndex + 1) % currentResults.length;
+      updateActiveItem();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      activeIndex = (activeIndex - 1 + currentResults.length) % currentResults.length;
+      updateActiveItem();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      const targetIndex = activeIndex >= 0 ? activeIndex : 0;
+      const targetItem = resultsContainer.children[targetIndex];
+      if (targetItem) {
+        targetItem.click();
+        window.location.href = targetItem.href;
+      }
+    }
+  });
+
+  function updateActiveItem() {
+    const items = resultsContainer.querySelectorAll('.search-result-item');
+    items.forEach((item, idx) => {
+      if (idx === activeIndex) {
+        item.classList.add('active');
+        // Scroll into view
+        item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  }
 
   // Global exposure for external inputs (like blog hero search)
   window.openGlobalSearch = function(initialQuery = '') {
     openSearch();
-    if(initialQuery) {
+    if (initialQuery) {
       searchInput.value = initialQuery;
-      searchInput.dispatchEvent(new Event('input'));
+      performSearch(initialQuery);
     }
   }
 });
