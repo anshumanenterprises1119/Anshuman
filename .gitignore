@@ -1,0 +1,28 @@
+mingit/
+mingit.zip
+Antigravity.exe
+"Anshuman enterprises.zip"
+Anshuman enterprises/
+images/gallery/
+*.exe
+*.zip
+*.mp4
+.gemini/
+node_modules/
+.venv/
+google_reviews_credentials.json
+client_secrets_config.json
+# db_config.json
+humanizer/db/
+comparison_tool/db/
+faq_engine/db/
+IMPORTANT-IDs.md
+payment-server/
+n8n_important_details.md
+
+# Next.js build files and environments
+**/node_modules/
+**/.next/
+**/.env*.local
+**/.env
+**/out/
