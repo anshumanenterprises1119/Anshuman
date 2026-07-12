@@ -172,5 +172,11 @@ const globalSearchData = [
     "title": "Return, Refund & Shipping Policy – Anshuman Enterprises",
     "type": "Page",
     "content": "Return, Refund & Shipping Policy – Anshuman Enterprises. Read our policy details: all sales are final, no return policy, refund processing time is 7 working days, store-only collections/delivery in 7 days after full payment."
+  },
+  {
+    "url": "products.html#hardware",
+    "title": "🔧 Construction Hardware, Cutter Blades & Adhesives",
+    "type": "Product/Service",
+    "content": "Construction Hardware & Cutting Blades: screws, nails, blades, adhesives, drywall screws, Bosch wood cutter blade, Bosch wall cutter blade, Wall Fix Bond, Araldite adhesives, sattring keels, concrete nails, Steelgrip insulation tape, masking tape, pvc saddle, heatex, zypsem drywall screw. Get bulk quote."
   }
 ];
