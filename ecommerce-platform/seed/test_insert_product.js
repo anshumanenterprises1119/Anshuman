@@ -25,7 +25,7 @@ const supabase = createClient(supabaseUrl, supabaseSecret);
 async function testInsert() {
   const PHYSICAL_BRAND_ID = '7b849219-dd00-4cf5-be4d-da8b7d342504';
   const prod = {
-    id: 'd101b1c6-2c5e-4029-9a2e-c1e1bc89a74a',
+    id: 'p101b1c6-2c5e-4029-9a2e-c1e1bc89a74a',
     brand_id: PHYSICAL_BRAND_ID,
     name: 'Premium COB Ceiling Light 12W',
     slug: 'premium-cob-ceiling-light-12w',

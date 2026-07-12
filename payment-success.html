@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Successful — FutureWithAi</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .container { max-width: 480px; }
+    .spinner {
+      width: 60px; height: 60px;
+      border: 3px solid rgba(74, 222, 128, 0.2);
+      border-top-color: #4ade80;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 24px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h1 { font-size: 1.5rem; font-weight: 600; color: #4ade80; margin-bottom: 12px; }
+    p { color: #9ca3af; font-size: 0.95rem; }
+  </style>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var orderId = params.get('orderId') || params.get('merchantOrderId') || '';
+      var destination = 'https://anshumanenterprises.online/futurewithai/payment-success.html';
+      if (orderId) destination += '?orderId=' + encodeURIComponent(orderId);
+      window.location.replace(destination);
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <h1>Payment Successful!</h1>
+    <p>Redirecting you to your order confirmation…</p>
+  </div>
+</body>
+</html>

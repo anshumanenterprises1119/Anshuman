@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192x192.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Electrical Planning Guide – Cat6 Cabling, Biometrics & LT Panels</title>
+  <meta name="description" content="Ultimate commercial electrical planning guide for builders and office contractors. Learn about structured Cat6 cabling, biometric fail-safes, and LT panel thermal schedules.">
+  <link rel="canonical" href="https://anshumanenterprises.online/commercial-electrical-planning.html">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --maroon: #6b1c23; --maroon-dark: #3d0e14; --maroon-mid: #8a2530;
+      --gold: #c9a84c; --gold-light: #e8c96a; --cream: #faf7f2;
+      --white: #ffffff; --text: #1a1a1a; --text-mid: #4a4040; --text-light: #8a7a7a;
+      --border: rgba(107, 28, 35, 0.12); --shadow-sm: 0 2px 12px rgba(61, 14, 20, 0.08);
+      --shadow-md: 0 8px 32px rgba(61, 14, 20, 0.14);
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--text); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; color: var(--maroon-dark); line-height: 1.3; }
+
+    #progress-container { width: 100%; height: 5px; background: transparent; position: fixed; top: 74px; left: 0; z-index: 999; }
+    #progress-bar { height: 5px; background: var(--gold); width: 0%; }
+
+    .breadcrumbs { max-width: 900px; margin: 30px auto 10px; padding: 0 5%; font-size: 14px; color: var(--text-light); }
+    .breadcrumbs a { color: var(--maroon); text-decoration: none; font-weight: 500; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+
+    .article-header { max-width: 900px; margin: 0 auto 40px; padding: 0 5%; text-align: center; }
+    .article-header h1 { font-size: clamp(32px, 5vw, 48px); margin: 20px 0; }
+    
+    .article-info-bar { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 14px; color: var(--text-mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 15px 0; margin-top: 30px; }
+    .article-info-bar span { display: flex; align-items: center; gap: 6px; }
+    .category-badge { background: var(--maroon-dark); color: var(--gold); padding: 4px 12px; border-radius: 50px; font-weight: 600; text-transform: uppercase; font-size: 12px; }
+
+    .article-layout { max-width: 1200px; margin: 0 auto 80px; padding: 0 5%; display: grid; grid-template-columns: 1fr 320px; gap: 50px; position: relative; }
+    .article-content { font-size: 17px; }
+    .article-content h2 { font-size: 32px; margin: 50px 0 25px; border-bottom: 2px solid var(--gold-light); padding-bottom: 10px; display: inline-block; }
+    .article-content h3 { font-size: 24px; margin: 40px 0 20px; color: var(--maroon); }
+    .article-content p { margin-bottom: 25px; }
+    .article-content ul, .article-content ol { margin: 0 0 25px 25px; }
+    .article-content li { margin-bottom: 15px; }
+    .article-content strong { color: var(--maroon-dark); }
+
+    .block-problem { background: #fff; border-left: 5px solid #e74c3c; padding: 25px 30px; border-radius: 0 8px 8px 0; margin: 40px 0; box-shadow: var(--shadow-sm); }
+    .block-problem h4 { color: #e74c3c; margin-top: 0; margin-bottom: 15px; font-size: 20px; display: flex; align-items: center; gap: 8px;}
+    
+    .block-solution { background: #f0fdf4; border-left: 5px solid #2ecc71; padding: 25px 30px; border-radius: 0 8px 8px 0; margin: 40px 0; box-shadow: var(--shadow-sm); }
+    .block-solution h4 { color: #27ae60; margin-top: 0; margin-bottom: 15px; font-size: 20px; display: flex; align-items: center; gap: 8px;}
+
+    .block-expert-tip { background: var(--maroon-dark); color: #fff; padding: 35px; border-radius: 16px; margin: 50px 0; box-shadow: var(--shadow-md); position: relative; overflow: hidden; }
+    .block-expert-tip h4 { color: var(--gold); margin-top: 0; margin-bottom: 20px; font-size: 24px; }
+    .block-expert-tip p { margin-bottom: 0; color: rgba(255,255,255,0.9); font-size: 18px;}
+
+    .toc { background: #fff; border: 1px solid var(--border); padding: 35px; border-radius: 16px; margin: 40px 0 50px; box-shadow: var(--shadow-md); border-top: 5px solid var(--maroon-dark); }
+    .toc h3 { margin-top: 0; font-size: 24px; margin-bottom: 25px; border: none; color: var(--maroon-dark); }
+    .toc ul { list-style: none; margin: 0; padding: 0; }
+    .toc ul li { margin-bottom: 15px; font-size: 18px; }
+    .toc ul li a { color: var(--maroon); text-decoration: none; font-weight: 500; transition: color 0.2s; display: flex; align-items: center; gap: 10px; }
+    .toc ul li a:hover { color: var(--gold); transform: translateX(5px); }
+
+    .article-sidebar { position: sticky; top: 100px; height: max-content; display: flex; flex-direction: column; gap: 30px; }
+    .widget-cta { background: var(--maroon-dark); color: #fff; text-align: center; padding: 35px 25px; border-radius: 16px; box-shadow: var(--shadow-md); }
+    .widget-cta h4 { color: var(--gold); margin-top: 0; margin-bottom: 15px; font-size: 22px; }
+    .widget-cta p { font-size: 16px; color: rgba(255,255,255,0.85); margin-bottom: 25px; line-height: 1.5; }
+    .btn-whatsapp { display: inline-block; background: #25D366; color: #fff; text-decoration: none; padding: 15px 25px; border-radius: 50px; font-weight: 600; width: 100%; font-family: 'Poppins', sans-serif; font-size: 16px; transition: transform 0.2s; }
+    .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); }
+    
+    .faq-section { margin-top: 80px; padding-top: 50px; border-top: 2px solid var(--border); }
+    .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 20px; overflow: hidden; box-shadow: var(--shadow-sm); }
+    .faq-question { padding: 22px 25px; margin: 0; font-size: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; font-weight: 600; color: var(--maroon-dark); transition: background 0.3s; }
+    .faq-answer { padding: 0 25px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; background: #faf7f2; }
+    .faq-item.active .faq-answer { padding: 25px; max-height: 800px; border-top: 1px solid var(--border); }
+    .faq-item.active .faq-question { background: var(--maroon-dark); color: var(--gold); }
+    
+    /* Navigation Styles */
+    .ae-nav {
+      background: var(--maroon-dark, #3d0e14);
+      position: sticky;
+      top: 0;
+      z-index: 10000;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+    }
+    .ae-nav-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 5%;
+      gap: 16px;
+    }
+    .ae-nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .ae-nav-logo img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+    }
+    .ae-nav-brand-wrap {
+      color: #c9a84c;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .ae-nav-brand-sub {
+      font-size: 13px;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .ae-nav-links-desktop {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .ae-nav-links-desktop a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    .ae-nav-links-desktop a:hover {
+      color: #c9a84c;
+    }
+    .ae-mobile-menu-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      z-index: 10001;
+    }
+    @media (min-width: 992px) {
+      .ae-nav-links-desktop { display: flex !important; }
+      .ae-mobile-menu-btn { display: none !important; }
+    }
+    @media (max-width: 991px) {
+      .ae-nav-links-desktop { display: none !important; }
+      .ae-mobile-menu-btn { display: flex !important; }
+    }
+  </style>
+  <link rel="stylesheet" href="google-stitch.css" />
+
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <!-- AN-ANALYTICS-START -->
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window,document,"clarity","script","XXXXXXXXXX");
+  </script>
+  <!-- AN-ANALYTICS-END -->
+
+  <!-- OpenGraph Social Metadata -->
+  <meta property="og:title" content="Commercial Electrical Planning Guide – Cat6 Cabling, Biometrics & LT Panels" />
+  <meta property="og:description" content="Ultimate commercial electrical planning guide for builders and office contractors. Learn about structured Cat6 cabling, biometric fail-safes, and LT panel thermal schedules." />
+  <meta property="og:image" content="https://anshumanenterprises.online/logo.webp" />
+  <meta property="og:url" content="https://anshumanenterprises.online/commercial-electrical-planning.html" />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="ae-nav">
+    <div class="ae-nav-inner">
+      <a href="index.html" class="ae-nav-logo">
+        <img src="logo.webp" alt="Anshuman Enterprises Logo" width="192" height="192" />
+        <span class="ae-nav-brand-wrap">Anshuman<span class="ae-nav-brand-sub">ENTERPRISES</span></span>
+      </a>
+      <div class="ae-nav-links-desktop">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="our-catalogue.html">Our Catalogue</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="progress-container"><div id="progress-bar"></div></div>
+  <script>
+    window.onscroll = function() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a> &gt; &gt; <span>Commercial Electrical Planning</span>
+  </div>
+
+  <header class="article-header">
+    <span class="category-badge">Planning Guides</span>
+    <h1>Commercial Electrical Planning – Cat6 Cabling, Biometrics & LT Panels</h1>
+    <div class="article-info-bar">
+      <span>By Aditya Tiwari, Anshuman Enterprises</span>
+      <span>&#128197; Updated: May 27, 2026</span>
+      <span>&#9201; 15 min read</span>
+    </div>
+  </header>
+
+  <div class="article-layout">
+    <main class="article-content">
+      <p><strong>Planning a commercial electrical infrastructure requires an entirely different engineering logic compared to residential setups.</strong> While homes prioritize aesthetic flexibility, corporate offices, warehouses, and industrial units demand extreme system uptime, strict safety compliance, structured thermal monitoring, and rigid data pathway organization. A single poor termination inside an LT panel or a daisy-chained emergency exit lock can lead to thousands of dollars in lost productivity or major safety liabilities.</p>
+      
+      <p>Drawing from our years of local contracting experience in Noida, Ghaziabad, and the wider Delhi NCR area, we have created this practical guide to help commercial developers, building contractors, and project managers size up network racks, design biometric access arrays, and schedule LT panel thermal audits.</p>
+
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+          <li><a href="#networking">&#9656; 1. Network Racks & Structured Cat6/Cat6A Cabling</a></li>
+          <li><a href="#biometrics">&#9656; 2. Biometric Door Access & Fire Safety Compliance</a></li>
+          <li><a href="#ltpanels">&#9656; 3. LT Panel Sizing & Thermal Monitoring Schedules</a></li>
+          <li><a href="#safetycodes">&#9656; 4. Corporate Load Balancing & National Electrical Code (NEC) Rules</a></li>
+          <li><a href="#faqs">&#9656; 5. Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <h2 id="networking">1. Network Racks & Structured Cat6/Cat6A Cabling</h2>
+      <p>In modern corporate office spaces, high-speed data connectivity is just as critical as continuous power. Structured cabling is the backbone of any commercial enterprise network. A messy data center or unmanaged cabling inside server closets leads to intermittent packet drops, difficult troubleshooting, and thermal blockages inside the network rack.</p>
+
+      <div class="block-problem">
+        <h4>&#9888; The "Spaghetti Cable" Nightmare</h4>
+        <p>Running raw data cables directly from workstations to switches without a patch panel is a recipe for disaster. Over time, cable weight strains switch RJ45 ports, causing connector failures. Moreover, unlabelled cables increase the network debugging time from minutes to hours.</p>
+      </div>
+
+      <p>When engineering high-density commercial data distribution networks, we recommend sticking to these fundamental protocols:</p>
+      <ul>
+        <li><strong>Choose Cat6 vs Cat6A Wisely:</strong> Use Cat6 cables for runs up to 55 meters if 10 Gbps speeds are required. For runs extending up to 100 meters, Cat6A with outer shielding (F/UTP) is mandatory to eliminate electromagnetic interference (EMI) from neighboring power lines.</li>
+        <li><strong>Ensure Dedicated Cable Trays:</strong> Always route low-voltage data cables (Cat6, CCTV coaxial, fiber) in separate cable trays, maintaining at least 150mm spacing from parallel high-voltage 415V power lines to prevent electromagnetic noise induction.</li>
+        <li><strong>Implement Patch Panels & Neat Dressing:</strong> Terminate all incoming network lines on rack-mounted patch panels. Use Velcro wraps instead of plastic zip ties; zip ties can easily over-compress and damage the delicate internal twists of the twisted-pair copper strands, reducing network bandwidth.</li>
+        <li><strong>Optimize Network Rack Ventilation:</strong> Ensure server racks are sized with at least 30% spare unit (U) space for future expansions. Maintain active cross-ventilation utilizing thermostat-controlled top fan trays to exhaust hot air generated by PoE switches and network video recorders (NVRs).</li>
+      </ul>
+
+      <h2 id="biometrics">2. Biometric Door Access & Fire Safety Compliance</h2>
+      <p>Biometric access control systems utilizing EM locks (Electromagnetic Locks) are standard security components in modern corporate environments. However, integrating these systems requires meticulous electrical design to prevent tragic entrapment scenarios during fire emergencies.</p>
+
+      <div class="block-solution">
+        <h4>✅ Primary Fail-Safe Architecture</h4>
+        <p>Always connect the main power supply of all biometric EM locks directly through the building's Fire Alarm Control Panel (FACP) relay. During an emergency trigger, power to the locks must immediately cut off, automatically releasing all access doors to their unlocked state.</p>
+      </div>
+
+      <p>To satisfy the strict guidelines of local fire safety inspections in industrial hubs like Noida Sec-63, Ecotech Greater Noida, or Gurugram, your commercial layout must incorporate the following emergency release mechanisms:</p>
+      <ol>
+        <li><strong>FACP Relay Integration:</strong> A dedicated signal from the fire panel must interrupt the 12V/24V DC positive power supply line feeding the electromagnetic locks.</li>
+        <li><strong>Manual Green Break-Glass Units:</strong> Place a physical green break-glass switch (green color signifies emergency exit) inline with the lock's power circuit at a height of 1.2 meters near every secured door. This provides an absolute mechanical break in the circuit, even if software relays fail.</li>
+        <li><strong>Fail-Safe vs. Fail-Secure Locks:</strong> Always deploy <em>Fail-Safe</em> electromagnetic locks on escape routes (power off = door unlocked). Reserved high-security server rooms may use <em>Fail-Secure</em> electronic drop-bolts (power off = door locked), but these must be accompanied by mechanical cylinder keys and thumb-turn overrides inside the room.</li>
+      </ol>
+
+      <h2 id="ltpanels">3. LT Panel Sizing & Thermal Monitoring Schedules</h2>
+      <p>The Low Tension (LT) main distribution panel is the heart of a commercial property's power supply. It receives incoming bulk power from the transformer and distributes it across different sub-distribution boards (lighting, HVAC, server rooms). Managing the thermal footprint inside these enclosures is vital to prevent catastrophic power failures.</p>
+
+      <div class="block-expert-tip">
+        <h4>💡 Expert Tip: Thermography is Mandatory</h4>
+        <p>“Thermal imbalances or loose cable lugs in LT panels won't trip standard breakers until they turn into active fire hazards. Implementing a bi-annual thermographic inspection protocol using infrared cameras is the single most cost-effective way to detect high-resistance hot spots before they fail.”</p>
+      </div>
+
+      <p>To design an industrial-grade LT panel that can run flawlessly in high ambient Indian summers, adhere to these technical benchmarks:</p>
+      <ul>
+        <li><strong>Busbar Sizing Rules:</strong> Use high-conductivity, electrolytic grade aluminum or copper busbars. Rate aluminum busbars conservatively at 0.8A per sq mm and copper busbars at 1.2A to 1.6A per sq mm, factoring in a safety margin to counter ambient temperature rises of up to 50°C inside electrical panel rooms.</li>
+        <li><strong>Proper Gland Plates & Terminations:</strong> Ensure cables enter the panel through thick, insulated brass cable glands. Tighten terminations using torque wrenches to exact manufacturer specifications to avoid micro-arcing. Always use premium copper lugs and heat-shrinkable sleeves on all feeder ends.</li>
+        <li><strong>Schedule Regular Maintenance:</strong> Dust and carbon deposits over switchgear contacts act as thermal insulators, trapping heat. Schedule quarterly shutdowns for busbar tightening, contact cleaning with dynamic solvent cleaners, and check the health of active panel exhaust fans.</li>
+      </ul>
+
+      <h2 id="safetycodes">4. Corporate Load Balancing & National Electrical Code (NEC) Rules</h2>
+      <p>Indian commercial premises must fully comply with the National Electrical Code (NEC) of India to pass safety audits and secure permanent commercial power connections. One of the biggest challenges in offices is maintaining three-phase load balancing.</p>
+      <p>Single-phase loads like LED light fixtures, desktop computers, and split air conditioners must be evenly distributed across the Red (R), Yellow (Y), and Blue (B) phases. An unbalanced system overloads the neutral conductor, causing high neutral-to-earth voltage, which can crash sensitive server equipment and burn out input transformers.</p>
+
+      <div class="block-problem">
+        <h4>&#9888; High Neutral Current Risks</h4>
+        <p>Modern commercial office equipment uses switch-mode power supplies (SMPS), which generate high levels of 3rd-order harmonic currents. These harmonics accumulate directly in the neutral wire. In an unbalanced phase configuration, the neutral current can exceed the phase currents, leading to thermal failure of the neutral busbar.</p>
+      </div>
+
+      <p>For high-reliability planning, commercial layouts must specify double-sized neutral busbars or install isolation transformers for dedicated server rooms, keeping neutral-to-earth voltage strictly below 1.0V AC at all times.</p>
+
+      <div class="faq-section" id="faqs">
+        <h2>5. Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h4 class="faq-question">Why does our office network slow down during peak afternoon hours? <span>+</span></h4>
+          <div class="faq-answer">
+            <p>This is commonly caused by high thermal buildup inside poorly ventilated server racks. As PoE switches heat up, their packet processing units undergo thermal throttling. Ensure your network rack has active exhaust fans and that high-density data lines are not routed near hot HVAC ducts.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">What is the local Noida/NCR requirement for commercial earthing systems? <span>+</span></h4>
+          <div class="faq-answer">
+            <p>Under local Delhi NCR building bylaws and NEC rules, a commercial property must install separate dedicated copper-plate earthing setups for servers/electronics (Clean Earth) and pipe-earthing for high-voltage panel boards (Body Earth). Resistance to earth must be checked bi-annually and kept strictly below 1.0 Ohm.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">How does a fire control panel physically override a biometric door lock? <span>+</span></h4>
+          <div class="faq-answer">
+            <p>The FACP contains heavy-duty dry contacts (NO/NC relays) linked to the primary biometric power controller. When the fire alarm system triggers, the relay switches states, breaking the circuit that supplies 12V/24V power to the electromagnetic lock, forcing the magnet to instantly de-energize and release the door.</p>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+          item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+            item.querySelector('span').innerText = parent.classList.contains('active') ? '-' : '+';
+          })
+        });
+      </script>
+    </main>
+
+    <aside class="article-sidebar">
+      <div class="widget-cta">
+        <h4>Planning a Commercial Site?</h4>
+        <p>Get custom consultations, structured layouts, and direct wholesale pricing on genuine LT Switchgear and Cat6 cables.</p>
+        <a href="https://wa.me/917065815743" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
+      </div>
+      <div class="widget-cta" style="background:#fff; border: 1px solid var(--border); color:#1a1a1a;">
+        <h4 style="color:var(--maroon-dark);">Electrical Contracting</h4>
+        <p style="color:var(--text-mid);">Contact us for certified commercial planning, structured wiring, and LT panel contracting.</p>
+        <a href="contact.html" class="btn-whatsapp" style="background:var(--maroon); color:#fff;">Get Expert Estimate</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background: var(--maroon-dark, #3d0e14); color: rgba(255, 255, 255, 0.8); padding: 40px 5%; font-size: 14px; text-align: center; border-top: 1px solid var(--border);">
+    <p>© 2026 Anshuman Enterprises. All rights reserved. Founded by Aditya Tiwari. | <a href="terms.html" style="color: inherit; text-decoration: underline;">Terms &amp; Conditions</a> | <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> | <a href="refund-shipping.html" style="color: inherit; text-decoration: underline;">Refund &amp; Shipping Policy</a></p>
+    <p style="font-size: 12px; opacity: 0.6; margin-top: 8px;">Shop No.-2, KHS-722, Sec-1, Greater Noida - 201306</p>
+  </footer>
+
+  <script src="chatbot.js" defer></script>
+</body>
+</html>
+

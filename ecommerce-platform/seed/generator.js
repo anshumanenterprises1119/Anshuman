@@ -137,68 +137,11 @@ async function runSeeder() {
       { id: 'e104b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'Havells Crabtree Modular Switch (Graphite)', slug: 'havells-crabtree-modular-switch-graphite', sku: 'AE-HAV-CS-06', base_price: 120, type: 'physical', is_active: true },
       { id: 'e105b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'Legrand Myrius 6A 2-Way Switch', slug: 'legrand-myrius-6a-2-way-switch', sku: 'AE-LEG-MY-2W', base_price: 150, type: 'physical', is_active: true },
       { id: 'e106b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'Orient LED Batten Lamp 20W', slug: 'orient-led-batten-lamp-20w', sku: 'AE-ORI-BAT-20', base_price: 350, type: 'physical', is_active: true },
-      { id: 'e107b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'CP Plus HD Dome Camera 2MP', slug: 'cp-plus-dome-camera-2mp', sku: 'AE-CPP-DOM-02', base_price: 1850, type: 'physical', is_active: true },
+      { id: 'e107b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'CP Plus HD Dome Camera 2MP', slug: 'cp-plus-hd-dome-camera-2mp', sku: 'AE-CPP-DOM-02', base_price: 1850, type: 'physical', is_active: true },
       { id: 'e108b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'Schneider Acti9 16A SP MCB', slug: 'schneider-acti9-16a-sp-mcb', sku: 'AE-SCH-MCB-16', base_price: 450, type: 'physical', is_active: true },
       { id: 'e109b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'PVC Conduit Pipe 25mm (Medium)', slug: 'pvc-conduit-pipe-25mm-medium', sku: 'AE-PVC-CON-25', base_price: 60, type: 'physical', is_active: true },
       { id: 'e110b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'Fingerprint Smart Door Lock (CONA)', slug: 'fingerprint-smart-door-lock-cona', sku: 'AE-CON-SDL-01', base_price: 12500, type: 'physical', is_active: true },
-
-      // Additional Physical Products (Anshuman Enterprises)
-      { id: 'e111b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA PIPE HEAVY 25MM', slug: 'indeana-pipe-heavy-25mm', sku: 'AE-IND-HW-25', base_price: 90, type: 'physical', is_active: true },
-      { id: 'e112b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA PIPE 20MM MEDIUM', slug: 'indeana-pipe-20mm-medium', sku: 'AE-IND-MW-20', base_price: 70, type: 'physical', is_active: true },
-      { id: 'e113b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA PIPE 25MM MEDIUM', slug: 'indeana-pipe-25mm-medium', sku: 'AE-IND-MW-25', base_price: 80, type: 'physical', is_active: true },
-      { id: 'e114b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA BAND 25MM', slug: 'indeana-band-25mm', sku: 'AE-IND-B-25', base_price: 15, type: 'physical', is_active: true },
-      { id: 'e115b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA BAND 20MM MEDIUM', slug: 'indeana-band-20mm-medium', sku: 'AE-IND-BM-20', base_price: 12, type: 'physical', is_active: true },
-      { id: 'e116b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'INDEANA BAND 25MM HEAVY', slug: 'indeana-band-25mm-heavy', sku: 'AE-IND-BH-25', base_price: 18, type: 'physical', is_active: true },
-      { id: 'e117b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'ORIENT BATTEN LIGHT 2 FEET 20W', slug: 'orient-batten-light-2-feet-20w', sku: 'AE-ORI-BL-220', base_price: 250, type: 'physical', is_active: true },
-      { id: 'e118b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'ORIENT BATTEN LIGHT 4 FEET 20W', slug: 'orient-batten-light-4-feet-20w', sku: 'AE-ORI-BL-420', base_price: 350, type: 'physical', is_active: true },
-      { id: 'e119b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'ORIENT BATTEN LIGHT 2 FEET 10W', slug: 'orient-batten-light-2-feet-10w', sku: 'AE-ORI-BL-210', base_price: 180, type: 'physical', is_active: true },
-      { id: 'e120b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '3 MODULAR BOX', slug: '3-modular-box', sku: 'AE-MB-3', base_price: 45, type: 'physical', is_active: true },
-      { id: 'e121b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '2 MODULAR BOX', slug: '2-modular-box', sku: 'AE-MB-2', base_price: 35, type: 'physical', is_active: true },
-      { id: 'e122b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '4 MODULAR BOX', slug: '4-modular-box', sku: 'AE-MB-4', base_price: 55, type: 'physical', is_active: true },
-      { id: 'e123b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '6 MODULAR BOX', slug: '6-modular-box', sku: 'AE-MB-6', base_price: 75, type: 'physical', is_active: true },
-      { id: 'e124b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '8 MODULAR BOX SQUARE', slug: '8-modular-box-square', sku: 'AE-MB-8S', base_price: 95, type: 'physical', is_active: true },
-      { id: 'e125b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '8 MODULAR BOX', slug: '8-modular-box', sku: 'AE-MB-8', base_price: 95, type: 'physical', is_active: true },
-      { id: 'e126b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: '12 MODULAR BOX', slug: '12-modular-box', sku: 'AE-MB-12', base_price: 140, type: 'physical', is_active: true },
-      { id: 'e127b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FAN BOX HEAVY', slug: 'fan-box-heavy', sku: 'AE-FB-H', base_price: 80, type: 'physical', is_active: true },
-      { id: 'e128b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'CONCIELD BOX HEAVY', slug: 'concield-box-heavy', sku: 'AE-CB-H', base_price: 60, type: 'physical', is_active: true },
-      { id: 'e129b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FAN BOX MEDIUM', slug: 'fan-box-medium', sku: 'AE-FB-M', base_price: 60, type: 'physical', is_active: true },
-      { id: 'e130b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'CONCIELD MEDIUM', slug: 'concield-medium', sku: 'AE-CB-M', base_price: 45, type: 'physical', is_active: true },
-      { id: 'e131b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FLEXIBLE PIPE 20MM', slug: 'flexible-pipe-20mm', sku: 'AE-FP-20', base_price: 150, type: 'physical', is_active: true },
-      { id: 'e132b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW .75 INCH', slug: 'screw-0-75-inch', sku: 'AE-SCR-075', base_price: 100, type: 'physical', is_active: true },
-      { id: 'e133b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW 1 INCH', slug: 'screw-1-inch', sku: 'AE-SCR-100', base_price: 120, type: 'physical', is_active: true },
-      { id: 'e134b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW 1.5 INCH', slug: 'screw-1-5-inch', sku: 'AE-SCR-150', base_price: 150, type: 'physical', is_active: true },
-      { id: 'e135b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW 2 INCH', slug: 'screw-2-inch', sku: 'AE-SCR-200', base_price: 180, type: 'physical', is_active: true },
-      { id: 'e136b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW 2.5 INCH', slug: 'screw-2-5-inch', sku: 'AE-SCR-250', base_price: 220, type: 'physical', is_active: true },
-      { id: 'e137b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SCREW 3 INCH', slug: 'screw-3-inch', sku: 'AE-SCR-300', base_price: 260, type: 'physical', is_active: true },
-      { id: 'e138b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'PVC SADDLE', slug: 'pvc-saddle', sku: 'AE-SAD-PVC', base_price: 50, type: 'physical', is_active: true },
-      { id: 'e139b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FAN ROD 12 INCH', slug: 'fan-rod-12-inch', sku: 'AE-ROD-12', base_price: 90, type: 'physical', is_active: true },
-      { id: 'e140b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'TEE COVER', slug: 'tee-cover', sku: 'AE-TEE-COV', base_price: 10, type: 'physical', is_active: true },
-      { id: 'e141b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FAN COVER', slug: 'fan-cover', sku: 'AE-FAN-COV', base_price: 20, type: 'physical', is_active: true },
-      { id: 'e142b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'STEELGRIP INSULATION TAPE', slug: 'steelgrip-insulation-tape', sku: 'AE-SG-TAPE', base_price: 15, type: 'physical', is_active: true },
-      { id: 'e143b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'THERMOCOL', slug: 'thermocol', sku: 'AE-THERMO', base_price: 30, type: 'physical', is_active: true },
-      { id: 'e144b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SOCKET', slug: 'socket', sku: 'AE-SOCK', base_price: 60, type: 'physical', is_active: true },
-      { id: 'e145b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'FAN BOX LIGHT 500G', slug: 'fan-box-light-500g', sku: 'AE-FB-L500', base_price: 40, type: 'physical', is_active: true },
-      { id: 'e146b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'MASKING TAPE', slug: 'masking-tape', sku: 'AE-MASK-TAPE', base_price: 45, type: 'physical', is_active: true },
-      { id: 'e147b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SELF DRILLING SCREW 1 INCH', slug: 'self-drilling-screw-1-inch', sku: 'AE-SDS-100', base_price: 180, type: 'physical', is_active: true },
-      { id: 'e148b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SELF DRILLING SCREW 1.5 INCH', slug: 'self-drilling-screw-1-5-inch', sku: 'AE-SDS-150', base_price: 220, type: 'physical', is_active: true },
-      { id: 'e149b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SELF DRILLING SCREW 2 INCH', slug: 'self-drilling-screw-2-inch', sku: 'AE-SDS-200', base_price: 260, type: 'physical', is_active: true },
-      { id: 'e150b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'HEATEX 5 KG', slug: 'heatex-5-kg', sku: 'AE-HEAT-5K', base_price: 450, type: 'physical', is_active: true },
-      { id: 'e151b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'KEEL 1*14 SPN', slug: 'keel-1-14-spn', sku: 'AE-KL-114', base_price: 80, type: 'physical', is_active: true },
-      { id: 'e152b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'KEEL 1.5*14 SPN', slug: 'keel-1-5-14-spn', sku: 'AE-KL-1514', base_price: 110, type: 'physical', is_active: true },
-      { id: 'e153b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'KEEL 2*14 SPN', slug: 'keel-2-14-spn', sku: 'AE-KL-214', base_price: 140, type: 'physical', is_active: true },
-      { id: 'e154b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WALL FIX BOND 50G', slug: 'wall-fix-bond-50g', sku: 'AE-WFB-50', base_price: 90, type: 'physical', is_active: true },
-      { id: 'e155b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WALL FIX BOND 18G', slug: 'wall-fix-bond-18g', sku: 'AE-WFB-18', base_price: 40, type: 'physical', is_active: true },
-      { id: 'e156b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'ARALDITE 1.8KG', slug: 'araldite-1-8kg', sku: 'AE-ARAL-18', base_price: 1450, type: 'physical', is_active: true },
-      { id: 'e157b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'ZYPSEM SCREW 3/4 WHITE', slug: 'zypsem-screw-3-4-white', sku: 'AE-ZYP-34', base_price: 110, type: 'physical', is_active: true },
-      { id: 'e158b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WOOD CUTTER BLADE 5/30 BOSCH', slug: 'wood-cutter-blade-5-30-bosch', sku: 'AE-WCB-530', base_price: 280, type: 'physical', is_active: true },
-      { id: 'e159b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WOOD CUTTER BLADE 4/30 BOSCH', slug: 'wood-cutter-blade-4-30-bosch', sku: 'AE-WCB-430', base_price: 220, type: 'physical', is_active: true },
-      { id: 'e160b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WALL CUTTER BLADE 4 INCH BOSCH', slug: 'wall-cutter-blade-4-inch-bosch', sku: 'AE-WLC-400', base_price: 320, type: 'physical', is_active: true },
-      { id: 'e161b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'WALL CUTTER BLADE 5 INCH BOSCH', slug: 'wall-cutter-blade-5-inch-bosch', sku: 'AE-WLC-500', base_price: 450, type: 'physical', is_active: true },
-      { id: 'e162b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SATTRING KEEL 1 INCH', slug: 'sattring-keel-1-inch', sku: 'AE-STK-1', base_price: 120, type: 'physical', is_active: true },
-      { id: 'e163b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SATTRING KEEL 2 INCH', slug: 'sattring-keel-2-inch', sku: 'AE-STK-2', base_price: 150, type: 'physical', is_active: true },
-      { id: 'e164b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SATTRING KEEL 3 INCH', slug: 'sattring-keel-3-inch', sku: 'AE-STK-3', base_price: 180, type: 'physical', is_active: true },
-      { id: 'e165b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: PHYSICAL_BRAND_ID, name: 'SATTRING KEEL 4 INCH', slug: 'sattring-keel-4-inch', sku: 'AE-STK-4', base_price: 220, type: 'physical', is_active: true },
-
+      
       // Digital Products (FutureWithAI)
       { id: 'e201b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: DIGITAL_BRAND_ID, name: 'Ultimate n8n AI Automation Pack', slug: 'ultimate-n8n-ai-pack', sku: 'FWAI-N8N-AI-PACK', base_price: 349, type: 'digital', is_active: true },
       { id: 'e202b1c6-2c5e-4029-9a2e-c1e1bc89a74a', brand_id: DIGITAL_BRAND_ID, name: '400+ PHP Manually Tested Scripts', slug: 'php-web-scripts-bundle', sku: 'FWAI-PHP-SCRIPTS', base_price: 499, type: 'digital', is_active: true },
@@ -222,18 +165,19 @@ async function runSeeder() {
     }
     console.log(`Seeded ${reportData.products.length} products successfully.`);
 
-    // Seed inventory dynamically for physical items to support large product lists
-    const inventoryData = [];
-    productsData.forEach(prod => {
-      if (prod.type === 'physical') {
-        inventoryData.push({
-          product_id: prod.id,
-          quantity: prod.name.toLowerCase().includes('lock') ? 4 : prod.name.toLowerCase().includes('pipe') ? 300 : 100,
-          reserved: 0,
-          low_stock_threshold: 5
-        });
-      }
-    });
+    // Seed inventory for physical items
+    const inventoryData = [
+      { product_id: 'e101b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 60, reserved: 0, low_stock_threshold: 5 },
+      { product_id: 'e102b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 45, reserved: 0, low_stock_threshold: 5 },
+      { product_id: 'e103b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 12, reserved: 0, low_stock_threshold: 5 },
+      { product_id: 'e104b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 200, reserved: 0, low_stock_threshold: 10 },
+      { product_id: 'e105b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 80, reserved: 0, low_stock_threshold: 10 },
+      { product_id: 'e106b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 80, reserved: 0, low_stock_threshold: 5 },
+      { product_id: 'e107b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 25, reserved: 0, low_stock_threshold: 2 },
+      { product_id: 'e108b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 50, reserved: 0, low_stock_threshold: 5 },
+      { product_id: 'e109b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 300, reserved: 0, low_stock_threshold: 20 },
+      { product_id: 'e110b1c6-2c5e-4029-9a2e-c1e1bc89a74a', quantity: 4, reserved: 0, low_stock_threshold: 3 }
+    ];
     for (const inv of inventoryData) {
       await supabase.from('inventory').upsert(inv);
     }

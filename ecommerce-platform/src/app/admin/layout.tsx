@@ -11,14 +11,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [authorized, setAuthorized] = useState(false);
 
   const isLoginPage = pathname === '/admin/login';
-  const isSetupFlowPage = pathname === '/admin/onboarding' || pathname === '/admin/readiness' || pathname === '/admin/action-center' || pathname === '/admin/lab';
 
   useEffect(() => {
     document.documentElement.setAttribute('data-brand', 'admin');
-    if (isSetupFlowPage) {
-      setAuthorized(true);
-      return;
-    }
     if (!loading && !isLoginPage) {
       if (!user) {
         router.push('/admin/login');
@@ -28,7 +23,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         setAuthorized(true);
       }
     }
-  }, [user, profile, loading, router, isLoginPage, isSetupFlowPage]);
+  }, [user, profile, loading, router, isLoginPage]);
 
   const handleSignOut = async () => {
     await signOut();
@@ -40,7 +35,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     return <>{children}</>;
   }
 
-  if (!isSetupFlowPage && (loading || (!authorized && !isLoginPage))) {
+  if (loading || (!authorized && !isLoginPage)) {
     return (
       <div className="min-h-screen bg-[#0b0f19] text-gray-400 flex items-center justify-center font-sans">
         <div className="text-center space-y-4">
@@ -53,10 +48,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   const navLinks = [
     { href: '/admin/dashboard', label: '📊 Dashboard Overview' },
-    { href: '/admin/onboarding', label: '🚀 Owner Onboarding' },
-    { href: '/admin/action-center', label: '⚡ Action Center' },
-    { href: '/admin/readiness', label: '🚦 Readiness Gate' },
-    { href: '/admin/lab', label: '🧪 Owner Lab' },
     { href: '/admin/cms', label: '✍️ CMS Management' },
     { href: '/admin/orders', label: '🛒 Orders Queue' },
     { href: '/admin/products', label: '📦 Products Catalog' },
