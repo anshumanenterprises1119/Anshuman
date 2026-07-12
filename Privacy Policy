@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <!-- v27514 -->
+
+
+  <title>Global Privacy Policy &ndash; Scribd Help Center</title>
+
+  
+
+  <meta name="description" content="1.0 About this Privacy Policy; Other TermsEverand™, Scribd®, and Slideshare® are brands or products of Scribd, Inc. (“the Company”, “we,”..." /><meta property="og:image" content="https://support.scribd.com/hc/theming_assets/01J0KGPBT1DJ9GGH0F8YBPZA25" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Scribd Help Center" />
+<meta property="og:title" content="Global Privacy Policy" />
+<meta property="og:description" content="1.0 About this Privacy Policy; Other TermsEverand™, Scribd®, and Slideshare® are brands or products of Scribd, Inc. (“the Company”, “we,” “our,” or “us”). The following additional terms, policies, ..." />
+<meta property="og:url" content="https://support.scribd.com/hc/en-us/articles/210129366-Global-Privacy-Policy" />
+<link rel="canonical" href="https://support.scribd.com/hc/en-us/articles/210129366-Global-Privacy-Policy">
+<link rel="alternate" hreflang="de" href="https://support.scribd.com/hc/de/articles/210129366-Globale-Datenschutzrichtlinie-von-Scribd-Inc">
+<link rel="alternate" hreflang="el" href="https://support.scribd.com/hc/el/articles/210129366-Scribd-Inc-%CE%A0%CE%B1%CE%B3%CE%BA%CF%8C%CF%83%CE%BC%CE%B9%CE%B1-%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE-%CE%91%CF%80%CE%BF%CF%81%CF%81%CE%AE%CF%84%CE%BF%CF%85">
+<link rel="alternate" hreflang="en-us" href="https://support.scribd.com/hc/en-us/articles/210129366-Global-Privacy-Policy">
+<link rel="alternate" hreflang="es" href="https://support.scribd.com/hc/es/articles/210129366-Pol%C3%ADtica-de-privacidad-global-de-Scribd-Inc">
+<link rel="alternate" hreflang="fr" href="https://support.scribd.com/hc/fr/articles/210129366-Scribd-Inc-Politique-de-confidentialit%C3%A9-globale">
+<link rel="alternate" hreflang="id" href="https://support.scribd.com/hc/id/articles/210129366-Kebijakan-Privasi-Global-Scribd-Inc">
+<link rel="alternate" hreflang="it" href="https://support.scribd.com/hc/it/articles/210129366-Informativa-sulla-privacy-globale-di-Scribd-Inc">
+<link rel="alternate" hreflang="nl" href="https://support.scribd.com/hc/nl/articles/210129366-Scribd-Inc-Wereldwijd-privacybeleid">
+<link rel="alternate" hreflang="pl" href="https://support.scribd.com/hc/pl/articles/210129366-Globalna-polityka-prywatno%C5%9Bci-Scribd-Inc">
+<link rel="alternate" hreflang="pt-br" href="https://support.scribd.com/hc/pt-br/articles/210129366-Pol%C3%ADtica-de-Privacidade-Global-do-Scribd-Inc">
+<link rel="alternate" hreflang="ro" href="https://support.scribd.com/hc/ro/articles/210129366-Scribd-Inc-Politica-global%C4%83-de-confiden%C8%9Bialitate">
+<link rel="alternate" hreflang="tr" href="https://support.scribd.com/hc/tr/articles/210129366-Scribd-Inc-K%C3%BCresel-Gizlilik-Politikas%C4%B1">
+<link rel="alternate" hreflang="x-default" href="https://support.scribd.com/hc/en-us/articles/210129366-Global-Privacy-Policy">
+
+  <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-9728c5319eba0423daea7e82ae8a1641.css" media="all" id="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/6641/2635666/style.css?digest=50319470214164">
+
+  <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HLS053957"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8HLS053957');
+</script>
+
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+  var locale = "en-us"
+  var baseUrl = window.location.protocol + "//" + window.location.host;
+  var everandAvatar = baseUrl + "/hc/theming_assets/01J0KGP5Y15BWEK6QHVEKBMRCM";
+  var scribdAvatar = baseUrl + "/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE";
+  var slideshareAvatar = baseUrl + "/hc/theming_assets/01K5W50S7KEQ00JYJ5MX8PG14V";
+  var defaultAvatar = baseUrl + "/hc/theming_assets/01KJTENM5ZSD9YYFCS66THK2AB";
+  var everandWhiteIcon = baseUrl + "/hc/theming_assets/01J0KGP5YGTY0VZK4NZVF8AEHB";
+  var scribdWhiteIcon = baseUrl + "/hc/theming_assets/01J0KGP68WWXS5XYJQCR65WJX5";
+  var slideshareWhiteIcon = baseUrl + "/hc/theming_assets/01K5W5Y08MRJ1HQKFCNQB3JF0A";
+  var defaultWhiteIcon = "/hc/theming_assets/01J0KGP68WWXS5XYJQCR65WJX5";
+  var chatbotInitialIntentId = "57bd2e27-3f9c-43b2-90b4-9c7afb8926a6";
+  var chatbotGreetingMessage = "Hello! Please enter a question below to find answers or receive further help.";
+  var everandThemeColor = "#201C14";
+  var scribdThemeColor = "#098647";
+  var slideshareThemeColor = "#211c13";
+  var localeString = 'en-us,es,pt-br,de,fr,id,it,nl,pl,ro,el,ru,sr,tr'
+  var selfServiceLocales = localeString.split(",")
+  var hideCategory = Number('4490518294932')
+  var hideSection = Number('')
+  var hideArticle = Number('6512463078676')
+
+  let defaultWFTag;
+  if ("helpcenter") {
+    defaultWFTag = "helpcenter";
+  } else {
+    defaultWFTag = Math.random().toString(36).substring(2, 7);
+  }
+
+</script>
+
+
+<script>  
+
+  const validBrands = [
+    'everand', 
+    'scribd', 
+    'slideshare'
+  ];
+
+  const prodBrandCategories = [
+    '201388246', 
+    '360005188511', 
+    '360004792932'
+  ];
+
+  const sandboxBrandCategories = [
+    '201269626', 
+    '360006327212', 
+    '360006358331'
+  ];
+
+  const prodCategoryImages = {
+    '201388246': '/hc/theming_assets/01JZ630ZCVXK1AY1CDXGPF30KB',
+    '360005188511': '/hc/theming_assets/01JN22TEW9WGHSY1VG2JW9ZN4F',
+    '360004792932': '/hc/theming_assets/01K5YE77PNTFDNSZ710YGERA07',
+    '201388186': '/hc/theming_assets/01JZ63110WF6KBV0CB8FENR0VB',
+    '360005188132': '/hc/theming_assets/01JZ6311B4S8MNETW1FDVH3VCK',
+  };
+
+  const sandboxCategoryImages = {
+    '201269626': '/hc/theming_assets/01JZ630ZCVXK1AY1CDXGPF30KB',
+    '360006327212': '/hc/theming_assets/01JN22TEW9WGHSY1VG2JW9ZN4F',
+    '360006358331': '/hc/theming_assets/01K5YE77PNTFDNSZ710YGERA07',
+    '360006358311': '/hc/theming_assets/01JZ63110WF6KBV0CB8FENR0VB',
+    '360006349252': '/hc/theming_assets/01JZ6311B4S8MNETW1FDVH3VCK'
+  };
+
+  const prodCategoryIcons = {
+    '201388246': '/hc/theming_assets/01JZ63102MMM93X3D118DT6AX7',
+    '360005188511': '/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE',
+    '360004792932': '/hc/theming_assets/01KT294AWXYXBEPV9ZWPXS38N0',
+    '201388186': '/hc/theming_assets/01JZ63110WF6KBV0CB8FENR0VB',
+    '360005188132': '/hc/theming_assets/01JZ6311B4S8MNETW1FDVH3VCK'
+  };
+
+  const sandboxCategoryIcons = {
+    '201269626': '/hc/theming_assets/01JZ63102MMM93X3D118DT6AX7',
+    '360006327212': '/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE',
+    '360006358331': '/hc/theming_assets/01KT294AWXYXBEPV9ZWPXS38N0',
+    '360006358311': '/hc/theming_assets/01JZ63110WF6KBV0CB8FENR0VB',
+    '360006349252': '/hc/theming_assets/01JZ6311B4S8MNETW1FDVH3VCK'
+  };
+
+  const validIntentParams = ['509e6579-ec25-43c1-a788-4a5d008a9500','1db98679-906c-481c-a8e7-6acfa6445574', '9a4ef146-8161-4a56-a92b-b92e5e541852', '67efa65b-ea2e-4ea9-a94c-be656ad73c68']
+    
+</script>
+
+
+<script type="text/javascript" src="/hc/theming_assets/01J0KGPA8JR8B5HEF56T5HCT1T"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP8NGS1MJ4HVF29FMKF7D"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGPA3N8WQGMHFKWTZZ16HD"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP803WKA28HMNWN7FJ9WW"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP89QJXVXB4832DG4DDX4"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP95ZTCJ4T1CJNSJ3F7Q0"></script>
+<script type="text/javascript" src="/hc/theming_assets/01KJTKYWMNMK0ZZZB52V191XMB"></script>
+<script type="text/javascript" src="/hc/theming_assets/01JD83FZY1Q5TAMV3B00YYJH7P"></script>
+<script type="text/javascript" src="/hc/theming_assets/01KT25Y9NH0APA9Y5YWHSTV7H9"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP8BYPKHHETT0606TNKGW"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP9ZERVTKGT7K91Z7C7B1"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP8MWH27R75Q9B7RJ7VP0"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGPA69X7F2BN6X2TR6DRRN"></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP8Z5AG5B7KN41AZFT65B"></script>
+
+<script type="text/javascript" src="/hc/theming_assets/01J0KGPA05NXY59EXYJ2TPC8SY" defer></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP8BZ9YQZP36Q996VNJBY" defer></script>
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP868KE9YER36Z8A929DE" defer></script>
+
+
+
+
+<script>  
+  setZendeskEnv(window.location.host)
+  setBrandCategories()
+  setCategoryImages()
+  setCategoryIcons()
+  setNewBrandConfig()  
+  
+</script>
+
+<!-- Apply noindex tag to sandbox only to prevent Google from indexing  -->
+<script>
+  if (currentZDEnv === 'sandbox'){
+    const meta = document.createElement('meta');
+    meta.name = "robots";
+    meta.content = "noindex";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+  }
+</script>
+
+<!-- Start Forethought code -->
+<script>
+  if (selfServiceLocales.includes(locale)) {
+
+    var COUNTRY_MAP = {
+      "af":"Afghanistan","al":"Albania","dz":"Algeria","as":"American Samoa",
+      "ad":"Andorra","ao":"Angola","ai":"Anguilla","aq":"Antarctica",
+      "ag":"Antigua & Barbuda","ar":"Argentina","am":"Armenia","aw":"Aruba",
+      "au":"Australia","at":"Austria","az":"Azerbaijan","bs":"Bahamas",
+      "bh":"Bahrain","bd":"Bangladesh","bb":"Barbados","by":"Belarus",
+      "be":"Belgium","bz":"Belize","bj":"Benin","bm":"Bermuda",
+      "bt":"Bhutan","bo":"Bolivia","ba":"Bosnia & Herzegovina","bw":"Botswana",
+      "bv":"Bouvet Island","br":"Brazil","io":"British Indian Ocean Territory",
+      "vg":"British Virgin Islands","bn":"Brunei","bg":"Bulgaria",
+      "bf":"Burkina Faso","bi":"Burundi","kh":"Cambodia","cm":"Cameroon",
+      "ca":"Canada","cv":"Cape Verde","bq":"Caribbean Netherlands",
+      "ky":"Cayman Islands","cf":"Central African Republic","td":"Chad",
+      "cl":"Chile","cn":"China","cx":"Christmas Island",
+      "cc":"Cocos (Keeling) Islands","co":"Colombia","km":"Comoros",
+      "cg":"Congo - Brazzaville","cd":"Congo - Kinshasa","ck":"Cook Islands",
+      "cr":"Costa Rica","hr":"Croatia","cu":"Cuba","cw":"Curaçao",
+      "cy":"Cyprus","cz":"Czechia","ci":"Côte d'Ivoire","dk":"Denmark",
+      "dj":"Djibouti","dm":"Dominica","do":"Dominican Republic","ec":"Ecuador",
+      "eg":"Egypt","sv":"El Salvador","gq":"Equatorial Guinea","er":"Eritrea",
+      "ee":"Estonia","sz":"Eswatini","et":"Ethiopia","fk":"Falkland Islands",
+      "fo":"Faroe Islands","fj":"Fiji","fi":"Finland","fr":"France",
+      "gf":"French Guiana","pf":"French Polynesia","tf":"French Southern Territories",
+      "ga":"Gabon","gm":"Gambia","ge":"Georgia","de":"Germany","gh":"Ghana",
+      "gi":"Gibraltar","gr":"Greece","gl":"Greenland","gd":"Grenada",
+      "gp":"Guadeloupe","gu":"Guam","gt":"Guatemala","gg":"Guernsey",
+      "gn":"Guinea","gw":"Guinea-Bissau","gy":"Guyana","ht":"Haiti",
+      "hm":"Heard & McDonald Islands","hn":"Honduras","hk":"Hong Kong SAR China",
+      "hu":"Hungary","is":"Iceland","in":"India","id":"Indonesia","ir":"Iran",
+      "iq":"Iraq","ie":"Ireland","im":"Isle of Man","il":"Israel","it":"Italy",
+      "jm":"Jamaica","jp":"Japan","je":"Jersey","jo":"Jordan","kz":"Kazakhstan",
+      "ke":"Kenya","ki":"Kiribati","kw":"Kuwait","kg":"Kyrgyzstan","la":"Laos",
+      "lv":"Latvia","lb":"Lebanon","ls":"Lesotho","lr":"Liberia","ly":"Libya",
+      "li":"Liechtenstein","lt":"Lithuania","lu":"Luxembourg","mo":"Macao SAR China",
+      "mg":"Madagascar","mw":"Malawi","my":"Malaysia","mv":"Maldives","ml":"Mali",
+      "mt":"Malta","mh":"Marshall Islands","mq":"Martinique","mr":"Mauritania",
+      "mu":"Mauritius","yt":"Mayotte","mx":"Mexico","fm":"Micronesia",
+      "md":"Moldova","mc":"Monaco","mn":"Mongolia","me":"Montenegro",
+      "ms":"Montserrat","ma":"Morocco","mz":"Mozambique","mm":"Myanmar (Burma)",
+      "na":"Namibia","nr":"Nauru","np":"Nepal","nl":"Netherlands",
+      "nc":"New Caledonia","nz":"New Zealand","ni":"Nicaragua","ne":"Niger",
+      "ng":"Nigeria","nu":"Niue","nf":"Norfolk Island","kp":"North Korea",
+      "mk":"North Macedonia","mp":"Northern Mariana Islands","no":"Norway",
+      "om":"Oman","pk":"Pakistan","pw":"Palau","ps":"Palestinian Territories",
+      "pa":"Panama","pg":"Papua New Guinea","py":"Paraguay","pe":"Peru",
+      "ph":"Philippines","pn":"Pitcairn Islands","pl":"Poland","pt":"Portugal",
+      "pr":"Puerto Rico","qa":"Qatar","ro":"Romania","ru":"Russia","rw":"Rwanda",
+      "re":"Réunion","ws":"Samoa","sm":"San Marino","sa":"Saudi Arabia",
+      "sn":"Senegal","rs":"Serbia","sc":"Seychelles","sl":"Sierra Leone",
+      "sg":"Singapore","sx":"Sint Maarten","sk":"Slovakia","si":"Slovenia",
+      "sb":"Solomon Islands","so":"Somalia","za":"South Africa",
+      "gs":"South Georgia & South Sandwich Islands","kr":"South Korea",
+      "ss":"South Sudan","es":"Spain","lk":"Sri Lanka","bl":"St. Barthélemy",
+      "sh":"St. Helena","kn":"St. Kitts & Nevis","lc":"St. Lucia",
+      "mf":"St. Martin","pm":"St. Pierre & Miquelon","vc":"St. Vincent & Grenadines",
+      "sd":"Sudan","sr":"Suriname","sj":"Svalbard & Jan Mayen","se":"Sweden",
+      "ch":"Switzerland","sy":"Syria","st":"São Tomé & Príncipe","tw":"Taiwan",
+      "tj":"Tajikistan","tz":"Tanzania","th":"Thailand","tl":"Timor-Leste",
+      "tg":"Togo","tk":"Tokelau","to":"Tonga","tt":"Trinidad & Tobago",
+      "tn":"Tunisia","tr":"Turkey","tm":"Turkmenistan","tc":"Turks & Caicos Islands",
+      "tv":"Tuvalu","um":"U.S. Outlying Islands","vi":"U.S. Virgin Islands",
+      "ug":"Uganda","ua":"Ukraine","ae":"United Arab Emirates","gb":"United Kingdom",
+      "us":"United States","uy":"Uruguay","uz":"Uzbekistan","vu":"Vanuatu",
+      "va":"Vatican City","ve":"Venezuela","vn":"Vietnam","wf":"Wallis & Futuna",
+      "eh":"Western Sahara","ye":"Yemen","zm":"Zambia","zw":"Zimbabwe","ax":"Åland Islands"
+    };
+
+    function initForethought(country) {
+      window.ftCountry = country || '';
+      setLanguageValues();
+      setForethoughtScriptAttributes();
+      setForethoughtRefundScript();
+    }
+
+    var cached = sessionStorage.getItem('hc_geo');
+    if (cached) {
+      try {
+        var geo = JSON.parse(cached);
+        initForethought(geo.country);
+      } catch(e) {
+        initForethought('');
+      }
+    } else {
+      fetch('/cdn-cgi/trace')
+        .then(function(r) { return r.text(); })
+        .then(function(text) {
+          var iso = '';
+          text.split('\n').forEach(function(line) {
+            var p = line.split('=');
+            if (p[0].trim() === 'loc') iso = p[1].trim().toLowerCase();
+          });
+          var country = COUNTRY_MAP[iso] || '';
+          sessionStorage.setItem('hc_geo', JSON.stringify({ iso: iso, country: country }));
+          initForethought(country);
+        })
+        .catch(function() {
+          initForethought('');
+        });
+    }
+  }
+</script>
+<!-- End Forethought code -->
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    categorySVGUpdater('[data-category-image]')
+    categorySVGUpdater('[data-category-icon]')
+    setZendeskWebWidgetScript()
+    setZendeskWebWidgetSettings()
+  });
+</script>
+
+<script>
+   window.addEventListener("load", (event) => {
+     autoOpenWidget();
+  });
+ 
+</script>
+
+<!-- Add Forethought script only if not already present -->
+<script type="text/javascript">
+  function reloadForethoughtFresh(intentId) {
+    console.log("Completely reloading Forethought with intent:", intentId);
+
+    // Remove existing script
+    const oldScript = document.getElementById("forethought-script");
+    if (oldScript) {
+      oldScript.remove();
+      console.log("Removed existing Forethought script.");
+    }
+
+    // Remove the iframe completely (kills current session)
+    const existingIframe = document.querySelector("iframe#forethought-chat, iframe[src*='solve-widget.forethought.ai']");
+    if (existingIframe) {
+      existingIframe.remove();
+      console.log("Removed existing Forethought iframe.");
+    }
+
+    // Inject a fresh Forethought script with the specified intent
+    const script = document.createElement("script");
+    script.id = "forethought-script";
+    script.src = "https://solve-widget.forethought.ai/embed.js";
+    script.type = "application/javascript";
+    script.setAttribute("data-api-key", "0918cbd1-1d49-40ab-acfb-43e82113e17d");
+    script.setAttribute("data-ft-Embed-Script-Language", typeof FTLocale !== "undefined" ? FTLocale : "en");
+    script.setAttribute("data-ft-Platform-String", "helpcenter");
+    script.setAttribute("data-ft-currentUrl", window.location.hostname);
+    script.setAttribute("initial-intent-id", intentId);
+    script.setAttribute("data-ft-workflow-tag", "copyright");
+
+    // Optional: force a fresh session and hide until ready
+    script.setAttribute("config-ft-persistence-id", "report-abuse-" + Date.now());
+    script.setAttribute("hidden", "true");
+
+    document.head.appendChild(script);
+
+    // Open the widget as soon as it loads
+    window.addEventListener("message", function onLoad(event) {
+      if (event.data?.event === "forethoughtWidgetLoaded") {
+        window.removeEventListener("message", onLoad);
+        console.log("Forethought fully loaded. Launching intent.");
+        window.Forethought('widget', 'show');
+        window.Forethought('widget', 'open');
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Bind to your CTA
+    document.querySelectorAll("[data-launch-chat]").forEach(function (element) {
+      element.addEventListener("click", function (event) {
+        event.preventDefault();
+        reloadForethoughtFresh("67efa65b-ea2e-4ea9-a94c-be656ad73c68");
+      });
+    });
+
+    //  Wufoo logic
+    document.querySelectorAll("[data-launch-webform]").forEach(function (element) {
+      var d = document,
+          s = d.createElement('script'),
+          h = element.getAttribute('data-launch-webform');
+      if (!h) return;
+      var options = {
+        'userName': 'scribd', 'formHash': h,
+        'autoResize': true, 'height': '3363', 'async': true,
+        'host': 'wufoo.com', 'header': 'show', 'ssl': true
+      };
+      var wf;
+      s.src = ('https:' == d.location.protocol ? 'https' : 'http') + '://secure.wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function () {
+        var rs = this.readyState;
+        if (rs && rs !== 'complete' && rs !== 'loaded') return;
+        try {
+          wf = new WufooForm();
+          wf.initialize(options);
+          wf.display();
+        } catch (e) { }
+      };
+      var scr = d.getElementsByTagName('script')[0],
+          par = scr.parentNode;
+      par.insertBefore(s, scr);
+    });
+  });
+</script>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<script type="text/javascript">
+  //
+  // Add your custom category icons here by uploading them to the theme's asset folder
+  // and using the reference provided. The name should include the category ID
+  // (e.g., `category-{id}`)
+  //
+  // If a given category image does not exist the default ("category-default") will
+  // be used.
+  //
+  // https://support.zendesk.com/hc/en-us/articles/115012399428
+  // https://zenplates.co/framework/guides/change-images-and-icons
+  //
+  var assets = {
+    "category-default": "",
+  }
+</script>
+
+
+
+ 
+<template id="self-service-locale">
+  <div id="bottom-banner" class="mx-auto mb-7 flex align-items-center text-center row bg-gray-300 border-radius p-4 container">
+    <div class="md:col-6 mx-auto my-3">
+      <div class="mb-2 font-size-2xl font-semibold h2 font-heading">
+        Still have a question?
+      </div>
+      <p class="font-size-lg mb-4 text-base">
+        Chat with our Support Bot for help or submit a ticket.
+      </p>
+      <div><a class="button font-semibold bg-primary text-white hover:bg-gray-700 hover:text-white" href="/hc/en-us/requests/new">Start a chat</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<template id="non-self-service-locale">
+  <div id="bottom-banner" class="mx-auto mb-7 flex align-items-center text-center row bg-gray-300 border-radius p-4 container">
+    <div class="md:col-6 mx-auto my-3">
+      <div class="mb-2 font-size-2xl font-semibold h2 font-heading">
+        Still have a question?
+      </div>
+      <p class="font-size-lg mb-4 text-base">
+      Our support team is here to help.
+      </p>
+      <button id="web-widget-button" class='button font-semibold bg-primary text-white hover:bg-gray-700 hover:text-white' onclick=" zE.show({hideOnClose: true}); zE('webWidget', 'toggle'); return false;">
+        Start a chat
+      </button>
+    </div>
+  </div>
+</template>
+
+
+<template id="brand-top-bar">
+  <div id="top-bar" class="bg-snow-200 text-center py-4 ">
+    <img
+      id="top-bar-img"
+      class="mx-auto section-brand-img category-top-bar"
+      data-category-image
+      src="/hc/theming_assets/01J0KGP4YCBYQWG7DW4YRPP2AF"
+      width="116px"
+      height="30px"/>
+  </div>
+</template>
+  
+
+
+
+
+
+<template id="non-self-service-search">
+  <div class="md:col-4 search-container">
+    <div class="search border border-2 border-gray-100 rounded mb-4">
+      
+        <form role="search" class="form-field border rounded bg-white mb-0 transition" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get"><input type="hidden" name="utf8" value="&#x2713;" autocomplete="off" /><input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" /></form>
+      
+      <svg class="search-icon transition" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 12 12" aria-hidden="true">
+        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
+        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
+      </svg>
+    </div>
+  </div>
+</template>
+
+
+
+<template id="brand-selector-modal-template">
+  <div
+    class="hidden bg-white shadow-md justify-content-center container flex flex-column max-w-sm px-4 py-4 fixed z-100 border-radius"
+    style="z-index:999;top: 50%;left: 50%;transform: translate(-50%, -50%);" id="brand-selector-modal">
+    <img id="close-modal-icon" class="align-self-end hover:opacity-75 circle hover:shadow-md cursor-pointer"
+      width="24px" height="24px" src="/hc/theming_assets/01JZ630XQR5XYQ2Q49D1PA9N0R">
+    <div class="row">
+      <div class="col-12 flex justify-content-center flex-column text-center">
+        <h2 class="font-size-3xl mt-0 pt-0">We'll be glad to help!</h2>
+        <p class="font-text">
+          Let us know what you need help with and we'll get you to the right place.
+        </p>
+      </div>
+    </div>
+    <div class="row mt-6">
+      <div class="col-12 md:col-4 md:m-0 my-2 bg-white flex justify-content-center grid-column">
+        <a id="everand-modal-button"
+          class="mx-1 w-screen button button-outline  border-1 shadow-sm hover:shadow-md hover:bg-snow-200" href="#">
+          <img class="m-2" src="/hc/theming_assets/01JZ630ZCVXK1AY1CDXGPF30KB" alt="everand-button" height="30px" />
+        </a>
+      </div>
+      <div class="col-12 md:col-4 md:m-0 my-2 bg-white flex justify-content-center grid-column">
+        <a id="scribd-modal-button"
+          class="mx-1 w-screen button button-outline  border-1 shadow-sm hover:shadow-md hover:bg-snow-200" href="#">
+          <img class="m-2" src="/hc/theming_assets/01JN22TEW9WGHSY1VG2JW9ZN4F" alt="scribd-button" height="30px" />
+        </a>
+      </div>
+      <div class="col-12 md:col-4 md:m-0 my-2 bg-white flex justify-content-center grid-column">
+        <a id="slideshare-modal-button"
+          class="mx-1 w-screen button button-outline  border-1 shadow-sm hover:shadow-md hover:bg-snow-200" href="#">
+          <img class="m-2" src="/hc/theming_assets/01K5YE77PNTFDNSZ710YGERA07" alt="slideshare-button" height="30px" />
+        </a>
+      </div>
+    </div>
+    <div class="row mt-6 my-4">
+      <div class="col-12 text-center">
+        <a id="something-else-modal-button" class="font-text text-primary hover:underline hover:text-gray-700">
+          I need help with something else
+          <img class="fill-current link-stretched hover:opacity-75" src="/hc/theming_assets/01JZ630VYR8STA1SXXKYEN4RMH"
+            alt="right arrow" width="16px" />
+        </a>
+      </div>
+</template>
+<template id="modal-background-overlay-template">
+  <div id="modal-background-overlay"
+    class="fixed bg-black opacity-75 hidden z-fixed min-h-screen min-w-screen top-0 right-0 bottom-0 left-0">
+  </div>
+</template>
+
+ 
+
+
+
+  
+</head>
+<body class="">
+  
+  
+  
+
+  <a class="sr-only sr-only-focusable" tabindex="1" href="#page-container">
+  Skip to main content
+</a>
+
+<div id="header-container" class="layout flex flex-column min-h-screen">
+  <header class="header  bg-snow-200"  id="header">
+    <nav class="navbar font-size-md font-medium container w-full " role="navigation" itemscope
+      itemtype="http://schema.org/SiteNavigationElement">
+      <div class=" row row-flush">
+        <div class="col flex flex-column">
+          <h4 class="m-0 p-0 font-size-xl">
+            <a title="Home" href="/hc/en-us">
+              Help Center
+            </a>
+          </h4>
+          <p class="m-0 p-0 font-size-base">
+            Support for Slideshare, Scribd, and Everand.
+          </p>
+        </div>
+        <div class="col flex justify-content-end">
+          <button class="navbar-toggle ml-2" data-toggle="collapse" data-target="#primary-nav"
+            aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span></span>
+          </button>
+          <ul class="nav nav-menu text-center collapse md:flex" role="menu" id="primary-nav">
+            
+          </ul>
+          
+            <div class="nav-link dropdown w-full my-4 sm:my-0 sm:w-auto hidden md:flex p-0 hover:text-teal-400">
+              <button
+                class="dropdown-toggle border-transparent bg-transparent border-solid border py-1 px-2  hover:bg-white border-radius hover:text-teal-400 transition hover:no-underline"
+                aria-haspopup="true">
+                English (United States)
+                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 12 12">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round"
+                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5" />
+                </svg>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end" role="menu" aria-expanded="false">
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F210129366-Globale-Datenschutzrichtlinie-von-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Deutsch
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/el?return_to=%2Fhc%2Fel%2Farticles%2F210129366-Scribd-Inc-%25CE%25A0%25CE%25B1%25CE%25B3%25CE%25BA%25CF%258C%25CF%2583%25CE%25BC%25CE%25B9%25CE%25B1-%25CE%25A0%25CE%25BF%25CE%25BB%25CE%25B9%25CF%2584%25CE%25B9%25CE%25BA%25CE%25AE-%25CE%2591%25CF%2580%25CE%25BF%25CF%2581%25CF%2581%25CE%25AE%25CF%2584%25CE%25BF%25CF%2585" dir="ltr" rel="nofollow" role="menuitem">
+                    Ελληνικά
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F210129366-Pol%25C3%25ADtica-de-privacidad-global-de-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Español
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/fr?return_to=%2Fhc%2Ffr%2Farticles%2F210129366-Scribd-Inc-Politique-de-confidentialit%25C3%25A9-globale" dir="ltr" rel="nofollow" role="menuitem">
+                    Français
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/id?return_to=%2Fhc%2Fid%2Farticles%2F210129366-Kebijakan-Privasi-Global-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Bahasa Indonesia
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/it?return_to=%2Fhc%2Fit%2Farticles%2F210129366-Informativa-sulla-privacy-globale-di-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Italiano
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/nl?return_to=%2Fhc%2Fnl%2Farticles%2F210129366-Scribd-Inc-Wereldwijd-privacybeleid" dir="ltr" rel="nofollow" role="menuitem">
+                    Nederlands
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/pl?return_to=%2Fhc%2Fpl%2Farticles%2F210129366-Globalna-polityka-prywatno%25C5%259Bci-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Polski
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br%2Farticles%2F210129366-Pol%25C3%25ADtica-de-Privacidade-Global-do-Scribd-Inc" dir="ltr" rel="nofollow" role="menuitem">
+                    Português do Brasil
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/ro?return_to=%2Fhc%2Fro%2Farticles%2F210129366-Scribd-Inc-Politica-global%25C4%2583-de-confiden%25C8%259Bialitate" dir="ltr" rel="nofollow" role="menuitem">
+                    Română
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/ru?return_to=%2Fhc%2Fru" dir="ltr" rel="nofollow" role="menuitem">
+                    Русский
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/sr?return_to=%2Fhc%2Fsr" dir="ltr" rel="nofollow" role="menuitem">
+                    Srpski
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold hover:no-underline"
+                    href="/hc/change_language/tr?return_to=%2Fhc%2Ftr%2Farticles%2F210129366-Scribd-Inc-K%25C3%25BCresel-Gizlilik-Politikas%25C4%25B1" dir="ltr" rel="nofollow" role="menuitem">
+                    Türkçe
+                  </a>
+                
+              </div>
+            </div>
+          
+          
+            <div class="flex align-items-center">
+
+              <a id="custom-sign-in-link" class='border-transparent border-solid border border-radius py-1 px-2 hover:bg-white hover:text-teal-400 transition text-slate-500 hover:no-underline cursor-pointer'>Sign in</a>
+
+              <a id="custom-sign-in-link-data" 
+                data-auth-action="signin" 
+                role="button"
+                href=""
+                title="Opens a dialog"
+                class='absolute top-0 right-0 z-0 opacity-0 border-transparent border-solid border border-radius py-1 px-2 hover:bg-white hover:text-teal-400 transition text-slate-500 hover:no-underline cursor-pointer'>
+                Sign in fake data
+              </a>
+              
+              
+
+              <a class="hidden-button  absolute top-0 right-0 opacity-0  z-0" role="button" rel="nofollow" data-auth-action="signin" title="Opens a dialog" href="/hc/en-us/signin?return_to=https%3A%2F%2Fsupport.scribd.com%2Fhc%2Fen-us%2Farticles%2F210129366-Global-Privacy-Policy">Sign in hidden
+              </a>
+              
+            </div>
+          
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <script>
+      $('button.navbar-toggle.ml-2').addClass('hidden');
+    </script>
+  
+
+  <main role="main">
+    <div class="container">
+    <div class="row align-items-center pt-4">
+      <nav id="page-nav" class="hidden md:block col font-size-md">
+        <ol class="breadcrumbs">
+  
+    <li title="Scribd Help Center">
+      
+        <a href="/hc/en-us">Scribd Help Center</a>
+      
+    </li>
+  
+    <li title="General Information">
+      
+        <a href="/hc/en-us/categories/201388186-General-Information">General Information</a>
+      
+    </li>
+  
+    <li title="Terms and Policies">
+      
+        <a href="/hc/en-us/sections/202246126-Terms-and-Policies">Terms and Policies</a>
+      
+    </li>
+  
+</ol>
+
+      </nav>
+
+      <script type="text/javascript" src="/hc/theming_assets/01JVT72B4J1G7SAPA39F10YKY1"></script>
+
+  </div>
+</div>
+<div class="container" id="page-container">
+  <div class="row row-lg">
+    <aside class="hidden md:col-4 md:block md:flex-first z-fixed" data-element="table-of-contents" data-template="table-of-contents" data-spy="scroll">
+    </aside>
+    <article class="col md:col-8" itemscope itemtype="http://schema.org/Article">
+      <header class="pt-4 mb-5">
+        <div class="mb-2">
+          <a class="button button-link m-0 p-0 hover:text-gray-700 text-slate-500 font-semibold js-back md:hidden" title="Home" href="/hc/en-us">
+            <svg class="svg-icon fill-current mr-2" viewBox="0 0 423 323" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M423,162 C423,174 413,184 401,184 L76,184 L177,286 C186,294 186,308 177,317 C173,321 167,323 161,323 C156,323 150,321 146,317 L7,178 C-2,169 -2,155 7,146 L146,7 C155,-2 169,-2 177,7 C186,16 186,30 177,39 L76,140 L401,140 C413,140 423,150 423,162 Z"></path>
+          </svg>
+          Scribd Help Center
+          </a>
+        </div>
+        <h1 title="Global Privacy Policy" itemprop="name headline" class="w-full mb-4 mt-0 font-size-3xl md:font-size-4xl">
+          Global Privacy Policy
+          
+        </h1>
+        <div class="flex">
+          <div class="media">
+            
+              <div class="avatar">
+                
+                  <svg class="svg-icon absolute bottom-0 right-0 text-primary bg-white border border-white circle" xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12">
+                    <path fill="currentColor" d="M6 0C2.7 0 0 2.7 0 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm2.3 7H3.7c-.3 0-.4-.3-.3-.5C3.9 7.6 4.9 7 6 7s2.1.6 2.6 1.5c.1.2 0 .5-.3.5z"/>
+                  </svg>
+                
+                <img class="avatar-img" alt="Article author" src="https://support.scribd.com/system/photos/70797499/laughing_lion_-_Google_Search.jpg">
+              </div>
+            
+            <div class="media-body font-size-md align-self-center">
+              
+                
+                  Jason
+                
+              
+              <ul class="list-divider">
+                <li class="text-gray-600">
+                  
+                    Updated
+                    <time datetime="2026-05-29T19:55:41Z" title="2026-05-29T19:55:41Z" data-datetime="relative">May 29, 2026 19:55</time>
+                  
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="row md:hidden">
+        <div class="col-12 md:hidden">
+          <div class="hr md:hidden"></div>
+          <div class="md:hidden z-0 is-unstuck collapsible-nav align-middle" data-element="table-of-contents" data-template="table-of-contents">
+          </div>
+          <div class="hr mb-4 md:hidden"></div>
+        </div>
+      </div>
+      <section class="content" itemprop="articleBody">
+        <h2 id="h_01KCM3H9J8QG82W74WB7BP4WYA"><strong>1.0 About this Privacy Policy; Other Terms</strong></h2><p>Everand™, Scribd®, and Slideshare® are brands or products of Scribd, Inc. (“the Company”, “we,” “our,” or “us”). The following additional terms, policies, and rules are expressly incorporated herein and form a binding part of this Agreement as if reproduced fully herein:</p><ol type="1">
+<li data-list-item-id="ea6bef7dc39a0f3802c90f6278c0f4e00">Scribd, Inc. Global Terms of Use (<a href="https://support.scribd.com/hc/articles/210129326">https://support.scribd.com/hc/articles/210129326</a>)</li>
+<li data-list-item-id="e8328d296909d46e093127a3c5a634882">Everand Subscriber Agreement (<a href="https://support.scribd.com/hc/en-us/articles/210129486-Subscriber-Agreement">https://support.scribd.com/hc/en-us/articles/210129486-Subscriber-Agreement</a>)</li>
+<li data-list-item-id="ea87289d0f650f7f9da081716cc837ddf">Privacy Notice for <strong><span class="wysiwyg-underline">California Residents</span></strong> (<a href="https://support.scribd.com/hc/articles/360038024311-California-Privacy-Notice">https://support.scribd.com/hc/articles/360038024311-California-Privacy-Notice</a>)</li>
+</ol><p>This Global Privacy Policy (“Privacy Policy,” or “Policy”), and its associated notices and disclosures, are incorporated into, and are subject to, our Global Terms of Use. Unless otherwise defined in this Policy, all capitalized terms have the meaning given in the Global Terms of Use.</p><p>We provide this Policy to inform our visitors, users, and subscribers (“you,” or “your”) about our data practices, the kinds of information that we collect, and how we intend to use and disclose (collectively, “Process”) that information. </p><p>Your use of our sites, apps, and other online products and services that link to this Privacy Policy (collectively, the “Services”) and any information that you provide through the Services or through your interactions with us are subject at all times to this Privacy Policy and any regional disclosures relevant to the place where you access the Services.</p><p>BY ACCESSING, BROWSING, OR USING ANY OF THE SERVICES THAT WE PROVIDE, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS POLICY, AND AGREE TO THE PROCESSING DESCRIBED IN THIS POLICY. IF YOU CHOOSE TO MAKE ANY OF YOUR INFORMATION PUBLICLY AVAILABLE VIA THE SERVICES, YOU ACKNOWLEDGE THAT YOU DO SO AT YOUR OWN RISK.</p><h2 id="h_01KCM3H9JBTRD7ZP3WYGCWWXY3"><strong>2.0 Information We Collect and How We Use It</strong></h2><p>The information that we collect and how we use or disclose it depends on your relationship with us and any applicable laws and regulations. In this section, we describe some of the ways that we collect and use information and the legal bases for doing so. We endeavor to collect only the limited amount of information that is relevant for the purposes of Processing as described in this Policy and its related policies as noted in Section 1.0.</p><p><span style="color: #2F3941;">If you apply for a job with Scribd or otherwise engage with us in connection with employment (including as an employee, contractor, or other personnel), the personal information we process in that context is subject to our Employee and Applicant Privacy Policy, which is available </span><a href="https://support.scribd.com/hc/en-us/articles/49754646187284-Employee-and-Applicant-Privacy-Policy-and-Notice-at-Collection"><span style="color: #2F3941;"><span class="wysiwyg-underline">here</span></span></a><span style="color: #2F3941;">.</span></p><h3 id="h_01KCM3H9JC66RCD2P270VWE3W6"><strong>2.1 How We Collect Information</strong></h3><p>The data that we collect from or about you depends on how you use the Services or interact with us.  Some of the ways that we Process your personal information (“Personal Information”) may include when you:</p><ul>
+<li data-list-item-id="e6ef99e015c857213e547d764ddaefa87">Register for an account; register for or attend an event;</li>
+<li data-list-item-id="e3094a041476a07c2e49eed7eed85af5f">Subscribe to or purchase a product;</li>
+<li data-list-item-id="e5f7075ee824f1a056b94b50a4e7f08c4">Participate in a contest, promotion, or survey;</li>
+<li data-list-item-id="e1048f17b6f86cafe467c9c311c00f94b">Sign up to receive information, including marketing, from us;</li>
+<li data-list-item-id="e4358f28d2b60be5ee9839627aa276a42">Use our Services, including submitting content or feedback to us or otherwise contact Us; or</li>
+<li data-list-item-id="eb89327a7f759466beebe0cddf9b6ca0a">Visit or engage with our Sites, Apps, Services.</li>
+</ul><h3 id="h_01KCM3H9JEXSVNMW7D6P7MMNEH"><strong>2.2 Information You Provide to Us </strong></h3><p>We collect the following information that you provide to us directly:</p><ul>
+<li data-list-item-id="eb1d4b6446ae860d9bffed86dfbc28cef">Contact information such as your name, e-mail address, street address, and phone number;</li>
+<li data-list-item-id="e62bbe4249ac4aa4c02331d9b770edb55">Payment information such as your credit card number (processed by our third-party payment processor) and expiration date, where appropriate to process a financial transaction that you have requested;</li>
+<li data-list-item-id="e0af9216fd692dc8e1cd5114375a00116">Transaction information such as your order (e.g., subscription) information;</li>
+<li data-list-item-id="ef957b8e02fc2910d0a0ffe74a0d3b8f6">User-Generated Content such as documents, comments, images, photos, videos, or other content you provide to the Services;</li>
+<li data-list-item-id="e39c5f4e6ca4697c020732edc287ec096">Profile Information if you choose to provide it, such as a profile picture, professional information (like job title and company), general location (like city and state);</li>
+<li data-list-item-id="e6dd620def470179141b63737b64ee53c">Engagement with Interactive Content on the Service such as responses to questions, surveys; searches for recommendations; and clicks on such interactive content; and</li>
+<li data-list-item-id="eb5fdf342c9265224f4037e76bd2427ae">Contents of communications with us, such as comments, requests, feedback and questions you submit through customer service interactions with us and recordings of calls when you call customer service.</li>
+</ul><p>We may use the information you provide, along with the information we collect automatically and from third parties, to make inferences about you, including your preferences and interests. </p><h3 id="h_01KCM3H9JGTW1YMNNMQ6694K2C"><strong>2.3 Information We Collect Automatically</strong></h3><p>We and service providers on our behalf automatically collect certain information about your use of the Services or your device. For example, we collect:</p><ul>
+<li data-list-item-id="ea7453ec7e4b5985a916801ca20e0222e">Device information such as hardware model, IP address, device identifiers, operating system, browser type and settings (like language and available font settings) and settings of the device you use to access the Services.</li>
+<li data-list-item-id="e689f58212458eeccba313d22dddb1c57">Usage information, including, but not limited to, your use of the Services, navigational data, the name of the domain and host from which you access the Internet, the date and time you access the Services, customer service interactions, and how you interact with our emails.</li>
+<li data-list-item-id="e4f10dd7e3425e11bb0483e3fb8aaaf9d">Location information such as general location derived from your computer’s IP address.</li>
+</ul><p>We and our service providers use cookies, web beacons, and other tracking technologies to collect such information.</p><h3 id="h_01KCM3H9JHHJG1SPE5W6DCAFDR"><strong>2.4 Information from Third Party Sources </strong></h3><p><a name="_heading=h.10qg088k7zxt"></a>We may process supplemental information about you from third parties in order to verify the information that you have provided to us and to enhance our ability to provide you with customer support and information about our businesses, products and Services. We may also occasionally offer optional service features by means of a third party application or service. We may receive information about you from these third parties if you choose to accept such offers. We may receive information about you from:</p><ul>
+<li data-list-item-id="e0fbba8a19162c7ef462408fd4a64e5a3">Publicly and commercially available data sources, as permitted by law, including contact information, demographic data, and interests.</li>
+<li data-list-item-id="e264e9b8cdbc8c6a4639d376a652c4d26">Social media services, if you interact with us through a social media service or log in using social media credentials. Depending on your social media settings, we may have access to your information from that service, such as your name, email address, friend or followers/following list, profile and demographic information, current city, comments about or reactions to our Services, and the people/sites you follow.</li>
+<li data-list-item-id="efcff5307833d6fb67938674320cd3193">Data analytics providers and advertising partners, including usage information, demographic information, information about your activity and transactions on other websites or platforms or with other companies, and inferred interests about You.</li>
+</ul><h3 id="h_01KCM3H9JJ7TM4FGWPCMMSGCEZ"><strong>2.5 How We Use Your Information</strong></h3><p>Depending on how you use the Services, we and our service providers may use your information as follows:</p><ul>
+<li data-list-item-id="e710fe5b217cd4250049a0af0afa1426a">Provide Information and Services that You Request. We may use the information about you to provide you with Services or information that you request (such as information about a product or service) including to: (a) manage your account information and settings; (b) process payments; (c) ; (c) verify your identity (d) provide access to certain areas and features; and (e) permit you to register for, and participate in, online and in-person events.  </li>
+<li data-list-item-id="ecb7c2c1fa809434058933361d8156144">Improve and Personalize the Services.<strong>  </strong>We may use the information about you to improve and personalize the Services, including, without limitation, to: (a) measure and analyze your interest in our Sites, Apps, programs or Services; (b) perform internal quality control; and (c) personalize the Services for you. </li>
+<li data-list-item-id="ed192f69d8dcedbca6b9ab126c83e34c2">Communicate with you.<strong>  </strong>We may use the information about you to communicate with you, including to (a) respond to your questions, comments and requests (e.g. customer support requests and legal requests) and (b) send you communications regarding the Sites, Apps, programs, Services, your Account(s) and/or Subscription, or any changes to any company policy, terms, or agreement.</li>
+<li data-list-item-id="e56ac80e62c2cfd1a844cdfff4b5e078f">Market and Advertise Products and Services. We may use the information about you to provide you with materials about offers, products, and our Services. We may provide you with these materials by notification via the Services, postal mail, email, or other electronic notification as permitted by applicable laws. We may work with third parties to provide you with personalized ads on the Services through the automatic collection of information (e.g. cookies) or to advertise the Services on other sites and services. You can opt out of marketing communications at any time by clicking the unsubscribe link in any commercial communication from us. Please note that, even if you opt out of marketing communications, we may continue to send you transactional communications related to your account or use of the Services.</li>
+<li data-list-item-id="e066072a0df034f9d7e68411c9ccc8c95">Research and Development. We may use your information to create de-identified, anonymous, or pseudonymous information that we may use, alone or in the aggregate, along with information obtained from other sources, for any purpose, including to help us to optimally deliver our existing products and services or develop new products, processes and services.</li>
+<li data-list-item-id="e0cb1745c1d0fe814ffd2b87d82f5472c">Surveys. We may occasionally engage third parties to conduct voluntary surveys on our behalf. Responses may be utilized to determine the effectiveness of the Services, the Company's communications, advertising campaigns, and/or promotional activities. If you participate in a survey, the information given will be used along with that of other study participants. The information collected will be used to help us to learn more about your needs and the quality of the products and services that we provide to you. We may occasionally disclose de-identified and aggregated data to third parties for research and analysis purposes.</li>
+<li data-list-item-id="eabd46f160cbd68f36e1baccaa352f159">Sharing Content with Friends or Colleagues. We may offer various tools and functionality that will allow you to forward or share certain content.</li>
+<li data-list-item-id="ed6073c1372265b60476b1681ae78c8c9">To Protect the Rights of the Services and Others and Comply with Law.<strong> </strong>We use your information if we, in good faith, believe it is necessary or appropriate to secure, protect, enforce, or defend the legal rights, privacy, safety, or property of the Services, its employees or agents, or other users, and to comply with applicable law and legal process. This includes using your information in order to prevent fraud and to protect the accuracy and integrity of financial transactions made throughout the Services and enforcing our Global Terms of Use, this Policy, and other related policies.</li>
+<li data-list-item-id="e154bb4ccc6e3d4edeb94de501f438684">With Consent. We use your information with your consent or at your direction.</li>
+<li data-list-item-id="ef9c7c89f7bc33d09c3fb19c2ecd9e363">Deidentified and Aggregated Data. We may use your information and other information about you to create de-identified and aggregated data. Our use and disclosure of de-identified information is not subject to any restrictions under this Privacy Policy, and we may use de-identified data for research, analysis, analytics, and any other legally permissible purposes.</li>
+</ul><h2 id="h_01KCM3H9JPPZZDYV1PQFG5Z3XM"><strong>3.0 How We Disclose Your Information</strong></h2><p><span style="background-color: white; color: #16171B;">We do not sell, share, or otherwise disclose Personal Information about you, except when you allow us to do so, or as otherwise described in this Privacy Policy. We endeavor to require third parties to which we disclose Personal Information to protect it using substantially similar standards to those required by us (and at least the same level of privacy protection as is required by applicable laws), and to notify us if they make a determination they can no longer meet this obligation.  </span></p><p>We may disclose your information in the following ways:</p><h3 id="h_01KCM3H9JQGR9Y24GV115VT6Y8">3.1 Service Providers</h3><p style="background-color: white;"><span style="color: black;">We may disclose Information to vendors that perform certain services on our behalf including (i) provision of information technology (IT) and related services; (ii) provision of information and services you have requested; (iii) payment processing; (iv) fraud prevention; and (v) customer service activities. Payment information will be used and shared only to process your order and may be stored by a third party payment processor for purposes of fraud prevention and future orders.</span></p><h3 id="h_01KCM3H9JQHKJ7Q88FPFMM1EPQ">3.2 Third Party Features</h3><p style="background-color: white;"><span style="color: #16171B;">We may offer features that allow you to access or disclose content with third party social media websites and apps, discussion boards, blogs, wikis, and other third party services. Please be aware that any information you provide to a third party will be subject to that third party’s privacy policy.</span></p><p style="background-color: white;"><span style="color: #16171B;">If you use a third party resource through one of our Services, we may collect Personal Information so that we can provide you with access to Services offered either by us or a third party; and we may be able to access any information that you make public through the Third Party resource (such as your username, comments, posts and contacts) and any other information that you permit us to access. Please carefully consider what Personal Information you share with others when using third party resources.</span></p><h3 id="h_01KCM3H9JREN1W5VXY1G14ADMW">
+<span style="color: #000514;">3.3 </span>Affiliates.</h3><p><span style="color: black;">We may disclose information to </span>o<span style="color: black;">ur affiliates for </span>o<span style="color: black;">ur and </span>o<span style="color: black;">ur affiliates’ internal business purposes, or to provide </span>y<span style="color: black;">ou with a product or service that </span>y<span style="color: black;">ou have requested.</span></p><h3 id="h_01KCM3H9JS0RE2YPRNDDSQ670B">3.4 Business Partners</h3><p style="background-color: white;"><span style="color: #16171B;">We may disclose information with our business partners to provide you with a product or service that you have requested. We may also provide Personal Information to business partners with whom we may jointly offer products or services, or whose products or services we believe may be of interest to You.</span></p><h3 id="h_01KCM3H9JTQTHCHS4VN2T3Q82F">3.5 Advertising Partners</h3><p>We may disclose or make available information to<strong> </strong>third parties to provide ads (including targeted ads) and personalized content, or to measure and analyze ad performance, on our Services or other websites or platforms.</p><h3 id="h_01KCT4TWK00GP4BW7NXBW5TQW9">3.6 For Our Protection and the Protection of Others</h3><p style="background-color: white;"><span style="color: #16171B;">We may disclose information about you: (i) if we are required to do so by law, court order, or another sufficient legal process; (ii) in response to lawful requests by public authorities, including to meet national security or law enforcement requirements; (iii) under the discovery process in litigation; (iv) to enforce our policies or contracts or to protect our Services, us, our users, or others; (v) to collect amounts owed to us; (vi) when we believe disclosure is necessary or appropriate to prevent physical harm or financial loss or in connection with an investigation or prosecution of suspected or actual illegal activity; or (vii) if we, in good faith, believe that disclosure is otherwise necessary or advisable.</span></p><h3 id="h_01KCM3H9JT0H485RE6QGB3X8EG">3.7 In Connection with Business Transactions</h3><p style="background-color: white;"><span style="color: #16171B;">We reserve the right to disclose or transfer your information in the event of a proposed or actual purchase, any reorganization, sale, lease, merger, joint venture, assignment, amalgamation or any other type of acquisition, disposal or financing of all or any portion of our business or of any of the business assets or shares (including in connection with any bankruptcy or similar proceeding).</span></p><h3 id="h_01KCM3H9JVCG6F5DVZXK9JKEMZ"><span style="color: black;">3.8 With Your Consent or At Your Direction</span></h3><p style="background-color: white;"><span style="color: black;">We also disclose information about you to third </span><span style="color: #16171B;">parties</span><span style="color: black;"> whenever you consent to or direct such sharing.</span></p><h3 id="h_01KCM3H9JWAV6FSJMA9NHP65MX">3.9 Cross-border Data Transfers</h3><p style="background-color: white;"><span style="color: #16171B;">Personal Information that we send or collect may be stored anywhere in the world in compliance with applicable law, including but not limited to our servers, the servers of our affiliates, and the servers of our service providers in the United States and European Union. By providing information to us, you consent to the storage of your Personal Information in these locations.</span><span style="color: black;"></span></p><h2 id="h_01KCM3H9JWF7ABZ4VNHXD9WHGW"><strong>4.0 Online Analytics Information and Advertising</strong></h2><p>We, as well as service providers and third parties that provide content, advertising, or other functionality on our Sites, Apps, and Services, may use cookies, pixel tags, local storage, and other technologies (“Technologies”) to automatically collect information about you when you access the Services by means of a computer, tablet, mobile phone, or other device (“Device”).</p><ul>
+<li data-list-item-id="e8ccba35e4bbf9699c0af37355d0d38e2">Cookies are small text files placed in your Device’s browser to store your preferences. For information on how to accept or reject cookies (including third-party cookies), please click the ‘<strong>Your Privacy Choices</strong>’ link (or ‘<strong>Cookie Preferences</strong>’ in the EU) in the footer of the Sites. If you do not allow our Service’s cookies, then the Sites may not work properly.</li>
+<li data-list-item-id="eb8d91ac91e44982f776577708d1b221e">A pixel tag (or web beacon) is a piece of code embedded on a Site page that collects information about your engagement on that page.</li>
+<li data-list-item-id="e85895ed2d8ee00fa95c6bb78f8eeec54">We use Google Analytics to collect information regarding visitor behavior and visitor demographics on some of our Services. These data are not tied to any information. For more information about Google Analytics, please visit: https://www.google.com/policies/privacy/partners/. You can opt out of Google’s collection and Processing of data generated by your use of the Services at: http://tools.google.com/dlpage/gaoptout.</li>
+</ul><p>Our uses of such Technologies fall into the following general categories:</p><ul>
+<li data-list-item-id="ee5e379d8901b5e5b9acb6a8f00e6f950">Operationally Necessary. We may use certain Technologies that are necessary to operate our Services; that are required to identify irregular Service behavior, prevent fraudulent activity and improve security; or that allow you to access and make use of our Services.</li>
+<li data-list-item-id="eb860067ebbdc7af77bcdf6ac086579fa">Performance Related. We may use certain Technologies to assess the performance of our Services, including as part of our analysis of the way you use the Sites and Apps, to determine if you have interacted with our messaging, to determine whether you have viewed an item or link, or to improve our Services.</li>
+<li data-list-item-id="e73a6f26fc4727cd9202426b5192aa17a">Functionality Related. We may use certain Technologies to offer you enhanced functionality when accessing or using our Services. This may include identifying you when you sign into our sites or keeping track of your specific preferences, interests, or past items viewed so that we may enhance the presentation of content to you on our sites.</li>
+<li data-list-item-id="ea01f9bd9b3bcf7b418bf722c4fb942cf">Advertising or Targeting Related. We may use first-party or third-party cookies and web beacons to deliver content, including ads relevant to your interests, on our Services or on third party sites. This includes using Technologies to understand the usefulness to you of the advertisements and content that has been delivered to you, such as whether you have clicked on an advertisement.</li>
+</ul><p>If you would like to opt-out of certain of these Technologies, you may do so by blocking, deleting, or disabling them as your browser or device permits, though this may impact the Services. Visit<a href="https://optout.networkadvertising.org/"> https://optout.networkadvertising.org/</a> to learn more about opting out of interest-based advertising. For additional ways to opt-out of targeted advertising activities under applicable law, see the “Your Rights and Choices” section below.</p><p><a name="_heading=h.icgtj3n9gbbm"></a>Please note that these opt-outs apply per browser and per device, so you will have to opt out for each device—and each browser on each device—through which you access our Services.</p><h2 id="h_01KCM3H9JZCT6GGRFGW7YBFZ90"><strong>5.0 Your Rights &amp; Choices</strong></h2><h3 id="h_01KCM3H9JZVV88DEZTX0HG2QWM"><strong>5.1 Information Rights and Choices</strong></h3><p>We provide you with the ability to exercise certain controls and choices regarding our collection, use, and disclosure of your information. Depending on the laws in your jurisdiction of residence (i.e., California, Colorado, Connecticut, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, Virginia, other US states with applicable privacy laws, and the EEA, UK and Switzerland), you may:<span style="color: red;"></span></p><ul>
+<li data-list-item-id="e01fa4290120d9b178079d76227fe6862">request access to your information including in a portable format (where technically feasible)<ul><li data-list-item-id="e6f61f292855c6f1eeb4f7a1af4b51c72">For Minnesota, Oregon, and Rhode Island residents, this will include a list of the specific third parties, other than natural persons, to which we have disclosed personal information.</li></ul>
+</li>
+<li data-list-item-id="ec9416006353a19bc8988f79ad98b023c">ask that we correct, amend, or delete your information</li>
+<li data-list-item-id="e09b6aa3c05701c98552eecdaba2122c8">restrict or object to the processing of certain of your information</li>
+</ul><p>California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah and Virginia residents also have opt out rights described below in Section 5.2.</p><p>California and Oregon residents can also request information about the categories of personal information we collect, disclose or sell or share about You. California residents can request the categories of sources of such information; the business or commercial purpose for collecting or selling or sharing your personal information; and the categories of third parties to whom we disclose personal information. Such information is also set forth in this Privacy Policy. Residents of certain other countries may be able request one or more of the above under applicable law.</p><p>Such requests will be processed in line with your local laws to the extent possible by this Privacy Policy.</p><p>If you would like information regarding your rights or would like to make a request (or if you are an authorized agent acting in accordance with applicable law), use <a href="https://support.scribd.com/hc/en-us/articles/360038016931-Privacy-Rights-Request-Form">this</a> form.</p><p>Your rights and our responses will vary based on your state or country of residency. You may be located in a jurisdiction where we are not obligated, or are unable, to fulfill a request. In such a case, your request may not be fulfilled. Certain information may be exempt from such requests under applicable law such as information we retain for legal compliance and to secure our Services. We may need certain information in order to provide the Services to you; if you ask us to delete it, you may no longer be able to use the Services.  To protect your privacy, we will take commercially reasonable steps to verify your identity before granting access to or making any changes to your information.  If you are an authorized agent submitting a request on behalf of another individual, we may require proof of your written authorization before processing the request.</p><p><span style="background-color: white;">Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, and Virginia residents may appeal the denial of a request by emailing us at privacy@scribd.com and including “Rights Appeal” in the subject line.</span></p><h3 id="h_01KCM3H9K2XAGXY03CVKBPDBNS"><strong>5.2 Sale/Targeted Advertising Opt Out Rights</strong></h3><p>If you are a California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah or Virginia resident, you may opt out of the sale of your information or processing of your information for targeted advertising, under applicable law.</p><p><span style="color: #161015;">We may use internally-generated and third-party analytics and advertising tools that result in the disclosure of your information, including device information and identifiers, such as IP address, and unique advertising identifiers and cookies; browsing history or app usage; identifiers (which may be hashed) such as contact information, and general location information, such as city, to </span>our third-party partners and that are subject to this opt out right. You can opt out of both activities by clicking “<span style="background-color: white; color: #292A2E;">Your Privacy Choices” (or “</span>Cookie Preferences” in the EU) on our website.</p><p>Note, if you use a cookie blocker such as Ghostery, it may block visibility of this tool or link, including in your web footer. Even if you opt out, you will still see advertising, it just may be less relevant to you.<span style="color: red;"> </span>If you have enabled a legally recognized browser-based opt out preference signal (such as Global Privacy Control) on your browser, we recognize such preference in accordance and to the extent required by applicable law.</p><h3 id="h_01KCM3H9K3WPJP6WA33PMNE59S"><strong>5.3 Marketing Choices</strong></h3><p>You can opt out of receiving marketing emails from us through the “Unsubscribe” link in marketing emails. Please note that your request will take some time to process, in accordance with applicable law. We may continue to send you transaction emails, including about your purchases and transactions, or support-related emails related to pending or previous support tickets that you have filed with us. You will not be able to opt-out of emails that we are legally required to send you.</p><h2 id="h_01KCM3H9K3PQX9MBY4075ZC8HX"><strong>6.0 Information Regarding Certain Users</strong></h2><h3 id="h_01KCM3H9K3MRGW63T0D3TTBYCZ">
+<strong>6.1 Information Regarding Minors</strong><span style="color: red;"></span>
+</h3><p>The Services are not intended for individuals under the age of 18 (“Minors”). Minors may not access or use the Services at any time or in any manner.</p><p style="background-color: white;"><span style="color: black;">If you are a parent or legal guardian of a Minor who you believe has accessed or subscribed to the Services, you may contact us at </span><span style="color: #0078D7;">privacy@scribd.com</span><span style="color: black;"><strong> </strong>to request termination of the Minor’s account and deletion of their information.  Please note we may require certain information from you to authenticate you and your request as permitted or required by applicable law.</span></p><h3 id="h_01KCM3H9K4AZBESMWSFBTMR8BQ">
+<strong>6.2 EEA, UK and </strong><span style="background-color: white;"><strong>Switzerland </strong></span><strong>Residents</strong>
+</h3><p><strong>Data Controller</strong></p><p><span style="background-color: white;">Under applicable law in the EEA, UK, and Switzerland, </span>Scribd, Inc. located at 460 Bryant St #300, San Francisco, CA 94107, United States of America is considered the “data controller” of the personal information we handle under this Policy.  <span style="background-color: white;">In other words, </span>Scribd, Inc.<span style="background-color: white;"> is responsible for deciding how to collect, use and disclose this information, subject to applicable law. Scribd Netherlands BV is our EU representative. </span>Persons in the EU/EEA+ should contact Scribd Netherlands BV by email at <a href="mailto:privacy@scribd.com">privacy@scribd.com</a> or by postal mail at Schiphol Boulevard 195, 1118 BG Schiphol, The Netherlands (Attention: Data Privacy). Persons outside the EU should refer to the contact information in the <a href="https://support.scribd.com/hc/en-us/articles/210129366-Global-Privacy-Policy?_gl=1%2A6ul5wm%2A_gcl_au%2AMTg5NzY5MzY1NC4xNzQyNTE3Mjg3">Global Privacy Policy</a>.</p><p><a name="_heading=h.uf2yeuknjp8q"></a><strong>Legal Bases for Processing</strong></p><p>Legal bases for our processing of your information are:</p><ol type="1">
+<li data-list-item-id="e6f1f5978e3602c4819f613a97e9336ed">The performance of a contract, where we have entered into a contract with you and need to process your information in order to fulfill our contractual obligations to you,</li>
+<li data-list-item-id="ea679c759db813ace128be2637e8bce9e">Our legitimate interests for the transfer of your information which are the following:<ol type="a">
+<li data-list-item-id="edadd8fea8480d82c6ad7b32ee930752a">for internal administrative and support purposes;</li>
+<li data-list-item-id="e03b598d7f5b7f36a1448b1b1cae4a7cc">compliance with a legal obligation to which Scribd is subject, for example if we are required by law to disclose information to law enforcement agencies or governmental authorities;</li>
+<li data-list-item-id="e117b94361be0824d8e04b8043a2f0ebe">for the purposes of exercising our legal rights or defending legal claims;</li>
+<li data-list-item-id="e50767dcc5335946a0a1ed8b0dd088de5">our legitimate interests for the transfer of your information in connection with a transfer of all or part of our organization or assets; and</li>
+<li data-list-item-id="eae7be24909bc7f942295fcca9198220d">our legitimate interests to protect and defend the rights or property of the Company or third parties, including enforcing Policies, Terms, and Guidelines and in an emergency including to protect the safety of our employees or any person which are the following: to protect the property, rights, and safety of any person and to prevent fraud.</li>
+</ol>
+</li>
+</ol><p><a name="_heading=h.8n0xd3whg0cn"></a><strong>Recipients in Third Countries</strong></p><p>The information that we collect or receive about you may be transferred to, and processed by, recipients that are located inside or outside the EEA+ and which are not recognized from an EEA+ law perspective as providing for an adequate level of data protection. When interacting with our site or contacting us, you transfer information to the United States, and Scribd may then transfer your information back to the originating country. To the extent your information is transferred to countries that do not provide for an adequate level of data protection from an EU, Swiss or UK law perspective, we will base the respective transfer on appropriate safeguards, such as standard data protection contractual clauses adopted by the European Commission. You can ask for a copy of such appropriate safeguards by contacting us as set out in the contact section.</p><p><a name="_heading=h.f58opo3yziv3"></a><strong>Data Subject Rights</strong></p><p>Please see the “Your Rights &amp; Choices” section for information about the rights you have with respect to your information under applicable law and how to exercise them.</p><p>In addition to those rights, you also have the right to lodge a complaint with a supervisory authority in your country.</p><p>If you have declared your consent for any information processing activities, you can withdraw this consent at any time with future effect. Such a withdrawal will not affect the lawfulness of the processing prior to the consent withdrawal. You can exercise your rights by contacting us as described in Section 1.0.</p><h2 id="h_01KCM3H9K9NDNAHZS0GB2HWCPF"><strong>7.0 Data Retention and Security</strong></h2><p>We retain the information that we receive as described in this Privacy Policy for as long as we determine is necessary to fulfill the purpose(s) for which it was collected, provide our products and services, resolve disputes, establish legal defenses, conduct audits, pursue legitimate business purposes, enforce our agreements, and comply with applicable laws. Our retention is based upon the amount, nature and sensitivity of the information, the potential risk of harm from unauthorized use or disclosure of the information, the purposes for which we process the information, applicable legal requirements, and our legitimate interests. The purposes for which we process information may dictate different retention periods for the same types of information.</p><p>While we employ various technical and organizational measures to protect your information, we cannot ensure or warrant the security of any information you transmit to Us, and you do so at your own risk. You are responsible for maintaining the secrecy of your own passwords. If you have reason to believe that your passwords and/or information are no longer secure, please promptly notify us at privacy@scribd.com.</p><h2 id="h_01KCM3H9K9ZA8B5WABTY4YMM60"><strong>8.0 Links to Third-Party Websites</strong></h2><p>Our Services may contain links to third party websites that are not owned or operated by us. Third party websites and privacy practices may differ from ours, and we do not endorse or make any representations about third party websites. Any information you choose to give to unrelated third parties is not covered by this Privacy Policy. We encourage you to review all relevant privacy policies before providing your information to anyone. Some third parties may choose to disclose their users’ information with us; that sharing is governed by that company’s privacy policy, not this Privacy Policy.</p><h2 id="h_01KCM3H9K937RGC2D5FT2585M6"><strong>9.0 Changes to the Privacy Policy</strong></h2><p>We may occasionally update this Privacy Policy. If we make material changes to this Privacy Policy, we will notify as otherwise required by applicable laws. We encourage you to review this Privacy Policy periodically to remain informed as to how we are using and protecting your information and to keep yourself aware of any changes to the Policy. Changes to this Privacy Policy will take effect immediately after we post it to<a href="https://scribd.com/privacy"> https://scribd.com/privacy</a>. You can determine when we last changed this Policy by referring to the “Updated” legend above. </p><h2 id="h_01KCM3H9KARZ8JNJWPTDHT1111"><strong>10.0 How to Contact Us</strong></h2><p>We welcome your questions about our Privacy Policy and practices by email at <a href="mailto:privacy@scribd.com">privacy@scribd.com</a>. If you are a citizen of the EU, UK, or Switzerland, please contact us at the contact information provided above. If any request remains unresolved, you may contact the national data protection authority for your EU Member State.</p>
+        
+      </section>
+      
+      
+      
+<div class="my-4 text-center md:text-left border-top border-bottom">
+  <h4 class="font-medium inline-flex">
+    Was this article helpful?
+  </h4>
+  <div class="mb-4 inline-flex" role="group">
+    <button type="button" class="button button-outline-primary my-0 mx-3 py-0 px-4" data-auth-action="signin" aria-label="This article was helpful" aria-pressed="false">
+      <svg class="svg-icon fill-current" viewBox="0 0 507 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M330,512 C261,512 152,489 126,470 C119,466 116,459 116,452 L116,234 C116,228 119,221 124,217 C126,216 165,185 206,163 C256,135 291,96 300,71 C310,41 324,0 370,0 C392,0 409,12 419,33 C438,77 418,137 384,184 C407,189 434,196 451,201 C482,211 502,233 506,260 C510,288 496,317 467,338 C445,397 408,489 380,504 C370,510 352,512 330,512 Z M161,439 C203,456 333,475 358,465 C370,454 403,379 426,316 C428,312 431,308 434,305 C453,293 462,278 461,266 C459,256 450,248 437,243 C409,234 340,219 339,219 C331,218 325,212 322,204 C319,196 321,188 327,183 C377,129 386,73 377,51 C374,45 372,45 370,45 C359,45 354,52 342,86 C329,125 282,171 227,201 C201,216 174,235 161,245 L161,439 Z M73,454 L73,232 C73,211 57,195 37,195 C16,195 0,211 0,232 L0,454 C0,474 16,490 36,490 C56,490 73,474 73,454 Z"></path>
+      </svg>
+    </button>
+    <button type="button" class="button button-outline-primary my-0 mx-3 py-0 px-4" data-auth-action="signin" aria-label="This article was not helpful" aria-pressed="false">
+      <svg class="svg-icon fill-current" viewBox="0 0 507 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M177,0 C247,0 355,23 382,42 C388,46 391,53 391,60 L391,278 C391,284 388,291 383,295 C381,296 342,327 302,349 C251,377 216,416 208,441 C197,471 183,512 137,512 C115,512 98,500 88,479 C69,435 89,375 123,328 C100,323 73,316 56,311 C26,301 5,279 1,252 C-3,224 11,195 41,174 C63,116 100,23 127,8 C137,2 155,0 177,0 Z M346,73 C304,56 174,37 149,47 C137,58 104,133 81,196 C79,200 76,204 73,207 C54,219 45,234 46,246 C48,256 57,264 70,269 C98,278 167,293 168,293 C176,294 182,300 185,308 C188,316 186,324 180,329 C130,383 121,439 130,461 C133,467 135,467 137,467 C148,467 153,460 165,426 C178,387 225,341 280,311 C306,296 333,277 346,267 L346,73 Z M434,58 L434,280 C434,300 450,316 470,316 C491,316 507,300 507,280 L507,58 C507,38 491,22 470,22 C450,22 434,38 434,58 Z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+      
+      
+        <div class="p-0 hidden md:block mb-4">
+          <div data-recent-articles></div>
+        </div>
+      
+    </article>
+  </div>
+</div>
+
+<script type="text/javascript" src="/hc/theming_assets/01J0KGP9GHWWZ97AQHDPY01FPM"></script>
+
+<script type="text/javascript">
+  document.documentElement.classList.add('article-page');
+  document.documentElement.classList.add('article-' + 210129366);
+</script>
+
+<script type="text/javascript" defer src="/hc/theming_assets/01J0KGP8MZNJGMZS7RSCCS3RYM"></script>
+
+
+<script type="text/javascript">
+  ready(function() {
+    var backLink = document.querySelector('.js-back');
+    if (backLink) {
+      backLink.href = '/hc/en-us/sections/202246126-Terms-and-Policies';
+      backLink.innerHTML = (
+          '<svg class="svg-icon fill-current mr-2" viewBox="0 0 423 323" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n' +
+          '  <path d="M423,162 C423,174 413,184 401,184 L76,184 L177,286 C186,294 186,308 177,317 C173,321 167,323 161,323 C156,323 150,321 146,317 L7,178 C-2,169 -2,155 7,146 L146,7 C155,-2 169,-2 177,7 C186,16 186,30 177,39 L76,140 L401,140 C413,140 423,150 423,162 Z"></path>\n' +
+          '</svg>' + 'Terms and Policies'
+      );
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  ready(function() {
+  $("section.recent-articles ul li a").prepend("<img class='pr-2' src='/hc/theming_assets/01JZ630Y7G9N290VZ534FJQMNK'>")
+  $("section.recent-articles ul li a").addClass("text-base flex")
+  $("section.recent-articles ul li").addClass("line-height-1 py-1")
+  });
+</script>
+
+  </main>
+
+  <footer class="bg-primary" id="footer">
+  <nav class="navbar-dark" aria-label="footer">
+    <div class="container px-5">
+      <div class="row my-5">
+        <div class="col my-5">
+          <p class="text-white font-size-xs font-semibold tracking-tight block m-0 uppercase">
+            Help Center For
+          </p>
+          <div class="block mb-2">
+            <a href="https://www.everand.com" target="_blank" class="text-white hover:opacity-75 hover:no-underline">
+              <img class="mr-1" src="/hc/theming_assets/01JZ630ZPZQ5ATCJ99P8ZQDGD0" alt="Everand logo"
+                 height="18px">
+            </a>
+            <a href="https://www.scribd.com" target="_blank" class="text-white hover:opacity-75 hover:no-underline">
+              <img class="mx-1" src="/hc/theming_assets/01JN22SEE9DRPAYSNKJSQE4ABE" alt="Scribd logo"
+                width="79" height="20">
+            </a>
+            <a href="https://www.slideshare.net" target="_blank" class="text-white hover:opacity-75 hover:no-underline">
+              <img class="mx-1" src="/hc/theming_assets/01K5VQBV849MXXNWSZ2XWMQFXZ" alt="SlideShare logo"
+                 height="19px">
+            </a>
+          </div>
+          <div class="text-white font-size-xs mt-5 inline-block">
+            <a href="http://scribd.com/terms" class="text-white hover:text-gray-300 hover:no-underline">
+              Terms
+            </a> &nbsp;&nbsp;•&nbsp;&nbsp; <a href="https://www.scribd.com/privacy"
+              class="text-white font-size-xs hover:text-gray-300 hover:no-underline">
+              Privacy
+            </a> &nbsp;&nbsp;•&nbsp;&nbsp; <div class="dropdown p-0 inline-flex text-white">
+              <button class="not-a-button dropdown-toggle font-size-xs font-semibold hover:text-gray-300"
+                aria-haspopup="true">
+                Language:&nbsp;&nbsp;English (United States)
+                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 12 12">
+                  <path fill="none" stroke="currentColor" stroke-linecap="round"
+                    d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5" />
+                </svg>
+              </button>
+              <div class="dropdown-menu" role="menu" aria-expanded="false">
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/de?return_to=%2Fhc%2Fde%2Farticles%2F210129366-Globale-Datenschutzrichtlinie-von-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Deutsch
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/el?return_to=%2Fhc%2Fel%2Farticles%2F210129366-Scribd-Inc-%25CE%25A0%25CE%25B1%25CE%25B3%25CE%25BA%25CF%258C%25CF%2583%25CE%25BC%25CE%25B9%25CE%25B1-%25CE%25A0%25CE%25BF%25CE%25BB%25CE%25B9%25CF%2584%25CE%25B9%25CE%25BA%25CE%25AE-%25CE%2591%25CF%2580%25CE%25BF%25CF%2581%25CF%2581%25CE%25AE%25CF%2584%25CE%25BF%25CF%2585"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Ελληνικά
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/es?return_to=%2Fhc%2Fes%2Farticles%2F210129366-Pol%25C3%25ADtica-de-privacidad-global-de-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Español
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/fr?return_to=%2Fhc%2Ffr%2Farticles%2F210129366-Scribd-Inc-Politique-de-confidentialit%25C3%25A9-globale"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Français
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/id?return_to=%2Fhc%2Fid%2Farticles%2F210129366-Kebijakan-Privasi-Global-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Bahasa Indonesia
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/it?return_to=%2Fhc%2Fit%2Farticles%2F210129366-Informativa-sulla-privacy-globale-di-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Italiano
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/nl?return_to=%2Fhc%2Fnl%2Farticles%2F210129366-Scribd-Inc-Wereldwijd-privacybeleid"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Nederlands
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/pl?return_to=%2Fhc%2Fpl%2Farticles%2F210129366-Globalna-polityka-prywatno%25C5%259Bci-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Polski
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/pt-br?return_to=%2Fhc%2Fpt-br%2Farticles%2F210129366-Pol%25C3%25ADtica-de-Privacidade-Global-do-Scribd-Inc"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Português do Brasil
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/ro?return_to=%2Fhc%2Fro%2Farticles%2F210129366-Scribd-Inc-Politica-global%25C4%2583-de-confiden%25C8%259Bialitate"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Română
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/ru?return_to=%2Fhc%2Fru"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Русский
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/sr?return_to=%2Fhc%2Fsr"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Srpski
+                  </a>
+                
+                  <a class="dropdown-item hover:bg-sand-300 hover:text-slate-800 hover:font-bold" href="/hc/change_language/tr?return_to=%2Fhc%2Ftr%2Farticles%2F210129366-Scribd-Inc-K%25C3%25BCresel-Gizlilik-Politikas%25C4%25B1"
+                    dir="ltr" rel="nofollow" role="menuitem">
+                    Türkçe
+                  </a>
+                
+              </div>
+            </div>
+            <div class="text-white font-size-xs mb-0">Copyright &#169;
+              <script>document.write(new Date().getFullYear())</script> Scribd Inc.
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+</footer>
+
+
+  <script type="text/html" id="tmpl-table-of-contents">
+    <% if (items.length > 1) { %>
+      <div class="sticky-top md:pt-6" data-scrollElement="#page-container" data-offset="" style="top: 60px;">
+        <div class="font-semibold font-size-xl md:mb-4">
+          In this article
+        </div>
+        <ul class="nav nav-pills flex-column line-height-normal md:py-0">
+          <% items.forEach(function(item) { %>
+            <li class="nav-item my-1 md:my-0">
+              <a class="nav-link hover:underline hover:text-gray-700 text-slate-500 border-radius md:py-1" href="<%= item.html_url %>">
+                <%= item.name %>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+    <% } %>
+  </script>
+
+
+
+
+<!-- begin custom templates -->
+<script type="text/html" id="tmpl-section-list">
+
+  <% const removeCat = brandCategories.filter(function (cat) {
+    return cat != activeCategory ;   %>
+  <% }); %>
+   
+    <div class="border-top border-bottom md:border-transparent">
+      <div class="collapse md:expand" id="categories">
+        <ul class="list-unstyled">
+          <% categories.forEach(function(category) { if (!removeCat.includes(String(category.id))) { %>
+            <li class="list-item" id="category-<%= category.id %>">
+              <a class="block font-semibold text-slate-500 px-2 font-medium hover:text-gray-700" href="<%= category.html_url %>">
+                <img class="align-middle" data-category-icon id="<%= category.id %>" src="<%= categoryIcons[category.id] %>" alt="<%= category.name %> icon" height="16" width="16" /> 
+                <%= category.name %></a>
+              <hr class="opacity-50 mx-0 my-2 p-0">
+              <div class="collapse md:expand" id="sections-in-category">
+                <ul class="list-unstyled">
+                  <% category.children.forEach(function(section) { if (!section.parent_section_id) { %>
+                    <li class="list-item" id="section-<%= section.id %>">
+                      <a class="block px-2 text-slate-500 hover:text-gray-700 font-normal<% if (section.id === activeSection) { %> w-full border-radius bg-sand-200 font-semibold py-2 text-slate-800<% } %>" href="<%= section.html_url %>">
+                      <%= section.name %></a>
+                      <ul class="list-unstyled">
+                        <% category.children.forEach(function(childSection) { if (childSection.parent_section_id === section.id) { %>
+                          <li class="list-item" id="section-<%= childSection.id %>">
+                            <a class="block ml-4 px-2 text-slate-500 hover:text-gray-700 font-normal<% if (childSection.id === activeSection) { %> w-full border-radius bg-sand-200 font-semibold py-2 text-slate-800<% } %>" href="<%= childSection.html_url %>">
+                            <%= childSection.name %></a>
+                          </li>
+                        <% }}); %>
+                      </ul>
+                    </li>
+                  <% }}); %>
+                </ul>
+              </div>
+            </li>
+          <% }}); %>
+        </ul>
+      </div>
+    </div>
+    <h4>
+      Questions about our other products?
+    </h4>
+    <div id="categories-cards">
+      <ul class="list-unstyled">
+        <% categories.forEach(function(category) { %>
+          <%   if (removeCat.includes(String(category.id)) ) { %>
+            <li class="list-item" id="card-category-<%= category.id %>">
+              <a class="media font-size-sm text-slate-500 hover:text-gray-700 bg-white flex-column p-5 shadow-xs border-radius border hover:no-underline hover:shadow-md transition" href="<%= category.html_url %>">
+                <img class="mb-4" data-category-image id="<%= category.id %>" src="<%= categoryImages[category.id] %>"  alt="<%= category.name %> icon" width="116px" height="30px" class="inline-flex" />
+              </a>
+            </li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+  <% window.onload = function() { %>
+  <% fetchCategoryDescriptions(); %>
+<% }; %> 
+</script>
+
+
+<!-- Start of redirecting untranslated articles to English -->
+<script>
+  var notDefaultLanguage = window.location.href.indexOf('/en-us/') == -1;
+  var isArticle = window.location.href.indexOf('/articles/') > -1;
+  var isErrorPage = $(".error-page").length > 0;
+  if (isArticle && notDefaultLanguage && isErrorPage) {
+    var newURL = window.location.href.replace(/(.*\/hc\/)([\w-]+)(\/.*)/, "$1en-us$3");
+    window.location.href = newURL;
+  }
+</script>
+<!-- End of redirecting untranslated articles to English -->
+
+
+
+<script>
+  // Replace links with new/request in the url in self-service locales
+  const storedBrand = sessionStorage.getItem('brand');
+  const brandTicketFormIDs = {
+    'prod': {
+      'everand': "19989276802068",
+      'scribd': "360001526992",
+      'slideshare': "360001306191"
+    },
+    'sandbox': {
+      'everand': "19823581657876",
+      'scribd': "360001526992",
+      'slideshare': "360001306191"
+    }
+  }
+
+    if (selfServiceLocales.includes(locale)) {
+      $("a[href$='requests/new']:not(#contact-support-button)").addClass("widget-launcher").removeAttr('href');
+    }
+
+    // Check if 'brand' exists in sessionStorage
+    if (storedBrand) {
+      // Determine the environment
+      const env = currentZDEnv == "sandbox" ? "sandbox" : "prod";
+
+      // Check if the 'brand' value is in the mapping for the current environment
+      if (storedBrand in brandTicketFormIDs[env]) {
+        // Get the corresponding ticket form ID
+        const parameter = brandTicketFormIDs[env][storedBrand];
+
+        // Update all links without parameters to include the parameter
+        $('a[href*="requests/new"], #contact-support-button').each(function() {
+          const currentHref = $(this).attr('href');
+          const updatedHref = `${currentHref}?ticket_form_id=${parameter}`;
+          $(this).attr('href', updatedHref);
+        });
+      }
+    }
+
+</script>
+
+
+
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+  handleBrandEvent({
+  "everandBrandEvent": { brandName: "Everand", workflowTag: "everand" },
+  "scribdBrandEvent": { brandName: "Scribd", workflowTag: "scribd" },
+  "slideshareBrandEvent": { brandName: "SlideShare", workflowTag: "slideshare" }
+});
+   
+  });
+</script>
+
+
+<script type="text/javascript">
+	
+  document.addEventListener("DOMContentLoaded", function () {
+  const storedBrand = sessionStorage.getItem('brand');
+	const workflowTag = $("#forethought-script").attr("data-ft-workflow-tag");
+
+	if (!storedBrand) {
+		// console.log("No stored brand");
+		return;
+
+	} else if (storedBrand && storedBrand != workflowTag) {
+		$("#forethought-script").attr("data-ft-workflow-tag", storedBrand);
+		// console.log("updated workflow tag to: " + storedBrand);
+
+	// } else if (storedBrand && storedBrand == workflowTag) {
+    // console.log("storedBrand and workflowTag match: " + storedBrand + "/" + workflowTag);
+	}
+});
+
+
+
+  
+</script>
+
+<script type="text/javascript">
+// if sessionStorage item 'openedFromButton' exists and is true, open widget on load t
+ document.addEventListener("DOMContentLoaded", function () {
+ if (sessionStorage.getItem('openedFromButton') === 'true') {
+  var checkForethought = setInterval(function() {
+    if (window.Forethought) {
+      window.Forethought("widget", "open");
+      // console.log("Opened widget from button");
+      clearInterval(checkForethought);
+    }
+  }, 1000); 
+  // remove item from sessionStorage once widget is opened
+  sessionStorage.removeItem('openedFromButton');
+  // console.log("Removed openedFromButton from sessionStorage");
+};
+});
+</script>
+
+
+  <!-- / -->
+
+  
+  <script src="//static.zdassets.com/hc/assets/en-us.02b443b9c55b82e01396.js"></script>
+  
+
+  <script type="text/javascript">
+  /*
+
+    Greetings sourcecode lurker!
+
+    This is for internal Zendesk and legacy usage,
+    we don't support or guarantee any of these values
+    so please don't build stuff on top of them.
+
+  */
+
+  HelpCenter = {};
+  HelpCenter.account = {"subdomain":"scribd","environment":"production","name":"Support Desk"};
+  HelpCenter.user = {"identifier":"da39a3ee5e6b4b0d3255bfef95601890afd80709","email":null,"name":"","role":"anonymous","avatar_url":"https://assets.zendesk.com/hc/assets/default_avatar.png","is_admin":false,"organizations":[],"groups":[]};
+  HelpCenter.internal = {"asset_url":"//static.zdassets.com/hc/assets/","web_widget_asset_composer_url":"https://static.zdassets.com/ekr/snippet.js","current_session":{"locale":"en-us","csrf_token":"hc:hcobject:server:280fu0ta3GM1h82P0IccbaaOlksrRhJ2Vwt0Rdy5ibOPz6fbwVI61mVOPzg4gS7xE8V3WRYFtFcao6FedCHTqA","shared_csrf_token":null},"usage_tracking":{"event":"article_viewed","data":"BAh7CDoLbG9jYWxlSSIKZW4tdXMGOgZFVDoPYXJ0aWNsZV9pZGkE1lGGDDoKX21ldGF7DDoPYWNjb3VudF9pZGkC8Rk6E2hlbHBfY2VudGVyX2lkaQSZrewLOg1icmFuZF9pZGkDkjcoOgx1c2VyX2lkMDoTdXNlcl9yb2xlX25hbWVJIg5BTk9OWU1PVVMGOwZUOwBJIgplbi11cwY7BlQ6GmFub255bW91c190cmFja2luZ19pZDA=--3d12fd1dc6e407f1744c891cb53af46194db2c20","url":"https://support.scribd.com/hc/activity"},"current_record_id":"210129366","current_record_url":"/hc/en-us/articles/210129366-Global-Privacy-Policy","current_record_title":"Global Privacy Policy","current_text_direction":"ltr","current_brand_id":2635666,"current_brand_name":"Scribd","current_brand_url":"https://scribd.zendesk.com","current_brand_active":true,"current_path":"/hc/en-us/articles/210129366-Global-Privacy-Policy","show_autocomplete_breadcrumbs":true,"user_info_changing_enabled":false,"has_user_profiles_enabled":false,"has_end_user_attachments":true,"user_aliases_enabled":false,"has_anonymous_kb_voting":false,"has_multi_language_help_center":true,"show_at_mentions":false,"embeddables_config":{"embeddables_web_widget":false,"embeddables_help_center_auth_enabled":false,"embeddables_connect_ipms":false},"answer_bot_subdomain":"static","gather_plan_state":"subscribed","has_article_verification":true,"has_gather":true,"has_ckeditor":false,"has_community_enabled":false,"has_community_badges":true,"has_community_post_content_tagging":false,"has_gather_content_tags":true,"has_guide_content_tags":true,"has_user_segments":true,"has_answer_bot_web_form_enabled":false,"has_garden_modals":false,"theming_cookie_key":"hc-da39a3ee5e6b4b0d3255bfef95601890afd80709-2-preview","is_preview":false,"has_search_settings_in_plan":true,"theming_api_version":2,"theming_settings":{"color_primary":"#16171B","color_primary_inverse":"#fff","color_heading":"#000514","color_text":"#16171B","color_link":"#16171b","color_border":"rgba(207, 214, 224, 1)","color_button_outline_primary":"#178CCC","color_outline":"#A020F0","bg_color":"#fff","bg_color_boxed":"#565656","bg_color_header":"#fff","color_hero_heading":"#fefefe","bg_color_hero":"rgba(0, 52, 81, 1)","bg_color_secondary_hero":"rgba(0, 52, 81, 1)","bg_opacity_hero":100,"color_note":"#61a5ff","color_warning":"#ef526e","color_gray_100":"#F7FAFC","color_gray_200":"#EDF2F7","bg_color_footer":"#16171B","heading_font":"'Source Serif 4', serif","text_font":"'Source Sans 3', sans-serif","code_font":"'Source Code Pro', monospace","base_font_size":"16px","favicon":"/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE","logo":"/hc/theming_assets/01J0KGPBT1DJ9GGH0F8YBPZA25","color_logo_width":"116","color_logo_height":"30","white_logo_width":"79","white_logo_height":"20","large_icon_width_height":"32","small_icon_width_height":"16","brand_category_ids":"201388246,360005188511,360004792932","block_1_image":"/hc/theming_assets/01JZ630ZCVXK1AY1CDXGPF30KB","everand_white_logo":"/hc/theming_assets/01JZ630ZPZQ5ATCJ99P8ZQDGD0","everand_icon":"/hc/theming_assets/01JZ63102MMM93X3D118DT6AX7","id_category_1":"201388246","block_2_image":"/hc/theming_assets/01JN22TEW9WGHSY1VG2JW9ZN4F","id_category_2":"360005188511","block_3_image":"/hc/theming_assets/01K5YE77PNTFDNSZ710YGERA07","id_category_3":"360004792932","block_4_image":"/hc/theming_assets/01JZ63110WF6KBV0CB8FENR0VB","id_category_4":"201388186","block_5_image":"/hc/theming_assets/01JZ6311B4S8MNETW1FDVH3VCK","id_category_5":"360005188132","block_6_image":"/hc/theming_assets/01JZ6311MDPE52ZAPGMNV921S0","id_category_6":"","block_7_image":"/hc/theming_assets/01JZ6311MDPE52ZAPGMNV921S0","id_category_7":"","block_8_image":"/hc/theming_assets/01JZ6311MDPE52ZAPGMNV921S0","id_category_8":"","scribd_white_logo":"/hc/theming_assets/01JN22SEE9DRPAYSNKJSQE4ABE","scribd_icon":"/hc/theming_assets/01JN22VAR11XM6CD7N03GGCZXE","slideshare_white_logo":"/hc/theming_assets/01K5VQBV849MXXNWSZ2XWMQFXZ","slideshare_icon":"/hc/theming_assets/01KT294AWXYXBEPV9ZWPXS38N0","id_category_1_sandbox":"201269626","id_category_2_sandbox":"360006327212","id_category_3_sandbox":"360006358331","id_category_4_sandbox":"360006358311","id_category_5_sandbox":"360006349252","instant_search":true,"scoped_kb_search":true,"scoped_community_search":true,"search_placeholder":"","boxed_layout":false,"show_notification":false,"notification_content":"help_center_general_page_element_-_notification","show_cta":true,"cta_element_heading":"help_center_cta_heading","cta_element_body":"help_center_cta_body","cta_element_link_text":"header_cta","fixed_header":false,"sticky_header":false,"light_links_header":false,"website_link_text":"","website_link_url":"","show_user_name":false,"hero_element_heading":"help_center_hero_header","section_list_heading":"help_center_category_list_title","show_icons":true,"show_promoted_articles":false,"show_article_author":true,"show_follow_article":false,"show_article_voting":true,"show_article_sharing":false,"share_title":"","show_recently_viewed_articles":true,"show_related_articles":true,"show_article_comments":true,"show_articles_in_section":true,"show_table_of_contents":true,"table_of_contents_heading":"In this article","note_title":"Note","warning_title":"Warning","enable_lightboxes":false,"enable_video_player":false,"show_follow_section":false,"show_follow_topic":true,"show_follow_post":true,"show_post_sharing":true,"light_links_footer":false,"show_social_links":true,"facebook_link":"https://www.facebook.com/Scribd/","twitter_link":"https://twitter.com/scribd","instagram_link":"https://www.instagram.com/scribd/","chatbot_initial_intent_id":"57bd2e27-3f9c-43b2-90b4-9c7afb8926a6","chatbot_greeting_message":"ft_chatbot_greeting_message","everand_theme_color":"#201C14","scribd_theme_color":"#098647","slideshare_theme_color":"#211c13","default_workflow_tag":"helpcenter","use_translations":true,"self_service_locale":"en-us,es,pt-br,de,fr,id,it,nl,pl,ro,el,ru,sr,tr","hide_category":"4490518294932","hide_section":"","hide_article":"6512463078676"},"has_pci_credit_card_custom_field":true,"help_center_restricted":false,"is_assuming_someone_else":false,"flash_messages":[],"user_photo_editing_enabled":true,"user_preferred_locale":"en-us","base_locale":"en-us","login_url":"https://scribd.zendesk.com/access?locale=en-us\u0026brand_id=2635666\u0026return_to=https%3A%2F%2Fsupport.scribd.com%2Fhc%2Fen-us%2Farticles%2F210129366-Global-Privacy-Policy","has_alternate_templates":true,"has_custom_statuses_enabled":false,"has_hc_generative_answers_setting_enabled":true,"has_suggested_initial_questions_enabled":false,"has_contentful_eap":false,"has_contentful_eap_eligible":false,"has_pdf_ingestion_eap":true,"has_pdf_ingestion_eap_eligible":true,"has_guide_service_catalog":true,"has_service_catalog_search_poc":true,"has_service_catalog_itam":false,"has_service_catalog_multibranding":false,"has_csat_reverse_2_scale_in_mobile":false,"has_trial_presumptive_setup":true,"has_unified_navigation":true,"has_unified_navigation_eap_access":true,"has_csat_bet365_branding":false,"has_help_center_gen_search_follow_up_conversation":true,"version":"v27514","dev_mode":false};
+</script>
+
+  
+  
+  <script src="//static.zdassets.com/hc/assets/hc_enduser-51777e251fb3d84937711c2ab27f0a1b.js"></script>
+  <script type="text/javascript" src="/hc/theming_assets/6641/2635666/script.js?digest=50319470214164"></script>
+  
+</body>
+</html>
