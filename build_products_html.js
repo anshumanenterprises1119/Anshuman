@@ -13,7 +13,7 @@ const products = [
 
   // Switches
   { category: 'switches', name: '2 MODULAR BOX', icon: '💠', image: 'galvanized-iron-2-modular-switch-box.webp', desc: 'Premium quality 2-module switchboard mounting metal box made of galvanized steel for rust resistance.' },
-  { category: 'switches', name: '3 MODULAR BOX', icon: '💠', image: 'galvanized-iron-3-modular-switch-box.jfif', desc: 'Robust 3-module galvanized iron modular mounting box with standard threads for modular switch plates.' },
+  { category: 'switches', name: '3 MODULAR BOX', icon: '💠', image: 'galvanized-iron-3-modular-switch-box.jpg', desc: 'Robust 3-module galvanized iron modular mounting box with standard threads for modular switch plates.' },
   { category: 'switches', name: '4 MODULAR BOX', icon: '💠', image: 'galvanized-iron-4-modular-switch-box.webp', desc: 'Galvanized 4-module switch box, durable and corrosion-resistant for concealed wiring setups.' },
   { category: 'switches', name: '6 MODULAR BOX', icon: '💠', image: 'galvanized-iron-6-modular-switch-box.webp', desc: 'Galvanized steel 6-module mounting box, engineered for standard switches and power outlets.' },
   { category: 'switches', name: '8 MODULAR BOX SQUARE', icon: '💠', image: '8-modular-box-square.webp', desc: 'Square 8-module metal switchboard box, optimized space utilization for complex modular grids.' },
@@ -22,9 +22,9 @@ const products = [
 
   // Conduit & Pipes
   { category: 'conduit', name: 'INDEANA PIPE HEAVY 25MM', icon: '🧰', image: 'indeana-pipe-heavy-25mm.webp', desc: 'Heavy-duty 25mm PVC conduit pipe by Indeana. High impact-resistant and fire-retardant wiring protection.' },
-  { category: 'conduit', name: 'INDEANA PIPE 20MM MEDIUM', icon: '🧰', image: 'indeana-medium-duty-pvc-conduit-pipe-20mm.jfif', desc: 'Medium-duty 20mm PVC conduit pipe by Indeana, flexible and robust for concealed ceiling and wall installations.' },
+  { category: 'conduit', name: 'INDEANA PIPE 20MM MEDIUM', icon: '🧰', image: 'indeana-medium-duty-pvc-conduit-pipe-20mm.jpg', desc: 'Medium-duty 20mm PVC conduit pipe by Indeana, flexible and robust for concealed ceiling and wall installations.' },
   { category: 'conduit', name: 'INDEANA PIPE 25MM MEDIUM', icon: '🧰', image: 'indeana-pipe-25mm-medium.webp', desc: 'Medium-duty 25mm PVC conduit pipe by Indeana, ideal for standard cable distribution and layouts.' },
-  { category: 'conduit', name: 'INDEANA BAND 25MM', icon: '🧰', image: 'indeana-pvc-conduit-bend-band-25mm.jfif', desc: 'Robust 25mm PVC bend/band by Indeana, designed for smooth pulling of wires without damage at corners.' },
+  { category: 'conduit', name: 'INDEANA BAND 25MM', icon: '🧰', image: 'indeana-pvc-conduit-bend-band-25mm.jpg', desc: 'Robust 25mm PVC bend/band by Indeana, designed for smooth pulling of wires without damage at corners.' },
   { category: 'conduit', name: 'INDEANA BAND 20MM MEDIUM', icon: '🧰', image: 'indeana-medium-pvc-conduit-bend-band-20mm.jpg', desc: 'Medium-duty 20mm PVC bend for connecting wall conduits seamlessly at right angles.' },
   { category: 'conduit', name: 'INDEANA BAND 25MM HEAVY', icon: '🧰', image: 'indeana-band-25mm-heavy.webp', desc: 'Heavy-duty 25mm PVC conduit bend, offering high physical impact tolerance for floor and structural bends.' },
   { category: 'conduit', name: 'FAN BOX HEAVY', icon: '🧰', image: 'fan-box-heavy.webp', desc: 'Heavy-duty ceiling fan mounting junction box, designed to bear high load and structural vibrations.' },
@@ -33,7 +33,7 @@ const products = [
   { category: 'conduit', name: 'CONCIELD MEDIUM', icon: '🧰', image: 'concealed-ceiling-junction-box-medium-duty-180g.jpg', desc: 'Concealed medium-duty wall junction box, flame-retardant and durable.' },
   { category: 'conduit', name: 'FLEXIBLE PIPE 20MM', icon: '🧰', image: 'pvc-flexible-corrugated-conduit-pipe-20mm.jpg', desc: 'Corrugated 20mm PVC flexible pipe, perfect for linking main conduits to switch boards around pillars.' },
   { category: 'conduit', name: 'FAN ROD 12 INCH', icon: '🧰', image: 'ceiling-fan-downrod-iron-12-inch.webp', desc: 'Heavy iron ceiling fan downrod (12 inches) with rust-resistant paint and secure key bolt slots.' },
-  { category: 'conduit', name: 'TEE COVER', icon: '🧰', image: 'pvc-conduit-tee-connection-cover.jfif', desc: 'Standard PVC Tee cover for securing T-junction connections of surface wiring casing/pipes.' },
+  { category: 'conduit', name: 'TEE COVER', icon: '🧰', image: 'pvc-conduit-tee-connection-cover.jpg', desc: 'Standard PVC Tee cover for securing T-junction connections of surface wiring casing/pipes.' },
   { category: 'conduit', name: 'FAN COVER', icon: '🧰', image: 'fan-cover.webp', desc: 'High-quality replacement canopy/cover set for ceiling fans, white glossy finish.' },
 
   // Hardware
@@ -50,19 +50,19 @@ const products = [
   { category: 'hardware', name: 'SELF DRILLING SCREW 1 INCH', icon: '🔧', image: 'self-drilling-screw-1-inch.webp', desc: 'High-efficiency 1-inch self-drilling screws for metal casing and GI pipe frames.' },
   { category: 'hardware', name: 'SELF DRILLING SCREW 1.5 INCH', icon: '🔧', image: 'self-drilling-screw-1-5-inch.webp', desc: 'Self-drilling 1.5-inch metal screws, drills and fastens in a single action.' },
   { category: 'hardware', name: 'SELF DRILLING SCREW 2 INCH', icon: '🔧', image: 'self-drilling-metal-screws-2-inch.jpg', desc: 'Heavy-duty 2-inch self-drilling metal screws for thick sheets and frames.' },
-  { category: 'hardware', name: 'HEATEX 5 KG', icon: '🔧', image: 'heatex-adhesive-seal-bond-compound-5kg.jfif', desc: 'High-grade Heatex adhesive / seal bond compound (5 Kg bucket) for construction joints.' },
-  { category: 'hardware', name: 'KEEL 1*14 SPN', icon: '🔧', image: 'concrete-nails-keel-1-inch-14-spn.jfif', desc: 'Standard 1x14 concrete nails / keels for fast ceiling and wall anchoring.' },
-  { category: 'hardware', name: 'KEEL 1.5*14 SPN', icon: '🔧', image: 'concrete-nails-keel-1-5-inch-14-spn.jfif', desc: 'High-strength 1.5x14 concrete nails for conduit clips and wiring casing anchoring.' },
+  { category: 'hardware', name: 'HEATEX 5 KG', icon: '🔧', image: 'heatex-adhesive-seal-bond-compound-5kg.jpg', desc: 'High-grade Heatex adhesive / seal bond compound (5 Kg bucket) for construction joints.' },
+  { category: 'hardware', name: 'KEEL 1*14 SPN', icon: '🔧', image: 'concrete-nails-keel-1-inch-14-spn.jpg', desc: 'Standard 1x14 concrete nails / keels for fast ceiling and wall anchoring.' },
+  { category: 'hardware', name: 'KEEL 1.5*14 SPN', icon: '🔧', image: 'concrete-nails-keel-1-5-inch-14-spn.jpg', desc: 'High-strength 1.5x14 concrete nails for conduit clips and wiring casing anchoring.' },
   { category: 'hardware', name: 'WALL FIX BOND 50G', icon: '🔧', image: 'wall-fix-rapid-adhesive-bond-50g.webp', desc: 'Rapid curing Wall Fix adhesive bond (50g tube) for quick panel and channel fixing.' },
-  { category: 'hardware', name: 'WALL FIX BOND 18G', icon: '🔧', image: 'wall-fix-rapid-adhesive-bond-18g.jfif', desc: 'Compact Wall Fix adhesive bond (18g tube) for minor repairs and quick hardware locking.' },
+  { category: 'hardware', name: 'WALL FIX BOND 18G', icon: '🔧', image: 'wall-fix-rapid-adhesive-bond-18g.jpg', desc: 'Compact Wall Fix adhesive bond (18g tube) for minor repairs and quick hardware locking.' },
   { category: 'hardware', name: 'ARALDITE 1.8KG', icon: '🔧', image: 'araldite-standard-epoxy-adhesive-1-8kg.webp', desc: 'Industrial grade Araldite epoxy adhesive pack (1.8 Kg), ultra-strong bonding strength.' },
   { category: 'hardware', name: 'ZYPSEM SCREW 3/4 WHITE', icon: '🔧', image: 'zypsem-drywall-screws-3-4-inch-white.webp', desc: 'Premium white Zypsem drywall screws (3/4 inch) for dry partition board wiring setups.' },
   { category: 'hardware', name: 'WOOD CUTTER BLADE 5/30 BOSCH', icon: '🔧', image: 'bosch-wood-cutter-circular-saw-blade-5-inch-30t.webp', desc: 'Genuine 5-inch 30-teeth wood cutter circular saw blade by Bosch. Ultra-sharp teeth for clean cuts.' },
-  { category: 'hardware', name: 'WOOD CUTTER BLADE 4/30 BOSCH', icon: '🔧', image: 'bosch-wood-cutter-circular-saw-blade-4-inch-30t.jfif', desc: 'Genuine 4-inch 30-teeth wood cutter circular saw blade by Bosch, engineered for high RPM.' },
-  { category: 'hardware', name: 'SATTRING KEEL 1 INCH', icon: '🔧', image: 'shuttering-concrete-nails-1-inch.jfif', desc: 'Standard 1-inch shuttering concrete keels/nails for wooden structuring and support.' },
-  { category: 'hardware', name: 'SATTRING KEEL 2 INCH', icon: '🔧', image: 'shuttering-concrete-nails-2-inch.jfif', desc: 'Heavy 2-inch shuttering concrete nails for frame support and conduit pipe anchoring.' },
-  { category: 'hardware', name: 'SATTRING KEEL 3 INCH', icon: '🔧', image: 'shuttering-concrete-nails-3-inch.jfif', desc: 'Heavy-duty 3-inch shuttering nails for heavy structural frames and timber support.' },
-  { category: 'hardware', name: 'SATTRING KEEL 4 INCH', icon: '🔧', image: 'shuttering-concrete-nails-4-inch.jfif', desc: 'Extra-long 4-inch concrete shuttering nails for high-load timber structures.' }
+  { category: 'hardware', name: 'WOOD CUTTER BLADE 4/30 BOSCH', icon: '🔧', image: 'bosch-wood-cutter-circular-saw-blade-4-inch-30t.jpg', desc: 'Genuine 4-inch 30-teeth wood cutter circular saw blade by Bosch, engineered for high RPM.' },
+  { category: 'hardware', name: 'SATTRING KEEL 1 INCH', icon: '🔧', image: 'shuttering-concrete-nails-1-inch.jpg', desc: 'Standard 1-inch shuttering concrete keels/nails for wooden structuring and support.' },
+  { category: 'hardware', name: 'SATTRING KEEL 2 INCH', icon: '🔧', image: 'shuttering-concrete-nails-2-inch.jpg', desc: 'Heavy 2-inch shuttering concrete nails for frame support and conduit pipe anchoring.' },
+  { category: 'hardware', name: 'SATTRING KEEL 3 INCH', icon: '🔧', image: 'shuttering-concrete-nails-3-inch.jpg', desc: 'Heavy-duty 3-inch shuttering nails for heavy structural frames and timber support.' },
+  { category: 'hardware', name: 'SATTRING KEEL 4 INCH', icon: '🔧', image: 'shuttering-concrete-nails-4-inch.jpg', desc: 'Extra-long 4-inch concrete shuttering nails for high-load timber structures.' }
 ];
 
 function generateGridHTML(categoryName) {
