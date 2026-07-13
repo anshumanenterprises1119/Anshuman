@@ -761,6 +761,250 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
         display: flex !important;
       }
     }
+    
+    /* ─€─€ SHOP BY CATEGORY & POPUP SYSTEM ─€─€ */
+    .category-index-card {
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .category-index-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md) !important;
+      border-color: var(--gold) !important;
+    }
+    .category-index-card:hover .cat-card-img {
+      transform: scale(1.08);
+    }
+    .category-index-card:hover .arrow {
+      transform: translateX(4px);
+    }
+    
+    .premium-popup-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(26,5,8,0.7);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .premium-popup-overlay.active {
+      display: flex !important;
+      opacity: 1;
+    }
+    .premium-popup-overlay.active .premium-popup-content {
+      transform: scale(1);
+    }
+    
+    .subcategory-btn {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 18px;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--maroon-dark);
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .subcategory-btn:hover {
+      background: var(--gold-pale);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(201,168,76,0.15);
+    }
+    .subcategory-btn.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--maroon-dark);
+    }
+    
+    /* ─€─€ STANDARDIZED PRODUCT CARDS ─€─€ */
+    .category-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: 40px auto 0;
+      padding: 0 5%;
+    }
+    .prod-static-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px !important;
+      padding: 24px !important;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      height: 100%;
+    }
+    .prod-static-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--gold);
+    }
+    .prod-card-img-wrap {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold-pale), #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(107,28,35,0.06);
+    }
+    .prod-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover !important;
+      display: block;
+      transition: transform 0.4s;
+    }
+    .prod-static-card:hover .prod-card-img {
+      transform: scale(1.05);
+    }
+    .prod-card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(61,14,20,0.85);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold-light);
+      padding: 4px 10px;
+      border-radius: 50px;
+      font-size: 10px;
+      font-family: 'DM Mono', monospace;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 5;
+    }
+    .prod-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--maroon-dark);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .prod-card-desc {
+      font-size: 13px;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .prod-card-specs {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      border-top: 1px solid rgba(107,28,35,0.08);
+      padding-top: 12px;
+    }
+    .prod-card-specs li {
+      font-size: 12px;
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+    }
+    .prod-card-specs li span:first-child {
+      font-weight: 500;
+      color: var(--text-mid);
+    }
+    .prod-card-footer {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .prod-card-price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .prod-card-price-label {
+      font-size: 10px;
+      color: var(--text-light);
+      text-transform: uppercase;
+      font-family: 'DM Mono', monospace;
+    }
+    .prod-card-price-val {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--maroon);
+    }
+    .prod-card-brand-tags {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .prod-card-brand-tag {
+      font-size: 10px;
+      font-weight: 700;
+      background: var(--cream-dark);
+      color: var(--maroon-dark);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    
+    .btn-card-view {
+      background: transparent;
+      border: 1px solid var(--maroon);
+      color: var(--maroon);
+      text-align: center;
+      padding: 10px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-card-view:hover {
+      background: var(--maroon);
+      color: #fff;
+    }
+    .btn-card-quote {
+      background: var(--gold);
+      color: var(--maroon-dark);
+      text-align: center;
+      padding: 10px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-card-quote:hover {
+      background: var(--gold-light);
+    }
+    
+    /* Responsive details modal grid */
+    @media(max-width: 650px) {
+      .details-body-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
   </style>
 
   <nav class="ae-nav">
@@ -1114,6 +1358,153 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
 </section>
 
 <!-- ═══════════════ LIGHTING — ALT SECTION ═══════════════ -->
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  SHOP BY CATEGORY INDEX ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
+<section class="section category-index-section" id="shop-by-category" style="background: var(--white); padding: 60px 5%; border-bottom: 1px solid var(--border);">
+  <div class="section-inner" style="max-width: 1200px; margin: auto;">
+    <span class="section-label" style="display: block; text-align: center; margin-bottom: 8px;">Explore Our Inventory</span>
+    <h2 class="section-title" style="text-align: center; margin-bottom: 40px; font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 700; color: var(--maroon-dark);">Shop by Category</h2>
+    
+    <div class="category-index-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+      <!-- Category 1: Electrical Accessories -->
+      <div class="category-index-card" data-category="switches" onclick="openSubcategoryPopup('switches')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/premium-modular-switch-gold-frame.webp" alt="Electrical Accessories" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">💠</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Electrical Accessories</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Premium modular switches, power sockets, regulators, frames and boxes.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 2: Hardware -->
+      <div class="category-index-card" data-category="hardware" onclick="openSubcategoryPopup('hardware')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/products/araldite-standard-epoxy-adhesive-1-8kg.webp" alt="Hardware" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">🔧</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Hardware</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Fasteners, screws, anchors, concrete nails, and industrial adhesive bonds.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 3: Lighting -->
+      <div class="category-index-card" data-category="lighting" onclick="openSubcategoryPopup('lighting')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/modern-interior-lighting-solutions.webp" alt="Lighting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">💡</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Lighting</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Premium batten lights, panel lights, linear profiles and indoor luminaires.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 4: CCTV & Security -->
+      <div class="category-index-card" data-category="cctv" onclick="openSubcategoryPopup('cctv')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/cctv-dvr-camera-security-kit.webp" alt="CCTV & Security" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">📹</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">CCTV & Security</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Dome, bullet, and PTZ security cameras, DVR/NVR kits and video door phones.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 5: Tools -->
+      <div class="category-index-card" data-category="tools" onclick="openSubcategoryPopup('tools')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/products/bosch-wood-cutter-circular-saw-blade-5-inch-30t.webp" alt="Tools" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">🛠️</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Tools</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Bosch cutting blades, circular wood saws, power tools, and hand equipment.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 6: Industrial Supplies -->
+      <div class="category-index-card" data-category="industrial" onclick="openSubcategoryPopup('industrial')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/mcb-distribution-board-electrical.webp" alt="Industrial Supplies" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">🏭</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Industrial Supplies</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Steelgrip insulation tapes, Heatex compounds, and high-strength epoxy adhesives.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 7: Decorative Lighting -->
+      <div class="category-index-card" data-category="declighting" onclick="openSubcategoryPopup('declighting')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/led-strip-ceiling-lighting-design.webp" alt="Decorative Lighting" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">✨</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">Decorative Lighting</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Vibrant strip lights, rope lights, linear profile tracks, and hanging wall lamps.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+      
+      <!-- Category 8: PVC & Conduits -->
+      <div class="category-index-card" data-category="conduit" onclick="openSubcategoryPopup('conduit')" style="background: var(--cream); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-sm); cursor: pointer; transition: all 0.3s; display: flex; flex-direction: column;">
+        <div style="aspect-ratio: 16/10; overflow: hidden; position: relative;">
+          <img src="images/gallery/pvc-conduit-pipes-fittings.webp" alt="PVC & Conduits" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;" class="cat-card-img" />
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(61,14,20,0.85); color: var(--gold); border-radius: 50%; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">🧰</div>
+        </div>
+        <div style="padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 700; color: var(--maroon-dark); margin-bottom: 6px;">PVC & Conduits</h3>
+            <p style="font-size: 12.5px; color: var(--text-mid); line-height: 1.5; margin-bottom: 12px;">Heavy & medium PVC conduit pipes, bands, concealed ceiling boxes, and downrods.</p>
+          </div>
+          <span style="font-size: 12px; font-weight: 700; color: var(--maroon); display: flex; align-items: center; gap: 4px;">View Subcategories <span style="transition: transform 0.2s;" class="arrow">→</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  UNIFIED FILTERED RESULTS ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
+<section class="section" id="filtered-products-section" style="display: none; background: var(--cream); padding: 80px 5%; border-bottom: 1px solid var(--border);">
+  <div class="section-inner" style="max-width: 1200px; margin: auto;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; border-bottom: 2px solid var(--border); padding-bottom: 20px; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <span class="section-label" style="margin-bottom: 8px;">Filtered Results</span>
+        <h2 id="filtered-section-title" style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: var(--maroon-dark);">Filtered Products</h2>
+      </div>
+      <button onclick="resetFilter()" style="background: var(--maroon-dark); color: #fff; border: 2px solid var(--maroon-dark); padding: 10px 24px; border-radius: 50px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; box-shadow: var(--shadow-sm);" onmouseover="this.style.background='var(--maroon-mid)';this.style.borderColor='var(--maroon-mid)'" onmouseout="this.style.background='var(--maroon-dark)';this.style.borderColor='var(--maroon-dark)'">Reset Filters & Show All</button>
+    </div>
+    
+    <div class="category-products-grid" id="grid-filtered">
+      <!-- Filtered products dynamically rendered here -->
+    </div>
+  </div>
+</section>
+
 <section class="alt-section alt-dark" id="lighting">
   <div class="alt-inner">
     <div class="alt-img-wrap">
@@ -1153,47 +1544,7 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
   </div>
 
   <!-- Dynamic Product Grid for lighting -->
-  <div class="category-products-grid" style="max-width:1200px; margin:36px auto 0; padding: 0 5%; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💡</div>
-        <img src="images/products/orient-batten-light-2ft-20w.webp" alt="ORIENT BATTEN LIGHT 2 FEET 20W" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">ORIENT BATTEN LIGHT 2 FEET 20W</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Premium 2-feet Orient LED Batten Light (20W) offering bright, glare-free, and energy-saving lighting for homes and offices.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20ORIENT%20BATTEN%20LIGHT%202%20FEET%2020W%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💡</div>
-        <img src="images/products/orient-batten-light-4ft-20w.webp" alt="ORIENT BATTEN LIGHT 4 FEET 20W" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">ORIENT BATTEN LIGHT 4 FEET 20W</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Premium 4-feet Orient LED Batten Light (20W) providing optimal lumens and high energy savings for commercial layouts.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20ORIENT%20BATTEN%20LIGHT%204%20FEET%2020W%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💡</div>
-        <img src="images/products/orient-batten-light-2ft-10w.webp" alt="ORIENT BATTEN LIGHT 2 FEET 10W" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">ORIENT BATTEN LIGHT 2 FEET 10W</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Compact 2-feet Orient LED Batten Light (10W), perfect for narrow spaces, corridors, and minor installations.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20ORIENT%20BATTEN%20LIGHT%202%20FEET%2010W%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-  </div>
+  <div class="category-products-grid" id="grid-lighting"></div>
 </section>
 
 <!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  WIRES — ALT SECTION ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
@@ -1234,6 +1585,9 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
       <a href="https://wa.me/917065815743?text=I%20need%20wires%20and%20cables%20pricing" class="btn-request">Request Pricing →</a>
     </div>
   </div>
+  
+  <!-- Dynamic Product Grid for wires -->
+  <div class="category-products-grid" id="grid-wires"></div>
 </section>
 
 <!-- ═══════════════ SWITCHES — ALT SECTION ═══════════════ -->
@@ -1275,104 +1629,11 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
     </div>
   </div>
 
-  <!-- Dynamic Product Grid for switches -->
-  <div class="category-products-grid" style="max-width:1200px; margin:36px auto 0; padding: 0 5%; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-2-modular-switch-box.webp" alt="2 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">2 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Premium quality 2-module switchboard mounting metal box made of galvanized steel for rust resistance.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%202%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-3-modular-switch-box.jpg" alt="3 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">3 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Robust 3-module galvanized iron modular mounting box with standard threads for modular switch plates.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%203%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-4-modular-switch-box.webp" alt="4 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">4 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Galvanized 4-module switch box, durable and corrosion-resistant for concealed wiring setups.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%204%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-6-modular-switch-box.webp" alt="6 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">6 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Galvanized steel 6-module mounting box, engineered for standard switches and power outlets.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%206%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/8-modular-box-square.webp" alt="8 MODULAR BOX SQUARE" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">8 MODULAR BOX SQUARE</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Square 8-module metal switchboard box, optimized space utilization for complex modular grids.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%208%20MODULAR%20BOX%20SQUARE%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-8-modular-rectangular-switch-box.jpg" alt="8 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">8 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Standard rectangular 8-module galvanized switch box for heavy home appliances and multiple points.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%208%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">💠</div>
-        <img src="images/products/galvanized-iron-12-modular-switch-box.webp" alt="12 MODULAR BOX" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">12 MODULAR BOX</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Spacious 12-module galvanized modular switchboard box for complete room control and panel distribution.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%2012%20MODULAR%20BOX%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    
-  </div>
+
+  <div class="category-products-grid" id="grid-switches"></div>
 </section>
 
-<!-- ═══════════════ CCTV — ALT SECTION ═══════════════ -->
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  CCTV — ALT SECTION ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
 <section class="alt-section" id="cctv">
   <div class="alt-inner reverse">
     <div class="alt-img-wrap">
@@ -1410,9 +1671,12 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
       <a href="https://wa.me/917065815743?text=I%20need%20CCTV%20system%20pricing" class="btn-request">Request Pricing →</a>
     </div>
   </div>
+  
+  <!-- Dynamic Product Grid for CCTV -->
+  <div class="category-products-grid" id="grid-cctv"></div>
 </section>
 
-<!-- ═══════════════ MCB — ALT SECTION ═══════════════ -->
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  MCB — ALT SECTION ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
 <section class="alt-section alt-dark" id="mcb">
   <div class="alt-inner">
     <div class="alt-img-wrap">
@@ -1450,6 +1714,9 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
       <a href="https://wa.me/917065815743?text=I%20need%20MCB%20DB%20panel%20pricing" class="btn-request">Request Pricing →</a>
     </div>
   </div>
+  
+  <!-- Dynamic Product Grid for MCB -->
+  <div class="category-products-grid" id="grid-mcb"></div>
 </section>
 
 <!-- ═══════════════ CONDUIT & HARDWARE ═══════════════ -->
@@ -1487,195 +1754,12 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--maroon-dark);">₹80 → ₹1,00,000+</div>
         <div style="font-size:11px;color:var(--text-light);margin-top:3px;">Single pipe to full conduit system supply</div>
       </div><br>
+      <a href="https://wa.me/917065815743?text=I%20need%20conduit%20piping%20pricing" class="btn-request">Request Pricing →</a>
     </div>
   </div>
 
   <!-- Dynamic Product Grid for conduit -->
-  <div class="category-products-grid" style="max-width:1200px; margin:36px auto 0; padding: 0 5%; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-pipe-heavy-25mm.webp" alt="INDEANA PIPE HEAVY 25MM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA PIPE HEAVY 25MM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Heavy-duty 25mm PVC conduit pipe by Indeana. High impact-resistant and fire-retardant wiring protection.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20PIPE%20HEAVY%2025MM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-medium-duty-pvc-conduit-pipe-20mm.jpg" alt="INDEANA PIPE 20MM MEDIUM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA PIPE 20MM MEDIUM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Medium-duty 20mm PVC conduit pipe by Indeana, flexible and robust for concealed ceiling and wall installations.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20PIPE%2020MM%20MEDIUM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-pipe-25mm-medium.webp" alt="INDEANA PIPE 25MM MEDIUM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA PIPE 25MM MEDIUM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Medium-duty 25mm PVC conduit pipe by Indeana, ideal for standard cable distribution and layouts.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20PIPE%2025MM%20MEDIUM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-pvc-conduit-bend-band-25mm.jpg" alt="INDEANA BAND 25MM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA BAND 25MM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Robust 25mm PVC bend/band by Indeana, designed for smooth pulling of wires without damage at corners.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20BAND%2025MM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-medium-pvc-conduit-bend-band-20mm.jpg" alt="INDEANA BAND 20MM MEDIUM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA BAND 20MM MEDIUM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Medium-duty 20mm PVC bend for connecting wall conduits seamlessly at right angles.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20BAND%2020MM%20MEDIUM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/indeana-band-25mm-heavy.webp" alt="INDEANA BAND 25MM HEAVY" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">INDEANA BAND 25MM HEAVY</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Heavy-duty 25mm PVC conduit bend, offering high physical impact tolerance for floor and structural bends.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20INDEANA%20BAND%2025MM%20HEAVY%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/fan-box-heavy.webp" alt="FAN BOX HEAVY" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">FAN BOX HEAVY</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Heavy-duty ceiling fan mounting junction box, designed to bear high load and structural vibrations.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20FAN%20BOX%20HEAVY%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/concealed-ceiling-junction-box-heavy-duty.jpg" alt="CONCIELD BOX HEAVY" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">CONCIELD BOX HEAVY</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Heavy-duty concealed ceiling junction box for neat wiring connections and profile lights.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20CONCIELD%20BOX%20HEAVY%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/fan-box-medium.webp" alt="FAN BOX MEDIUM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">FAN BOX MEDIUM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Standard medium-duty fan junction box for residential housing projects.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20FAN%20BOX%20MEDIUM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/concealed-ceiling-junction-box-medium-duty-180g.jpg" alt="CONCIELD MEDIUM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">CONCIELD MEDIUM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Concealed medium-duty wall junction box, flame-retardant and durable.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20CONCIELD%20MEDIUM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/pvc-flexible-corrugated-conduit-pipe-20mm.jpg" alt="FLEXIBLE PIPE 20MM" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">FLEXIBLE PIPE 20MM</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Corrugated 20mm PVC flexible pipe, perfect for linking main conduits to switch boards around pillars.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20FLEXIBLE%20PIPE%2020MM%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/ceiling-fan-downrod-iron-12-inch.webp" alt="FAN ROD 12 INCH" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">FAN ROD 12 INCH</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Heavy iron ceiling fan downrod (12 inches) with rust-resistant paint and secure key bolt slots.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20FAN%20ROD%2012%20INCH%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/pvc-conduit-tee-connection-cover.jpg" alt="TEE COVER" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">TEE COVER</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">Standard PVC Tee cover for securing T-junction connections of surface wiring casing/pipes.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20TEE%20COVER%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
-      <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
-        <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:48px; z-index:1;">🧰</div>
-        <img src="images/products/fan-cover.webp" alt="FAN COVER" style="width:100%; height:100%; object-fit:cover; display:block; position:absolute; top:0; left:0; z-index:2;" onerror="this.style.display='none';" />
-      </div>
-      <h4 style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px; line-height:1.2;">FAN COVER</h4>
-      <p style="font-size:12.5px; color:var(--text-mid); line-height:1.65; margin-bottom:16px;">High-quality replacement canopy/cover set for ceiling fans, white glossy finish.</p>
-      <div style="margin-top:auto;">
-        <a href="https://wa.me/917065815743?text=I%20am%20interested%20in%20FAN%20COVER%20wholesale%20price" target="_blank" style="display:flex; align-items:center; justify-content:center; gap:6px; background:var(--gold); color:var(--maroon-dark); padding:10px; border-radius:50px; font-size:12px; font-weight:700; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-          💬 Get Quote
-        </a>
-      </div>
-    </div>
-    
-  </div>
+  <div class="category-products-grid" id="grid-conduit"></div>
 </section>
 
 <!-- ═══════════════ BRANDS SLIDER ═══════════════ -->
@@ -1711,7 +1795,7 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
   </div>
 
   <!-- Dynamic Product Grid for hardware -->
-  <div class="category-products-grid" style="max-width:1200px; margin:36px auto 0; padding: 0 5%; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+  <div class="category-products-grid" id="grid-hardware" style="display:none;">
     <!-- Screws -->
     <div class="prod-static-card" style="background:#fff; border:1px solid rgba(107,28,35,0.1); border-radius:12px; padding:22px; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:all 0.3s; position:relative;">
       <div style="height:140px; background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-radius:8px; margin-bottom:14px; overflow:hidden; position:relative;">
@@ -2132,6 +2216,11 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
         <div class="why-icon">🚚</div>
         <h3>Fast Delivery</h3>
         <p>Reliable dispatch support across Greater Noida and NCR. Urgent site requirements handled with priority — because your deadline is ours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════════════ PRODUCT PRICE RANGE LIST ═══════════════ -->
 <section class="price-range-section" id="price-list" style="padding:60px 5%;background:#fff;">
   <div class="price-range-inner" style="max-width:1200px;margin:0 auto;">
@@ -2816,6 +2905,1088 @@ sections.forEach(s => obs.observe(s));
       });
     }
   })();
+</script>
+
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═  SUBCATEGORY SELECTION POPUP ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
+<div id="subcategory-popup" class="premium-popup-overlay" onclick="handlePopupOverlayClick(event, 'subcategory-popup')">
+  <div class="premium-popup-content" style="background:#fff; border-radius:24px; border:1px solid var(--border); box-shadow:0 24px 60px rgba(0,0,0,0.15); width:90%; max-width:600px; padding:32px; transform:scale(0.9); transition:transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); position:relative; overflow:hidden;">
+    <div style="position:absolute; top:0; left:0; width:100%; height:6px; background:linear-gradient(90deg, var(--maroon), var(--gold), var(--maroon-dark));"></div>
+    <button onclick="closeSubcategoryPopup()" style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; color:var(--text-light); transition:color 0.2s;" onmouseover="this.style.color='var(--maroon)'" onmouseout="this.style.color='var(--text-light)'">&times;</button>
+    
+    <h3 id="subcategory-popup-title" style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:700; color:var(--maroon-dark); margin-bottom:8px;">Select Subcategory</h3>
+    <p style="font-size:13.5px; color:var(--text-mid); margin-bottom:24px;">Refine your search by selecting a specific category type below.</p>
+    
+    <div id="subcategory-buttons-container" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; max-height:350px; overflow-y:auto; padding-right:6px;">
+      <!-- Buttons dynamically loaded -->
+    </div>
+  </div>
+</div>
+
+<!-- ═ ═ ═ ═ ═ ═ ═ ═ ═  PRODUCT DETAILS SPECIFICATIONS MODAL ═ ═ ═ ═ ═ ═ ═ ═ ═  -->
+<div id="product-details-modal" class="premium-popup-overlay" onclick="handlePopupOverlayClick(event, 'product-details-modal')">
+  <div class="premium-popup-content" style="background:#fff; border-radius:24px; border:1px solid var(--border); box-shadow:0 24px 60px rgba(0,0,0,0.18); width:92%; max-width:750px; padding:0; transform:scale(0.9); transition:transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); position:relative; overflow:hidden;">
+    <button onclick="closeProductDetailsModal()" style="position:absolute; top:20px; right:20px; background:rgba(255,255,255,0.85); backdrop-filter:blur(6px); border:1px solid rgba(0,0,0,0.08); border-radius:50%; width:36px; height:36px; display:flex; align-items:center; justify-content:center; font-size:20px; cursor:pointer; color:var(--maroon-dark); z-index:10; transition:all 0.2s;" onmouseover="this.style.background='var(--maroon)';this.style.color='#fff';" onmouseout="this.style.background='rgba(255,255,255,0.85)';this.style.color='var(--maroon-dark)';">&times;</button>
+    
+    <div class="details-body-grid" style="display:grid; grid-template-columns: 1.1fr 1.3fr; min-height:450px;">
+      <div id="details-modal-img-container" style="background:linear-gradient(135deg, var(--gold-pale), #fff); display:flex; align-items:center; justify-content:center; border-right:1px solid rgba(0,0,0,0.06); overflow:hidden; position:relative; aspect-ratio: 1/1;">
+        <img id="details-modal-img" src="" alt="Product Image" style="width:100%; height:100%; object-fit:cover; display:block;" />
+        <span id="details-modal-badge" class="prod-card-badge">Detail View</span>
+      </div>
+      
+      <div style="padding:32px; display:flex; flex-direction:column; justify-content:space-between; max-height: 520px; overflow-y: auto;">
+        <div>
+          <div id="details-modal-cat" style="font-size:10px; font-family:'DM Mono',monospace; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; font-weight:600;">Category</div>
+          <h3 id="details-modal-title" style="font-family:'Cormorant Garamond',serif; font-size:30px; font-weight:700; color:var(--maroon-dark); margin-bottom:12px; line-height:1.2;">Product Title</h3>
+          
+          <div id="details-modal-brand-container" style="display:flex; gap:6px; margin-bottom:18px;">
+            <!-- Brand Tags -->
+          </div>
+          
+          <p id="details-modal-desc" style="font-size:13.5px; color:var(--text-mid); line-height:1.65; margin-bottom:20px;">Detailed description of the product and standard use-cases in commercial construction projects.</p>
+          
+          <div style="margin-bottom:24px;">
+            <h4 style="font-size:12px; font-weight:700; color:var(--text-light); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">Technical Specifications</h4>
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px;">
+              <tbody id="details-modal-specs-table">
+                <!-- Specifications rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div style="border-top:1px solid var(--border); padding-top:20px; display:flex; flex-direction:column; gap:12px;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:11px; text-transform:uppercase; font-family:'DM Mono',monospace; color:var(--text-light);">Wholesale Price Range</span>
+            <span id="details-modal-price" style="font-family:'Cormorant Garamond',serif; font-size:19px; font-weight:700; color:var(--maroon);">₹500 - ₹5,00,000+</span>
+          </div>
+          
+          <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:12px;">
+            <button onclick="closeProductDetailsModal()" class="btn-card-view" style="font-size:13px; font-weight:700; padding:12px;">Back to Catalog</button>
+            <a id="details-modal-wa-btn" href="" target="_blank" class="btn-card-quote" style="font-size:13px; font-weight:700; padding:12px; display:flex; align-items:center; justify-content:center; gap:8px;">💬 Get Custom Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // PRODUCTS DATABASE (57 items)
+  const productsData = [
+    // --- LIGHTING (5 items) ---
+    {
+      id: "orient-led-batten-light-2ft-20w",
+      category: "lighting",
+      subcategory: "LED Battens",
+      title: "ORIENT BATTEN LIGHT 2 FEET 20W",
+      image: "images/products/orient-led-batten-light-2ft-20w.jpg",
+      badge: "Lighting Solutions",
+      desc: "Premium 2-feet Orient LED Batten Light (20W) offering bright, glare-free, and energy-saving lighting for homes and offices.",
+      brands: ["Orient"],
+      price: "₹180 - ₹240",
+      specs: { "Brand": "Orient Electric", "Length": "2 Feet (60cm)", "Wattage": "20 Watts", "Color Temp": "6500K (Cool Day Light)", "Warranty": "2 Years" }
+    },
+    {
+      id: "orient-led-batten-light-4ft-20w",
+      category: "lighting",
+      subcategory: "LED Battens",
+      title: "ORIENT BATTEN LIGHT 4 FEET 20W",
+      image: "images/products/orient-led-batten-light-4ft-20w.jpg",
+      badge: "Lighting Solutions",
+      desc: "Premium 4-feet Orient LED Batten Light (20W) providing optimal lumens and high energy savings for commercial layouts.",
+      brands: ["Orient"],
+      price: "₹220 - ₹290",
+      specs: { "Brand": "Orient Electric", "Length": "4 Feet (120cm)", "Wattage": "20 Watts", "Color Temp": "6500K", "Luminous Flux": "2000 Lm", "Warranty": "2 Years" }
+    },
+    {
+      id: "orient-led-batten-light-2ft-10w",
+      category: "lighting",
+      subcategory: "LED Battens",
+      title: "ORIENT BATTEN LIGHT 2 FEET 10W",
+      image: "images/products/orient-led-batten-light-2ft-10w.webp",
+      badge: "Lighting Solutions",
+      desc: "Compact 2-feet Orient LED Batten Light (10W), perfect for narrow spaces, corridors, and minor installations.",
+      brands: ["Orient"],
+      price: "₹150 - ₹190",
+      specs: { "Brand": "Orient Electric", "Length": "2 Feet (60cm)", "Wattage": "10 Watts", "Color Temp": "6500K", "Warranty": "2 Years" }
+    },
+    {
+      id: "orient-led-panel-light-12w-square",
+      category: "lighting",
+      subcategory: "Panel Lights",
+      title: "ORIENT LED PANEL LIGHT 12W SQUARE",
+      image: "images/gallery/modern-interior-lighting-solutions.webp",
+      badge: "Lighting Solutions",
+      desc: "Ultra-slim 12W square recessed panel light by Orient. Sophisticated design for premium false ceiling layouts.",
+      brands: ["Orient"],
+      price: "₹280 - ₹350",
+      specs: { "Brand": "Orient Electric", "Shape": "Square", "Wattage": "12 Watts", "Type": "Recessed", "Color Temp": "6500K / 4000K / 3000K" }
+    },
+    {
+      id: "orient-led-panel-light-15w-round",
+      category: "lighting",
+      subcategory: "Panel Lights",
+      title: "ORIENT LED PANEL LIGHT 15W ROUND",
+      image: "images/gallery/modern-interior-lighting-solutions.webp",
+      badge: "Lighting Solutions",
+      desc: "Round recessed 15W LED panel light by Orient. Superior brightness with uniform light distribution.",
+      brands: ["Orient"],
+      price: "₹320 - ₹410",
+      specs: { "Brand": "Orient Electric", "Shape": "Round", "Wattage": "15 Watts", "Type": "Recessed", "Color Temp": "6500K / 3000K" }
+    },
+
+    // --- SWITCHES (7 items) ---
+    {
+      id: "galvanized-iron-2-modular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "2 MODULAR BOX",
+      image: "images/products/galvanized-iron-2-modular-switch-box.webp",
+      badge: "Electrical Accessories",
+      desc: "Premium quality 2-module switchboard mounting metal box made of galvanized steel for rust resistance.",
+      brands: ["Anshuman"],
+      price: "₹30 - ₹45",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "2 Module", "Wall Thickness": "1.0mm - 1.2mm", "Type": "Concealed Wall Box", "Rust Resistance": "High" }
+    },
+    {
+      id: "galvanized-iron-3-modular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "3 MODULAR BOX",
+      image: "images/products/galvanized-iron-3-modular-switch-box.jpg",
+      badge: "Electrical Accessories",
+      desc: "Robust 3-module galvanized iron modular mounting box with standard threads for modular switch plates.",
+      brands: ["Anshuman"],
+      price: "₹35 - ₹52",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "3 Module", "Wall Thickness": "1.2mm", "Type": "Concealed Wall Box" }
+    },
+    {
+      id: "galvanized-iron-4-modular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "4 MODULAR BOX",
+      image: "images/products/galvanized-iron-4-modular-switch-box.webp",
+      badge: "Electrical Accessories",
+      desc: "Galvanized 4-module switch box, durable and corrosion-resistant for concealed wiring setups.",
+      brands: ["Anshuman"],
+      price: "₹40 - ₹60",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "4 Module", "Wall Thickness": "1.2mm" }
+    },
+    {
+      id: "galvanized-iron-6-modular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "6 MODULAR BOX",
+      image: "images/products/galvanized-iron-6-modular-switch-box.webp",
+      badge: "Electrical Accessories",
+      desc: "Galvanized steel 6-module mounting box, engineered for standard switches and power outlets.",
+      brands: ["Anshuman"],
+      price: "₹50 - ₹75",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "6 Module", "Wall Thickness": "1.2mm" }
+    },
+    {
+      id: "galvanized-iron-8-modular-square-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "8 MODULAR BOX SQUARE",
+      image: "images/products/galvanized-iron-8-modular-switch-box.webp",
+      badge: "Electrical Accessories",
+      desc: "Square 8-module metal switchboard box, optimized space utilization for complex modular grids.",
+      brands: ["Anshuman"],
+      price: "₹65 - ₹95",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "8 Module (Square)", "Dimensions": "5x5 inches" }
+    },
+    {
+      id: "galvanized-iron-8-modular-rectangular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "8 MODULAR BOX RECTANGULAR",
+      image: "images/products/galvanized-iron-8-modular-rectangular-switch-box.jpg",
+      badge: "Electrical Accessories",
+      desc: "Standard rectangular 8-module galvanized switch box for heavy home appliances and multiple points.",
+      brands: ["Anshuman"],
+      price: "₹65 - ₹95",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "8 Module (Rect)", "Dimensions": "3x9 inches" }
+    },
+    {
+      id: "galvanized-iron-12-modular-switch-box",
+      category: "switches",
+      subcategory: "Modular Switch Boxes",
+      title: "12 MODULAR BOX",
+      image: "images/products/galvanized-iron-12-modular-switch-box.webp",
+      badge: "Electrical Accessories",
+      desc: "Spacious 12-module galvanized modular switchboard box for complete room control and panel distribution.",
+      brands: ["Anshuman"],
+      price: "₹85 - ₹125",
+      specs: { "Material": "Galvanized Iron (GI)", "Size": "12 Module", "Wall Thickness": "1.2mm" }
+    },
+
+    // --- CONDUIT (14 items) ---
+    {
+      id: "indeana-heavy-duty-pvc-conduit-pipe-25mm",
+      category: "conduit",
+      subcategory: "PVC Conduit Pipes",
+      title: "INDEANA PIPE HEAVY 25MM",
+      image: "images/products/indeana-heavy-duty-pvc-conduit-pipe-25mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Heavy-duty 25mm PVC conduit pipe by Indeana. High impact-resistant and fire-retardant wiring protection.",
+      brands: ["Indeana"],
+      price: "₹75 - ₹95 per pipe",
+      specs: { "Brand": "Indeana", "Size": "25mm Outer Diameter", "Class": "Heavy Duty", "Material": "Rigid PVC", "Length": "3 Meters" }
+    },
+    {
+      id: "indeana-medium-duty-pvc-conduit-pipe-20mm",
+      category: "conduit",
+      subcategory: "PVC Conduit Pipes",
+      title: "INDEANA PIPE 20MM MEDIUM",
+      image: "images/products/indeana-medium-duty-pvc-conduit-pipe-20mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Medium-duty 20mm PVC conduit pipe by Indeana, flexible and robust for concealed ceiling and wall installations.",
+      brands: ["Indeana"],
+      price: "₹55 - ₹70 per pipe",
+      specs: { "Brand": "Indeana", "Size": "20mm Outer Diameter", "Class": "Medium Duty", "Material": "Rigid PVC", "Length": "3 Meters" }
+    },
+    {
+      id: "indeana-medium-duty-pvc-conduit-pipe-25mm",
+      category: "conduit",
+      subcategory: "PVC Conduit Pipes",
+      title: "INDEANA PIPE 25MM MEDIUM",
+      image: "images/products/indeana-medium-duty-pvc-conduit-pipe-25mm.webp",
+      badge: "Conduits & Fittings",
+      desc: "Medium-duty 25mm PVC conduit pipe by Indeana, ideal for standard cable distribution and layouts.",
+      brands: ["Indeana"],
+      price: "₹65 - ₹82 per pipe",
+      specs: { "Brand": "Indeana", "Size": "25mm Outer Diameter", "Class": "Medium Duty", "Length": "3 Meters" }
+    },
+    {
+      id: "indeana-pvc-conduit-bend-band-25mm",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "INDEANA BAND 25MM",
+      image: "images/products/indeana-pvc-conduit-bend-band-25mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Robust 25mm PVC bend/band by Indeana, designed for smooth pulling of wires without damage at corners.",
+      brands: ["Indeana"],
+      price: "₹8 - ₹14",
+      specs: { "Brand": "Indeana", "Type": "Conduit Bend (Band)", "Size": "25mm", "Material": "PVC" }
+    },
+    {
+      id: "indeana-medium-pvc-conduit-bend-band-20mm",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "INDEANA BAND 20MM MEDIUM",
+      image: "images/products/indeana-medium-pvc-conduit-bend-band-20mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Medium-duty 20mm PVC bend for connecting wall conduits seamlessly at right angles.",
+      brands: ["Indeana"],
+      price: "₹6 - ₹10",
+      specs: { "Brand": "Indeana", "Type": "Conduit Bend", "Size": "20mm" }
+    },
+    {
+      id: "indeana-heavy-pvc-conduit-bend-band-25mm",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "INDEANA BAND 25MM HEAVY",
+      image: "images/products/indeana-heavy-pvc-conduit-bend-band-25mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Heavy-duty 25mm PVC conduit bend, offering high physical impact tolerance for floor and structural bends.",
+      brands: ["Indeana"],
+      price: "₹10 - ₹16",
+      specs: { "Brand": "Indeana", "Type": "Conduit Bend (Heavy)", "Size": "25mm" }
+    },
+    {
+      id: "ceiling-fan-junction-box-heavy-duty-700g",
+      category: "conduit",
+      subcategory: "Junction Boxes",
+      title: "FAN BOX HEAVY",
+      image: "images/products/ceiling-fan-junction-box-heavy-duty-700g.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Heavy-duty ceiling fan mounting junction box, designed to bear high load and structural vibrations.",
+      brands: ["Anshuman"],
+      price: "₹75 - ₹110",
+      specs: { "Type": "Ceiling Fan Box", "Weight Class": "Heavy Duty (~700g)", "Material": "Iron / Zinc Coated", "Mounting": "Ceiling Recessed" }
+    },
+    {
+      id: "concealed-ceiling-junction-box-heavy-duty",
+      category: "conduit",
+      subcategory: "Junction Boxes",
+      title: "CONCIELD BOX HEAVY",
+      image: "images/products/concealed-ceiling-junction-box-heavy-duty.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Heavy-duty concealed ceiling junction box for neat wiring connections and profile lights.",
+      brands: ["Anshuman"],
+      price: "₹35 - ₹55",
+      specs: { "Type": "Concealed Junction Box", "Material": "Galvanized Iron", "Thickness": "Heavy Duty" }
+    },
+    {
+      id: "ceiling-fan-junction-box-medium-duty-500g",
+      category: "conduit",
+      subcategory: "Junction Boxes",
+      title: "FAN BOX MEDIUM",
+      image: "images/products/ceiling-fan-junction-box-medium-duty-500g.webp",
+      badge: "Conduits & Fittings",
+      desc: "Standard medium-duty fan junction box for residential housing projects.",
+      brands: ["Anshuman"],
+      price: "₹55 - ₹85",
+      specs: { "Type": "Ceiling Fan Box", "Weight Class": "Medium Duty (~500g)", "Material": "Iron" }
+    },
+    {
+      id: "concealed-ceiling-junction-box-medium-duty-180g",
+      category: "conduit",
+      subcategory: "Junction Boxes",
+      title: "CONCIELD MEDIUM",
+      image: "images/products/concealed-ceiling-junction-box-medium-duty-180g.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Concealed medium-duty wall junction box, flame-retardant and durable.",
+      brands: ["Anshuman"],
+      price: "₹25 - ₹40",
+      specs: { "Type": "Concealed Junction Box", "Weight": "Medium Duty (~180g)", "Material": "GI Steel" }
+    },
+    {
+      id: "pvc-flexible-corrugated-conduit-pipe-20mm",
+      category: "conduit",
+      subcategory: "PVC Conduit Pipes",
+      title: "FLEXIBLE PIPE 20MM",
+      image: "images/products/pvc-flexible-corrugated-conduit-pipe-20mm.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Corrugated 20mm PVC flexible pipe, perfect for linking main conduits to switch boards around pillars.",
+      brands: ["Anshuman"],
+      price: "₹180 - ₹280 per roll",
+      specs: { "Type": "Corrugated Flexible Pipe", "Size": "20mm", "Material": "PVC", "Roll Length": "30 Meters" }
+    },
+    {
+      id: "ceiling-fan-downrod-iron-12-inch",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "FAN ROD 12 INCH",
+      image: "images/products/ceiling-fan-downrod-iron-12-inch.webp",
+      badge: "Conduits & Fittings",
+      desc: "Heavy iron ceiling fan downrod (12 inches) with rust-resistant paint and secure key bolt slots.",
+      brands: ["Anshuman"],
+      price: "₹40 - ₹65",
+      specs: { "Type": "Ceiling Fan Downrod", "Length": "12 Inches (30cm)", "Material": "Cast Iron", "Finish": "Powder Coated White" }
+    },
+    {
+      id: "pvc-conduit-tee-connection-cover",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "TEE COVER",
+      image: "images/products/pvc-conduit-tee-connection-cover.jpg",
+      badge: "Conduits & Fittings",
+      desc: "Standard PVC Tee cover for securing T-junction connections of surface wiring casing/pipes.",
+      brands: ["Anshuman"],
+      price: "₹5 - ₹10",
+      specs: { "Type": "Casing Tee Connection Cover", "Material": "Rigid PVC", "Compatibility": "Standard modular channelling" }
+    },
+    {
+      id: "ceiling-fan-canopy-replacement-cover",
+      category: "conduit",
+      subcategory: "Accessories & Downrods",
+      title: "FAN COVER",
+      image: "images/products/ceiling-fan-canopy-replacement-cover.jpg",
+      badge: "Conduits & Fittings",
+      desc: "High-quality replacement canopy/cover set for ceiling fans, white glossy finish.",
+      brands: ["Anshuman"],
+      price: "₹25 - ₹40",
+      specs: { "Type": "Ceiling Fan Canopy Set", "Includes": "Top & Bottom Canopies", "Color": "Glossy White" }
+    },
+
+    // --- HARDWARE (23 items) ---
+    {
+      id: "premium-threaded-mounting-screws-0-75-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW .75 INCH",
+      image: "images/products/premium-threaded-mounting-screws-0-75-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Standard 0.75-inch premium threaded metal screws for switchboards and general hardware fittings.",
+      brands: ["Anshuman"],
+      price: "₹80 - ₹120 per box",
+      specs: { "Type": "Threaded Mounting Screws", "Length": "0.75 Inch", "Qty": "100/box", "Material": "Steel / Zinc Plated" }
+    },
+    {
+      id: "premium-threaded-mounting-screws-1-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW 1 INCH",
+      image: "images/products/premium-threaded-mounting-screws-1-inch.png",
+      badge: "Construction Hardware",
+      desc: "Threaded 1-inch metal screws, durable and rust-resistant for secure electrical hardware mounting.",
+      brands: ["Anshuman"],
+      price: "₹95 - ₹140 per box",
+      specs: { "Type": "Threaded Screws", "Length": "1 Inch", "Qty": "100/box" }
+    },
+    {
+      id: "premium-threaded-mounting-screws-1.5-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW 1.5 INCH",
+      image: "images/products/premium-threaded-mounting-screws-1.5-inch.webp",
+      badge: "Construction Hardware",
+      desc: "Threaded 1.5-inch mounting screws for wood panel fittings and heavier wall fixtures.",
+      brands: ["Anshuman"],
+      price: "₹110 - ₹160 per box",
+      specs: { "Type": "Threaded Screws", "Length": "1.5 Inch", "Qty": "100/box" }
+    },
+    {
+      id: "premium-threaded-mounting-screws-2-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW 2 INCH",
+      image: "images/products/premium-threaded-mounting-screws-2-inch.webp",
+      badge: "Construction Hardware",
+      desc: "High-tensile 2-inch threaded metal screws, ideal for distribution boxes and frame mountings.",
+      brands: ["Anshuman"],
+      price: "₹130 - ₹190 per box",
+      specs: { "Type": "Threaded Screws", "Length": "2 Inch", "Qty": "100/box" }
+    },
+    {
+      id: "premium-threaded-mounting-screws-2.5-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW 2.5 INCH",
+      image: "images/products/premium-threaded-mounting-screws-2.5-inch.png",
+      badge: "Construction Hardware",
+      desc: "Heavy-duty 2.5-inch threaded wood/metal mounting screws for specialized framing.",
+      brands: ["Anshuman"],
+      price: "₹150 - ₹220 per box",
+      specs: { "Type": "Threaded Screws", "Length": "2.5 Inch" }
+    },
+    {
+      id: "premium-threaded-mounting-screws-3-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SCREW 3 INCH",
+      image: "images/products/premium-threaded-mounting-screws-3-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Extra-long 3-inch threaded screws for deep anchoring and heavy machinery fixtures.",
+      brands: ["Anshuman"],
+      price: "₹180 - ₹260 per box",
+      specs: { "Type": "Threaded Screws", "Length": "3 Inch" }
+    },
+    {
+      id: "pvc-conduit-pipe-saddle-clamp-25mm",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SADDLE CLAMP 25MM",
+      image: "images/products/pvc-conduit-pipe-saddle-clamp-25mm.webp",
+      badge: "Construction Hardware",
+      desc: "Steel saddle clamp (25mm) for securing PVC conduit pipes along concrete walls and pillars.",
+      brands: ["Anshuman"],
+      price: "₹1.50 - ₹3.00 per pc",
+      specs: { "Type": "Pipe Saddle Clamp", "Size": "25mm", "Material": "Mild Steel (GI)" }
+    },
+    {
+      id: "steelgrip-pvc-insulation-tape-pidilite",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "STEELGRIP TAPE",
+      image: "images/products/steelgrip-pvc-insulation-tape-pidilite.webp",
+      badge: "Construction Hardware",
+      desc: "Pidilite Steelgrip PVC electric insulation tape. Industry-standard adhesion and high dielectric strength.",
+      brands: ["Steelgrip"],
+      price: "₹10 - ₹15 per roll",
+      specs: { "Brand": "Steelgrip (Pidilite)", "Material": "PVC", "Width": "1.8cm", "Length": "7m / 8m", "Colors": "Black, Red, Blue, Yellow, Green" }
+    },
+    {
+      id: "thermocol-sheets-roof-insulation-50mm",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "THERMOCOL SHEET 50MM",
+      image: "images/products/thermocol-sheets-roof-insulation-50mm.webp",
+      badge: "Construction Hardware",
+      desc: "High density 50mm EPS thermocol sheets for roof, concrete slabs, and underdeck thermal insulation.",
+      brands: ["Anshuman"],
+      price: "₹45 - ₹75 per sheet",
+      specs: { "Material": "Expanded Polystyrene (EPS)", "Thickness": "50mm", "Density": "High Density", "Dimensions": "3x2 / 4x2 feet" }
+    },
+    {
+      id: "high-adhesion-masking-tape",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "MASKING TAPE",
+      image: "images/products/high-adhesion-masking-tape.webp",
+      badge: "Construction Hardware",
+      desc: "Premium crepe paper masking tape for layout marking and protective masking during wall painting.",
+      brands: ["Anshuman"],
+      price: "₹35 - ₹65 per roll",
+      specs: { "Type": "Crepe Paper Masking Tape", "Width": "1 Inch / 2 Inch", "Adhesion": "Medium-High" }
+    },
+    {
+      id: "self-drilling-metal-screws-1-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SELF DRILLING SCREW 1 ICH",
+      image: "images/products/self-drilling-metal-screws-1-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "High-efficiency 1-inch self-drilling screws for metal casing and GI pipe frames.",
+      brands: ["Anshuman"],
+      price: "₹180 - ₹240 per pack",
+      specs: { "Type": "Self-Drilling Screw", "Length": "1 Inch", "Point": "Tek Drill Point", "Material": "Carbon Steel" }
+    },
+    {
+      id: "self-drilling-metal-screws-1.5-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SELF DRILLING SCREW 1.5 INCH",
+      image: "images/products/self-drilling-metal-screws-1.5-inch.webp",
+      badge: "Construction Hardware",
+      desc: "Self-drilling 1.5-inch metal screws, drills and fastens in a single action.",
+      brands: ["Anshuman"],
+      price: "₹210 - ₹280 per pack",
+      specs: { "Type": "Self-Drilling Screw", "Length": "1.5 Inch" }
+    },
+    {
+      id: "self-drilling-metal-screws-2-inch",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "SELF DRILLING SCREW 2 INCH",
+      image: "images/products/self-drilling-metal-screws-2-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Self-drilling 2-inch screws for structural steel sheet cladding and heavy brackets.",
+      brands: ["Anshuman"],
+      price: "₹240 - ₹320 per pack",
+      specs: { "Type": "Self-Drilling Screw", "Length": "2 Inch" }
+    },
+    {
+      id: "heatex-adhesive-seal-bond-compound-5kg",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "HEATEX 5KG",
+      image: "images/products/heatex-adhesive-seal-bond-compound-5kg.jpg",
+      badge: "Construction Hardware",
+      desc: "Heatex heavy-duty adhesive jointing compound (5kg pack) for pipeline joint sealing & high heat insulation.",
+      brands: ["Heatex"],
+      price: "₹450 - ₹620",
+      specs: { "Brand": "Heatex", "Weight": "5 Kg", "Type": "Adhesive Seal Compound", "Heat Resistance": "Excellent" }
+    },
+    {
+      id: "concrete-nails-keel-1-inch-14-spn",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL 1 INCH",
+      image: "images/products/concrete-nails-keel-1-inch-14-spn.jpg",
+      badge: "Construction Hardware",
+      desc: "Durable 1-inch concrete construction nails for masonry fittings and shuttering work.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Keel Nails", "Length": "1 Inch", "Thickness": "14 Gauge", "Application": "Slabs & Walls" }
+    },
+    {
+      id: "concrete-nails-keel-1-5-inch-14-spn",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL 1.5 INCH",
+      image: "images/products/concrete-nails-keel-1-5-inch-14-spn.jpg",
+      badge: "Construction Hardware",
+      desc: "High-grade 1.5-inch concrete keel nails for concrete board panel frames and supports.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Keel Nails", "Length": "1.5 Inch", "Gauge": "14 SPN" }
+    },
+    {
+      id: "wall-fix-rapid-adhesive-bond-50g",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "WALL FIX 50G",
+      image: "images/products/wall-fix-rapid-adhesive-bond-50g.webp",
+      badge: "Construction Hardware",
+      desc: "Wall Fix rapid setting adhesive compound (50g) for quick wall plaster patch-ups and board joint fills.",
+      brands: ["Wall Fix"],
+      price: "₹30 - ₹45 per tube",
+      specs: { "Brand": "Wall Fix", "Weight": "50g", "Type": "Rapid Adhesive Bond", "Curing Time": "Quick Setting" }
+    },
+    {
+      id: "wall-fix-rapid-adhesive-bond-18g",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "WALL FIX 18G",
+      image: "images/products/wall-fix-rapid-adhesive-bond-18g.jpg",
+      badge: "Construction Hardware",
+      desc: "Wall Fix quick instant bond tube (18g), ideal for small site adjustments and minor board pasting.",
+      brands: ["Wall Fix"],
+      price: "₹12 - ₹20",
+      specs: { "Brand": "Wall Fix", "Weight": "18g", "Type": "Instant Adhesive Bond" }
+    },
+    {
+      id: "araldite-standard-epoxy-adhesive-1-8kg",
+      category: "hardware",
+      subcategory: "Adhesives & Tapes",
+      title: "ARALDITE 1.8KG",
+      image: "images/products/araldite-standard-epoxy-adhesive-1-8kg.webp",
+      badge: "Construction Hardware",
+      desc: "Araldite Standard heavy industrial epoxy adhesive (1.8kg combo pack). Super strong bonding of metals, glass and concrete.",
+      brands: ["Araldite"],
+      price: "₹1,450 - ₹1,750",
+      specs: { "Brand": "Araldite (Huntsman)", "Type": "Two-part Epoxy Adhesive", "Combo Weight": "1.8 Kg (Resin + Hardener)", "Bond Strength": "Industrial Grade" }
+    },
+    {
+      id: "zypsem-drywall-screws-3-4-inch-white",
+      category: "hardware",
+      subcategory: "Premium Screws",
+      title: "DRYWALL SCREWS 3/4 WHITE",
+      image: "images/products/zypsem-drywall-screws-3-4-inch-white.webp",
+      badge: "Construction Hardware",
+      desc: "White coated drywall screws (3/4 inch) by Zypsem. Sharp bugle head for smooth plasterboard anchoring.",
+      brands: ["Zypsem"],
+      price: "₹120 - ₹170 per box",
+      specs: { "Brand": "Zypsem", "Length": "3/4 Inch", "Color": "White Coated", "Type": "Drywall Bugle Screws" }
+    },
+    {
+      id: "bosch-wood-cutter-circular-saw-blade-5-inch-30t",
+      category: "hardware",
+      subcategory: "Cutting Blades",
+      title: "BOSCH WOOD CUTTER 5 INCH",
+      image: "images/products/bosch-wood-cutter-circular-saw-blade-5-inch-30t.webp",
+      badge: "Construction Hardware",
+      desc: "Bosch professional 5-inch circular saw blade (30 Teeth) for clean and fast wood cutting in interior projects.",
+      brands: ["Bosch"],
+      price: "₹280 - ₹380",
+      specs: { "Brand": "Bosch Professional", "Diameter": "5 Inch (125mm)", "Teeth Count": "30T", "Application": "Softwood / Hardwood / Plywood", "Max Speed": "12,00,000 RPM" }
+    },
+    {
+      id: "bosch-wood-cutter-circular-saw-blade-4-inch-30t",
+      category: "hardware",
+      subcategory: "Cutting Blades",
+      title: "BOSCH WOOD CUTTER 4 INCH",
+      image: "images/products/bosch-wood-cutter-circular-saw-blade-4-inch-30t.jpg",
+      badge: "Construction Hardware",
+      desc: "Bosch professional 4-inch circular saw blade (30 Teeth) for clean cutting in compact saws.",
+      brands: ["Bosch"],
+      price: "₹220 - ₹290",
+      specs: { "Brand": "Bosch Professional", "Diameter": "4 Inch (110mm)", "Teeth Count": "30T", "Application": "Wood Cutting" }
+    },
+    {
+      id: "shuttering-concrete-nails-1-inch",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL 1 INCH (MASONRY)",
+      image: "images/products/shuttering-concrete-nails-1-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Masonry concrete nails 1-inch, high carbon steel pins for timber to concrete block joints.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Nails (Sattring Keel)", "Length": "1 Inch" }
+    },
+    {
+      id: "shuttering-concrete-nails-2-inch",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL 2 INCH",
+      image: "images/products/shuttering-concrete-nails-2-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Tempered 2-inch concrete shuttering nails, heavy gauge designed for slab structural shuttering support boards.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Nails", "Length": "2 Inch" }
+    },
+    {
+      id: "shuttering-concrete-nails-3-inch",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL3 INCH",
+      image: "images/products/shuttering-concrete-nails-3-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Heavy-duty 3-inch shuttering nails for heavy structural frames and timber support.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Nails", "Length": "3 Inch" }
+    },
+    {
+      id: "shuttering-concrete-nails-4-inch",
+      category: "hardware",
+      subcategory: "Concrete Nails",
+      title: "SATTRING KEEL 4 INCH",
+      image: "images/products/shuttering-concrete-nails-4-inch.jpg",
+      badge: "Construction Hardware",
+      desc: "Extra-long 4-inch concrete shuttering nails for high-load timber structures.",
+      brands: ["Anshuman"],
+      price: "₹90 - ₹130 per kg",
+      specs: { "Type": "Concrete Nails", "Length": "4 Inch" }
+    },
+
+    // --- WIRES & CABLES (2 items) ---
+    {
+      id: "fr-frls-house-wiring-cables-wholesale",
+      category: "wires",
+      subcategory: "House Wiring (FR/FRLS)",
+      title: "FR / FRLS HOUSE WIRING CABLES",
+      image: "images/gallery/fr-frls-house-wiring-cables-wholesale.webp",
+      badge: "Wires & Cables",
+      desc: "Flame-retardant house wiring cables from Polycab, Havells and KEI. Best for safety and high current capacity.",
+      brands: ["Polycab", "Havells", "KEI"],
+      price: "₹850 - ₹4,500 per coil",
+      specs: { "Brands": "Polycab / Havells / KEI / RR", "Gauges": "0.75 sq mm to 10 sq mm", "Class": "FR / FRLS (Low Smoke)", "ISI Standard": "IS 694 Certified", "Conductor": "99.97% Pure Electrolytic Copper" }
+    },
+    {
+      id: "solar-and-electrical-cables-display",
+      category: "wires",
+      subcategory: "Solar & Industrial",
+      title: "SOLAR DC & ARMOURED INDUSTRIAL CABLES",
+      image: "images/gallery/solar-and-electrical-cables-display.webp",
+      badge: "Wires & Cables",
+      desc: "Heavy duty armoured cables and TUV certified solar DC wires for building installations and green solar power grids.",
+      brands: ["Polycab", "KEI"],
+      price: "₹45 - ₹850 per meter",
+      specs: { "Application": "Solar Grid & Industrial Power", "Core Type": "Armoured Aluminum/Copper", "Solar Certification": "TUV Approved 4mm / 6mm", "Voltage Grade": "1100 Volts" }
+    },
+
+    // --- CCTV & SECURITY (2 items) ---
+    {
+      id: "cctv-dvr-camera-security-kit",
+      category: "cctv",
+      subcategory: "DVR & Accessories",
+      title: "CCTV DVR KIT WITH DOME CAMERAS",
+      image: "images/gallery/cctv-dvr-camera-security-kit.webp",
+      badge: "CCTV & Security",
+      desc: "Complete CP Plus / Hikvision 4-Camera analog HD security package. High night vision clarity and remote app viewing.",
+      brands: ["CP Plus", "Hikvision"],
+      price: "₹9,500 - ₹16,500 kit",
+      specs: { "Brand": "CP Plus / Hikvision / Dahua", "Resolution": "2MP / 4MP Full HD", "Kit Includes": "4 Cameras + 4Ch DVR + Power Supply + BNC + 90m Cable", "Night Vision": "IR / Color night vision up to 20m" }
+    },
+    {
+      id: "cctv-security-camera-installation",
+      category: "cctv",
+      subcategory: "Cameras (IP/HD)",
+      title: "CCTV SECURITY CAMERA INSTALLATION",
+      image: "images/gallery/cctv-security-camera-installation.webp",
+      badge: "CCTV & Security",
+      desc: "Professional site wiring, dome/bullet camera setups, DVR/NVR configuration and networking support.",
+      brands: ["CP Plus", "Hikvision", "Dahua"],
+      price: "₹2,500 - ₹4,500 per point",
+      specs: { "Service Area": "NCR, Greater Noida", "Installation Type": "Concealed Conduit / Casing Piping", "Warranty": "1 Year Service Warranty" }
+    },
+
+    // --- MCB & DB PANELS (2 items) ---
+    {
+      id: "mcb-breaker-panel-installation",
+      category: "mcb",
+      subcategory: "Circuit Breakers (MCB)",
+      title: "MCB BREAKER PANEL INSTALLATION & ENCLOSURES",
+      image: "images/gallery/mcb-breaker-panel-installation.webp",
+      badge: "MCB & DB Panels",
+      desc: "Siemens, Havells & Legrand single-pole, double-pole, and four-pole MCBs. Heavy current protection.",
+      brands: ["Siemens", "Havells", "Legrand"],
+      price: "₹180 - ₹1,200",
+      specs: { "Current Rating": "6A to 63A", "Tripping Curve": "B / C / D Curves", "Breaking Capacity": "10kA", "Brand": "Havells / Legrand / Siemens" }
+    },
+    {
+      id: "mcb-distribution-board-electrical",
+      category: "mcb",
+      subcategory: "Distribution Boards",
+      title: "MCB DISTRIBUTION BOARD ENCLOSURES",
+      image: "images/gallery/mcb-distribution-board-electrical.webp",
+      badge: "MCB & DB Panels",
+      desc: "Double door sheet steel MCB distribution boards with IP43 protection. Available in 4, 8, 12, 16 way variants.",
+      brands: ["Havells", "Legrand"],
+      price: "₹850 - ₹3,500",
+      specs: { "Type": "SPN / TPN Distribution Board", "Doors": "Double Door Metal Enclosure", "IP Rating": "IP43 Weather Protection", "Brand": "Havells / Legrand" }
+    },
+
+    // --- DECORATIVE LIGHTING (1 item) ---
+    {
+      id: "led-strip-ceiling-lighting-design",
+      category: "lighting",
+      subcategory: "Decorative Strips",
+      title: "LED STRIP CEILING LIGHTING COILS",
+      image: "images/gallery/led-strip-ceiling-lighting-design.webp",
+      badge: "Decorative Lighting",
+      desc: "Flexible high brightness LED strip lights for false ceiling cove designs. Available in multiple single colours and RGB.",
+      brands: ["Havells", "Orient", "RR"],
+      price: "₹350 - ₹1,250 roll",
+      specs: { "Type": "Flexible LED Strip (5050/2835)", "Length": "5 Meters per roll", "LED Density": "120 LEDs/meter", "Voltage": "12V DC (Requires Driver)" }
+    }
+  ];
+
+  // CATEGORY INDEX CONFIGURATION MAPPING
+  const categoryMap = {
+    switches: {
+      title: "Modular Switches & Accessories",
+      dbCategories: ["switches"],
+      subcategories: ["All Accessories", "Modular Switch Boxes"]
+    },
+    hardware: {
+      title: "Construction Fasteners & Screws",
+      dbCategories: ["hardware"],
+      subcategories: ["All Hardware", "Premium Screws", "Concrete Nails", "Adhesives & Tapes"]
+    },
+    lighting: {
+      title: "LED Lighting & Battens",
+      dbCategories: ["lighting"],
+      subcategories: ["All Lighting", "LED Battens", "Panel Lights", "Decorative Strips"]
+    },
+    cctv: {
+      title: "CCTV Cameras & Security Kits",
+      dbCategories: ["cctv"],
+      subcategories: ["All CCTV & Security", "Cameras (IP/HD)", "DVR & Accessories"]
+    },
+    tools: {
+      title: "Cutting Saw Blades & Tools",
+      dbCategories: ["hardware"],
+      subcategories: ["All Tools & Blades", "Cutting Blades"]
+    },
+    industrial: {
+      title: "Industrial Adhesives & Insulation",
+      dbCategories: ["hardware"],
+      subcategories: ["All Industrial", "Adhesives & Tapes"]
+    },
+    declighting: {
+      title: "Decorative Profile & Strip Lights",
+      dbCategories: ["lighting"],
+      subcategories: ["All Decorative Lighting", "Decorative Strips"]
+    },
+    conduit: {
+      title: "PVC Conduits, Fan Boxes & Breakers",
+      dbCategories: ["conduit", "mcb"],
+      subcategories: ["All Conduits & Breakers", "PVC Conduit Pipes", "Junction Boxes", "Accessories & Downrods", "Circuit Breakers (MCB)", "Distribution Boards"]
+    }
+  };
+
+  // ACTIVE FILTERS STATE
+  let activeCategoryKey = null;
+  let activeSubcategoryName = null;
+
+  // INITIALIZE DYNAMIC CATALOG
+  function initDynamicCatalog() {
+    renderAllDefaultGrids();
+  }
+
+  // RENDER DOCK GRIDS (DEFAULT VIEW)
+  function renderAllDefaultGrids() {
+    const categories = ["lighting", "wires", "switches", "cctv", "mcb", "conduit", "hardware"];
+    categories.forEach(cat => {
+      const grid = document.getElementById(`grid-${cat}`);
+      if (grid) {
+        const filteredList = productsData.filter(p => p.category === cat);
+        grid.innerHTML = generateProductsHtml(filteredList);
+        grid.style.display = "grid"; // Ensure it is shown
+      }
+    });
+  }
+
+  // GENERATE HTML CARDS STRING
+  function generateProductsHtml(list) {
+    if (list.length === 0) {
+      return `
+        <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-light); font-size: 14px;">
+          No matching products found. Please request a quote for direct sourcing.
+        </div>
+      `;
+    }
+    return list.map(prod => {
+      const brandTags = prod.brands.map(b => `<span class="prod-card-brand-tag">${b}</span>`).join('');
+      const firstSpecKey = Object.keys(prod.specs)[0] || '';
+      const firstSpecVal = prod.specs[firstSpecKey] || '';
+      const secondSpecKey = Object.keys(prod.specs)[1] || '';
+      const secondSpecVal = prod.specs[secondSpecKey] || '';
+      
+      return `
+        <div class="prod-static-card">
+          <span class="prod-card-badge">${prod.badge}</span>
+          <div class="prod-card-img-wrap">
+            <img class="prod-card-img" src="${prod.image}" alt="${prod.title}" onerror="this.src='images/gallery/pvc-conduit-pipes-fittings.webp';">
+          </div>
+          <div class="prod-card-brand-tags">${brandTags}</div>
+          <h4 class="prod-card-title">${prod.title}</h4>
+          <p class="prod-card-desc">${prod.desc}</p>
+          
+          <ul class="prod-card-specs">
+            ${firstSpecKey ? `<li><span>${firstSpecKey}:</span> <span>${firstSpecVal}</span></li>` : ''}
+            ${secondSpecKey ? `<li><span>${secondSpecKey}:</span> <span>${secondSpecVal}</span></li>` : ''}
+          </ul>
+          
+          <div class="prod-card-footer">
+            <div class="prod-card-price-row">
+              <span class="prod-card-price-label">Wholesale Price</span>
+              <span class="prod-card-price-val">${prod.price}</span>
+            </div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <button onclick="openProductDetailsModal('${prod.id}')" class="btn-card-view">Specs Modal</button>
+              <a href="https://wa.me/917065815743?text=I%20need%20wholesale%20pricing%20for%20${encodeURIComponent(prod.title)}" target="_blank" class="btn-card-quote" style="display:flex; align-items:center; justify-content:center; gap:4px; text-decoration:none;">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // OPEN SUBCATEGORY POPUP
+  window.openSubcategoryPopup = function(categoryKey) {
+    const config = categoryMap[categoryKey];
+    if (!config) return;
+    
+    activeCategoryKey = categoryKey;
+    
+    // Set popup title
+    document.getElementById("subcategory-popup-title").textContent = config.title;
+    
+    // Generate subcategory buttons
+    const container = document.getElementById("subcategory-buttons-container");
+    container.innerHTML = config.subcategories.map(sub => {
+      const cleanSub = sub.startsWith("All") ? "All" : sub;
+      return `
+        <button onclick="applySubcategoryFilter('${categoryKey}', '${sub}')" class="subcategory-btn">
+          <span>${sub}</span>
+          <span style="font-size:16px; color:var(--gold);">&rarr;</span>
+        </button>
+      `;
+    }).join('');
+    
+    // Open Modal
+    const popup = document.getElementById("subcategory-popup");
+    popup.classList.add("active");
+    document.body.style.overflow = "hidden";
+  };
+
+  // CLOSE SUBCATEGORY POPUP
+  window.closeSubcategoryPopup = function() {
+    const popup = document.getElementById("subcategory-popup");
+    popup.classList.remove("active");
+    if (!document.getElementById("product-details-modal").classList.contains("active")) {
+      document.body.style.overflow = "auto";
+    }
+  };
+
+  // APPLY SUBCATEGORY FILTER & CLIENT SIDE ROUTE
+  window.applySubcategoryFilter = function(categoryKey, subcategoryName) {
+    const config = categoryMap[categoryKey];
+    if (!config) return;
+    
+    activeSubcategoryName = subcategoryName;
+    closeSubcategoryPopup();
+    
+    // Filter the items
+    let filtered = [];
+    const dbCats = config.dbCategories;
+    
+    if (subcategoryName.startsWith("All")) {
+      filtered = productsData.filter(p => dbCats.includes(p.category));
+    } else {
+      filtered = productsData.filter(p => dbCats.includes(p.category) && p.subcategory === subcategoryName);
+    }
+    
+    // Render in filtered results container
+    const filteredGrid = document.getElementById("grid-filtered");
+    filteredGrid.innerHTML = generateProductsHtml(filtered);
+    
+    // Update Title
+    document.getElementById("filtered-section-title").innerHTML = `${config.title} &mdash; <span style="color:var(--gold-light);">${subcategoryName}</span>`;
+    
+    // Toggle view visibility
+    document.getElementById("filtered-products-section").style.display = "block";
+    
+    // Hide default section containers to direct focus to results
+    const normalSections = ["featured", "lighting", "wires", "switches", "cctv", "mcb", "conduit", "hardware"];
+    normalSections.forEach(id => {
+      const sec = document.getElementById(id);
+      if (sec) sec.style.display = "none";
+    });
+    
+    // Scroll to results
+    setTimeout(() => {
+      const el = document.getElementById("filtered-products-section");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  };
+
+  // RESET FILTER AND RESTORE ALL SECTIONS
+  window.resetFilter = function() {
+    activeCategoryKey = null;
+    activeSubcategoryName = null;
+    
+    // Hide filtered results
+    document.getElementById("filtered-products-section").style.display = "none";
+    
+    // Show normal sections
+    const normalSections = ["featured", "lighting", "wires", "switches", "cctv", "mcb", "conduit", "hardware"];
+    normalSections.forEach(id => {
+      const sec = document.getElementById(id);
+      if (sec) sec.style.display = "block";
+    });
+    
+    // Re-render grids
+    renderAllDefaultGrids();
+    
+    // Scroll back to shop by category index
+    setTimeout(() => {
+      const el = document.getElementById("shop-by-category");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
+  };
+
+  // OPEN PRODUCT DETAILS SPECIFICATIONS MODAL
+  window.openProductDetailsModal = function(productId) {
+    const prod = productsData.find(p => p.id === productId);
+    if (!prod) return;
+    
+    // Set text contents
+    document.getElementById("details-modal-title").textContent = prod.title;
+    document.getElementById("details-modal-cat").textContent = prod.badge;
+    document.getElementById("details-modal-desc").textContent = prod.desc;
+    document.getElementById("details-modal-price").textContent = prod.price;
+    
+    // Set image
+    const img = document.getElementById("details-modal-img");
+    img.src = prod.image;
+    img.alt = prod.title;
+    
+    // Set brands tags
+    const brandContainer = document.getElementById("details-modal-brand-container");
+    brandContainer.innerHTML = prod.brands.map(b => `<span class="prod-card-brand-tag" style="background:var(--maroon-pale); color:var(--maroon-dark);">${b}</span>`).join('');
+    
+    // Set technical specs table rows
+    const specsTable = document.getElementById("details-modal-specs-table");
+    specsTable.innerHTML = Object.entries(prod.specs).map(([key, val]) => `
+      <tr style="border-bottom:1px solid rgba(0,0,0,0.05);">
+        <td style="padding:10px 0; font-weight:700; color:var(--text-mid); width:40%;">${key}</td>
+        <td style="padding:10px 0; color:var(--text-light);">${val}</td>
+      </tr>
+    `).join('');
+    
+    // Set WhatsApp link
+    const waBtn = document.getElementById("details-modal-wa-btn");
+    waBtn.href = `https://wa.me/917065815743?text=I%20am%20interested%20in%20obtaining%20a%20bulk%20quote%20for%20${encodeURIComponent(prod.title)}%20(Specifications:%20${encodeURIComponent(JSON.stringify(prod.specs))})`;
+    
+    // Show Modal
+    const modal = document.getElementById("product-details-modal");
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  };
+
+  // CLOSE PRODUCT DETAILS MODAL
+  window.closeProductDetailsModal = function() {
+    const modal = document.getElementById("product-details-modal");
+    modal.classList.remove("active");
+    if (!document.getElementById("subcategory-popup").classList.contains("active")) {
+      document.body.style.overflow = "auto";
+    }
+  };
+
+  // POPUP BACKDROP CLOSE HANDLING
+  window.handlePopupOverlayClick = function(e, modalId) {
+    const overlay = document.getElementById(modalId);
+    if (e.target === overlay) {
+      if (modalId === "subcategory-popup") closeSubcategoryPopup();
+      if (modalId === "product-details-modal") closeProductDetailsModal();
+    }
+  };
+
+  // KEYBOARD ACCESSIBILITY: ESC CLOSES MODALS & TRAP ACCESSIBILITY KEY
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (document.getElementById("subcategory-popup").classList.contains("active")) {
+        closeSubcategoryPopup();
+      }
+      if (document.getElementById("product-details-modal").classList.contains("active")) {
+        closeProductDetailsModal();
+      }
+    }
+  });
+
+  // INITIALIZE ON LOAD
+  document.addEventListener("DOMContentLoaded", initDynamicCatalog);
+})();
 </script>
 
   <script src="chatbot.js" defer></script>
