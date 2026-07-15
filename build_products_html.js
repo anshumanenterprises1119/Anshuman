@@ -62,7 +62,18 @@ const products = [
   { category: 'hardware', name: 'SATTRING KEEL 1 INCH', icon: '🔧', image: 'shuttering-concrete-nails-1-inch.jpg', desc: 'Standard 1-inch shuttering concrete keels/nails for wooden structuring and support.' },
   { category: 'hardware', name: 'SATTRING KEEL 2 INCH', icon: '🔧', image: 'shuttering-concrete-nails-2-inch.jpg', desc: 'Heavy 2-inch shuttering concrete nails for frame support and conduit pipe anchoring.' },
   { category: 'hardware', name: 'SATTRING KEEL 3 INCH', icon: '🔧', image: 'shuttering-concrete-nails-3-inch.jpg', desc: 'Heavy-duty 3-inch shuttering nails for heavy structural frames and timber support.' },
-  { category: 'hardware', name: 'SATTRING KEEL 4 INCH', icon: '🔧', image: 'shuttering-concrete-nails-4-inch.jpg', desc: 'Extra-long 4-inch concrete shuttering nails for high-load timber structures.' }
+  { category: 'hardware', name: 'SATTRING KEEL 4 INCH', icon: '🔧', image: 'shuttering-concrete-nails-4-inch.jpg', desc: 'Extra-long 4-inch concrete shuttering nails for high-load timber structures.' },
+  { category: 'hardware', name: 'MARBLE CUTTER BLADE 4 INCH', icon: '🔧', image: 'marble-cutter-blade-4-inch.webp', desc: 'Premium 4-inch diamond marble cutter blade for fast, precise, and chip-free cutting of marble, granite, and tiles.' },
+  { category: 'hardware', name: 'MARBLE CUTTER BLADE 5 INCH', icon: '🔧', image: 'marble-cutter-blade-5-inch.webp', desc: 'Heavy-duty 5-inch diamond blade designed for cutting through marbles, tiles, and masonry with clean edges.' },
+  { category: 'hardware', name: 'MARBLE CUTTER BLADE 6 INCH', icon: '🔧', image: 'marble-cutter-blade-6-inch.webp', desc: 'Professional 6-inch diamond edge cutting blade for large granite slabs, concrete, and thick stone tiles.' },
+  { category: 'hardware', name: 'SDS PLUS HAMMER DRILL BIT 6 X 110MM', icon: '🔧', image: 'sds-plus-hammer-drill-bit-6mm.webp', desc: 'Professional SDS-Plus masonry hammer drill bit (6mm diameter, 110mm length) for rapid concrete and brick drilling.' },
+  { category: 'hardware', name: 'SDS PLUS HAMMER DRILL BIT 8 X 160MM', icon: '🔧', image: 'sds-plus-hammer-drill-bit-8mm.webp', desc: 'Professional SDS-Plus masonry hammer drill bit (8mm diameter, 160mm length) for wall plugs and anchor installations.' },
+  { category: 'hardware', name: 'SDS PLUS HAMMER DRILL BIT 10 X 160MM', icon: '🔧', image: 'sds-plus-hammer-drill-bit-10mm.webp', desc: 'Premium SDS-Plus masonry hammer drill bit (10mm diameter, 160mm length) for heavy wall anchors and conduit brackets.' },
+  { category: 'hardware', name: 'SDS PLUS HAMMER DRILL BIT 12 X 160MM', icon: '🔧', image: 'sds-plus-hammer-drill-bit-12mm.webp', desc: 'High-performance SDS-Plus hammer drill bit (12mm diameter, 160mm length) designed for concrete and masonry.' },
+  { category: 'hardware', name: 'SDS PLUS HAMMER DRILL BIT 16 X 200MM', icon: '🔧', image: 'sds-plus-hammer-drill-bit-16mm.webp', desc: 'Heavy-duty SDS-Plus concrete drill bit (16mm diameter, 200mm length) for large cabling pass-throughs and structural anchoring.' },
+  { category: 'hardware', name: 'PARAS THREADED ROD 1 METER', icon: '🔧', image: 'paras-threaded-rod-1m.webp', desc: 'High-strength galvanized iron threaded hanger rod (Paras Rod) for supporting ceiling channels, conduits, and heavy cable trays.' },
+  { category: 'hardware', name: 'BOSCH CUTTING WHEEL 14 INCH', icon: '🔧', image: 'bosch-cutting-wheel-14-inch.webp', desc: 'Genuine 14-inch Bosch abrasive metal cutting wheel, engineered for chop saws to deliver fast, clean cuts in steel and iron.' },
+  { category: 'hardware', name: 'BOSCH GRINDING WHEEL 4 INCH', icon: '🔧', image: 'bosch-grinding-wheel-4-inch.webp', desc: 'Genuine 4-inch Bosch grinding and polishing (Gisai) disc, designed for metal surface cleaning, weld dressing, and deburring.' }
 ];
 
 function generateGridHTML(categoryName) {

@@ -177,6 +177,6 @@ const globalSearchData = [
     "url": "products.html#hardware",
     "title": "🔧 Construction Hardware, Cutter Blades & Adhesives",
     "type": "Product/Service",
-    "content": "Construction Hardware & Cutting Blades: screws, nails, blades, adhesives, drywall screws, Bosch wood cutter blade, Bosch wall cutter blade, Wall Fix Bond, Araldite adhesives, sattring keels, concrete nails, Steelgrip insulation tape, masking tape, pvc saddle, heatex, zypsem drywall screw. Get bulk quote."
+    "content": "Construction Hardware & Cutting Blades: screws, nails, blades, adhesives, drywall screws, Bosch wood cutter blade, Bosch wall cutter blade, Wall Fix Bond, Araldite adhesives, sattring keels, concrete nails, Steelgrip insulation tape, masking tape, pvc saddle, heatex, zypsem drywall screw, marble cutter blade, sds plus hammer drill bit, paras threaded rod, bosch cutting wheel 14 inch, bosch grinding wheel 4 inch, gisai wheel. Get bulk quote."
   }
 ];
