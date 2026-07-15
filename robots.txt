@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /404.html
+Disallow: /payment-success.html
+Disallow: /payment-failure.html
 
 Sitemap: https://anshumanenterprises.online/sitemap.xml
