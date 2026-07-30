@@ -61,24 +61,8 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* NAV */
-    nav {
-      background: var(--maroon-dark);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
-    }
-
-    .nav-inner {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 5%;
-      gap: 16px;
-    }
+    /* NAV - neutralized for new AE Hub header */
+    nav.ae-legacy-nav { display: none; }.nav-inner { /* legacy - removed */ }
 
     .nav-logo {
       display: flex;
@@ -496,105 +480,59 @@
   <meta property="og:image" content="https://anshumanenterprises.online/aditya-contractor-logo.png" />
   <meta property="og:url" content="https://anshumanenterprises.online/wifi-access-points.html" />
   <meta property="og:type" content="website" />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style id="ae-nav-override">
+/* Override any legacy sticky nav CSS */
+nav:not([style]) { position: static !important; background: transparent !important; box-shadow: none !important; }
+#ae-sticky-wrap { position: sticky; top: 0; z-index: 10000; width: 100%; }
+#ae-sticky-wrap nav { position: static !important; background: transparent !important; box-shadow: none !important; }
+.nav-inner { display: none !important; }
+</style>
 </head>
 
 <body>
-<!-- Flipkart-Style Vertical Switcher Top Bar -->
-<div class="ae-vertical-bar" style="background:#0f172a; padding:8px 16px; border-bottom:1px solid rgba(255,255,255,0.1); font-family:'Montserrat', sans-serif; ">
-  <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px;">
-    <div style="display:flex; align-items:center; gap:8px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none;">
-      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0;">
-        <span>🏢</span>
-        <span>Anshuman Hub</span>
-      </a>
-      <a href="../decoratenow/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0;">
-        <span>💡</span>
-        <span>DecorateNow</span>
-      </a>
-      <a href="../contractor/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#38bdf8; color:#0f172a; box-shadow:0 0 12px rgba(56,189,248,0.4);">
-        <span>🔧</span>
-        <span>Aditya Contractor</span>
-      </a>
+<div id="ae-sticky-wrap" style="position:sticky;top:0;z-index:10000;width:100%;">
+<div id="ae-global-switcher" style="background:#0f172a;padding:8px 16px;border-bottom:1px solid rgba(255,255,255,0.1);font-family:'Montserrat',sans-serif;">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <div style="display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;">
+      <a href="../index.html" style="display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:50px;text-decoration:none;font-weight:700;font-size:12px;white-space:nowrap;background:rgba(255,255,255,0.08);color:#e2e8f0;">🏢 Anshuman Hub</a>
+      <a href="../decoratenow/index.html" style="display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:50px;text-decoration:none;font-weight:700;font-size:12px;white-space:nowrap;background:rgba(255,255,255,0.08);color:#e2e8f0;">💡 DecorateNow</a>
+      <a href="../contractor/index.html" style="display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:50px;text-decoration:none;font-weight:700;font-size:12px;white-space:nowrap;background:#38bdf8;color:#0f172a;box-shadow:0 0 12px rgba(56,189,248,0.4);">🔧 Aditya Contractor</a>
     </div>
-    <div style="display:flex; align-items:center; gap:16px; color:#cbd5e1; font-size:11px; font-weight:500; white-space:nowrap;">
+    <div style="display:flex;align-items:center;gap:16px;color:#cbd5e1;font-size:11px;font-weight:500;white-space:nowrap;">
       <span>📍 Greater Noida, UP</span>
       <span>📞 +91 70658 15743</span>
     </div>
   </div>
 </div>
-<div class="ae-sticky-header-wrap" style="position:sticky; top:0; z-index:10000; width:100%; box-shadow:0 4px 20px rgba(0,0,0,0.15);">
-<!-- Flipkart-Style Vertical Switcher Top Bar -->
-<div class="ae-vertical-bar" style="background:#0f172a; padding:8px 16px; border-bottom:1px solid rgba(255,255,255,0.1); font-family:'Montserrat', sans-serif; ">
-  <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px;">
-    <div style="display:flex; align-items:center; gap:8px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none;">
-      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
-        <span>⚡</span>
-        <span>Anshuman Hub</span>
+<header id="ae-ac-header" style="background:#0f172a;border-bottom:1px solid rgba(56,189,248,0.15);box-shadow:0 2px 20px rgba(0,0,0,0.4);">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;">
+    <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+      <img alt="Aditya Contractor Logo" src="../aditya-contractor-logo.png" style="height:42px;width:42px;border-radius:50%;object-fit:cover;border:2px solid #38bdf8;"/>
+      <span style="font-family:'EB Garamond','Cormorant Garamond',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:-0.01em;">Aditya Contractor</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:24px;">
+      <a href="index.html" style="font-family:"Montserrat",sans-serif;font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);text-decoration:none;">Home</a>
+      <a href="services.html" style="font-family:"Montserrat",sans-serif;font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);text-decoration:none;">Services</a>
+      <a href="projects.html" style="font-family:"Montserrat",sans-serif;font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);text-decoration:none;">Projects</a>
+      <a href="request-quote.html" style="font-family:"Montserrat",sans-serif;font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);text-decoration:none;">Request Quote</a>
+      <a href="contact.html" style="font-family:"Montserrat",sans-serif;font-size:14px;font-weight:600;color:rgba(255,255,255,0.8);text-decoration:none;">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <a href="request-quote.html" style="display:inline-flex;align-items:center;gap:6px;background:#38bdf8;color:#0f172a;padding:8px 18px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;">
+        <span class="material-symbols-outlined" style="font-size:16px;">request_quote</span>Get Quote
       </a>
-      <a href="../decoratenow/index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
-        <span>💡</span>
-        <span>DecorateNow</span>
-      </a>
-      <a href="../index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#0284c7; color:#ffffff; box-shadow:0 0 12px rgba(2,132,199,0.5);">
-        <span>🛠</span>
-        <span>Aditya Contractor</span>
-      </a>
-      <a href="../products.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
-        <span>📦</span>
-        <span>B2B Wholesale</span>
-      </a>
-    </div>
-    <div style="display:flex; align-items:center; gap:16px; color:#cbd5e1; font-size:11px; font-weight:500; white-space:nowrap;">
-      <span>📍 Greater Noida, UP</span>
-      <span>📞 +91 70658 15743</span>
+      <a href="https://wa.me/917065815743?text=Hello%20Aditya%20Contractor" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;padding:8px 14px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;">📱 WhatsApp</a>
     </div>
   </div>
+</header>
 </div>
 
-            <header class="w-full z-50 bg-[#FAF7F2] border-b border-[#6B1C23]/10 shadow-sm" style=" background:#FAF7F2; border-bottom:1px solid rgba(107,28,35,0.12); box-shadow: 0 2px 12px rgba(61,14,20,0.06);">
-    <div class="flex justify-between items-center px-4 md:px-12 py-3 max-w-[1280px] mx-auto" style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:12px 24px;">
-      
-      <!-- Logo -->
-      <a href="../index.html" class="flex items-center gap-3 text-decoration-none" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <img alt="Aditya Contractor Logo" src="../aditya-contractor-logo.png" style="height:42px; width:42px; border-radius:50%; object-fit:cover; border:1px solid #C9A84C;"/>
-        <span class="font-headline-md font-bold text-[#3D0E14]" style="font-family:'EB Garamond', 'Cormorant Garamond', serif; font-size:22px; font-weight:700; color:#3D0E14; letter-spacing:-0.01em;">Aditya Contractor</span>
-      </a>
+<!-- Flipkart-Style Vertical Switcher Top Bar -->
 
-      <!-- Nav Links -->
-      <nav class="hidden lg:flex items-center gap-7" style="display:flex; align-items:center; gap:24px;">
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="../index.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Services Home</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="../electrical-contracting.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Electrical Contracting</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="../cctv-installation.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">CCTV Installation</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="../projects.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Projects</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="../contact.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Get Quote</a>
-      </nav>
-
-      <!-- Search & Action Bar -->
-      <div class="flex items-center gap-5" style="display:flex; align-items:center; gap:20px;">
-        <div class="hidden xl:flex items-center bg-[#f0ede9] px-4 py-2 rounded-full border border-[#d7c1c2]/40" style="display:flex; align-items:center; background:#f0ede9; padding:6px 16px; border-radius:50px; border:1px solid rgba(215,193,194,0.5);">
-          <span class="material-symbols-outlined text-[#857373] text-[18px]" style="font-size:18px; color:#857373; margin-right:8px;">search</span>
-          <input class="bg-transparent border-none outline-none text-[14px] w-44 text-[#1c1c19] placeholder-[#857373]" placeholder="Search inventory..." type="text" onkeyup="if(event.key==='Enter') window.location.href='products.html?q='+encodeURIComponent(this.value)" style="background:transparent; border:none; outline:none; font-size:14px; width:160px; color:#1c1c19;"/>
-        </div>
-
-        <div class="flex items-center gap-4 text-[#3D0E14]" style="display:flex; align-items:center; gap:16px; color:#3D0E14;">
-          <a href="https://wa.me/917065815743?text=Hello%20Anshuman%20Enterprises" target="_blank" title="Chat on WhatsApp" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
-            <span class="material-symbols-outlined" style="font-size:22px;">chat</span>
-          </a>
-          <a href="../contact.html" title="Request Quote" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
-            <span class="material-symbols-outlined" style="font-size:22px;">request_quote</span>
-          </a>
-          <a href="../dashboard.html" title="Account" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
-            <span class="material-symbols-outlined" style="font-size:22px;">account_circle</span>
-          </a>
-          <a href="../checkout.html" title="Cart" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center; position:relative;">
-            <span class="material-symbols-outlined" style="font-size:22px;">shopping_cart</span>
-            <span style="position:absolute; top:-6px; right:-6px; background:#6b1c23; color:#fff; font-size:10px; font-weight:700; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center;">0</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
 </div>
+
+
 
   <section class="content-section">
     <div class="content-grid">
