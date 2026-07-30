@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
 
 <!-- Favicon -->
 <link rel="icon" href="decoratenow_home/decoratenow_icon_logo_transparent.png" type="image/png">
@@ -26,11 +27,11 @@
 <div class="ae-vertical-bar" style="background:#0f172a; padding:8px 16px; border-bottom:1px solid rgba(255,255,255,0.1); font-family:'Montserrat', sans-serif; ">
   <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px;">
     <div style="display:flex; align-items:center; gap:8px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none;">
-      <a href="index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#f59e0b; color:#111827; box-shadow:0 0 12px rgba(245,158,11,0.4);">
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
         <span>⚡</span>
         <span>Anshuman Hub</span>
       </a>
-      <a href="decoratenow.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
+      <a href="decoratenow.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#f59e0b; color:#111827; box-shadow:0 0 12px rgba(245,158,11,0.4);">
         <span>💡</span>
         <span>DecorateNow</span>
       </a>
@@ -50,33 +51,22 @@
   </div>
 </div>
 
-<!-- ============ ANNOUNCEMENT BAR ============ -->
-<div class="announce-bar" id="announceBar">
-  <div class="announce-track">
-    <span class="announce-item">✦ Free shipping on orders above ₹1,999</span>
-    <span class="announce-item">✦ Flat 10% off — code GLOW10 on first order</span>
-    <span class="announce-item">✦ 2 year warranty on all fittings</span>
-  </div>
-  <button class="announce-close" id="announceClose">&times;</button>
-</div>
-
 <!-- ============ HEADER ============ -->
 <header class="w-full z-50 bg-[#FAF7F2] border-b border-[#6B1C23]/10 shadow-sm" style=" background:#FAF7F2; border-bottom:1px solid rgba(107,28,35,0.12); box-shadow: 0 2px 12px rgba(61,14,20,0.06);">
     <div class="flex justify-between items-center px-4 md:px-12 py-3 max-w-[1280px] mx-auto" style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:12px 24px;">
       
       <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-3 text-decoration-none" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <img alt="Anshuman Enterprises Logo" src="logo.webp" style="height:42px; width:42px; border-radius:50%; object-fit:cover; border:1px solid #C9A84C;"/>
-        <span class="font-headline-md font-bold text-[#3D0E14]" style="font-family:'EB Garamond', 'Cormorant Garamond', serif; font-size:22px; font-weight:700; color:#3D0E14; letter-spacing:-0.01em;">Anshuman Enterprises</span>
+      <a href="decoratenow.html" class="flex items-center gap-3 text-decoration-none" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img alt="DecorateNow Logo" src="decoratenow-logo.png" style="height:42px; width:42px; border-radius:50%; object-fit:cover; border:1px solid #C9A84C;"/>
+        <span class="font-headline-md font-bold text-[#3D0E14]" style="font-family:'EB Garamond', 'Cormorant Garamond', serif; font-size:22px; font-weight:700; color:#3D0E14; letter-spacing:-0.01em;">DecorateNow</span>
       </a>
 
       <!-- Nav Links -->
       <nav class="hidden lg:flex items-center gap-7" style="display:flex; align-items:center; gap:24px;">
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="index.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Home</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="about.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">About Us</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="contact.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Contact Us</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="faq.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">FAQs</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="our-catalogue.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Catalogue</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="decoratenow.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Home</a>
+        <a class="nav-link text-[#C9A84C] border-b-2 border-[#C9A84C] pb-1 font-semibold" href="products.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#C9A84C; border-bottom:2px solid #C9A84C; padding-bottom:2px; text-decoration:none;">Products</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="dashboard.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Track Order</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="contact.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Support & Contact</a>
       </nav>
 
       <!-- Search & Action Bar -->
@@ -129,8 +119,112 @@
     <h2>All Lighting &amp; Decor</h2>
   </div>
 
-  <div class="product-grid" id="recommendedRail"></div>
-  <div class="product-grid" id="trendingRail" style="margin-top:24px;"></div>
+<!-- ============ EXCLUSIVE 5 DECORATENOW PRODUCTS ============ -->
+  <section class="section" id="signature-wall-lamps" aria-label="Signature Decorative Wall Lamps" style="padding:24px 0; background:transparent;">
+    <div class="wall-lamps-grid" style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:24px;">
+      
+      <!-- Product 1 -->
+      <div class="product-card-custom" style="background:#27272a; border:1px solid rgba(201,168,76,0.3); border-radius:16px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+        <div style="position:relative; width:100%; height:220px; border-radius:12px; overflow:hidden; background:#111; margin-bottom:14px;">
+          <img src="images/products/aditya-wallchiere-wall-lamp-without-bulb-1.webp" alt="Aditya Wallchiere Wall Lamp" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='logo.webp'">
+          <span style="position:absolute; top:10px; left:10px; background:#C9A84C; color:#111; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; text-transform:uppercase;">67% OFF</span>
+        </div>
+        <div>
+          <span style="color:#C9A84C; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Wall Lights</span>
+          <h3 style="color:#ffffff; font-family:'Cormorant Garamond', serif; font-size:20px; font-weight:700; margin:4px 0 6px;">Aditya Wallchiere Wall Lamp</h3>
+          <p style="color:#a1a1aa; font-size:12px; line-height:1.4; margin-bottom:12px;">Handcrafted metallic wallchiere fixture (Without Bulb) with soft warm wall wash.</p>
+        </div>
+        <div>
+          <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+            <span style="color:#C9A84C; font-size:20px; font-weight:700;">₹499</span>
+            <span style="color:#71717a; font-size:13px; text-decoration:line-through;">₹1,499</span>
+          </div>
+          <button onclick="addToCart('DN-WALL-01', 'Aditya Wallchiere Wall Lamp', 499, 'images/products/aditya-wallchiere-wall-lamp-without-bulb-1.webp')" class="btn btn-gold ripple" style="width:100%; text-align:center; padding:10px; font-size:13px; border-radius:8px; background:#C9A84C; color:#111; font-weight:700; border:none; cursor:pointer;">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card-custom" style="background:#27272a; border:1px solid rgba(201,168,76,0.3); border-radius:16px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+        <div style="position:relative; width:100%; height:220px; border-radius:12px; overflow:hidden; background:#111; margin-bottom:14px;">
+          <img src="images/products/ansh-wallchiere-wall-lamp-without-bulb.webp" alt="Ansh Wallchiere Wall Lamp" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='logo.webp'">
+          <span style="position:absolute; top:10px; left:10px; background:#C9A84C; color:#111; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; text-transform:uppercase;">67% OFF</span>
+        </div>
+        <div>
+          <span style="color:#C9A84C; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Wall Lights</span>
+          <h3 style="color:#ffffff; font-family:'Cormorant Garamond', serif; font-size:20px; font-weight:700; margin:4px 0 6px;">Ansh Wallchiere Wall Lamp</h3>
+          <p style="color:#a1a1aa; font-size:12px; line-height:1.4; margin-bottom:12px;">Modern antique brass sconce (Without Bulb) for living rooms and luxury hallways.</p>
+        </div>
+        <div>
+          <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+            <span style="color:#C9A84C; font-size:20px; font-weight:700;">₹499</span>
+            <span style="color:#71717a; font-size:13px; text-decoration:line-through;">₹1,499</span>
+          </div>
+          <button onclick="addToCart('DN-WALL-02', 'Ansh Wallchiere Wall Lamp', 499, 'images/products/ansh-wallchiere-wall-lamp-without-bulb.webp')" class="btn btn-gold ripple" style="width:100%; text-align:center; padding:10px; font-size:13px; border-radius:8px; background:#C9A84C; color:#111; font-weight:700; border:none; cursor:pointer;">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card-custom" style="background:#27272a; border:1px solid rgba(201,168,76,0.3); border-radius:16px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+        <div style="position:relative; width:100%; height:220px; border-radius:12px; overflow:hidden; background:#111; margin-bottom:14px;">
+          <img src="images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp" alt="DecorateNow Wallchiere Lamp" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='logo.webp'">
+          <span style="position:absolute; top:10px; left:10px; background:#C9A84C; color:#111; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; text-transform:uppercase;">67% OFF</span>
+        </div>
+        <div>
+          <span style="color:#C9A84C; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Signature Edition</span>
+          <h3 style="color:#ffffff; font-family:'Cormorant Garamond', serif; font-size:20px; font-weight:700; margin:4px 0 6px;">DecorateNow Wallchiere Lamp</h3>
+          <p style="color:#a1a1aa; font-size:12px; line-height:1.4; margin-bottom:12px;">Premium handblown glass sconce with warm LED bulb included.</p>
+        </div>
+        <div>
+          <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+            <span style="color:#C9A84C; font-size:20px; font-weight:700;">₹499</span>
+            <span style="color:#71717a; font-size:13px; text-decoration:line-through;">₹1,499</span>
+          </div>
+          <button onclick="addToCart('DN-WALL-03', 'DecorateNow Wallchiere Lamp', 499, 'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp')" class="btn btn-gold ripple" style="width:100%; text-align:center; padding:10px; font-size:13px; border-radius:8px; background:#C9A84C; color:#111; font-weight:700; border:none; cursor:pointer;">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card-custom" style="background:#27272a; border:1px solid rgba(201,168,76,0.3); border-radius:16px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+        <div style="position:relative; width:100%; height:220px; border-radius:12px; overflow:hidden; background:#111; margin-bottom:14px;">
+          <img src="images/products/swing-arm-wall-light-wall-lamp-with-bulb.webp" alt="Swing Arm Wall Light" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='logo.webp'">
+          <span style="position:absolute; top:10px; left:10px; background:#C9A84C; color:#111; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; text-transform:uppercase;">67% OFF</span>
+        </div>
+        <div>
+          <span style="color:#C9A84C; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Task &amp; Accent</span>
+          <h3 style="color:#ffffff; font-family:'Cormorant Garamond', serif; font-size:20px; font-weight:700; margin:4px 0 6px;">Swing Arm Wall Light</h3>
+          <p style="color:#a1a1aa; font-size:12px; line-height:1.4; margin-bottom:12px;">Adjustable dual-pivot arm lamp for reading desks and bedside illumination (With Bulb).</p>
+        </div>
+        <div>
+          <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+            <span style="color:#C9A84C; font-size:20px; font-weight:700;">₹499</span>
+            <span style="color:#71717a; font-size:13px; text-decoration:line-through;">₹1,499</span>
+          </div>
+          <button onclick="addToCart('DN-WALL-04', 'Swing Arm Wall Light', 499, 'images/products/swing-arm-wall-light-wall-lamp-with-bulb.webp')" class="btn btn-gold ripple" style="width:100%; text-align:center; padding:10px; font-size:13px; border-radius:8px; background:#C9A84C; color:#111; font-weight:700; border:none; cursor:pointer;">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card-custom" style="background:#27272a; border:1px solid rgba(201,168,76,0.3); border-radius:16px; padding:16px; display:flex; flex-direction:column; justify-content:space-between; transition:all 0.3s ease;">
+        <div style="position:relative; width:100%; height:220px; border-radius:12px; overflow:hidden; background:#111; margin-bottom:14px;">
+          <img src="images/products/wallchiere-wall-lamp-with-bulb.webp" alt="Luxury Wallchiere Lamp" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='logo.webp'">
+          <span style="position:absolute; top:10px; left:10px; background:#C9A84C; color:#111; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px; text-transform:uppercase;">67% OFF</span>
+        </div>
+        <div>
+          <span style="color:#C9A84C; font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Architectural</span>
+          <h3 style="color:#ffffff; font-family:'Cormorant Garamond', serif; font-size:20px; font-weight:700; margin:4px 0 6px;">Luxury Wallchiere Lamp</h3>
+          <p style="color:#a1a1aa; font-size:12px; line-height:1.4; margin-bottom:12px;">High-end sconce with crystal accents &amp; warm diffused glow (With Bulb).</p>
+        </div>
+        <div>
+          <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px;">
+            <span style="color:#C9A84C; font-size:20px; font-weight:700;">₹499</span>
+            <span style="color:#71717a; font-size:13px; text-decoration:line-through;">₹1,499</span>
+          </div>
+          <button onclick="addToCart('DN-WALL-05', 'Luxury Wallchiere Lamp', 499, 'images/products/wallchiere-wall-lamp-with-bulb.webp')" class="btn btn-gold ripple" style="width:100%; text-align:center; padding:10px; font-size:13px; border-radius:8px; background:#C9A84C; color:#111; font-weight:700; border:none; cursor:pointer;">🛒 Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
 
 <!-- ============ FOOTER ============ -->
