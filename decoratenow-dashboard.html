@@ -3,15 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>My Account — DecorateNow</title>
+<title>DecorateNow Customer Dashboard — Track Order &amp; Account</title>
+<meta name="description" content="DecorateNow Customer Dashboard for tracking orders, managing saved addresses, and contacting support.">
 <meta name="theme-color" content="#111111">
 
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
 
+<!-- Favicon -->
 <link rel="icon" href="decoratenow_home/decoratenow_icon_logo_transparent.png" type="image/png">
+
+<!-- Styles -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animations.css">
@@ -22,11 +27,11 @@
 <div class="ae-vertical-bar" style="background:#0f172a; padding:8px 16px; border-bottom:1px solid rgba(255,255,255,0.1); font-family:'Montserrat', sans-serif; ">
   <div style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:16px;">
     <div style="display:flex; align-items:center; gap:8px; overflow-x:auto; padding-bottom:2px; scrollbar-width:none;">
-      <a href="index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#f59e0b; color:#111827; box-shadow:0 0 12px rgba(245,158,11,0.4);">
+      <a href="index.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
         <span>⚡</span>
         <span>Anshuman Hub</span>
       </a>
-      <a href="decoratenow.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:rgba(255,255,255,0.08); color:#e2e8f0; ">
+      <a href="decoratenow.html" style="display:inline-flex; align-items:center; gap:6px; padding:6px 16px; border-radius:50px; text-decoration:none; font-weight:700; font-size:12px; transition:all 0.2s; white-space:nowrap; background:#f59e0b; color:#111827; box-shadow:0 0 12px rgba(245,158,11,0.4);">
         <span>💡</span>
         <span>DecorateNow</span>
       </a>
@@ -46,22 +51,22 @@
   </div>
 </div>
 
+<!-- ============ HEADER ============ -->
 <header class="w-full z-50 bg-[#FAF7F2] border-b border-[#6B1C23]/10 shadow-sm" style=" background:#FAF7F2; border-bottom:1px solid rgba(107,28,35,0.12); box-shadow: 0 2px 12px rgba(61,14,20,0.06);">
     <div class="flex justify-between items-center px-4 md:px-12 py-3 max-w-[1280px] mx-auto" style="max-width:1280px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:12px 24px;">
       
       <!-- Logo -->
-      <a href="index.html" class="flex items-center gap-3 text-decoration-none" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <img alt="Anshuman Enterprises Logo" src="logo.webp" style="height:42px; width:42px; border-radius:50%; object-fit:cover; border:1px solid #C9A84C;"/>
-        <span class="font-headline-md font-bold text-[#3D0E14]" style="font-family:'EB Garamond', 'Cormorant Garamond', serif; font-size:22px; font-weight:700; color:#3D0E14; letter-spacing:-0.01em;">Anshuman Enterprises</span>
+      <a href="decoratenow.html" class="flex items-center gap-3 text-decoration-none" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img alt="DecorateNow Logo" src="decoratenow-logo.png" style="height:42px; width:42px; border-radius:50%; object-fit:cover; border:1px solid #C9A84C;"/>
+        <span class="font-headline-md font-bold text-[#3D0E14]" style="font-family:'EB Garamond', 'Cormorant Garamond', serif; font-size:22px; font-weight:700; color:#3D0E14; letter-spacing:-0.01em;">DecorateNow</span>
       </a>
 
       <!-- Nav Links -->
       <nav class="hidden lg:flex items-center gap-7" style="display:flex; align-items:center; gap:24px;">
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="index.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Home</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="about.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">About Us</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="contact.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Contact Us</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="faq.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">FAQs</a>
-        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="our-catalogue.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Catalogue</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="decoratenow.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Home</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="products.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Products</a>
+        <a class="nav-link text-[#C9A84C] border-b-2 border-[#C9A84C] pb-1 font-semibold" href="decoratenow-dashboard.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#C9A84C; border-bottom:2px solid #C9A84C; padding-bottom:2px; text-decoration:none;">Track Order</a>
+        <a class="nav-link text-[#524343] hover:text-[#C9A84C] transition-colors" href="contact.html" style="font-family:'Montserrat', sans-serif; font-size:14px; font-weight:600; color:#524343; text-decoration:none;">Support & Contact</a>
       </nav>
 
       <!-- Search & Action Bar -->
@@ -78,7 +83,7 @@
           <a href="contact.html" title="Request Quote" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
             <span class="material-symbols-outlined" style="font-size:22px;">request_quote</span>
           </a>
-          <a href="dashboard.html" title="Account" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
+          <a href="decoratenow-dashboard.html" title="Account" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center;">
             <span class="material-symbols-outlined" style="font-size:22px;">account_circle</span>
           </a>
           <a href="checkout.html" title="Cart" style="color:#3D0E14; text-decoration:none; display:flex; align-items:center; position:relative;">
@@ -91,43 +96,43 @@
   </header>
 </div>
 
-<main class="section" style="padding-top:40px;max-width:900px;">
-  <div class="section-head">
-    <p class="eyebrow">Customer Account</p>
-    <h2>Welcome Back, Member</h2>
+<main class="section" style="padding-top:40px; max-width:1000px; margin:0 auto; padding-left:20px; padding-right:20px;">
+  <div class="section-head" style="margin-bottom:30px;">
+    <p class="eyebrow" style="color:#C9A84C; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px;">DecorateNow Member Portal</p>
+    <h2 style="font-family:'Cormorant Garamond', serif; font-size:32px; color:#3D0E14;">DecorateNow Order &amp; Account Dashboard</h2>
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr;gap:20px;">
-    <div style="background:var(--gray-light);padding:24px;border-radius:var(--radius-md);border:1px solid var(--gray-line);">
-      <h3 style="margin-bottom:12px;font-size:22px;">Recent Orders</h3>
-      <div style="padding:14px;background:var(--white);border-radius:var(--radius-sm);border:1px solid var(--gray-line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
+  <div style="display:grid; grid-template-columns:1fr; gap:24px;">
+    <div style="background:#ffffff; padding:28px; border-radius:16px; border:1px solid rgba(107,28,35,0.12); box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+      <h3 style="margin-bottom:16px; font-size:20px; font-weight:700; color:#3D0E14; display:flex; align-items:center; gap:8px;">
+        <span class="material-symbols-outlined" style="color:#C9A84C;">local_shipping</span>
+        Track DecorateNow Orders
+      </h3>
+      <div style="padding:18px; background:#FAF7F2; border-radius:12px; border:1px solid rgba(201,168,76,0.3); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
         <div>
-          <strong style="display:block;">Order #DN-948201</strong>
-          <span style="font-size:12px;color:var(--text-muted);">Placed on July 5, 2026 • Aurelia Tiered Chandelier</span>
+          <strong style="display:block; font-size:16px; color:#3D0E14;">Order #DN-948201</strong>
+          <span style="font-size:13px; color:#666;">Placed on July 5, 2026 • DecorateNow Wallchiere Lamp</span>
         </div>
-        <span style="padding:4px 10px;background:rgba(47,125,79,0.15);color:var(--success);font-weight:700;font-size:12px;border-radius:999px;">Dispatched</span>
+        <span style="padding:6px 14px; background:#10b981; color:#ffffff; font-weight:700; font-size:12px; border-radius:50px;">Dispatched</span>
       </div>
     </div>
 
-    <div style="background:var(--gray-light);padding:24px;border-radius:var(--radius-md);border:1px solid var(--gray-line);">
-      <h3 style="margin-bottom:12px;font-size:22px;">Saved Addresses</h3>
-      <p style="font-size:14px;color:var(--text-body);margin-bottom:12px;">Plot 14, Industrial Area, Greater Noida, UP 201310</p>
-      <button class="btn btn-outline btn-sm">Edit Address</button>
+    <div style="background:#ffffff; padding:28px; border-radius:16px; border:1px solid rgba(107,28,35,0.12); box-shadow:0 4px 16px rgba(0,0,0,0.05);">
+      <h3 style="margin-bottom:16px; font-size:20px; font-weight:700; color:#3D0E14; display:flex; align-items:center; gap:8px;">
+        <span class="material-symbols-outlined" style="color:#C9A84C;">home_pin</span>
+        Saved Delivery Addresses
+      </h3>
+      <p style="font-size:14px; color:#444; margin-bottom:14px; line-height:1.5;">Plot 14, Industrial Area, Greater Noida, UP 201310</p>
+      <a href="contact.html" style="display:inline-block; padding:10px 20px; border-radius:50px; background:#3D0E14; color:#ffffff; text-decoration:none; font-size:13px; font-weight:600;">Edit Address &amp; Support</a>
     </div>
   </div>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" style="margin-top:60px;">
   <div class="footer-bottom">
     <p>&copy; <span id="footerYear"></span> DecorateNow. All rights reserved.</p>
   </div>
 </footer>
-
-<nav class="bottom-nav">
-  <a href="index.html" class="bottom-nav-item"><span>Home</span></a>
-  <a href="shop.html" class="bottom-nav-item"><span>Catalog</span></a>
-  <a href="dashboard.html" class="bottom-nav-item is-active"><span>Account</span></a>
-</nav>
 
 <script src="js/app.js"></script>
 </body>
