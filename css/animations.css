@@ -1,0 +1,94 @@
+/* =========================================================
+   DecorateNow — Animations
+   ========================================================= */
+
+/* ---------- Reveal-on-scroll base states ---------- */
+.reveal{opacity:0;will-change:transform,opacity;}
+.reveal-up{transform:translateY(28px);}
+.reveal-left{transform:translateX(-28px);}
+.reveal-right{transform:translateX(28px);}
+.reveal-zoom{transform:scale(.92);}
+
+.reveal.is-visible{
+  opacity:1;transform:translate(0,0) scale(1);
+  transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);
+}
+
+/* staggered children helper (JS adds --d custom property) */
+.reveal{transition-delay:var(--d,0ms);}
+
+/* ---------- fade-up utility used inline on hero ---------- */
+.fade-up{animation:fadeUp .9s cubic-bezier(.2,.7,.2,1) both;}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(24px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ---------- Announcement bar marquee ---------- */
+@keyframes announceScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+/* ---------- Ripple button effect ---------- */
+@keyframes rippleAnim{
+  to{transform:scale(3.2);opacity:0;}
+}
+
+/* ---------- Skeleton shimmer ---------- */
+@keyframes skeletonShine{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+
+/* ---------- Wishlist heart pop ---------- */
+@keyframes heartPop{
+  0%{transform:scale(1);}
+  35%{transform:scale(1.35);}
+  60%{transform:scale(.9);}
+  100%{transform:scale(1);}
+}
+.badge-wishlist.is-popping svg{animation:heartPop .38s ease;}
+
+/* ---------- Cart bump on add ---------- */
+@keyframes cartBump{
+  0%{transform:scale(1);}
+  40%{transform:scale(1.28);}
+  100%{transform:scale(1);}
+}
+#cartBtn.is-bumping,#bottomCart.is-bumping{animation:cartBump .35s ease;}
+
+/* ---------- Countdown digit flip ---------- */
+@keyframes digitPulse{
+  0%{opacity:.4;transform:translateY(-4px);}
+  100%{opacity:1;transform:translateY(0);}
+}
+.countdown-box span.is-ticking{animation:digitPulse .25s ease;}
+
+/* ---------- Hero slide zoom (Ken Burns) ---------- */
+.hero-slide.is-active{animation:kenBurns 8s ease-out both;}
+@keyframes kenBurns{
+  from{background-size:112% auto;}
+  to{background-size:100% auto;}
+}
+
+/* ---------- Signature "glow" pulse for gold accents ---------- */
+@keyframes glowPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,.35);}
+  50%{box-shadow:0 0 0 8px rgba(201,168,76,0);}
+}
+.flash-head .countdown-box:first-child{animation:glowPulse 2.4s infinite;}
+
+/* ---------- Back to top fade ---------- */
+.fab-top{opacity:0;transform:translateY(10px);transition:opacity .25s ease, transform .25s ease;}
+.fab-top.is-shown{opacity:1;transform:translateY(0);}
+
+/* ---------- Category / room image lazy fade ---------- */
+img[loading="lazy"]{opacity:0;transition:opacity .5s ease;}
+img[loading="lazy"].is-loaded{opacity:1;}
+
+/* ---------- Micro-interaction: chip tap ---------- */
+.chip:active,.category-card:active .category-thumb,.room-card:active,.product-card:active{
+  transform:scale(.97);
+}

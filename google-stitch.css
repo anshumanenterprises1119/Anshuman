@@ -1,408 +1,667 @@
 /* ==========================================================================
-   GOOGLE STITCH - PREMIUM 3D & MATERIAL DESIGN SYSTEM
+   DECORATENOW DESIGN SYSTEM & PWA SUPER APP FRAMEWORK
+   Anshuman Enterprises Master Stylesheet
+   Design Tokens: Gold #C9A84C, Maroon #3D0E14, Slate #0F172A, Charcoal #121212
+   Typography: Cormorant Garamond (Display) / Montserrat (Body)
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --stitch-gold: #c9a84c;
-  --stitch-gold-glow: rgba(201, 168, 76, 0.35);
-  --stitch-maroon: #6b1c23;
-  --stitch-maroon-dark: #3d0e14;
-  --stitch-shadow-sm: 0 4px 15px rgba(61, 14, 20, 0.05);
-  --stitch-shadow-md: 0 15px 40px rgba(61, 14, 20, 0.08);
-  --stitch-shadow-3d: 0 20px 45px rgba(61, 14, 20, 0.12), 0 8px 20px rgba(201, 168, 76, 0.06);
+  /* Fonts */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Global Color Tokens (Matching DecorateNow Core) */
+  --gold: #C9A84C;
+  --gold-soft: #E4CE8E;
+  --gold-deep: #A8873A;
+  --gold-glow: rgba(201, 168, 76, 0.35);
+  
+  --maroon: #6B1C23;
+  --maroon-dark: #3D0E14;
+  --maroon-mid: #8A2530;
+  
+  --cream: #FAF7F2;
+  --cream-dark: #F0EBE1;
+  
+  --charcoal: #121212;
+  --charcoal-card: #181818;
+  
+  --slate-dark: #0F172A;
+  --slate-card: #1E293B;
+  
+  --whatsapp-green: #25D366;
+  --white: #FFFFFF;
+
+  /* Radius Tokens */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+
+  /* Shadow System */
+  --shadow-sm: 0 2px 10px rgba(17, 17, 17, 0.06), 0 1px 2px rgba(17, 17, 17, 0.05);
+  --shadow-card-hover: 0 18px 36px -12px rgba(17, 17, 17, 0.22), 0 4px 12px rgba(201, 168, 76, 0.18);
+  --shadow-pop: 0 24px 60px -20px rgba(17, 17, 17, 0.35);
+
+  /* Spacing Tokens */
+  --container-pad: 16px;
+  --header-h: 64px;
+  --bottom-nav-h: 64px;
 }
 
-/* 1. Global 3D Perspective and Elevation on Cards */
-.card, 
-.service-card, 
-.feature-card, 
-.project-card, 
-.blog-card, 
-.secure-embed-container, 
-.product-showcase-card,
-.step-card {
-  perspective: 1200px;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
-              box-shadow 0.4s ease, 
-              border-color 0.4s ease, 
-              background-color 0.4s ease !important;
-}
-
-.card:hover, 
-.service-card:hover, 
-.feature-card:hover, 
-.project-card:hover, 
-.blog-card:hover, 
-.secure-embed-container:hover, 
-.product-showcase-card:hover,
-.step-card:hover {
-  transform: translateY(-8px) rotateX(1.5deg) rotateY(-1.5deg) !important;
-  box-shadow: var(--stitch-shadow-3d) !important;
-  border-color: rgba(201, 168, 76, 0.3) !important;
-}
-
-/* 2. Global Interactive 3D Tactile Buttons */
-.btn, 
-.btn-primary, 
-.btn-secondary,
-.cta-btn, 
-.product-cta-btn, 
-.lead-btn-primary {
-  position: relative !important;
-  top: 0;
-  box-shadow: 0 4px 0px rgba(0, 0, 0, 0.15), 0 6px 15px rgba(0, 0, 0, 0.1) !important;
-  transition: all 0.15s ease !important;
-}
-
-.btn:hover, 
-.btn-primary:hover, 
-.btn-secondary:hover,
-.cta-btn:hover, 
-.product-cta-btn:hover, 
-.lead-btn-primary:hover {
-  top: 2px !important;
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.08) !important;
-}
-
-.btn:active, 
-.btn-primary:active, 
-.btn-secondary:active,
-.cta-btn:active, 
-.product-cta-btn:active, 
-.lead-btn-primary:active {
-  top: 4px !important;
-  box-shadow: 0 0px 0px rgba(0,0,0,0), 0 2px 5px rgba(0,0,0,0.05) !important;
-}
-
-/* 3. Global Glassmorphism panels */
-.glass-panel,
-.lead-modal-content,
-.search-modal-content {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(201, 168, 76, 0.25) !important;
-}
-
-/* 4. Elegant Focus Highlight on Inputs */
-input:focus, 
-textarea:focus, 
-select:focus {
-  border-color: var(--stitch-gold) !important;
-  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.18) !important;
-  outline: none !important;
-}
-
-/* 5. Google Material Symbols Global Alignment */
-.material-symbols-outlined {
-  vertical-align: middle;
-  line-height: 1;
-  display: inline-block;
-}
-
-/* 6. Subtle Pulse Micro-animations */
-.icon-pulse {
-  animation: stitchPulse 2.5s infinite ease-in-out;
-}
-
-@keyframes stitchPulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+@media (max-width: 374px) {
+  :root {
+    --container-pad: 12px;
+  }
 }
 
 /* ==========================================================================
-   ANSHUMAN AI CHATBOT WIDGET STYLES
+   1. GLOBAL REBOOT & MOBILE-FIRST TYPOGRAPHY
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main, #1a1a1a);
+  background-color: var(--bg-primary, var(--cream));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: var(--bottom-nav-h);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, .brand-font {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text-main, #111111);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 6px;
+}
+
+/* ==========================================================================
+   2. MULTI-VERTICAL THEMES (Aligned with DecorateNow & Super App)
    ========================================================================== */
 
-#chatbot-widget-container {
-  position: fixed;
-  bottom: 24px;
-  left: 24px; /* default bottom-left to prevent overlapping WhatsApp/Review floats on bottom-right */
-  right: auto;
-  z-index: 100000;
-  font-family: 'DM Sans', sans-serif;
+/* 2.1 HOME VERTICAL (Corporate Luxury - Warm White & Maroon) */
+body[data-vertical="home"],
+[data-vertical="home"] .superapp-vertical-section {
+  --bg-primary: var(--cream);
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --text-main: #111111;
+  --text-muted: #4a4040;
+  --accent-color: var(--maroon);
+  --accent-gold: var(--gold);
 }
 
-/* Chat bubble toggle button */
-#chatbot-bubble {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--stitch-maroon-dark) 0%, var(--stitch-maroon) 100%);
-  border: 2px solid var(--stitch-gold);
-  color: var(--white, #fff);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 8px 25px rgba(61,14,20,0.3);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  position: relative;
-}
-#chatbot-bubble:hover {
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 12px 30px rgba(61,14,20,0.4);
-}
-#chatbot-bubble .material-symbols-outlined {
-  font-size: 28px;
-  color: #fff;
-}
-#chatbot-bubble .chat-badge {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 12px;
-  height: 12px;
-  background: #25D366;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  animation: stitchPulse 2s infinite;
+/* 2.2 STORE VERTICAL (Wholesale B2B Inventory - Deep Maroon) */
+body[data-vertical="store"],
+[data-vertical="store"] .superapp-vertical-section {
+  --bg-primary: #2d0b10;
+  --bg-surface: var(--maroon-dark);
+  --bg-card: #4a1218;
+  --text-main: #ffffff;
+  --text-muted: #e5d5d7;
+  --accent-color: var(--gold);
+  --accent-gold: var(--gold-soft);
 }
 
-/* Chatbox Window */
-#chatbot-window {
-  position: absolute;
-  bottom: 80px;
-  left: 0; /* default open side */
-  right: auto;
-  width: 360px;
-  max-width: 90vw;
-  height: 500px;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 50px rgba(61,14,20,0.22);
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 1px solid rgba(201, 168, 76, 0.25);
-  transform: scale(0.9) translateY(20px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-origin: bottom left;
-}
-#chatbot-window.open {
-  transform: scale(1) translateY(0);
-  opacity: 1;
-  pointer-events: auto;
+/* 2.3 SERVICES VERTICAL (Engineering & CCTV - Dark Charcoal Glassmorphism) */
+body[data-vertical="services"],
+[data-vertical="services"] .superapp-vertical-section {
+  --bg-primary: #0a0a0a;
+  --bg-surface: var(--charcoal);
+  --bg-card: var(--charcoal-card);
+  --text-main: #ffffff;
+  --text-muted: #a3a3a3;
+  --accent-color: var(--gold);
+  --accent-gold: var(--gold-soft);
 }
 
-/* Header */
-.chatbot-header {
-  background: linear-gradient(135deg, var(--stitch-maroon-dark) 0%, var(--stitch-maroon) 100%);
-  padding: 16px 20px;
-  color: #fff;
+/* 2.4 DECORATENOW VERTICAL (Luxury E-Commerce - Slate Grey) */
+body[data-vertical="decoratenow"],
+[data-vertical="decoratenow"] .superapp-vertical-section {
+  --bg-primary: #0b1120;
+  --bg-surface: var(--slate-dark);
+  --bg-card: var(--slate-card);
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --accent-color: #eab308;
+  --accent-gold: var(--gold);
+}
+
+/* ==========================================================================
+   3. APP HEADER (DESKTOP TOP NAVIGATION)
+   ========================================================================== */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--maroon-dark);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.app-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px var(--container-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid var(--stitch-gold);
+  gap: 16px;
 }
-.chatbot-brand-info {
+
+.app-logo-brand {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-.chatbot-avatar {
-  width: 36px;
-  height: 36px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: var(--stitch-maroon);
-  border: 1px solid var(--stitch-gold);
-  font-size: 16px;
-}
-.chatbot-header-text h4 {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  font-family: 'DM Sans', sans-serif;
-  color: #fff;
-}
-.chatbot-header-text span {
-  font-size: 10px;
-  color: #25D366;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 600;
-}
-.chatbot-header-text span::before {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: #25D366;
-  border-radius: 50%;
-}
-.chatbot-close-btn {
-  background: none;
-  border: none;
-  color: rgba(255,255,255,0.7);
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.2s;
-  line-height: 1;
-}
-.chatbot-close-btn:hover {
-  color: #fff;
+  text-decoration: none;
 }
 
-/* Chat Messages */
-.chatbot-messages {
-  flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  background: #faf8f5;
+.app-logo-brand img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.app-brand-titles {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-.chatbot-msg-bubble {
-  max-width: 80%;
-  padding: 12px 16px;
-  border-radius: 16px;
-  font-size: 13.5px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  animation: chatbotFadeIn 0.3s ease both;
-}
-.chatbot-msg-bubble.ai {
-  background: #fff;
-  color: #2b0b0e;
-  align-self: flex-start;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0 2px 8px rgba(61,14,20,0.03);
-  border: 1px solid rgba(107,28,35,0.05);
-}
-.chatbot-msg-bubble.user {
-  background: var(--stitch-maroon);
-  color: #fff;
-  align-self: flex-end;
-  border-bottom-right-radius: 4px;
-  box-shadow: 0 4px 10px rgba(61,14,20,0.1);
 }
 
-.chatbot-msg-bubble a {
-  color: var(--stitch-gold);
-  text-decoration: underline;
-  font-weight: 600;
-}
-.chatbot-msg-bubble a:hover {
-  color: #e8c96a;
-}
-
-/* Suggestions Row */
-.chatbot-suggestions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 10px 20px;
-  background: #faf8f5;
-  border-top: 1px solid rgba(61,14,20,0.03);
-}
-.chatbot-suggest-btn {
-  background: #fff;
-  border: 1px solid rgba(107, 28, 35, 0.15);
-  color: var(--stitch-maroon);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 11px;
+.app-brand-name {
+  font-family: var(--font-display);
+  font-size: 20px;
   font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.chatbot-suggest-btn:hover {
-  background: var(--stitch-maroon);
-  color: #fff;
-  border-color: var(--stitch-maroon);
+  color: #ffffff;
+  line-height: 1.1;
 }
 
-/* Typing Indicator */
-.chatbot-typing {
-  align-self: flex-start;
-  background: #fff;
-  padding: 12px 16px;
-  border-radius: 16px;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0 2px 8px rgba(61,14,20,0.03);
-  border: 1px solid rgba(107,28,35,0.05);
-  display: none;
+.app-brand-tag {
+  font-family: var(--font-body);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-soft);
 }
-.chatbot-typing span {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--stitch-maroon);
-  border-radius: 50%;
-  animation: chatbotTypingDot 1.4s infinite both;
-  margin: 0 2px;
-}
-.chatbot-typing span:nth-child(2) { animation-delay: .2s; }
-.chatbot-typing span:nth-child(3) { animation-delay: .4s; }
 
-/* Input Footer */
-.chatbot-input-footer {
-  padding: 14px 20px;
-  border-top: 1px solid #f0e6d2;
-  background: #fff;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.chatbot-input-footer input {
+/* Global Search Container */
+.app-search-wrapper {
+  position: relative;
   flex: 1;
-  border: 1px solid rgba(107,28,35,0.18);
-  border-radius: 30px;
-  padding: 10px 18px;
-  font-size: 13.5px;
-  font-family: 'DM Sans', sans-serif;
-  color: #3d0e14;
+  max-width: 420px;
 }
-.chatbot-input-footer input:focus {
-  border-color: var(--stitch-gold);
-  box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+
+.app-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 13px;
+  font-family: var(--font-body);
+  outline: none;
+  transition: all 0.25s ease;
 }
-.chatbot-send-btn {
+
+.app-search-input:focus {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: var(--gold);
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.35);
+}
+
+.app-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.app-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Desktop Nav Links */
+.desktop-nav-links {
+  display: none;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav-links {
+    display: flex;
+  }
+}
+
+.desktop-nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.desktop-nav-link:hover,
+.desktop-nav-link.active {
+  color: var(--maroon-dark);
+  background: var(--gold);
+}
+
+/* Header Actions */
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-header-wa {
+  background: var(--whatsapp-green);
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-header-wa:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.cart-icon-btn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--gold);
+  color: var(--gold-soft);
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--stitch-maroon);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(61,14,20,0.15);
-  transition: all 0.2s;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-.chatbot-send-btn:hover {
-  background: var(--stitch-maroon-dark);
-  transform: scale(1.05);
+
+.cart-icon-btn:hover {
+  background: var(--gold);
+  color: var(--maroon-dark);
 }
-.chatbot-send-btn .material-symbols-outlined {
+
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   4. MOBILE FLIPKART-INSPIRED CATEGORY NAVIGATION BAR
+   ========================================================================== */
+.mobile-category-bar {
+  display: flex;
+  background: var(--maroon-dark);
+  padding: 10px var(--container-pad);
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-category-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: var(--radius-md);
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  flex-shrink: 0;
+}
+
+.cat-pill-icon {
   font-size: 20px;
+  margin-bottom: 3px;
+  transition: transform 0.25s ease;
 }
 
-@keyframes chatbotFadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes chatbotTypingDot {
-  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
-  40% { transform: scale(1); opacity: 1; }
+.cat-pill-label {
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-@media (max-width: 480px) {
-  #chatbot-widget-container { bottom: 16px; right: 16px; }
-  #chatbot-window {
-    width: calc(100vw - 32px);
-    height: 440px;
+.cat-pill.active {
+  background: var(--gold);
+  color: var(--maroon-dark);
+  border-color: var(--gold-soft);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(201, 168, 76, 0.35);
+}
+
+.cat-pill.active .cat-pill-icon {
+  transform: scale(1.15);
+}
+
+@media (min-width: 768px) {
+  .mobile-category-bar {
+    display: none;
   }
+}
+
+/* ==========================================================================
+   5. MOBILE PERSISTENT BOTTOM NAVIGATION BAR
+   ========================================================================== */
+.mobile-bottom-nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--bottom-nav-h);
+  background: var(--maroon-dark);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(201, 168, 76, 0.3);
+  z-index: 9999;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.35);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  flex: 1;
+  height: 100%;
+}
+
+.bottom-nav-icon {
+  font-size: 18px;
+  margin-bottom: 2px;
+  transition: transform 0.25s ease;
+}
+
+.bottom-nav-item.active {
+  color: var(--gold);
+}
+
+.bottom-nav-item.active .bottom-nav-icon {
+  transform: translateY(-3px) scale(1.2);
+  color: var(--gold-soft);
+}
+
+@media (min-width: 768px) {
+  .mobile-bottom-nav {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   6. VERTICAL SECTION TRANSITION & CARDS SYSTEM (DecorateNow Phone Optimized)
+   ========================================================================== */
+.superapp-vertical-section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  padding: 24px var(--container-pad);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.superapp-vertical-section.active-vertical {
+  display: block;
+  opacity: 1;
+}
+
+/* App Cards */
+.app-card {
+  background: var(--bg-card, #ffffff);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--gold);
+}
+
+/* Section Header (DecorateNow font sizing) */
+.app-section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-section-subtitle {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold-deep);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.app-section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 10px;
+}
+
+.app-section-desc {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   7. DECORATENOW CART DRAWER MODAL
+   ========================================================================== */
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  background: var(--slate-dark);
+  color: #ffffff;
+  z-index: 10000;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+  transition: right 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer.open {
+  right: 0;
+}
+
+.cart-drawer-header {
+  padding: 20px;
+  background: #090d16;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-drawer-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  color: var(--gold-soft);
+}
+
+.cart-drawer-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-drawer-body {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cart-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cart-item-price {
+  font-size: 12px;
+  color: var(--gold-soft);
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-drawer-footer {
+  padding: 20px;
+  background: #090d16;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 12px;
+  background: var(--gold);
+  color: var(--maroon-dark);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-checkout:hover {
+  background: var(--gold-soft);
 }

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DecorateNow - Lighting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#ece1d1",
+                    "on-primary-container": "#604700",
+                    "surface-container-highest": "#ece1d1",
+                    "background": "#fff8f2",
+                    "tertiary-fixed": "#ffdf9f",
+                    "error": "#ba1a1a",
+                    "inverse-surface": "#353025",
+                    "surface-container-high": "#f2e7d7",
+                    "primary-fixed": "#ffdf9a",
+                    "surface-bright": "#fff8f2",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#d3c5ac",
+                    "on-background": "#201b11",
+                    "on-primary-fixed": "#251a00",
+                    "secondary-container": "#e2dfde",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-primary-fixed-variant": "#5a4300",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#e3d9c9",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "primary-container": "#eab308",
+                    "on-surface": "#201b11",
+                    "on-secondary-container": "#636262",
+                    "surface": "#fff8f2",
+                    "on-surface-variant": "#4f4633",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#785a00",
+                    "on-tertiary-fixed": "#261a00",
+                    "tertiary-container": "#ecb210",
+                    "primary": "#785a00",
+                    "inverse-on-surface": "#faefdf",
+                    "tertiary": "#795900",
+                    "primary-fixed-dim": "#f7be1d",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "inverse-primary": "#f7be1d",
+                    "outline": "#817660",
+                    "surface-container": "#f7ecdc",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#fdf2e2",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#614700"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "xs": "4px",
+                    "md": "24px",
+                    "xl": "80px",
+                    "container-max": "1280px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Montserrat"
+                    ],
+                    "headline-lg": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "Montserrat"
+                    ],
+                    "body-md": [
+                            "Montserrat"
+                    ],
+                    "label-sm": [
+                            "Montserrat"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "headline-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "label-md": [
+                            "Montserrat"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .filter-transition {
+            transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface-dim font-body-md text-body-md border-b border-outline-variant dark:border-outline flat no shadows sticky top-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-md text-on-surface dark:text-inverse-on-surface" href="#">DecorateNow</a>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1 hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 Active: opacity-80 scale-95 transition-transform" href="#">Lighting</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 Active: opacity-80 scale-95 transition-transform" href="#">Switches</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 Active: opacity-80 scale-95 transition-transform" href="#">Smart Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-200 Active: opacity-80 scale-95 transition-transform" href="#">Decor</a>
+</nav>
+<div class="flex items-center gap-md">
+<button aria-label="shopping_cart" class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors flex items-center justify-center p-xs hover:bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button aria-label="person" class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors flex items-center justify-center p-xs hover:bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-md md:py-lg">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="mb-lg">
+<ol class="flex items-center gap-xs text-label-md text-on-surface-variant font-label-md">
+<li>
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+</li>
+<li>
+<span class="material-symbols-outlined text-sm" style="font-size: 16px;">chevron_right</span>
+</li>
+<li aria-current="page" class="text-on-surface">Lighting</li>
+</ol>
+</nav>
+<div class="flex flex-col lg:flex-row gap-lg items-start">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-1/4 flex-shrink-0 bg-surface-container-lowest rounded-lg p-md shadow-sm border border-outline-variant md:sticky md:top-24">
+<div class="flex justify-between items-center mb-md pb-xs border-b border-outline-variant">
+<h2 class="font-headline-md text-headline-md text-on-surface">Filters</h2>
+<button class="text-label-md text-primary hover:underline">Clear All</button>
+</div>
+<div class="space-y-md">
+<!-- Price Filter -->
+<div class="border-b border-outline-variant pb-md">
+<button class="flex justify-between items-center w-full text-left font-label-md text-body-md text-on-surface mb-sm group">
+                            Price
+                            <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">expand_more</span>
+</button>
+<div class="space-y-xs">
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Under $50</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">$50 - $150</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">$150 - $300</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Over $300</span>
+</label>
+</div>
+</div>
+<!-- Style Filter -->
+<div class="border-b border-outline-variant pb-md">
+<button class="flex justify-between items-center w-full text-left font-label-md text-body-md text-on-surface mb-sm group">
+                            Style
+                            <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">expand_more</span>
+</button>
+<div class="space-y-xs">
+<label class="flex items-center gap-sm cursor-pointer group">
+<input checked="" class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Modern Minimalist</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Industrial</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Mid-Century</span>
+</label>
+<label class="flex items-center gap-sm cursor-pointer group">
+<input class="form-checkbox h-4 w-4 text-primary border-outline focus:ring-primary-container rounded" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface transition-colors">Contemporary</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="w-full lg:w-3/4 flex flex-col">
+<!-- Toolbar -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-lg gap-md bg-surface-container-lowest p-md rounded-lg shadow-sm border border-outline-variant">
+<p class="font-body-md text-body-md text-on-surface-variant">Showing 1-12 of 48 products</p>
+<div class="flex items-center gap-sm">
+<label class="font-label-md text-label-md text-on-surface" for="sort">Sort by:</label>
+<select class="form-select block w-48 rounded-md border-outline-variant text-on-surface bg-surface-container-lowest focus:border-on-surface focus:ring focus:ring-primary-container focus:ring-opacity-20 text-body-md" id="sort">
+<option>Featured</option>
+<option>Newest Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden border border-outline-variant hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 relative flex flex-col h-full">
+<div class="absolute top-sm left-sm z-10 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-sm py-xs rounded-full uppercase tracking-wider">New</div>
+<button aria-label="Add to wishlist" class="absolute top-sm right-sm z-10 text-secondary hover:text-error transition-colors p-xs bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A modern, minimalist pendant light hanging in a brightly lit, high-key contemporary living room. The fixture features a matte black geometric frame enclosing a frosted glass globe. Sunlight streams through large windows, casting soft, diffused shadows on clean white walls. The aesthetic is clean, sophisticated, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHgakjYDPdqDqJKbFRbj9TeoC_935w29-PWTOXtaQl8lriUNRU2rAWfdm7KlTvpW9rKjuQqRPHMxCqu3A5VmOsBFM774W7hGdc57FukbtsBbz-5mOfgYge_V7y92CtTI1YNbjChJBBj1sQm_5Zwo7XgwV1feB-zdyBUR_ZGEMpJhkAa1OSfNOjll-ChNM90jHdHyZBcu5Y-l7nuJLF1lvP83zSCeHuzwJmNmIF7OpSDVIaVylRjqhg"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-body-lg text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Aura Minimalist Pendant</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm line-clamp-2">Matte black finish with frosted glass diffuser. Perfect for dining areas.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">$189.00</span>
+<button aria-label="Add to cart" class="bg-primary text-on-primary p-sm rounded-full hover:bg-surface-tint transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden border border-outline-variant hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 relative flex flex-col h-full">
+<button aria-label="Add to wishlist" class="absolute top-sm right-sm z-10 text-secondary hover:text-error transition-colors p-xs bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A sleek, brass-finished modern wall sconce mounted on a textured, off-white gallery wall. The light casts a warm, subtle glow upwards and downwards, highlighting the metallic finish. The environment is minimalist and upscale, emphasizing clean lines and high-quality materials. The lighting is balanced and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATaRtKmqv3SptBlDnGvhWt5scG1I_lUhTNbG6wstcs5d-A1ydqbUE4St6mxPeqWRQParrg69pQ_8W694BoOiElhUgd-hRKKvYK_opaRch8HJNU4smnL5okyB1A_RCVNIzAEPS7Jrb_803z6oIfd_PrrbqI2Lv5NbQedaDsYXrZ3JTl1HjuCYUuHOzcVYvwoA4tcPaOSs2HT5XS-r14K2avwJWd1hLiqPxLIKwGStrPzY3zMqO90tvF"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-body-lg text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Lumina Brass Sconce</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm line-clamp-2">Elegant brass wall fixture with dual directional lighting.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">$125.00</span>
+<button aria-label="Add to cart" class="bg-primary text-on-primary p-sm rounded-full hover:bg-surface-tint transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden border border-outline-variant hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 relative flex flex-col h-full">
+<button aria-label="Add to wishlist" class="absolute top-sm right-sm z-10 text-secondary hover:text-error transition-colors p-xs bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="An industrial-chic exposed bulb chandelier suspended over a modern oak dining table. The fixture is composed of intersecting dark steel rods ending in warm, vintage-style Edison bulbs. The room features ample negative space and neutral tones, creating a sophisticated gallery-like atmosphere. The focus is on the striking structural design of the light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAujG_mQB6_3wMD65RztXN4a5IIZZ3Gq0pXx9CBW4NzZdtuIc2XbuwEMBSMJBI8Aba874-8a1TcML4LTtRpe3_jdowgcbFTUOyCom5F00wJvzVr8EHUf2JMtZqcglAwpg4YomKRJXRIrT2z4MZI_-gc4fvfrAPmmY20t3eT5klIGdzqIenbhvKq_fsQmP-E8y0Q8sKo8qjCjObJpoXs92kjd2aKYBk4PyKhY_tCpZ7Rkld99stMNTtr"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-body-lg text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Axis Industrial Chandelier</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm line-clamp-2">Statement piece with exposed Edison bulbs and steel structure.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">$345.00</span>
+<button aria-label="Add to cart" class="bg-primary text-on-primary p-sm rounded-full hover:bg-surface-tint transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest rounded-lg overflow-hidden border border-outline-variant hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300 relative flex flex-col h-full">
+<div class="absolute top-sm left-sm z-10 bg-secondary text-on-secondary font-label-sm text-label-sm px-sm py-xs rounded-full uppercase tracking-wider">Sale</div>
+<button aria-label="Add to wishlist" class="absolute top-sm right-sm z-10 text-secondary hover:text-error transition-colors p-xs bg-surface-container-lowest rounded-full shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A modern, slim-profile LED floor lamp standing in a corner of a minimalist bedroom. The lamp is constructed of brushed aluminum, emitting a cool white glow against a light gray wall. The setting is clean, uncluttered, and serene, emphasizing the lamp's functional elegance and modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBofvZRD-tt3rpEC4OSrvi_DHj-i3ViMXN8GHT5xWVklxEDDqWkdS9MncyOqvydrunzFSMiQZOemrZFVQdvC6nSduAxJc9zX45CEnL3lpo7yLyJJlKmGF-80j03aUEGJwUctz7YGAx8tqyiPwKbau09yFt5donLkTlNnrzZm0olyBQ3Rtnt5k2iqqDUa-u_WMP39b1Y2lBnkc8QBoloCD8Y-LRU-nFbRffkLFxZQ0Jl7yAyfFal0SGk"/>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-label-md text-body-lg text-on-surface mb-xs group-hover:text-primary transition-colors line-clamp-1">Vectra Floor Lamp</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm line-clamp-2">Ultra-slim LED profile with adjustable color temperature.</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<span class="font-headline-md text-headline-md text-primary">$199.00</span>
+<span class="font-body-md text-body-md text-on-surface-variant line-through text-sm">$249.00</span>
+</div>
+<button aria-label="Add to cart" class="bg-primary text-on-primary p-sm rounded-full hover:bg-surface-tint transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-xl flex justify-center items-center gap-sm">
+<button class="p-sm text-secondary hover:text-primary transition-colors rounded-full hover:bg-surface-container-low flex items-center justify-center border border-outline-variant" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center">1</button>
+<button class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center justify-center transition-colors">2</button>
+<button class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center justify-center transition-colors">3</button>
+<span class="text-on-surface-variant font-body-md">...</span>
+<button class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-low font-label-md text-label-md flex items-center justify-center transition-colors">8</button>
+<button class="p-sm text-secondary hover:text-primary transition-colors rounded-full hover:bg-surface-container-low flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface text-primary dark:text-primary-fixed-dim font-body-md text-body-md full-width bottom border-t border-outline-variant dark:border-outline flat no shadows mt-auto">
+<div class="w-full py-xl px-gutter grid grid-cols-1 md:grid-cols-4 gap-lg max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<a class="font-headline-md text-headline-md text-on-surface dark:text-inverse-on-surface mb-md block" href="#">DecorateNow</a>
+<p class="text-on-surface-variant mt-sm">Premium electrical decorative products for modern homes and designers.</p>
+</div>
+<div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-lg">
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-sm">Company</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">Shipping Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">Returns</a>
+</div>
+<div class="flex flex-col gap-sm">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-sm">Support</span>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">Contact Support</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">Privacy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors focus:ring-2 focus:ring-primary" href="#">Terms</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-1 flex flex-col gap-sm justify-end">
+<p class="text-on-surface-variant text-sm">© 2024 DecorateNow Electricals. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

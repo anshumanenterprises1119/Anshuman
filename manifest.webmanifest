@@ -1,0 +1,70 @@
+{
+  "name": "Anshuman Enterprises Super App",
+  "short_name": "Anshuman App",
+  "description": "Leading Wholesale Electrical, CCTV Security, Commercial Engineering & Luxury Lighting Supplier in Greater Noida",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#faf7f2",
+  "theme_color": "#3d0e14",
+  "categories": [
+    "shopping",
+    "business",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/electrical_bg_1778688113768.webp",
+      "sizes": "1280x720",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Wholesale Electrical Supplies"
+    },
+    {
+      "src": "/cctv_bg_1778688143741.webp",
+      "sizes": "720x1280",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "CCTV & Security Solutions"
+    }
+  ]
+}

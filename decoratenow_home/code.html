@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DecorateNow - Premium Electrical Decor</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#ece1d1",
+                        "on-primary-container": "#604700",
+                        "surface-container-highest": "#ece1d1",
+                        "background": "#fff8f2",
+                        "tertiary-fixed": "#ffdf9f",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#353025",
+                        "surface-container-high": "#f2e7d7",
+                        "primary-fixed": "#ffdf9a",
+                        "surface-bright": "#fff8f2",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#d3c5ac",
+                        "on-background": "#201b11",
+                        "on-primary-fixed": "#251a00",
+                        "secondary-container": "#e2dfde",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed-variant": "#5a4300",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#e3d9c9",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "primary-container": "#eab308",
+                        "on-surface": "#201b11",
+                        "on-secondary-container": "#636262",
+                        "surface": "#fff8f2",
+                        "on-surface-variant": "#4f4633",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#785a00",
+                        "on-tertiary-fixed": "#261a00",
+                        "tertiary-container": "#ecb210",
+                        "primary": "#785a00",
+                        "inverse-on-surface": "#faefdf",
+                        "tertiary": "#795900",
+                        "primary-fixed-dim": "#f7be1d",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "inverse-primary": "#f7be1d",
+                        "outline": "#817660",
+                        "surface-container": "#f7ecdc",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#fdf2e2",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#614700"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "container-max": "1280px",
+                        "lg": "48px",
+                        "base": "8px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 w-full z-50 flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<div class="flex items-center gap-md">
+<a class="flex items-center gap-2" href="#">
+<img alt="DecorateNow Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcD6whjhsT4Vuod8Y_qMENxYt7KbC_SsE3M8rJX6HgY1BdylgBJ3LOicOYlXlgUj7kl7mgaamZSc2ST1XOfnK3PXtODdNBAjcF03DVkgHx0iFNcuSimfW7oTsXKaJQ76-gegOuwaleIlzfOGJ197goolSiUJXeiQl3sEC5ilZS7i5suiU7ZDuuYQYw0kZdSs-c80yzfsqchKRXu8Ta-vtXLcFuQeos3qvDsqJ3s05bT-gZvEgn6vNTA6GmMRC3CxjWNQ"/>
+<span class="font-display-lg text-headline-md text-on-surface">DecorateNow</span>
+</a>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-lg">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors hover:text-primary hover:bg-surface-container-low duration-200" href="#">Lighting</a>
+<a class="text-secondary hover:text-primary transition-colors hover:bg-surface-container-low duration-200 py-1" href="#">Switches</a>
+<a class="text-secondary hover:text-primary transition-colors hover:bg-surface-container-low duration-200 py-1" href="#">Smart Home</a>
+<a class="text-secondary hover:text-primary transition-colors hover:bg-surface-container-low duration-200 py-1" href="#">Decor</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary-container text-on-primary-container text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">2</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-colors hidden md:block">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+<button class="md:hidden text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full absolute inset-0" data-alt="A luxurious modern living room bathed in golden hour sunlight. Minimalist architecture with large floor-to-ceiling windows. A stunning, sculptural gold and charcoal pendant light hangs in the center, acting as the focal point. The decor is sleek, featuring a mix of warm wood tones, crisp white surfaces, and deep charcoal accents. The overall mood is sophisticated, bright, and inviting, showcasing premium electrical decor in a contemporary setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCILDfK0oyI-QUEUBnoi1ZIYGn0EdaBC4dVJGHvITsPgL6YMiUwjXdmg7J7T-T3hoJ9n9Tk8GlEaUWPXzV06VUlffLOJTErC6z2vt7u4TDnBjGspLrkkIf6qcq-OxeX07tA2F6PXRmHKSOKuIfyl-M6SHiXal7LwNR1bxXjKH8BkbU6nhkQy5W3AuZvtSvQbS9CdkPwBSGUKxchMJjvKLMWD1yFC3KSA6FP8jdD0YiTkqeBWCBuT0rb')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-md">
+<div class="flex flex-col items-start gap-md">
+<div class="bg-primary-container text-on-primary-container font-label-md text-label-md px-4 py-1 rounded-full uppercase tracking-wider">
+                        Summer Glow Collection
+                    </div>
+<h1 class="font-display-lg text-display-lg md:text-[64px] leading-tight text-on-background">
+                        Illuminate Your <br/> Modern Canvas
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Discover architectural lighting and precision-engineered switches designed to elevate your interior spaces.
+                    </p>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:opacity-90 transition-opacity mt-4 flex items-center gap-2">
+                        Shop the Collection
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Categories -->
+<section class="py-xl max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<h2 class="font-headline-lg text-headline-lg text-center mb-12">Curated Essentials</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Category 1 -->
+<a class="group relative h-[400px] overflow-hidden rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up shot of an elegant, minimalist pendant light. The fixture features a matte charcoal exterior with a brushed brass inner lining, casting a warm, inviting glow. It hangs against a soft, off-white textured wall. The lighting is dramatic yet soft, emphasizing the clean lines and premium materials of the product. The style is modern, architectural, and highly refined." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR721I8zdR6lD4QzFlmNN1vzBKoECpymq31A7cWYuTJ61ijLgb94qgq-mD1-NH0LlTHGwzIU13JtDDT9rH_tusq83g9eXTN5BPnuLWkus0ISd0ctd5lbB3RaHg7r3_V0aXKEIptuTqgU2Fosqb4keU9IyCLT5Qv98SSwGOT7pyDaFmpZ9XEOeZh0A_buPQ8YDmOuXzNiFSNyJBht6sCchfFY2C3wTAOOHPsRp1S5pMdzSZRJ2P_9YP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 flex flex-col gap-2 w-full">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Pendant Lights</h3>
+<span class="text-primary-fixed-dim font-label-md text-label-md group-hover:underline underline-offset-4 flex items-center gap-1">
+                            Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Category 2 -->
+<a class="group relative h-[400px] overflow-hidden rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A detailed macro photograph of a high-end designer light switch installed on a pristine white gallery wall. The switch plate is made of brushed dark charcoal metal with a subtle, illuminated yellow LED indicator. The design is hyper-minimalist and tactile, showcasing precision engineering. The lighting is sharp and clinical, highlighting the texture and flawless finish of the electrical hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP4sf6pp_YPjgAb2gm9g3l-Va3R0BVFbG1FBam88HuwTLFDvYowNpdmE7PHOCU9qbzCtVqGE9iG0mLRrkTH0AkIl538hNhxeitP8lIRaDZH_2FhaUH6IsbGZ24KKChY0D5UJnmtNkOmNpvMudy7iOTRG8Kckm1RokhbCyMxoGfL-kEQtygYnqinpVhFRb91TjDlRLobCE06LQvQ00RHhR9wlu3m284K5Gwd2ErLy3MmwBRiMxv2TiU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 flex flex-col gap-2 w-full">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Designer Switches</h3>
+<span class="text-primary-fixed-dim font-label-md text-label-md group-hover:underline underline-offset-4 flex items-center gap-1">
+                            Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Category 3 -->
+<a class="group relative h-[400px] overflow-hidden rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300" href="#">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A breathtaking view of a modern outdoor patio at dusk. Sleek, low-profile architectural uplights illuminate textured concrete walls and lush architectural plants. The primary light source is a series of modern, dark grey wall sconces casting geometric light patterns. The sky is a deep twilight blue, contrasting with the warm, precise golden light from the fixtures. The mood is serene, luxurious, and perfectly engineered." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdqvB2C-kioiVSAPDoxQPnYtGEgQs2lsGyK0-Sc0hWEvOzlOVMYJFb_a_rYYkcnc0KA4NKxv6mPXRC6Dd_BUyuTHPte_Vlk4opghFw3oq4yOdXO-mDwQPc_6Q2zLxpcDHhTihrZwn5TGgb3J0HH7NfO9a917mOfsWmNtMCe5WaNJVJwwizLlNcp47sBtBUrkgX2TJOMxwBPwYCxfdd21hq5meOQXB1wiWbF6ld7kdlTX-hqYJG4X7G"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 flex flex-col gap-2 w-full">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Outdoor Illumination</h3>
+<span class="text-primary-fixed-dim font-label-md text-label-md group-hover:underline underline-offset-4 flex items-center gap-1">
+                            Explore <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Promotional Banner -->
+<section class="py-xl bg-inverse-surface text-surface-container-lowest relative overflow-hidden">
+<!-- Decorative subtle pattern -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10 flex flex-col md:flex-row items-center justify-between gap-lg">
+<div class="md:w-1/2 flex flex-col gap-6">
+<div class="inline-block bg-surface-tint text-surface-container-lowest font-label-sm text-label-sm px-3 py-1 rounded-full uppercase w-max">
+                        Smart Home Integration
+                    </div>
+<h2 class="font-headline-lg text-headline-lg">Control the Ambience. <br/> Effortlessly.</h2>
+<p class="font-body-md text-body-md text-surface-variant max-w-md">
+                        Upgrade your space with our new range of smart dimmers and Wi-Fi enabled fixtures. Sync with your lifestyle for perfect lighting, every time.
+                    </p>
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity w-max">
+                        Shop Smart Lighting
+                    </button>
+</div>
+<div class="md:w-1/2 relative h-[300px] w-full rounded-lg overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A clean, modern lifestyle shot showing a person's hand holding a sleek smartphone, displaying a minimalist smart home lighting control app interface. The background is slightly blurred but reveals a beautifully lit, contemporary living space with integrated LED strip lighting and a statement floor lamp. The color palette features whites, greys, and warm golden light. The mood implies convenience, modern technology, and elegant design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCryGXfuLr7NsnqHmoyait-6zOHBWhE06L71dhBSGgTHqIJTfIQLi3jYwThNMXYxntHU_YkUx10f2EfEUPCwmAgp1IE4IpDHOEgBtWgJu4i3UwEtzKGFyQTb1iCzRg5Ka1QqGRI2RTnms-go8cIiI9r_6FTFwCEbC5lDWaj6xF0QUEMDJfiftMYfDN9opTm9CxEOqk9joS-BLFcUjVThqeD_a-AyT6WQMGy2TL3yKhutz7IGgOh4KP"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant w-full py-xl px-gutter grid grid-cols-1 md:grid-cols-4 gap-lg max-w-container-max mx-auto mt-xl">
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-2 mb-4" href="#">
+<img alt="DecorateNow Logo" class="h-8 w-8 object-contain grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQ_ZJglfDYvh7yEOerPD5Cht8yZzVSR_GcB_BsFoESjB2AIPtP3A4esZTG2HPDOuXw8Gf8qo_8xeBVJFeTzhhSL6XLlaa2Amy_PrqFCbNhc5-6j7Y1g5QVrgvAT1WdhdlHU3AEkj6hseukjxLILjur9Bok4bCO591mYEcrflFej_tXCMIt2uq7D4A_jrQHmYI11LQK9qz-_qQz4AVPLBaPHsDw82eK3XQj2gEyzzQrbguJlCk4kCYpakLWmru8-VTQw"/>
+<span class="font-headline-md text-headline-md text-on-surface">DecorateNow</span>
+</a>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevating spaces through precision engineering and modern design.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-2">Company</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-2">Policies</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Returns</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-2">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-2">Subscribe for updates and design inspiration.</p>
+<div class="flex border border-outline-variant rounded-DEFAULT overflow-hidden focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all">
+<input class="w-full border-none focus:ring-0 bg-surface-container-lowest text-on-surface font-body-md px-4 py-2" placeholder="Your email address" type="email"/>
+<button class="bg-inverse-surface text-surface-container-lowest px-4 hover:bg-on-surface transition-colors">
+<span class="material-symbols-outlined text-sm mt-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<p>© 2024 DecorateNow Electricals. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">language</span>
+</div>
+</div>
+</footer>
+</body></html>

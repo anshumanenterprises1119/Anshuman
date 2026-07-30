@@ -1,0 +1,238 @@
+/* DecorateNow E-Commerce - Premium Custom Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Light Theme (Design System standard) */
+    --background: #fff8f2;
+    --on-background: #201b11;
+    --surface: #fff8f2;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #fdf2e2;
+    --surface-container: #f7ecdc;
+    --surface-container-high: #f2e7d7;
+    --surface-container-highest: #ece1d1;
+    --on-surface: #201b11;
+    --on-surface-variant: #4f4633;
+    --primary: #785a00;
+    --on-primary: #ffffff;
+    --primary-container: #eab308;
+    --on-primary-container: #604700;
+    --outline: #817660;
+    --outline-variant: #d3c5ac;
+    --secondary: #5f5e5e;
+    --error: #ba1a1a;
+}
+
+/* Dark Luxury Theme overrides */
+html.dark {
+    --background: #0f0c08;
+    --on-background: #f5eedf;
+    --surface: #15110a;
+    --surface-container-lowest: #0a0703;
+    --surface-container-low: #1d180f;
+    --surface-container: #262014;
+    --surface-container-high: #2f2719;
+    --surface-container-highest: #3b3120;
+    --on-surface: #f7eedb;
+    --on-surface-variant: #cbbfa7;
+    --primary: #f7c844;
+    --on-primary: #382700;
+    --primary-container: #d69e2e;
+    --on-primary-container: #fff1d6;
+    --outline: #a09074;
+    --outline-variant: #4f432d;
+    --secondary: #a3a19e;
+    --error: #ffb4ab;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--on-background);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface-container-lowest);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--outline-variant);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--outline);
+}
+
+/* Transitions for dynamic elements */
+.transition-theme {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, shadow 0.3s ease;
+}
+
+/* Glassmorphism utility */
+.glassmorphism {
+    background: rgba(255, 248, 242, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+html.dark .glassmorphism {
+    background: rgba(21, 17, 10, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Slide-over Transition Panel */
+.cart-drawer-open {
+    transform: translateX(0);
+}
+
+.cart-drawer-closed {
+    transform: translateX(100%);
+}
+
+/* Toast Notifications styling & progress animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInMobile {
+    from {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes progressShrink {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+.animate-slide-in {
+    animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 768px) {
+    .animate-slide-in-mobile {
+        animation: slideInMobile 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+}
+
+.animate-fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+.toast-progress-bar {
+    height: 3px;
+    background-color: var(--primary);
+    animation: progressShrink 3.5s linear forwards;
+}
+
+/* Credit Card Flip effect */
+.card-container {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 320px;
+    height: 190px;
+}
+
+.card-inner {
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+
+.card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* Skeleton loader pulsing effect */
+@keyframes skeletonPulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.skeleton-pulse {
+    background-color: var(--surface-container-high);
+    animation: skeletonPulse 1.5s ease-in-out infinite;
+}
+
+/* Mega Menu Hover Styling */
+.mega-menu-trigger:hover .mega-menu-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu-panel {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide scrollbar indicators for category scroll wrapper */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Payment — DecorateNow</title>
+<meta name="theme-color" content="#111111">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="decoratenow_home/decoratenow_icon_logo_transparent.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="decoratenow icon logo.png" alt="DecorateNow Icon" class="logo-img-icon remove-bg-yellow">
+      <img src="heading logo.png" alt="DecorateNow" class="logo-img-heading remove-bg-yellow">
+    </a>
+  </div>
+</header>
+
+<main class="section" style="padding-top:40px;max-width:700px;">
+  <div class="section-head">
+    <p class="eyebrow">Secure Gateway</p>
+    <h2>Select Payment Method</h2>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <label style="padding:16px;border:1px solid var(--gold);border-radius:var(--radius-md);display:flex;align-items:center;gap:12px;background:rgba(201,168,76,0.06);cursor:pointer;">
+      <input type="radio" name="payment" checked>
+      <div>
+        <strong style="display:block;font-size:15px;">UPI (Google Pay, PhonePe, Paytm, BHIM)</strong>
+        <span style="font-size:12px;color:var(--text-muted);">Instant zero-fee transfer</span>
+      </div>
+    </label>
+
+    <label style="padding:16px;border:1px solid var(--gray-line);border-radius:var(--radius-md);display:flex;align-items:center;gap:12px;cursor:pointer;">
+      <input type="radio" name="payment">
+      <div>
+        <strong style="display:block;font-size:15px;">Credit / Debit Card</strong>
+        <span style="font-size:12px;color:var(--text-muted);">Visa, Mastercard, RuPay</span>
+      </div>
+    </label>
+
+    <label style="padding:16px;border:1px solid var(--gray-line);border-radius:var(--radius-md);display:flex;align-items:center;gap:12px;cursor:pointer;">
+      <input type="radio" name="payment">
+      <div>
+        <strong style="display:block;font-size:15px;">Cash on Delivery (COD)</strong>
+        <span style="font-size:12px;color:var(--text-muted);">Pay upon delivery at your doorstep</span>
+      </div>
+    </label>
+
+    <a href="order-success.html" class="btn btn-gold ripple" style="margin-top:16px;text-align:center;">Complete Order (₹2,499)</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <p>&copy; <span id="footerYear"></span> DecorateNow. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
