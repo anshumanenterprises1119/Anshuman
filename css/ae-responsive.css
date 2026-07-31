@@ -1,0 +1,149 @@
+/* Anshuman Enterprises - Global Responsive CSS & Mobile Navbar Fixes */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Prevent image and video overflow */
+img, svg, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header & Mobile Drawer Styles */
+#ae-sticky-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+}
+
+.ae-nav-desktop-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .ae-nav-desktop-links {
+    display: none !important;
+  }
+  .ae-search-desktop {
+    display: none !important;
+  }
+  .ae-topbar-contact {
+    display: none !important;
+  }
+}
+
+/* Mobile Hamburger Toggle */
+#ae-mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #3D0E14;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  #ae-mobile-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile Drawer Overlay */
+#ae-mobile-drawer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  pointer-events: none;
+}
+
+#ae-mobile-drawer.is-active {
+  pointer-events: auto;
+}
+
+#ae-mobile-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#ae-mobile-drawer.is-active #ae-mobile-backdrop {
+  opacity: 1;
+}
+
+#ae-mobile-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  max-width: 320px;
+  background: #FAF7F2;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+#ae-mobile-drawer.is-active #ae-mobile-panel {
+  transform: translateX(0);
+}
+
+.ae-mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #3D0E14;
+  font-family: 'Montserrat', 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.ae-mobile-nav-link:hover, .ae-mobile-nav-link.active {
+  background: rgba(201, 168, 76, 0.15);
+  color: #6B1C23;
+}
+
+/* Fix bento grid on mobile */
+@media (max-width: 768px) {
+  .bento-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .bento-grid > div {
+    min-height: 200px !important;
+    width: 100% !important;
+  }
+}
+
+/* Modal Responsive Fix */
+.modal-dialog, [role="dialog"], .quick-enquiry-modal {
+  max-width: 92vw !important;
+  margin: 20px auto !important;
+}
