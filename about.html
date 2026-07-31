@@ -168,36 +168,6 @@
     .social-icon-circle:hover svg {
       transform: scale(1.05);
     }
-    .social-icon-circle.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-    .social-icon-circle.youtube { background-color: #ff0000; }
-    .social-icon-circle.linkedin { background-color: #0077b5; }
-    .social-icon-circle.review { background-color: #4285f4; }
-    </style>
-
-<style>
-.about-hero {
-  background:linear-gradient(160deg, var(--maroon-dark) 0%, var(--maroon) 100%);
-  padding:80px 5% 90px; text-align:center; position:relative; overflow:hidden;
-}
-.about-hero::before {
-  content:''; position:absolute; inset:0;
-  background:radial-gradient(circle at 30% 70%, rgba(201,168,76,0.1) 0%, transparent 50%),
-             radial-gradient(circle at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 40%);
-}
-.about-hero-inner { max-width:700px; margin:auto; position:relative; z-index:1; }
-.about-hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(36px,5vw,56px); color:#fff; line-height:1.15; margin-bottom:20px; font-weight:700; }
-.about-hero h1 em { font-style:italic; color:var(--gold-light); }
-.about-hero p { font-size:17px; color:rgba(255,255,255,0.72); line-height:1.75; }
-.about-hero .meta { margin-top:32px; display:flex; justify-content:center; gap:24px; flex-wrap:wrap; }
-.meta-chip {
-  background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15);
-  border-radius:50px; padding:8px 20px; color:rgba(255,255,255,0.8);
-  font-size:12px; font-family:'DM Mono',monospace;
-}
-
-/* FOUNDER SECTION */
-.founder-section { padding:100px 5%; }
-.founder-grid {
   max-width:1100px; margin:auto;
   display:grid; grid-template-columns:350px 1fr; gap:80px; align-items:start;
 }
@@ -485,24 +455,83 @@ nav:not([style]){position:static!important;background:transparent!important;box-
   </div>
 </div>
 
-<!-- HERO -->
-<section class="about-hero">
-  <div class="about-hero-inner">
-    <span class="label" style="border-color:rgba(201,168,76,0.4);color:var(--gold-light);">⚡ Our Story</span>
-    <h1>From Contracting<br>to <em>Building Trust</em></h1>
-    <p>The journey behind Greater Noida's most honest electrical & hardware supply brand — built on real ground-level experience, not just business plans.</p>
-    <div class="meta">
-      <div class="meta-chip">Founded by Aditya Tiwari</div>
-      <div class="meta-chip">19 November 2025</div>
-      <div class="meta-chip">Greater Noida</div>
 
-<div style="margin-top:32px;border-radius:16px;overflow:hidden;max-width:600px;margin-left:auto;margin-right:auto;box-shadow:0 20px 60px rgba(0,0,0,0.4);">
-  <img loading="lazy" src="images/about/about_img_1.jpg" alt="Anshuman Enterprises Shop - Greater Noida" style="width:100%;display:block;object-fit:cover;height:280px;" width="1152" height="1536" />
-  <div style="background:rgba(61,14,20,0.95);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;">
-    <span style="color:var(--gold-light);font-size:12px;font-family:'DM Mono',monospace;letter-spacing:1.5px;">📍 KHS-722, Greater Noida · Sec-1</span>
-    <span style="color:rgba(255,255,255,0.6);font-size:11px;">Est. 19 Nov 2025</span>
-  </div>
-</div>
+<!-- HERO -->
+<section class="about-hero" style="background:#FFFFFF;border-bottom:1px solid rgba(107,28,35,0.12);padding:60px 5% 80px;text-align:center;position:relative;overflow:hidden;">
+  <div class="about-hero-inner" style="max-width:1150px;margin:auto;position:relative;z-index:1;">
+    <span class="label" style="border:1px solid rgba(201,168,76,0.5);color:#C9A84C;background:rgba(201,168,76,0.1);padding:4px 18px;border-radius:50px;font-weight:700;font-size:12px;display:inline-block;margin-bottom:16px;">⚡ Our Story & Infrastructure</span>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,56px);color:#3D0E14;line-height:1.15;margin-bottom:16px;font-weight:700;">From Contracting<br>to <em style="font-style:italic;color:#C9A84C;">Building Trust</em></h1>
+    <p style="font-size:17px;color:#524343;line-height:1.75;max-width:750px;margin:0 auto;">The journey behind Greater Noida's most honest electrical, decorative lighting & hardware supply brand — built on real ground-level experience and authentic inventory.</p>
+    
+    <div class="meta" style="margin-top:24px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+      <div class="meta-chip" style="background:#FAF7F2;border:1px solid rgba(201,168,76,0.4);border-radius:50px;padding:6px 18px;color:#3D0E14;font-size:12px;font-weight:600;">Founded by Aditya Tiwari</div>
+      <div class="meta-chip" style="background:#FAF7F2;border:1px solid rgba(201,168,76,0.4);border-radius:50px;padding:6px 18px;color:#3D0E14;font-size:12px;font-weight:600;">19 November 2025</div>
+      <div class="meta-chip" style="background:#FAF7F2;border:1px solid rgba(201,168,76,0.4);border-radius:50px;padding:6px 18px;color:#3D0E14;font-size:12px;font-weight:600;">📍 KHS-722, Sec-1, Greater Noida</div>
+    </div>
+
+    <!-- Multi-Image Shop Gallery Grid -->
+    <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;text-align:left;">
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_1.jpg" alt="Anshuman Enterprises Storefront" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">🏢 Main Storefront & Entrance</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">Shop No.-2, KHS-722, Sector-1, Greater Noida</div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_4.jpg" alt="Electrical Wires & Cable Stock" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">🔌 Wires, Cables & Switchgear Rack</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">100% Genuine Polycab, Havells & Finolex Supplies</div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_5.jpg" alt="DecorateNow Lighting Showroom Display" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">💡 DecorateNow Lighting Showroom</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">Luxury Chandeliers, Wall Sconces & Pendant Lights</div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_6.jpg" alt="CCTV & Security Hardware Stock" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">📹 CCTV & Smart Security Depot</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">Hikvision, CP PLUS & Biometric Access Systems</div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_7.jpg" alt="Modular Switches & Panels" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">⚡ Modular Switches & Panels</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">Schneider, Legrand, Anchor & MCB Boxes</div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;overflow:hidden;background:#FAF7F2;border:1px solid rgba(201,168,76,0.3);box-shadow:0 10px 25px rgba(61,14,20,0.06);">
+        <div style="height:230px;overflow:hidden;">
+          <img loading="lazy" src="images/about/about_img_8.jpg" alt="Showroom Counter & Customer Reception" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+        </div>
+        <div style="padding:14px 18px;background:#fff;border-top:1px solid rgba(201,168,76,0.2);">
+          <div style="font-weight:700;color:#3D0E14;font-size:14px;">🤝 Showroom Counter & Consultations</div>
+          <div style="color:#857373;font-size:12px;margin-top:2px;">Direct Contractor Consultations & Wholesale Billing</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
