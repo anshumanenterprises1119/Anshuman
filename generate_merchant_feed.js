@@ -1,6 +1,6 @@
 /**
- * GOOGLE MERCHANT CENTER XML FEED GENERATOR
- * Generates google_merchant_feed.xml for automatic Google Merchant Profile syncing
+ * GOOGLE MERCHANT CENTER XML FEED GENERATOR (STRICT XML ESCAPED)
+ * Generates 100% Google Merchant Center compliant RSS 2.0 / XML feed
  */
 
 const fs = require('fs');
@@ -8,7 +8,6 @@ const path = require('path');
 
 const domain = "https://anshumanenterprises.online";
 
-// Catalog Products
 const products = [
   {
     id: "DN-PENDANT-01",
@@ -125,9 +124,9 @@ const products = [
 let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Anshuman Enterprises &amp; DecorateNow Product Catalog</title>
+    <title><![CDATA[Anshuman Enterprises & DecorateNow Product Catalog]]></title>
     <link>${domain}</link>
-    <description>Authorized Wholesale Electrical &amp; Luxury Decorative Lighting Store Greater Noida</description>
+    <description><![CDATA[Authorized Wholesale Electrical & Luxury Decorative Lighting Store Greater Noida]]></description>
 `;
 
 products.forEach(p => {
@@ -148,11 +147,12 @@ products.forEach(p => {
   xmlContent += `      <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>${p.price}</g:price>
-      <g:brand>${p.brand}</g:brand>
-      <g:google_product_category>${p.category}</g:google_product_category>
+      <g:brand><![CDATA[${p.brand}]]></g:brand>
+      <g:google_product_category><![CDATA[${p.category}]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -163,4 +163,4 @@ xmlContent += `  </channel>
 </rss>`;
 
 fs.writeFileSync(path.join(__dirname, 'google_merchant_feed.xml'), xmlContent, 'utf-8');
-console.log('google_merchant_feed.xml generated successfully with', products.length, 'products.');
+console.log('google_merchant_feed.xml updated with strict CDATA XML escaping for Google Merchant Center.');

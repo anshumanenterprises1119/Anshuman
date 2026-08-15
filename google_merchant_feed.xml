@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Anshuman Enterprises &amp; DecorateNow Product Catalog</title>
+    <title><![CDATA[Anshuman Enterprises & DecorateNow Product Catalog]]></title>
     <link>https://anshumanenterprises.online</link>
-    <description>Authorized Wholesale Electrical &amp; Luxury Decorative Lighting Store Greater Noida</description>
+    <description><![CDATA[Authorized Wholesale Electrical & Luxury Decorative Lighting Store Greater Noida]]></description>
     <item>
       <g:id>DN-PENDANT-01</g:id>
       <g:title><![CDATA[Ansh DecorateNow Gold Crystal Cylinder Pendant Light]]></g:title>
@@ -21,11 +21,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>899.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Pendant Lights</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Pendant Lights]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -46,11 +47,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>699.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Wall Lights & Sconces</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Wall Lights & Sconces]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -63,11 +65,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>499.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Wall Lights & Sconces</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Wall Lights & Sconces]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -80,11 +83,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>499.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Wall Lights & Sconces</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Wall Lights & Sconces]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -97,11 +101,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>499.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Wall Lights & Sconces</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Wall Lights & Sconces]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -114,11 +119,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>499.00 INR</g:price>
-      <g:brand>DecorateNow</g:brand>
-      <g:google_product_category>Home & Garden > Lighting > Wall Lights & Sconces</g:google_product_category>
+      <g:brand><![CDATA[DecorateNow]]></g:brand>
+      <g:google_product_category><![CDATA[Home & Garden > Lighting > Wall Lights & Sconces]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -131,11 +137,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>1450.00 INR</g:price>
-      <g:brand>Polycab</g:brand>
-      <g:google_product_category>Hardware > Electrical Wires & Cables</g:google_product_category>
+      <g:brand><![CDATA[Polycab]]></g:brand>
+      <g:google_product_category><![CDATA[Hardware > Electrical Wires & Cables]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -148,11 +155,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>45.00 INR</g:price>
-      <g:brand>Havells</g:brand>
-      <g:google_product_category>Hardware > Switches & Outlets</g:google_product_category>
+      <g:brand><![CDATA[Havells]]></g:brand>
+      <g:google_product_category><![CDATA[Hardware > Switches & Outlets]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
@@ -165,11 +173,12 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>12500.00 INR</g:price>
-      <g:brand>Hikvision</g:brand>
-      <g:google_product_category>Electronics > Security Cameras</g:google_product_category>
+      <g:brand><![CDATA[Hikvision]]></g:brand>
+      <g:google_product_category><![CDATA[Electronics > Security Cameras]]></g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard</g:service>
+        <g:service>Standard Delivery</g:service>
         <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
