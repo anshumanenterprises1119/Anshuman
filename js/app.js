@@ -140,20 +140,40 @@
     },
     {
       id: 'DN-WALL-03',
-      name: 'DecorateNow Wallchiere Wall Lamp (With Warm LED Bulb)',
-      desc: 'Signature DecorateNow wallchiere featuring handblown glass shade and energy-efficient warm LED bulb included.',
+      name: 'DecorateNow Premium Gold Crystal Square Wallchiere Pendant Lamp (With Warm LED Bulb)',
+      seoTitle: 'DecorateNow Gold Crystal Wallchiere Pendant Lamp | Warm LED Included',
+      desc: 'Handcrafted luxury gold electroplated square pendant lamp featuring high-refraction optical oval crystals, intricate geometric lattice pattern, adjustable cord, & energy-efficient warm LED bulb included.',
       category: 'Wall Lights',
-      rooms: ['Living Room', 'Bedroom', 'Office'],
+      rooms: ['Living Room', 'Bedroom', 'Dining', 'Office'],
       brand: 'DecorateNow Luxury',
-      price: 499,
-      mrp: 1499,
-      discount: 67,
+      price: 699,
+      mrp: 2999,
+      discount: 77,
       rating: '5.0',
       reviews: 215,
       stock: 'in',
       tags: ['trending', 'bestseller', 'new', 'flash', 'deal', 'luxury', 'premium'],
       img: 'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp',
-      imgLarge: 'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp'
+      imgLarge: 'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp',
+      gallery: [
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-2.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-3.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-4.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-5.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-6.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-7.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-8.webp',
+        'images/products/decoratenow-wallchiere-wall-lamp-with-bulb-9.webp'
+      ],
+      features: [
+        'Premium Gold Finish: Glossy electroplated brass-gold metallic body',
+        'Elegant Pattern Design: Intricate double-ring lattice textured pattern',
+        'High Quality Crystal: Faceted optical oval glass lens for dazzling light refraction',
+        'Adjustable Cord: Heavy-duty black suspension cord with brass canopy top',
+        'Sturdy Metal Construction: Durable square alloy frame built for long life',
+        'Warm LED Bulb Included: Pre-fitted energy-saving warm white LED light'
+      ]
     },
     {
       id: 'DN-WALL-04',

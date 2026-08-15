@@ -178,5 +178,11 @@ const globalSearchData = [
     "title": "🔧 Construction Hardware, Cutter Blades & Adhesives",
     "type": "Product/Service",
     "content": "Construction Hardware & Cutting Blades: screws, nails, blades, adhesives, drywall screws, Bosch wood cutter blade, Bosch wall cutter blade, Wall Fix Bond, Araldite adhesives, sattring keels, concrete nails, Steelgrip insulation tape, masking tape, pvc saddle, heatex, zypsem drywall screw, marble cutter blade, sds plus hammer drill bit, paras threaded rod, bosch cutting wheel 14 inch, bosch grinding wheel 4 inch, gisai wheel. Get bulk quote."
+  },
+  {
+    "url": "decoratenow/product.html?id=DN-WALL-03",
+    "title": "💡 DecorateNow Premium Gold Crystal Square Wallchiere Pendant Lamp (With Warm LED Bulb) — ₹699",
+    "type": "Product/Service",
+    "content": "DecorateNow Handcrafted Luxury Gold Crystal Square Wallchiere Pendant Lamp with warm LED bulb included. Special launch discount price ₹699 per pcs (MRP ₹2,999 — 77% OFF, save ₹2,300). Key features analyzed from 9 high-res images: 1. Premium Gold Electroplated Finish (glossy rust-proof metallic body). 2. Elegant Pattern Design (intricate double-ring laser lattice mesh). 3. High Quality Optical Faceted Oval Crystals for sparkling light refraction. 4. Adjustable Suspension Cord with gold ceiling canopy. 5. Sturdy All-Metal Cage Construction. Includes E27 warm white LED bulb. Free shipping across India. Order on WhatsApp +91 70658 15743."
   }
 ];
