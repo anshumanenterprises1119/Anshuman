@@ -1,5 +1,11 @@
 const globalSearchData = [
   {
+    "url": "decoratenow/product.html?id=DN-PENDANT-01",
+    "title": "✨ Ansh DecorateNow Gold Crystal Cylinder Pendant Light",
+    "type": "Luxury Decor Product",
+    "content": "Ansh DecorateNow Gold Crystal Cylinder Pendant Light 9 images luxury gold cylinder hanging lamp oval K9 crystal gems adjustable suspension cable brass canopy dining living bedroom DecorateNow Greater Noida"
+  },
+  {
     "url": "wires-cables.html",
     "title": "Wires & Cables Supplier in Greater Noida – Wholesale Polycab, Havells",
     "type": "Product/Service",

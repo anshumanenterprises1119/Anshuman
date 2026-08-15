@@ -639,23 +639,89 @@
 </footer>
 
 <script>
-  // 9 Images array for DN-WALL-03
-  const productImages = [
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp', label: '1. Main Illuminated Product View' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-2.webp', label: '2. Premium Gold Finish' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-3.webp', label: '3. Elegant Lattice Pattern' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-4.webp', label: '4. High Quality Faceted Crystal' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-5.webp', label: '5. Adjustable Cord & Top Canopy' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-6.webp', label: '6. Sturdy Metal Cage Construction' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-7.webp', label: '7. Ambient Warm Night Glow' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-8.webp', label: '8. 360° Symmetry View' },
-    { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-9.webp', label: '9. Complete Package Assembly' }
-  ];
+  // Product Database for 9-Image Gallery Detail Pages
+  const productsDB = {
+    'DN-PENDANT-01': {
+      id: 'DN-PENDANT-01',
+      title: 'Ansh DecorateNow Gold Crystal Cylinder Pendant Light',
+      eyebrow: '✦ Luxury Gold Crystal Pendant Edit',
+      price: 899,
+      mrp: 3999,
+      discount: '78% OFF',
+      rating: '5.0 (312 Verified Reviews)',
+      desc: 'Electroplated gold cylinder frame with oval K9 crystal gems, adjustable suspension cable & brass canopy.',
+      images: [
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-1.webp', label: '1. Main Illuminated Pendant View' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-2.webp', label: '2. Polished Electroplated Gold Lattice' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-3.webp', label: '3. Faceted K9 Crystal Glass Gems' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-4.webp', label: '4. Heavy Brass Ceiling Canopy' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-5.webp', label: '5. 1.2M Adjustable Braided Suspension Cable' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-6.webp', label: '6. E27 Socket & Interior Fitting' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-7.webp', label: '7. Warm Diffused Prism Glow' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-8.webp', label: '8. 360° Symmetrical Cylinder View' },
+        { src: '../images/products/ansh-decoratenow-gold-crystal-pendant-lamp-9.webp', label: '9. Full Installation Hardware Set' }
+      ]
+    },
+    'DN-WALL-03': {
+      id: 'DN-WALL-03',
+      title: 'Ansh DecorateNow Gold Crystal Wallchiere Lamp (With Warm LED Bulb)',
+      eyebrow: '✦ Signature Luxury Wallchiere Launch',
+      price: 699,
+      mrp: 2999,
+      discount: '77% OFF',
+      rating: '5.0 (215 Verified Customer Reviews)',
+      desc: 'Premium gold finish, optical crystal, adjustable cord, sturdy metal frame & warm LED bulb included.',
+      images: [
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-1.webp', label: '1. Main Illuminated Product View' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-2.webp', label: '2. Premium Gold Finish' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-3.webp', label: '3. Elegant Lattice Pattern' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-4.webp', label: '4. High Quality Faceted Crystal' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-5.webp', label: '5. Adjustable Cord & Top Canopy' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-6.webp', label: '6. Sturdy Metal Cage Construction' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-7.webp', label: '7. Ambient Warm Night Glow' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-8.webp', label: '8. 360° Symmetry View' },
+        { src: '../images/products/decoratenow-wallchiere-wall-lamp-with-bulb-9.webp', label: '9. Complete Package Assembly' }
+      ]
+    }
+  };
 
+  let currentProductId = 'DN-PENDANT-01';
+  let productImages = productsDB['DN-PENDANT-01'].images;
   let currentIndex = 0;
 
   function initGallery() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const prodId = urlParams.get('id') || 'DN-PENDANT-01';
+    
+    if (productsDB[prodId]) {
+      currentProductId = prodId;
+      const p = productsDB[prodId];
+      productImages = p.images;
+      
+      const titleElem = document.getElementById('pTitle');
+      if (titleElem) titleElem.textContent = p.title;
+      
+      const priceMain = document.querySelector('.price-main');
+      if (priceMain) priceMain.textContent = `₹${p.price}`;
+      
+      const priceMrp = document.querySelector('.price-mrp');
+      if (priceMrp) priceMrp.textContent = `₹${p.mrp}`;
+      
+      const priceSave = document.querySelector('.price-save');
+      if (priceSave) priceSave.textContent = `🎉 You Save ₹${p.mrp - p.price} (${p.discount}) • Inclusive of all taxes`;
+      
+      const badgeDisc = document.querySelector('.badge-discount');
+      if (badgeDisc) badgeDisc.textContent = p.discount;
+
+      const mainViewer = document.getElementById('mainViewerImg');
+      if (mainViewer && p.images[0]) {
+        mainViewer.src = p.images[0].src;
+        mainViewer.alt = p.images[0].label;
+      }
+    }
+
     const strip = document.getElementById('thumbnailStrip');
+    if (!strip) return;
     strip.innerHTML = '';
 
     productImages.forEach((imgObj, idx) => {
@@ -673,15 +739,16 @@
     const mainImg = document.getElementById('mainViewerImg');
     const badge = document.getElementById('imageCounterBadge');
     
-    mainImg.style.opacity = '0.3';
-    setTimeout(() => {
-      mainImg.src = productImages[idx].src;
-      mainImg.alt = productImages[idx].label;
-      mainImg.style.opacity = '1';
-      badge.textContent = `Image ${idx + 1} of 9 — ${productImages[idx].label.split('.')[1] || ''}`;
-    }, 150);
+    if (mainImg) {
+      mainImg.style.opacity = '0.3';
+      setTimeout(() => {
+        mainImg.src = productImages[idx].src;
+        mainImg.alt = productImages[idx].label;
+        mainImg.style.opacity = '1';
+        if (badge) badge.textContent = `Image ${idx + 1} of 9 — ${productImages[idx].label.split('.')[1] || ''}`;
+      }, 150);
+    }
 
-    // Update active thumb
     const thumbs = document.querySelectorAll('.thumb-item');
     thumbs.forEach((t, i) => {
       if(i === idx) t.classList.add('active');
@@ -690,16 +757,17 @@
   }
 
   function addToCartLocal() {
-    alert('🛒 DecorateNow Premium Gold Crystal Square Wallchiere Lamp added to your cart at ₹699 per pcs!');
+    const p = productsDB[currentProductId];
+    alert(`🛒 ${p.title} added to your cart at ₹${p.price} per pcs!`);
     const badge = document.getElementById('cartBadgeCount');
     if(badge) badge.textContent = parseInt(badge.textContent || '0') + 1;
   }
 
   function quickBuyNow() {
-    window.location.href = '../checkout.html?item=DN-WALL-03&qty=1&price=699';
+    const p = productsDB[currentProductId];
+    window.location.href = `../checkout.html?item=${p.id}&qty=1&price=${p.price}`;
   }
 
-  // Initialize on load
   document.addEventListener('DOMContentLoaded', initGallery);
 </script>
 
