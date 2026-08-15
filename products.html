@@ -44,7 +44,8 @@ nav {
   background:var(--maroon-dark);
   position:sticky; top:0; z-index:1000;
   box-shadow:0 2px 20px rgba(0,0,0,0.35);
-}.nav-inner { /* legacy - removed */ }
+}
+.nav-inner { /* legacy - removed */ }
 .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
 .nav-logo-icon {
   height:40px; width:40px; background:var(--gold); border-radius:8px;
@@ -596,6 +597,266 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
     .social-icon-circle.youtube { background-color: #ff0000; }
     .social-icon-circle.linkedin { background-color: #0077b5; }
     .social-icon-circle.review { background-color: #4285f4; }
+
+    /* ==========================================
+       FLIPKART / AMAZON PRODUCT GRID SYSTEM
+       ========================================== */
+    .category-products-grid, #grid-filtered, .products-grid, .wall-lamps-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+      gap: 20px !important;
+      margin-top: 24px !important;
+      margin-bottom: 40px !important;
+      width: 100% !important;
+      max-width: 1240px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      box-sizing: border-box !important;
+    }
+    .catalog-split-wrapper {
+      display: flex !important;
+      gap: 30px !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+    }
+    .catalog-sidebar {
+      width: 260px !important;
+      flex-shrink: 0 !important;
+      background: #ffffff !important;
+      border: 1px solid rgba(107, 28, 35, 0.14) !important;
+      border-radius: 16px !important;
+      padding: 20px !important;
+      position: sticky !important;
+      top: 100px !important;
+      box-shadow: 0 4px 14px rgba(61, 14, 20, 0.05) !important;
+    }
+    .catalog-main-content {
+      flex-grow: 1 !important;
+      width: calc(100% - 290px) !important;
+      min-width: 0 !important;
+    }
+    .prod-static-card, .product-card-custom, .product-card-flipkart {
+      background: #ffffff !important;
+      border: 1px solid rgba(107, 28, 35, 0.14) !important;
+      border-radius: 16px !important;
+      padding: 16px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+      box-shadow: 0 4px 14px rgba(61, 14, 20, 0.05) !important;
+      position: relative !important;
+      overflow: hidden !important;
+      height: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .prod-static-card:hover, .product-card-custom:hover {
+      transform: translateY(-5px) !important;
+      box-shadow: 0 12px 30px rgba(61, 14, 20, 0.15) !important;
+      border-color: rgba(201, 168, 76, 0.6) !important;
+    }
+    .prod-card-img-wrap {
+      position: relative !important;
+      width: 100% !important;
+      height: 200px !important;
+      border-radius: 12px !important;
+      overflow: hidden !important;
+      background: #f8fafc !important;
+      margin-bottom: 12px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: 1px solid #f1f5f9 !important;
+    }
+    .prod-card-img {
+      max-width: 100% !important;
+      max-height: 100% !important;
+      width: auto !important;
+      height: auto !important;
+      object-fit: contain !important;
+      transition: transform 0.3s ease !important;
+    }
+    .prod-static-card:hover .prod-card-img {
+      transform: scale(1.06) !important;
+    }
+    .prod-card-badge {
+      position: absolute !important;
+      top: 10px !important;
+      left: 10px !important;
+      background: #3d0e14 !important;
+      color: #c9a84c !important;
+      font-size: 10px !important;
+      font-weight: 800 !important;
+      padding: 4px 10px !important;
+      border-radius: 50px !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.5px !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+      z-index: 2 !important;
+    }
+    .prod-card-brand-tags {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      margin-bottom: 6px !important;
+    }
+    .prod-card-brand-tag {
+      background: #f5ead5 !important;
+      color: #6b1c23 !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      padding: 2px 8px !important;
+      border-radius: 4px !important;
+      text-transform: uppercase !important;
+    }
+    .prod-card-title {
+      font-family: 'DM Sans', sans-serif !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      color: #1a1a1a !important;
+      margin-bottom: 6px !important;
+      line-height: 1.35 !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      min-height: 40px !important;
+    }
+    .prod-card-desc {
+      font-size: 12px !important;
+      color: #64748b !important;
+      line-height: 1.5 !important;
+      margin-bottom: 12px !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      min-height: 36px !important;
+    }
+    .prod-card-specs {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 0 14px 0 !important;
+      background: #f8fafc !important;
+      border-radius: 8px !important;
+      padding: 8px 10px !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+    .prod-card-specs li {
+      font-size: 11px !important;
+      color: #475569 !important;
+      margin-bottom: 3px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+    }
+    .prod-card-specs li:last-child {
+      margin-bottom: 0 !important;
+    }
+    .prod-card-specs li span:first-child {
+      font-weight: 600 !important;
+      color: #64748b !important;
+    }
+    .prod-card-specs li span:last-child {
+      font-weight: 700 !important;
+      color: #1e293b !important;
+    }
+    .prod-card-footer {
+      margin-top: auto !important;
+    }
+    .prod-card-price-row {
+      display: flex !important;
+      align-items: baseline !important;
+      justify-content: space-between !important;
+      margin-bottom: 12px !important;
+      padding-top: 8px !important;
+      border-top: 1px dashed #e2e8f0 !important;
+    }
+    .prod-card-price-label {
+      font-size: 10px !important;
+      text-transform: uppercase !important;
+      color: #94a3b8 !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.5px !important;
+    }
+    .prod-card-price-val {
+      font-size: 17px !important;
+      font-weight: 800 !important;
+      color: #6b1c23 !important;
+      font-family: 'DM Mono', monospace !important;
+    }
+    .btn-card-rfq {
+      flex: 1 !important;
+      background: #6b1c23 !important;
+      color: #ffffff !important;
+      border: 1px solid #6b1c23 !important;
+      padding: 9px 12px !important;
+      border-radius: 8px !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      text-align: center !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+    }
+    .btn-card-rfq:hover {
+      background: #8a2530 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 4px 12px rgba(107, 28, 35, 0.25) !important;
+    }
+    .btn-card-view {
+      background: rgba(201, 168, 76, 0.15) !important;
+      color: #6b1c23 !important;
+      border: 1px solid #c9a84c !important;
+      padding: 9px 12px !important;
+      border-radius: 8px !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    .btn-card-view:hover {
+      background: #c9a84c !important;
+      color: #111111 !important;
+    }
+    @media (max-width: 900px) {
+      .category-products-grid, #grid-filtered, .products-grid, .wall-lamps-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 0 10px !important;
+      }
+      .prod-static-card {
+        padding: 12px !important;
+      }
+      .prod-card-img-wrap {
+        height: 160px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .category-products-grid, #grid-filtered, .products-grid, .wall-lamps-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        padding: 0 6px !important;
+      }
+      .prod-card-title {
+        font-size: 13px !important;
+        min-height: 34px !important;
+      }
+      .prod-card-price-val {
+        font-size: 14px !important;
+      }
+      .btn-card-rfq, .btn-card-view {
+        padding: 7px 6px !important;
+        font-size: 11px !important;
+      }
+    }
     </style>
 
 
@@ -617,7 +878,7 @@ footer { background:var(--maroon-dark); color:rgba(255,255,255,0.8); padding:56p
     "email": "anshumanenterprises1119@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Shop No.-2, KHS-722, Sector 1",
+      "streetAddress": "Shop No.-2, KHS-782, Sector 1",
       "addressLocality": "Greater Noida",
       "addressRegion": "UP",
       "postalCode": "201306",
@@ -2214,7 +2475,7 @@ nav:not([style]){position:static!important;background:transparent!important;box-
       
       <div class="footer-col">
         <h4 style="color: #e8c96a; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; font-weight: 600;">Contact Details</h4>
-        <p style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 8px; line-height: 1.6;">📍 Shop No.-2, KHS-722,<br>Near Adityanandan Hospital,<br>J S Roop Road, Aimnabad,<br>Sec-1, Greater Noida - 201306</p>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 8px; line-height: 1.6;">📍 Shop No.-2, KHS-782,<br>Near Adityanandan Hospital,<br>J S Roop Road, Aimnabad,<br>Sec-1, Greater Noida - 201306</p>
         <a href="tel:+917065815743" style="display: block; color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; margin-bottom: 8px; transition: color 0.2s;">📞 +91 70658 15743</a>
         <a href="mailto:anshumanenterprises1119@gmail.com" style="display: block; color: rgba(255,255,255,0.65); font-size: 13px; text-decoration: none; margin-bottom: 8px; transition: color 0.2s;">✉ anshumanenterprises1119@gmail.com</a>
         <p style="font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 8px;">GSTIN: 09AWTPT8270E1ZQ</p>
@@ -2223,7 +2484,7 @@ nav:not([style]){position:static!important;background:transparent!important;box-
     
     <div class="footer-bottom" style="max-width: 1200px; margin: 24px auto 0; display: flex; justify-content: space-between; align-items: center; font-size: 12px; opacity: 0.5; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px; flex-wrap: wrap; gap: 8px;">
       <span>© 2025-2026 Anshuman Enterprises. All rights reserved. Founded by Aditya Tiwari. | <a href="terms.html" style="color: inherit; text-decoration: underline;">Terms &amp; Conditions</a> | <a href="privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a> | <a href="refund-shipping.html" style="color: inherit; text-decoration: underline;">Refund &amp; Shipping Policy</a></span>
-      <span>Shop No.-2, KHS-722, Greater Noida - 201306</span>
+      <span>Shop No.-2, KHS-782, Greater Noida - 201306</span>
     </div>
 
     <!-- FLOATING CTA -->
