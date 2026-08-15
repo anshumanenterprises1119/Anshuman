@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title><![CDATA[Anshuman Enterprises & DecorateNow Catalog]]></title>
+    <title><![CDATA[Anshuman Enterprises & DecorateNow Complete Product Catalog]]></title>
     <link>https://anshumanenterprises.online</link>
-    <description><![CDATA[Wholesale Electrical & Luxury Decorative Lighting Store Greater Noida]]></description>
+    <description><![CDATA[Authorized Wholesale Electrical, Security & Luxury Decorative Lighting Store Greater Noida]]></description>
     <item>
       <g:id>DN-PENDANT-01</g:id>
       <g:title><![CDATA[Ansh DecorateNow Gold Crystal Cylinder Pendant Light]]></g:title>
@@ -129,15 +129,69 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>WIRE-POLY-1.5</g:id>
-      <g:title><![CDATA[Polycab FR House Wire 1.5 sq mm 100m Coil]]></g:title>
-      <g:description><![CDATA[Flame Retardant 99.97% pure copper wire for home electrical installation.]]></g:description>
-      <g:link>https://anshumanenterprises.online/products.html#WIRE-POLY-1.5</g:link>
-      <g:image_link>https://anshumanenterprises.online/images/gallery/fr-frls-house-wiring-cables-wholesale.jpg</g:image_link>
+      <g:id>PROD-ORIENT-BATTEN-LIGHT-2-FEET-20W</g:id>
+      <g:title><![CDATA[ORIENT BATTEN LIGHT 2 FEET 20W]]></g:title>
+      <g:description><![CDATA[Premium 2-feet Orient LED Batten Light (20W) offering bright, glare-free, and energy-saving lighting for homes and offices.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-ORIENT-BATTEN-LIGHT-2-FEET-20W</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>1450.00 INR</g:price>
-      <g:brand><![CDATA[Polycab]]></g:brand>
+      <g:price>126.00 INR</g:price>
+      <g:brand><![CDATA[Orient Electric]]></g:brand>
+      <g:google_product_category>524</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-ORIENT-BATTEN-LIGHT-4-FEET-20W</g:id>
+      <g:title><![CDATA[ORIENT BATTEN LIGHT 4 FEET 20W]]></g:title>
+      <g:description><![CDATA[Premium 4-feet Orient LED Batten Light (20W) providing optimal lumens and high energy savings for commercial layouts.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-ORIENT-BATTEN-LIGHT-4-FEET-20W</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>126.00 INR</g:price>
+      <g:brand><![CDATA[Orient Electric]]></g:brand>
+      <g:google_product_category>524</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-ORIENT-BATTEN-LIGHT-2-FEET-10W</g:id>
+      <g:title><![CDATA[ORIENT BATTEN LIGHT 2 FEET 10W]]></g:title>
+      <g:description><![CDATA[Compact 2-feet Orient LED Batten Light (10W), perfect for narrow spaces, corridors, and minor installations.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-ORIENT-BATTEN-LIGHT-2-FEET-10W</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>126.00 INR</g:price>
+      <g:brand><![CDATA[Orient Electric]]></g:brand>
+      <g:google_product_category>524</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-2-MODULAR-BOX</g:id>
+      <g:title><![CDATA[2 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Premium quality 2-module switchboard mounting metal box made of galvanized steel for rust resistance.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-2-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-2-modular-switch-box.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>30.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
       <g:google_product_category>1938</g:google_product_category>
       <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
@@ -147,15 +201,951 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>SWITCH-HAVELLS-6A</g:id>
-      <g:title><![CDATA[Havells Crabtree 6A 1-Way Modular Switch]]></g:title>
-      <g:description><![CDATA[Flame retardant silver contact modular switch with smooth quiet action.]]></g:description>
-      <g:link>https://anshumanenterprises.online/products.html#SWITCH-HAVELLS-6A</g:link>
-      <g:image_link>https://anshumanenterprises.online/images/gallery/premium-modular-electrical-switch.jpg</g:image_link>
+      <g:id>PROD-3-MODULAR-BOX</g:id>
+      <g:title><![CDATA[3 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Robust 3-module galvanized iron modular mounting box with standard threads for modular switch plates.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-3-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-3-modular-switch-box.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>36.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-4-MODULAR-BOX</g:id>
+      <g:title><![CDATA[4 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Galvanized 4-module switch box, durable and corrosion-resistant for concealed wiring setups.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-4-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-4-modular-switch-box.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>42.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-6-MODULAR-BOX</g:id>
+      <g:title><![CDATA[6 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Galvanized steel 6-module mounting box, engineered for standard switches and power outlets.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-6-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-6-modular-switch-box.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>60.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-8-MODULAR-BOX-SQUARE</g:id>
+      <g:title><![CDATA[8 MODULAR BOX SQUARE]]></g:title>
+      <g:description><![CDATA[Square 8-module metal switchboard box, optimized space utilization for complex modular grids.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-8-MODULAR-BOX-SQUARE</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>72.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-8-MODULAR-BOX</g:id>
+      <g:title><![CDATA[8 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Standard rectangular 8-module galvanized switch box for heavy home appliances and multiple points.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-8-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-8-modular-rectangular-switch-box.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>60.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-12-MODULAR-BOX</g:id>
+      <g:title><![CDATA[12 MODULAR BOX]]></g:title>
+      <g:description><![CDATA[Spacious 12-module galvanized modular switchboard box for complete room control and panel distribution.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-12-MODULAR-BOX</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/galvanized-iron-12-modular-switch-box.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>84.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-PIPE-HEAVY-25MM</g:id>
+      <g:title><![CDATA[INDEANA PIPE HEAVY 25MM]]></g:title>
+      <g:description><![CDATA[Heavy-duty 25mm PVC conduit pipe by Indeana. High impact-resistant and fire-retardant wiring protection.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-PIPE-HEAVY-25MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>2016.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-PIPE-20MM-MEDIUM</g:id>
+      <g:title><![CDATA[INDEANA PIPE 20MM MEDIUM]]></g:title>
+      <g:description><![CDATA[Medium-duty 20mm PVC conduit pipe by Indeana, flexible and robust for concealed ceiling and wall installations.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-PIPE-20MM-MEDIUM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/indeana-medium-duty-pvc-conduit-pipe-20mm.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>1920.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-PIPE-25MM-MEDIUM</g:id>
+      <g:title><![CDATA[INDEANA PIPE 25MM MEDIUM]]></g:title>
+      <g:description><![CDATA[Medium-duty 25mm PVC conduit pipe by Indeana, ideal for standard cable distribution and layouts.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-PIPE-25MM-MEDIUM</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>1704.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-BAND-25MM</g:id>
+      <g:title><![CDATA[INDEANA BAND 25MM]]></g:title>
+      <g:description><![CDATA[Robust 25mm PVC bend/band by Indeana, designed for smooth pulling of wires without damage at corners.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-BAND-25MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/indeana-pvc-conduit-bend-band-25mm.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>156.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-BAND-20MM-MEDIUM</g:id>
+      <g:title><![CDATA[INDEANA BAND 20MM MEDIUM]]></g:title>
+      <g:description><![CDATA[Medium-duty 20mm PVC bend for connecting wall conduits seamlessly at right angles.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-BAND-20MM-MEDIUM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/indeana-medium-pvc-conduit-bend-band-20mm.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>216.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-INDEANA-BAND-25MM-HEAVY</g:id>
+      <g:title><![CDATA[INDEANA BAND 25MM HEAVY]]></g:title>
+      <g:description><![CDATA[Heavy-duty 25mm PVC conduit bend, offering high physical impact tolerance for floor and structural bends.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-INDEANA-BAND-25MM-HEAVY</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>240.00 INR</g:price>
+      <g:brand><![CDATA[Indeana]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FAN-BOX-HEAVY</g:id>
+      <g:title><![CDATA[FAN BOX HEAVY]]></g:title>
+      <g:description><![CDATA[Heavy-duty ceiling fan mounting junction box, designed to bear high load and structural vibrations.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FAN-BOX-HEAVY</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>96.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-CONCIELD-BOX-HEAVY</g:id>
+      <g:title><![CDATA[CONCIELD BOX HEAVY]]></g:title>
+      <g:description><![CDATA[Heavy-duty concealed ceiling junction box for neat wiring connections and profile lights.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-CONCIELD-BOX-HEAVY</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/concealed-ceiling-junction-box-heavy-duty.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>42.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FAN-BOX-MEDIUM</g:id>
+      <g:title><![CDATA[FAN BOX MEDIUM]]></g:title>
+      <g:description><![CDATA[Standard medium-duty fan junction box for residential housing projects.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FAN-BOX-MEDIUM</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>78.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-CONCIELD-MEDIUM</g:id>
+      <g:title><![CDATA[CONCIELD MEDIUM]]></g:title>
+      <g:description><![CDATA[Concealed medium-duty wall junction box, flame-retardant and durable.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-CONCIELD-MEDIUM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/concealed-ceiling-junction-box-medium-duty-180g.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>36.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FLEXIBLE-PIPE-20MM</g:id>
+      <g:title><![CDATA[FLEXIBLE PIPE 20MM]]></g:title>
+      <g:description><![CDATA[Corrugated 20mm PVC flexible pipe, perfect for linking main conduits to switch boards around pillars.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FLEXIBLE-PIPE-20MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/pvc-flexible-corrugated-conduit-pipe-20mm.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>94.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FAN-ROD-12-INCH</g:id>
+      <g:title><![CDATA[FAN ROD 12 INCH]]></g:title>
+      <g:description><![CDATA[Heavy iron ceiling fan downrod (12 inches) with rust-resistant paint and secure key bolt slots.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FAN-ROD-12-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/ceiling-fan-downrod-iron-12-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>22.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-TEE-COVER</g:id>
+      <g:title><![CDATA[TEE COVER]]></g:title>
+      <g:description><![CDATA[Standard PVC Tee cover for securing T-junction connections of surface wiring casing/pipes.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-TEE-COVER</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/pvc-conduit-tee-connection-cover.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>3.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FAN-COVER</g:id>
+      <g:title><![CDATA[FAN COVER]]></g:title>
+      <g:description><![CDATA[High-quality replacement canopy/cover set for ceiling fans, white glossy finish.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FAN-COVER</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>12.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-75-INCH</g:id>
+      <g:title><![CDATA[SCREW .75 INCH]]></g:title>
+      <g:description><![CDATA[Standard 0.75-inch premium threaded metal screws for switchboards and general hardware fittings.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-75-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/screw-0-75-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>240.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-1-INCH</g:id>
+      <g:title><![CDATA[SCREW 1 INCH]]></g:title>
+      <g:description><![CDATA[Threaded 1-inch metal screws, durable and rust-resistant for secure electrical hardware mounting.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-1-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/premium-threaded-mounting-screws-1-inch.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>264.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-1-5-INCH</g:id>
+      <g:title><![CDATA[SCREW 1.5 INCH]]></g:title>
+      <g:description><![CDATA[Heavy-duty 1.5-inch mounting screws for conduits, junction boxes, and frame clamping.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-1-5-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/screw-1-5-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>240.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-2-INCH</g:id>
+      <g:title><![CDATA[SCREW 2 INCH]]></g:title>
+      <g:description><![CDATA[High-tensile 2-inch screws, perfect for deep wall plug anchorage and heavy fixtures.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-2-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/premium-threaded-mounting-screws-2-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>264.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-2-5-INCH</g:id>
+      <g:title><![CDATA[SCREW 2.5 INCH]]></g:title>
+      <g:description><![CDATA[Premium 2.5-inch structural screws for ceiling box fittings and secure heavy clamping.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-2-5-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>300.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SCREW-3-INCH</g:id>
+      <g:title><![CDATA[SCREW 3 INCH]]></g:title>
+      <g:description><![CDATA[Extra-long 3-inch steel mounting screws for deep concrete plug anchoring and brackets.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SCREW-3-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>336.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-PVC-SADDLE</g:id>
+      <g:title><![CDATA[PVC SADDLE]]></g:title>
+      <g:description><![CDATA[High-grade PVC conduit pipe clamp/saddle for rigid surface routing and ceiling clipping.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-PVC-SADDLE</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>180.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-STEELGRIP-INSULATION-TAPE</g:id>
+      <g:title><![CDATA[STEELGRIP INSULATION TAPE]]></g:title>
+      <g:description><![CDATA[Premium Steelgrip self-adhesive PVC insulation tape, high dielectric strength and heat resistant.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-STEELGRIP-INSULATION-TAPE</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>324.00 INR</g:price>
+      <g:brand><![CDATA[Steelgrip]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-THERMOCOL</g:id>
+      <g:title><![CDATA[THERMOCOL]]></g:title>
+      <g:description><![CDATA[Premium grade thermocol sheets/blocks for shockproofing and packaging utility.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-THERMOCOL</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>72.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SOCKET</g:id>
+      <g:title><![CDATA[socket]]></g:title>
+      <g:description><![CDATA[Standard electrical modular switch/socket fitting.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SOCKET</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>7.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-FAN-BOX-LIGHT-500G</g:id>
+      <g:title><![CDATA[Fan box light 500G]]></g:title>
+      <g:description><![CDATA[Standard fan junction light box 500g capacity.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-FAN-BOX-LIGHT-500G</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>72.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-MASKING-TAPE</g:id>
+      <g:title><![CDATA[MASKING TAPE]]></g:title>
+      <g:description><![CDATA[High-adhesion masking tape for site painting protection and structural marking.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-MASKING-TAPE</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/high-adhesion-masking-tape.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>24.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SELF-DRILLING-SCREW-1-INCH</g:id>
+      <g:title><![CDATA[SELF DRILLING SCREW 1 INCH]]></g:title>
+      <g:description><![CDATA[High-efficiency 1-inch self-drilling screws for metal casing and GI pipe frames.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SELF-DRILLING-SCREW-1-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>1.50 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SELF-DRILLING-SCREW-1-5-INCH</g:id>
+      <g:title><![CDATA[SELF DRILLING SCREW 1.5 INCH]]></g:title>
+      <g:description><![CDATA[Self-drilling 1.5-inch metal screws, drills and fastens in a single action.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SELF-DRILLING-SCREW-1-5-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>360.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SELF-DRILLING-SCREW-2-INCH</g:id>
+      <g:title><![CDATA[SELF DRILLING SCREW 2 INCH]]></g:title>
+      <g:description><![CDATA[Heavy-duty 2-inch self-drilling metal screws for thick sheets and frames.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SELF-DRILLING-SCREW-2-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/self-drilling-metal-screws-2-inch.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>360.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-HEATEX-5-KG</g:id>
+      <g:title><![CDATA[HEATEX 5 KG]]></g:title>
+      <g:description><![CDATA[High-grade Heatex adhesive / seal bond compound (5 Kg bucket) for construction joints.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-HEATEX-5-KG</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/heatex-adhesive-seal-bond-compound-5kg.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>2820.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-KEEL-1-14-SPN</g:id>
+      <g:title><![CDATA[KEEL 1*14 SPN]]></g:title>
+      <g:description><![CDATA[Standard 1x14 concrete nails / keels for fast ceiling and wall anchoring.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-KEEL-1-14-SPN</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/concrete-nails-keel-1-inch-14-spn.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>114.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-KEEL-1-5-14-SPN</g:id>
+      <g:title><![CDATA[KEEL 1.5*14 SPN]]></g:title>
+      <g:description><![CDATA[High-strength 1.5x14 concrete nails for conduit clips and wiring casing anchoring.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-KEEL-1-5-14-SPN</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/concrete-nails-keel-1-5-inch-14-spn.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>114.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-KEEL-2-14-SPN</g:id>
+      <g:title><![CDATA[KEEL 2*14 SPN]]></g:title>
+      <g:description><![CDATA[Standard 2x14 concrete nails / keels for structural concrete fittings.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-KEEL-2-14-SPN</g:link>
+      <g:image_link>https://anshumanenterprises.online/logo.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>114.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-WALL-FIX-BOND-50G</g:id>
+      <g:title><![CDATA[WALL FIX BOND 50G]]></g:title>
+      <g:description><![CDATA[Rapid curing Wall Fix adhesive bond (50g tube) for quick panel and channel fixing.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-WALL-FIX-BOND-50G</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/wall-fix-rapid-adhesive-bond-50g.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>108.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-WALL-FIX-BOND-18G</g:id>
+      <g:title><![CDATA[WALL FIX BOND 18G]]></g:title>
+      <g:description><![CDATA[Compact Wall Fix adhesive bond (18g tube) for minor repairs and quick hardware locking.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-WALL-FIX-BOND-18G</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/wall-fix-rapid-adhesive-bond-18g.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>54.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-ARALDITE-1-8KG</g:id>
+      <g:title><![CDATA[ARALDITE 1.8KG]]></g:title>
+      <g:description><![CDATA[Industrial grade Araldite epoxy adhesive pack (1.8 Kg), ultra-strong bonding strength.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-ARALDITE-1-8KG</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/araldite-standard-epoxy-adhesive-1-8kg.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>1224.00 INR</g:price>
+      <g:brand><![CDATA[Araldite]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-ZYPSEM-SCREW-3-4-WHITE</g:id>
+      <g:title><![CDATA[ZYPSEM SCREW 3/4 WHITE]]></g:title>
+      <g:description><![CDATA[Premium white Zypsem drywall screws (3/4 inch) for dry partition board wiring setups.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-ZYPSEM-SCREW-3-4-WHITE</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/zypsem-drywall-screws-3-4-inch-white.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>300.00 INR</g:price>
+      <g:brand><![CDATA[Zypsem]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-WOOD-CUTTER-BLADE-5-30-BOSCH</g:id>
+      <g:title><![CDATA[WOOD CUTTER BLADE 5/30 BOSCH]]></g:title>
+      <g:description><![CDATA[Genuine 5-inch 30-teeth wood cutter circular saw blade by Bosch. Ultra-sharp teeth for clean cuts.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-WOOD-CUTTER-BLADE-5-30-BOSCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/bosch-wood-cutter-circular-saw-blade-5-inch-30t.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>276.00 INR</g:price>
+      <g:brand><![CDATA[Bosch]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-WOOD-CUTTER-BLADE-4-30-BOSCH</g:id>
+      <g:title><![CDATA[WOOD CUTTER BLADE 4/30 BOSCH]]></g:title>
+      <g:description><![CDATA[Genuine 4-inch 30-teeth wood cutter circular saw blade by Bosch, engineered for high RPM.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-WOOD-CUTTER-BLADE-4-30-BOSCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/bosch-wood-cutter-circular-saw-blade-4-inch-30t.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>252.00 INR</g:price>
+      <g:brand><![CDATA[Bosch]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SATTRING-KEEL-1-INCH</g:id>
+      <g:title><![CDATA[SATTRING KEEL 1 INCH]]></g:title>
+      <g:description><![CDATA[Standard 1-inch shuttering concrete keels/nails for wooden structuring and support.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SATTRING-KEEL-1-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/shuttering-concrete-nails-1-inch.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>82.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SATTRING-KEEL-2-INCH</g:id>
+      <g:title><![CDATA[SATTRING KEEL 2 INCH]]></g:title>
+      <g:description><![CDATA[Heavy 2-inch shuttering concrete nails for frame support and conduit pipe anchoring.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SATTRING-KEEL-2-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/shuttering-concrete-nails-2-inch.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>82.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SATTRING-KEEL-3-INCH</g:id>
+      <g:title><![CDATA[SATTRING KEEL 3 INCH]]></g:title>
+      <g:description><![CDATA[Heavy-duty 3-inch shuttering nails for heavy structural frames and timber support.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SATTRING-KEEL-3-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/shuttering-concrete-nails-3-inch.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>82.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SATTRING-KEEL-4-INCH</g:id>
+      <g:title><![CDATA[SATTRING KEEL 4 INCH]]></g:title>
+      <g:description><![CDATA[Extra-long 4-inch concrete shuttering nails for high-load timber structures.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SATTRING-KEEL-4-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/shuttering-concrete-nails-4-inch.jpg</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>82.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-MARBLE-CUTTER-BLADE-4-INCH</g:id>
+      <g:title><![CDATA[MARBLE CUTTER BLADE 4 INCH]]></g:title>
+      <g:description><![CDATA[Premium 4-inch diamond marble cutter blade for fast, precise, and chip-free cutting of marble, granite, and tiles.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-MARBLE-CUTTER-BLADE-4-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/marble-cutter-blade-4-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>180.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-MARBLE-CUTTER-BLADE-5-INCH</g:id>
+      <g:title><![CDATA[MARBLE CUTTER BLADE 5 INCH]]></g:title>
+      <g:description><![CDATA[Heavy-duty 5-inch diamond blade designed for cutting through marbles, tiles, and masonry with clean edges.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-MARBLE-CUTTER-BLADE-5-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/marble-cutter-blade-5-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>220.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-MARBLE-CUTTER-BLADE-6-INCH</g:id>
+      <g:title><![CDATA[MARBLE CUTTER BLADE 6 INCH]]></g:title>
+      <g:description><![CDATA[Professional 6-inch diamond edge cutting blade for large granite slabs, concrete, and thick stone tiles.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-MARBLE-CUTTER-BLADE-6-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/marble-cutter-blade-6-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>260.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SDS-PLUS-HAMMER-DRILL-BIT-6-X-110MM</g:id>
+      <g:title><![CDATA[SDS PLUS HAMMER DRILL BIT 6 X 110MM]]></g:title>
+      <g:description><![CDATA[Professional SDS-Plus masonry hammer drill bit (6mm diameter, 110mm length) for rapid concrete and brick drilling.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SDS-PLUS-HAMMER-DRILL-BIT-6-X-110MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/sds-plus-hammer-drill-bit-6mm.webp</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>45.00 INR</g:price>
-      <g:brand><![CDATA[Havells]]></g:brand>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
       <g:google_product_category>1938</g:google_product_category>
       <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
@@ -165,16 +1155,124 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>CCTV-BOSCH-KIT4</g:id>
-      <g:title><![CDATA[Bosch Hikvision 4 Camera 1080p HD CCTV Security Kit]]></g:title>
-      <g:description><![CDATA[Complete 4 channel DVR and 4 outdoor weatherproof night vision cameras and 1TB hard drive.]]></g:description>
-      <g:link>https://anshumanenterprises.online/products.html#CCTV-BOSCH-KIT4</g:link>
-      <g:image_link>https://anshumanenterprises.online/images/gallery/cctv-dvr-camera-security-kit.jpg</g:image_link>
+      <g:id>PROD-SDS-PLUS-HAMMER-DRILL-BIT-8-X-160MM</g:id>
+      <g:title><![CDATA[SDS PLUS HAMMER DRILL BIT 8 X 160MM]]></g:title>
+      <g:description><![CDATA[Professional SDS-Plus masonry hammer drill bit (8mm diameter, 160mm length) for wall plugs and anchor installations.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SDS-PLUS-HAMMER-DRILL-BIT-8-X-160MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/sds-plus-hammer-drill-bit-8mm.webp</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>12500.00 INR</g:price>
-      <g:brand><![CDATA[Hikvision]]></g:brand>
-      <g:google_product_category>3478</g:google_product_category>
+      <g:price>55.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SDS-PLUS-HAMMER-DRILL-BIT-10-X-160MM</g:id>
+      <g:title><![CDATA[SDS PLUS HAMMER DRILL BIT 10 X 160MM]]></g:title>
+      <g:description><![CDATA[Premium SDS-Plus masonry hammer drill bit (10mm diameter, 160mm length) for heavy wall anchors and conduit brackets.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SDS-PLUS-HAMMER-DRILL-BIT-10-X-160MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/sds-plus-hammer-drill-bit-10mm.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>65.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SDS-PLUS-HAMMER-DRILL-BIT-12-X-160MM</g:id>
+      <g:title><![CDATA[SDS PLUS HAMMER DRILL BIT 12 X 160MM]]></g:title>
+      <g:description><![CDATA[High-performance SDS-Plus hammer drill bit (12mm diameter, 160mm length) designed for concrete and masonry.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SDS-PLUS-HAMMER-DRILL-BIT-12-X-160MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/sds-plus-hammer-drill-bit-12mm.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>85.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-SDS-PLUS-HAMMER-DRILL-BIT-16-X-200MM</g:id>
+      <g:title><![CDATA[SDS PLUS HAMMER DRILL BIT 16 X 200MM]]></g:title>
+      <g:description><![CDATA[Heavy-duty SDS-Plus concrete drill bit (16mm diameter, 200mm length) for large cabling pass-throughs and structural anchoring.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-SDS-PLUS-HAMMER-DRILL-BIT-16-X-200MM</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/sds-plus-hammer-drill-bit-16mm.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>135.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-PARAS-THREADED-ROD-1-METER</g:id>
+      <g:title><![CDATA[PARAS THREADED ROD 1 METER]]></g:title>
+      <g:description><![CDATA[High-strength galvanized iron threaded hanger rod (Paras Rod) for supporting ceiling channels, conduits, and heavy cable trays.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-PARAS-THREADED-ROD-1-METER</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/paras-threaded-rod-1m.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>110.00 INR</g:price>
+      <g:brand><![CDATA[Anshuman Enterprises]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-BOSCH-CUTTING-WHEEL-14-INCH</g:id>
+      <g:title><![CDATA[BOSCH CUTTING WHEEL 14 INCH]]></g:title>
+      <g:description><![CDATA[Genuine 14-inch Bosch abrasive metal cutting wheel, engineered for chop saws to deliver fast, clean cuts in steel and iron.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-BOSCH-CUTTING-WHEEL-14-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/bosch-cutting-wheel-14-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>210.00 INR</g:price>
+      <g:brand><![CDATA[Bosch]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
+      <g:identifier_exists>no</g:identifier_exists>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>PROD-BOSCH-GRINDING-WHEEL-4-INCH</g:id>
+      <g:title><![CDATA[BOSCH GRINDING WHEEL 4 INCH]]></g:title>
+      <g:description><![CDATA[Genuine 4-inch Bosch grinding and polishing (Gisai) disc, designed for metal surface cleaning, weld dressing, and deburring.]]></g:description>
+      <g:link>https://anshumanenterprises.online/products.html#PROD-BOSCH-GRINDING-WHEEL-4-INCH</g:link>
+      <g:image_link>https://anshumanenterprises.online/images/products/bosch-grinding-wheel-4-inch.webp</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in_stock</g:availability>
+      <g:price>50.00 INR</g:price>
+      <g:brand><![CDATA[Bosch]]></g:brand>
+      <g:google_product_category>1938</g:google_product_category>
       <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>IN</g:country>

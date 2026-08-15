@@ -1,6 +1,6 @@
 /**
- * GOOGLE MERCHANT CENTER FEED GENERATOR (XML + TSV + CSV)
- * Generates 100% Google Merchant Center compliant XML, TSV, and CSV feeds
+ * FULL CATALOG GOOGLE MERCHANT CENTER FEED GENERATOR (XML + TSV)
+ * Automatically indexes all products across the entire website (70+ items)
  */
 
 const fs = require('fs');
@@ -8,7 +8,47 @@ const path = require('path');
 
 const domain = "https://anshumanenterprises.online";
 
-const products = [
+// Category to Google Numeric Category ID mapping
+const googleCategoryMap = {
+  lighting: "524",
+  switches: "1938",
+  conduit: "1938",
+  hardware: "1938",
+  wires: "1938",
+  mcb: "1938",
+  cctv: "3478",
+  pendant: "530",
+  wall: "536"
+};
+
+// Brand mapper based on product title
+function getBrandFromTitle(title) {
+  const t = title.toUpperCase();
+  if (t.includes("ORIENT")) return "Orient Electric";
+  if (t.includes("INDEANA")) return "Indeana";
+  if (t.includes("BOSCH")) return "Bosch";
+  if (t.includes("POLYCAB")) return "Polycab";
+  if (t.includes("HAVELLS")) return "Havells";
+  if (t.includes("FINOLEX")) return "Finolex";
+  if (t.includes("STEELGRIP")) return "Steelgrip";
+  if (t.includes("ZYPSEM")) return "Zypsem";
+  if (t.includes("ARALDITE")) return "Araldite";
+  if (t.includes("DECORATENOW") || t.includes("ANSH DECORATENOW")) return "DecorateNow";
+  return "Anshuman Enterprises";
+}
+
+// Custom ID slug generator
+function makeSlug(text) {
+  return text.toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '')
+    .toUpperCase();
+}
+
+let allProducts = [];
+
+// 1. ADD DECORATENOW 9-IMAGE PRODUCTS & SPECIALTY LIGHTS
+allProducts.push(
   {
     id: "DN-PENDANT-01",
     title: "Ansh DecorateNow Gold Crystal Cylinder Pendant Light",
@@ -27,7 +67,7 @@ const products = [
     ],
     price: "899.00 INR",
     brand: "DecorateNow",
-    category: "530" // Google Numeric Category ID for Accent Lighting / Pendant Lights
+    category: "530"
   },
   {
     id: "DN-WALL-03",
@@ -47,7 +87,7 @@ const products = [
     ],
     price: "699.00 INR",
     brand: "DecorateNow",
-    category: "536" // Google Numeric Category ID for Wall Lights & Sconces
+    category: "536"
   },
   {
     id: "DN-WALL-01",
@@ -88,51 +128,73 @@ const products = [
     price: "499.00 INR",
     brand: "DecorateNow",
     category: "536"
-  },
-  {
-    id: "WIRE-POLY-1.5",
-    title: "Polycab FR House Wire 1.5 sq mm 100m Coil",
-    description: "Flame Retardant 99.97% pure copper wire for home electrical installation.",
-    link: `${domain}/products.html#WIRE-POLY-1.5`,
-    image: `${domain}/images/gallery/fr-frls-house-wiring-cables-wholesale.jpg`,
-    price: "1450.00 INR",
-    brand: "Polycab",
-    category: "1938" // Google Numeric Category ID for Hardware > Electrical Supplies
-  },
-  {
-    id: "SWITCH-HAVELLS-6A",
-    title: "Havells Crabtree 6A 1-Way Modular Switch",
-    description: "Flame retardant silver contact modular switch with smooth quiet action.",
-    link: `${domain}/products.html#SWITCH-HAVELLS-6A`,
-    image: `${domain}/images/gallery/premium-modular-electrical-switch.jpg`,
-    price: "45.00 INR",
-    brand: "Havells",
-    category: "1938"
-  },
-  {
-    id: "CCTV-BOSCH-KIT4",
-    title: "Bosch Hikvision 4 Camera 1080p HD CCTV Security Kit",
-    description: "Complete 4 channel DVR and 4 outdoor weatherproof night vision cameras and 1TB hard drive.",
-    link: `${domain}/products.html#CCTV-BOSCH-KIT4`,
-    image: `${domain}/images/gallery/cctv-dvr-camera-security-kit.jpg`,
-    price: "12500.00 INR",
-    brand: "Hikvision",
-    category: "3478" // Google Numeric Category ID for Cameras & Optics > Cameras > Surveillance Cameras
   }
-];
+);
 
-// ==========================================
-// 1. GENERATE STRICT XML FEED
-// ==========================================
+// 2. PARSE CSV CATALOG FILE (64 PRODUCTS)
+const csvPath = path.join(__dirname, 'indiamart_products_upload.csv');
+if (fs.existsSync(csvPath)) {
+  const csvText = fs.readFileSync(csvPath, 'utf-8');
+  const lines = csvText.split('\n');
+  
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    
+    // Parse CSV line regex for quoted values
+    const regex = /(?:^|,)(?:"([^"]*)"|([^,]*))/g;
+    let matches = [];
+    let match;
+    while ((match = regex.exec(line)) !== null) {
+      if (match[0] === '' && matches.length === 0) continue;
+      matches.push(match[1] !== undefined ? match[1] : match[2]);
+    }
+    
+    if (matches.length >= 5) {
+      const pName = matches[0] ? matches[0].trim() : '';
+      const pDesc = matches[1] ? matches[1].trim() : '';
+      const pPriceNum = parseFloat(matches[2]) || 99;
+      const pCat = matches[4] ? matches[4].trim().toLowerCase() : 'hardware';
+      const pImgFile = matches[5] ? matches[5].trim() : 'logo.webp';
+      
+      if (pName) {
+        const prodId = `PROD-${makeSlug(pName)}`;
+        const gCat = googleCategoryMap[pCat] || "1938";
+        const brand = getBrandFromTitle(pName);
+        
+        let imgUrl = `${domain}/images/products/${pImgFile}`;
+        if (!fs.existsSync(path.join(__dirname, 'images', 'products', pImgFile))) {
+          imgUrl = `${domain}/images/gallery/${pImgFile}`;
+          if (!fs.existsSync(path.join(__dirname, 'images', 'gallery', pImgFile))) {
+            imgUrl = `${domain}/logo.webp`;
+          }
+        }
+        
+        allProducts.push({
+          id: prodId,
+          title: pName,
+          description: pDesc || `${pName} wholesale supply in Greater Noida by Anshuman Enterprises.`,
+          link: `${domain}/products.html#${prodId}`,
+          image: imgUrl,
+          price: `${pPriceNum.toFixed(2)} INR`,
+          brand: brand,
+          category: gCat
+        });
+      }
+    }
+  }
+}
+
+// 3. GENERATE STRICT GOOGLE MERCHANT CENTER XML FEED
 let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title><![CDATA[Anshuman Enterprises & DecorateNow Catalog]]></title>
+    <title><![CDATA[Anshuman Enterprises & DecorateNow Complete Product Catalog]]></title>
     <link>${domain}</link>
-    <description><![CDATA[Wholesale Electrical & Luxury Decorative Lighting Store Greater Noida]]></description>
+    <description><![CDATA[Authorized Wholesale Electrical, Security & Luxury Decorative Lighting Store Greater Noida]]></description>
 `;
 
-products.forEach(p => {
+allProducts.forEach(p => {
   xmlContent += `    <item>
       <g:id>${p.id}</g:id>
       <g:title><![CDATA[${p.title}]]></g:title>
@@ -167,9 +229,7 @@ xmlContent += `  </channel>
 
 fs.writeFileSync(path.join(__dirname, 'google_merchant_feed.xml'), xmlContent, 'utf-8');
 
-// ==========================================
-// 2. GENERATE GOOGLE RECOMMENDED TSV FEED
-// ==========================================
+// 4. GENERATE GOOGLE RECOMMENDED TSV FEED
 const tsvHeaders = [
   'id', 'title', 'description', 'link', 'image_link',
   'additional_image_link', 'availability', 'price', 'condition',
@@ -178,12 +238,12 @@ const tsvHeaders = [
 
 let tsvContent = tsvHeaders.join('\t') + '\n';
 
-products.forEach(p => {
+allProducts.forEach(p => {
   const addImagesStr = (p.additionalImages && p.additionalImages.length > 0) ? p.additionalImages.join(',') : '';
   const row = [
     p.id,
-    p.title.replace(/\t/g, ' '),
-    p.description.replace(/\t/g, ' '),
+    p.title.replace(/[\t\n\r]/g, ' '),
+    p.description.replace(/[\t\n\r]/g, ' '),
     p.link,
     p.image,
     addImagesStr,
@@ -200,4 +260,4 @@ products.forEach(p => {
 
 fs.writeFileSync(path.join(__dirname, 'google_merchant_feed.tsv'), tsvContent, 'utf-8');
 
-console.log('google_merchant_feed.xml and google_merchant_feed.tsv generated successfully.');
+console.log(`FULL CATALOG GENERATED: ${allProducts.length} PRODUCTS IN XML & TSV FEEDS!`);
