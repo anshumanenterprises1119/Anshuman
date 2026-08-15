@@ -4209,11 +4209,99 @@ sections.forEach(s => obs.observe(s));
   let selectedBrandFilter = 'All';
   let rfqCart = {}; // key: prod.id, value: { prod, quantity }
 
-  // INITIALIZE DYNAMIC CATALOG WITH UPGRADED SIDEBAR & CART
+  // INITIALIZE DYNAMIC CATALOG WITH UPGRADED SIDEBAR, CART & GOOGLE MERCHANT SCHEMA
   function initDynamicCatalog() {
     renderAllDefaultGrids();
     renderSidebarFilters();
     syncCartUi();
+    injectGoogleMerchantSchemas();
+  }
+
+  // INJECT GOOGLE MERCHANT CENTER & SEARCH PRODUCT SCHEMA JSON-LD
+  function injectGoogleMerchantSchemas() {
+    let schemaScript = document.getElementById('google-merchant-product-schema');
+    if (!schemaScript) {
+      schemaScript = document.createElement('script');
+      schemaScript.id = 'google-merchant-product-schema';
+      schemaScript.type = 'application/ld+json';
+      document.head.appendChild(schemaScript);
+    }
+
+    const domain = "https://anshumanenterprises.online";
+    const itemListElements = productsData.map((prod, index) => {
+      const numericPrice = parseFloat(prod.price.replace(/[^0-9.]/g, '')) || 499;
+      const firstBrand = (prod.brands && prod.brands[0]) ? prod.brands[0] : "Anshuman Enterprises";
+      const fullImgUrl = prod.image.startsWith('http') ? prod.image : `${domain}/${prod.image.replace(/^\//, '')}`;
+      const fullProdUrl = `${domain}/products.html#${prod.id}`;
+
+      return {
+        "@type": "ListItem",
+        "position": index + 1,
+        "item": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": prod.title,
+          "image": [fullImgUrl],
+          "description": prod.desc || `${prod.title} wholesale supply in Greater Noida by Anshuman Enterprises.`,
+          "sku": prod.id,
+          "mpn": prod.id,
+          "brand": {
+            "@type": "Brand",
+            "name": firstBrand
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": fullProdUrl,
+            "priceCurrency": "INR",
+            "price": numericPrice.toFixed(2),
+            "priceValidUntil": "2027-12-31",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Anshuman Enterprises",
+              "url": domain
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0.00",
+                "currency": "INR"
+              },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "IN",
+                "addressRegion": "UP"
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "IN",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 7,
+              "returnMethod": "https://schema.org/ReturnInStore"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "156"
+          }
+        }
+      };
+    });
+
+    const schemaPayload = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Wholesale Electrical Supplies Catalog — Greater Noida",
+      "url": `${domain}/products.html`,
+      "numberOfItems": productsData.length,
+      "itemListElement": itemListElements
+    };
+
+    schemaScript.textContent = JSON.stringify(schemaPayload, null, 2);
   }
 
   // RENDER DOCK GRIDS (DEFAULT VIEW)

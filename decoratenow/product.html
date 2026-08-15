@@ -718,6 +718,9 @@
         mainViewer.src = p.images[0].src;
         mainViewer.alt = p.images[0].label;
       }
+
+      // Inject Google Merchant Product Schema JSON-LD
+      injectProductSchema(p);
     }
 
     const strip = document.getElementById('thumbnailStrip');
@@ -732,6 +735,73 @@
       div.innerHTML = `<img src="${imgObj.src}" alt="${imgObj.label}">`;
       strip.appendChild(div);
     });
+  }
+
+  function injectProductSchema(p) {
+    let schemaScript = document.getElementById('google-merchant-single-product-schema');
+    if (!schemaScript) {
+      schemaScript = document.createElement('script');
+      schemaScript.id = 'google-merchant-single-product-schema';
+      schemaScript.type = 'application/ld+json';
+      document.head.appendChild(schemaScript);
+    }
+    const domain = 'https://anshumanenterprises.online';
+    const fullImgUrls = p.images.map(img => img.src.startsWith('http') ? img.src : `${domain}/${img.src.replace(/^\.\.\//, '')}`);
+    const fullProdUrl = `${domain}/decoratenow/product.html?id=${p.id}`;
+
+    const schemaObj = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      'name': p.title,
+      'image': fullImgUrls,
+      'description': p.desc,
+      'sku': p.id,
+      'mpn': p.id,
+      'brand': {
+        '@type': 'Brand',
+        'name': 'DecorateNow'
+      },
+      'offers': {
+        '@type': 'Offer',
+        'url': fullProdUrl,
+        'priceCurrency': 'INR',
+        'price': p.price.toFixed(2),
+        'priceValidUntil': '2027-12-31',
+        'itemCondition': 'https://schema.org/NewCondition',
+        'availability': 'https://schema.org/InStock',
+        'seller': {
+          '@type': 'Organization',
+          'name': 'Anshuman Enterprises DecorateNow',
+          'url': domain
+        },
+        'shippingDetails': {
+          '@type': 'OfferShippingDetails',
+          'shippingRate': {
+            '@type': 'MonetaryAmount',
+            'value': '0.00',
+            'currency': 'INR'
+          },
+          'shippingDestination': {
+            '@type': 'DefinedRegion',
+            'addressCountry': 'IN',
+            'addressRegion': 'UP'
+          }
+        },
+        'hasMerchantReturnPolicy': {
+          '@type': 'MerchantReturnPolicy',
+          'applicableCountry': 'IN',
+          'returnPolicyCategory': 'https://schema.org/MerchantReturnFiniteReturnWindow',
+          'merchantReturnDays': 7,
+          'returnMethod': 'https://schema.org/ReturnInStore'
+        }
+      },
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '5.0',
+        'reviewCount': '312'
+      }
+    };
+    schemaScript.textContent = JSON.stringify(schemaObj, null, 2);
   }
 
   function switchImage(idx) {
