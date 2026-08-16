@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage({ params }: { params: { brand_slug: st
 
             <div className="p-4 bg-gray-50 rounded-xl border border-gray-150 space-y-2 text-xs">
               <h4 className="font-bold text-[#4d1017]">Grievance Officer & Contact details:</h4>
-              <p>📍 Shop No.-2, KHS-722, Near Adityanandan Hospital, J S Roop Road, Aimnabad, Greater Noida - 201306</p>
+              <p>📍 Shop No.-2, KHS-782, Near Adityanandan Hospital, J S Roop Road, Aimnabad, Greater Noida - 201306</p>
               <p>📞 Phone: +91 70658 15743</p>
               <p>✉ Email: <a href="mailto:anshumanenterprises1119@gmail.com" className="font-semibold text-[var(--primary-color)] hover:underline">anshumanenterprises1119@gmail.com</a></p>
               <p><strong>GSTIN Ref:</strong> 09AWTPT8270E1ZQ</p>

@@ -105,6 +105,45 @@
 
   var products = [
     {
+      id: 'DN-WALL-06',
+      name: 'Ansh DecorateNow Modern Golden Oval 3-in-1 LED Wall Light',
+      desc: 'Luxury handcrafted gold electroplated oval LED wall light with K9 crystal lattice diffuser ring. Features 3-in-1 switch color changing modes: Warm White (3000K), Cool White (6500K), Natural White (4000K). Dimensions: 10" H x 8" W x 8" D.',
+      category: 'Wall Lights',
+      rooms: ['Living Room', 'Bedroom', 'Dining', 'Office'],
+      brand: 'DecorateNow Luxury',
+      price: 449,
+      mrp: 1999,
+      discount: 78,
+      rating: '5.0',
+      reviews: 428,
+      stock: 'in',
+      tags: ['trending', 'bestseller', 'new', 'flash', 'deal', 'luxury', 'premium'],
+      img: 'images/products/decoratenow-oval-3in1-wall-lamp-1.webp',
+      imgLarge: 'images/products/decoratenow-oval-3in1-wall-lamp-1.webp',
+      gallery: [
+        'images/products/decoratenow-oval-3in1-wall-lamp-1.webp',
+        'images/products/decoratenow-oval-3in1-wall-lamp-2.webp',
+        'images/products/decoratenow-oval-3in1-wall-lamp-3.webp'
+      ]
+    },
+    {
+      id: 'DN-WALL-DEER',
+      name: 'Ansh DecorateNow Deer Head Decorative LED Wall Lamp',
+      desc: 'Modern artistic deer head wall lamp with electroplated gold antler accents and ambient warm illumination for luxury home decor.',
+      category: 'Wall Lights',
+      rooms: ['Living Room', 'Bedroom', 'Dining'],
+      brand: 'DecorateNow Luxury',
+      price: 349,
+      mrp: 1299,
+      discount: 73,
+      rating: '4.9',
+      reviews: 189,
+      stock: 'in',
+      tags: ['trending', 'bestseller', 'new', 'flash', 'deal', 'luxury', 'premium'],
+      img: 'images/products/decoratenow-deer-led-wall-lamp.webp',
+      imgLarge: 'images/products/decoratenow-deer-led-wall-lamp.webp'
+    },
+    {
       id: 'DN-WALL-01',
       name: 'Aditya Wallchiere Wall Lamp (Without Bulb)',
       desc: 'Handcrafted luxury wallchiere sconce with metallic body and warm ambience, ideal for living room & hallway accents.',

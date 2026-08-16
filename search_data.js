@@ -1,5 +1,17 @@
 const globalSearchData = [
   {
+    "url": "decoratenow/product.html?id=DN-WALL-06",
+    "title": "✨ Ansh DecorateNow Modern Golden Oval 3-in-1 LED Wall Light — ₹449",
+    "type": "Luxury Decor Product",
+    "content": "Ansh DecorateNow Modern Golden Oval 3-in-1 LED Wall Light MRP 1999 Price 449 78% OFF Warm White 3000K Cool White 6500K Natural White 4000K Dimensions 10 inch height 8 inch width 8 inch depth gold electroplated K9 crystal wall sconce fixture DecorateNow Greater Noida"
+  },
+  {
+    "url": "decoratenow/product.html?id=DN-WALL-DEER",
+    "title": "✨ Ansh DecorateNow Deer Head Decorative LED Wall Lamp — ₹349",
+    "type": "Luxury Decor Product",
+    "content": "Ansh DecorateNow Deer Head Decorative LED Wall Lamp MRP 1299 Price 349 73% OFF modern artistic deer head wall sconce gold antler accents ambient warm illumination DecorateNow Greater Noida"
+  },
+  {
     "url": "decoratenow/product.html?id=DN-PENDANT-01",
     "title": "✨ Ansh DecorateNow Gold Crystal Cylinder Pendant Light",
     "type": "Luxury Decor Product",

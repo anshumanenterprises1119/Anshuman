@@ -135,7 +135,49 @@ p{color:#666;font-size:15px;line-height:1.7;margin-bottom:24px;}
   <p>Thank you for reaching out to <strong>Anshuman Enterprises</strong>. Our team will contact you within <strong>24 hours</strong> on the phone/email you provided.</p>
   <a href="/" class="home-btn">← Back to Home</a>
   <p class="timer">Redirecting automatically in 5 seconds…</p>
-</div>
 <script src="js/ae-mobile-nav.js"></script>
+
+<!-- BEGIN GOOGLE CUSTOMER REVIEWS SURVEY OPT-IN MODULE -->
+<script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+<script>
+  window.renderOptIn = function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var orderId = urlParams.get('orderId') || urlParams.get('order_id') || 'AE-' + Math.floor(100000 + Math.random() * 900000);
+    var email = urlParams.get('email') || localStorage.getItem('customer_email') || 'anshumanenterprises119@gmail.com';
+    
+    var delDate = new Date();
+    delDate.setDate(delDate.getDate() + 5);
+    var estDeliveryDate = delDate.toISOString().split('T')[0];
+
+    window.gapi.load('surveyoptin', function() {
+      window.gapi.surveyoptin.render({
+        "merchant_id": 5839320454,
+        "order_id": orderId,
+        "email": email,
+        "delivery_country": "IN",
+        "estimated_delivery_date": estDeliveryDate
+      });
+    });
+  };
+</script>
+<!-- END GOOGLE CUSTOMER REVIEWS SURVEY OPT-IN MODULE -->
+
+<!-- BEGIN GOOGLE MERCHANT RATING WIDGET -->
+<script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+<script>
+  if (document.getElementById('merchantWidgetScript')) {
+    document.getElementById('merchantWidgetScript').addEventListener('load', function () {
+      if (window.merchantwidget && typeof window.merchantwidget.start === 'function') {
+        window.merchantwidget.start({
+          merchant_id: 5839320454,
+          position: 'BOTTOM_RIGHT',
+          region: 'IN'
+        });
+      }
+    });
+  }
+</script>
+<!-- END GOOGLE MERCHANT RATING WIDGET -->
+
 </body>
 </html>

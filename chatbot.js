@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. Greet / Address / Discount Quick overrides
     if (intentType === "address") {
       return `Hamari shop ka official address yeh hai:<br><br>
-        📍 <strong>Shop No.-2, KHS-722, Sector 1, Greater Noida, UP - 201306</strong>.<br><br>
+        📍 <strong>Shop No.-2, KHS-782, Sector 1, Greater Noida, UP - 201306</strong>.<br><br>
         Greater Noida aur Noida region ke project sites par **free doorstep site delivery** ready hai!`;
     }
     

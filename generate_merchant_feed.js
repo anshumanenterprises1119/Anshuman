@@ -90,6 +90,30 @@ allProducts.push(
     category: "536"
   },
   {
+    id: "DN-WALL-06",
+    title: "Ansh DecorateNow Modern Golden Oval 3-in-1 LED Wall Light",
+    description: "Luxury handcrafted gold electroplated oval LED wall light with K9 crystal lattice diffuser ring. Features 3-in-1 switch color changing modes: Warm White (3000K), Cool White (6500K), Natural White (4000K). Dimensions: 10 inch height, 8 inch width, 8 inch depth base canopy.",
+    link: `${domain}/decoratenow/product.html?id=DN-WALL-06`,
+    image: `${domain}/images/products/decoratenow-oval-3in1-wall-lamp-1.webp`,
+    additionalImages: [
+      `${domain}/images/products/decoratenow-oval-3in1-wall-lamp-2.webp`,
+      `${domain}/images/products/decoratenow-oval-3in1-wall-lamp-3.webp`
+    ],
+    price: "449.00 INR",
+    brand: "DecorateNow",
+    category: "536"
+  },
+  {
+    id: "DN-WALL-DEER",
+    title: "Ansh DecorateNow Deer Head Decorative LED Wall Lamp",
+    description: "Modern artistic deer head wall lamp with electroplated gold antler accents and ambient warm illumination for luxury home decor.",
+    link: `${domain}/decoratenow/product.html?id=DN-WALL-DEER`,
+    image: `${domain}/images/products/decoratenow-deer-led-wall-lamp.webp`,
+    price: "349.00 INR",
+    brand: "DecorateNow",
+    category: "536"
+  },
+  {
     id: "DN-WALL-01",
     title: "Ansh DecorateNow Aditya Wallchiere Lamp",
     description: "Handcrafted metallic wallchiere fixture without bulb with soft warm wall wash.",
@@ -130,60 +154,6 @@ allProducts.push(
     category: "536"
   }
 );
-
-// 2. PARSE CSV CATALOG FILE (64 PRODUCTS)
-const csvPath = path.join(__dirname, 'indiamart_products_upload.csv');
-if (fs.existsSync(csvPath)) {
-  const csvText = fs.readFileSync(csvPath, 'utf-8');
-  const lines = csvText.split('\n');
-  
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
-    
-    // Parse CSV line regex for quoted values
-    const regex = /(?:^|,)(?:"([^"]*)"|([^,]*))/g;
-    let matches = [];
-    let match;
-    while ((match = regex.exec(line)) !== null) {
-      if (match[0] === '' && matches.length === 0) continue;
-      matches.push(match[1] !== undefined ? match[1] : match[2]);
-    }
-    
-    if (matches.length >= 5) {
-      const pName = matches[0] ? matches[0].trim() : '';
-      const pDesc = matches[1] ? matches[1].trim() : '';
-      const pPriceNum = parseFloat(matches[2]) || 99;
-      const pCat = matches[4] ? matches[4].trim().toLowerCase() : 'hardware';
-      const pImgFile = matches[5] ? matches[5].trim() : 'logo.webp';
-      
-      if (pName) {
-        const prodId = `PROD-${makeSlug(pName)}`;
-        const gCat = googleCategoryMap[pCat] || "1938";
-        const brand = getBrandFromTitle(pName);
-        
-        let imgUrl = `${domain}/images/products/${pImgFile}`;
-        if (!fs.existsSync(path.join(__dirname, 'images', 'products', pImgFile))) {
-          imgUrl = `${domain}/images/gallery/${pImgFile}`;
-          if (!fs.existsSync(path.join(__dirname, 'images', 'gallery', pImgFile))) {
-            imgUrl = `${domain}/logo.webp`;
-          }
-        }
-        
-        allProducts.push({
-          id: prodId,
-          title: pName,
-          description: pDesc || `${pName} wholesale supply in Greater Noida by Anshuman Enterprises.`,
-          link: `${domain}/products.html#${prodId}`,
-          image: imgUrl,
-          price: `${pPriceNum.toFixed(2)} INR`,
-          brand: brand,
-          category: gCat
-        });
-      }
-    }
-  }
-}
 
 // 3. GENERATE STRICT GOOGLE MERCHANT CENTER XML FEED
 let xmlContent = `<?xml version="1.0" encoding="UTF-8"?>

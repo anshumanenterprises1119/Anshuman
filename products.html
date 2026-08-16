@@ -4895,6 +4895,24 @@ sections.forEach(s => obs.observe(s));
   </div>
 
 <script src="js/ae-mobile-nav.js"></script>
+
+<!-- BEGIN GOOGLE MERCHANT RATING WIDGET -->
+<script id='merchantWidgetScript' src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+<script>
+  if (document.getElementById('merchantWidgetScript')) {
+    document.getElementById('merchantWidgetScript').addEventListener('load', function () {
+      if (window.merchantwidget && typeof window.merchantwidget.start === 'function') {
+        window.merchantwidget.start({
+          merchant_id: 5839320454,
+          position: 'BOTTOM_RIGHT',
+          region: 'IN'
+        });
+      }
+    });
+  }
+</script>
+<!-- END GOOGLE MERCHANT RATING WIDGET -->
+
 </body>
 </html>
 
