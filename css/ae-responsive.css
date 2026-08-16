@@ -739,3 +739,59 @@ img, svg, video, iframe {
   }
 }
 
+/* ==========================================================================
+   MASTER NON-OVERLAPPING FLOATING ACTION BUTTONS & CHATBOT LAYOUT
+   ========================================================================== */
+
+.floating-cta, .floating-btns {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 20px !important;
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: center !important;
+  gap: 12px !important;
+  z-index: 99990 !important;
+  pointer-events: auto !important;
+}
+
+.fab-wa, .fab-review, .fab-whatsapp, .fab-call, .fab-top, .fab {
+  position: relative !important;
+  bottom: auto !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+#quote-cart-badge {
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 99980 !important;
+}
+
+@media (max-width: 768px) {
+  .floating-cta, .floating-btns {
+    bottom: 76px !important;
+    right: 14px !important;
+    gap: 10px !important;
+  }
+  .fab-wa, .fab-review, .fab {
+    width: 46px !important;
+    height: 46px !important;
+  }
+  #chatbot-widget-container {
+    bottom: 76px !important;
+    left: 14px !important;
+  }
+  #chatbot-window {
+    width: calc(100vw - 28px) !important;
+    max-height: calc(100vh - 120px) !important;
+    bottom: 68px !important;
+    left: 0 !important;
+  }
+}
+
