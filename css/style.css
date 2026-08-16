@@ -519,7 +519,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{
   border-top:1px solid rgba(201,168,76,.15);font-size:13px;
 }
 .footer-grid{
-  display:grid;grid-template-columns:1fr;gap:32px;max-width:1360px;margin:0 auto 36px;
+  display:grid;grid-template-columns:2fr 1.2fr 1.2fr 1.5fr;gap:36px;max-width:1360px;margin:0 auto 36px;width:100%;
+}
+@media (max-width: 1024px) {
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width: 600px) {
+  .footer-grid{grid-template-columns:1fr;}
 }
 .footer-col h4{font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin-bottom:14px;}
 .footer-col a{display:block;margin-bottom:8px;color:rgba(255,255,255,.7);transition:.2s;}

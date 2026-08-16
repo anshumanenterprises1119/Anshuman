@@ -795,3 +795,40 @@ img, svg, video, iframe {
   }
 }
 
+/* ==========================================================================
+   MASTER RESPONSIVE FOOTER GRID STRUCTURE
+   ========================================================================== */
+
+@media (min-width: 1025px) {
+  .footer-grid, footer .footer-grid, .site-footer .footer-grid {
+    display: grid !important;
+    grid-template-columns: 2fr 1.2fr 1.2fr 1.5fr !important;
+    gap: 36px !important;
+    max-width: 1360px !important;
+    margin: 0 auto 36px !important;
+    width: 100% !important;
+    align-items: start !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer-grid, footer .footer-grid, .site-footer .footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 32px !important;
+    width: 100% !important;
+  }
+  .footer-brand, .footer-col:first-child {
+    grid-column: span 2 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid, footer .footer-grid, .site-footer .footer-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+}
+
