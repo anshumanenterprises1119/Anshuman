@@ -58,7 +58,7 @@ export default function PrivacyPolicyPage({ params }: { params: { brand_slug: st
               <h3 className="text-base font-bold text-gray-900">4. Support & Contact</h3>
               <p>
                 For data access requests or deletion parameters, please email our security officer at: 
-                <a href="mailto:support@futurewithai.online" className="text-[var(--primary-color)] ml-1 font-semibold hover:underline">support@futurewithai.online</a>.
+                <a href="mailto:anshumanenterprises1119@gmail.com" className="text-[var(--primary-color)] ml-1 font-semibold hover:underline">anshumanenterprises1119@gmail.com</a>.
               </p>
             </div>
           </div>
